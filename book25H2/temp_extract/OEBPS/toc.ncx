@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+      <meta name="dtb:uid" content="bookid"/>
+      <meta name="dtb:depth" content="0"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+   <docTitle>
+      <text>UnKnown</text>
+   </docTitle>
+   <navMap>
+     <navPoint id="id1" playOrder="1">
+       <navLabel>
+         <text>扉页</text>
+       </navLabel>
+       <content src="text00000.html"/>
+     </navPoint>
+     <navPoint id="id2" playOrder="2">
+       <navLabel>
+         <text>版权页</text>
+       </navLabel>
+       <content src="text00001.html"/>
+     </navPoint>
+     <navPoint id="id3" playOrder="3">
+       <navLabel>
+         <text>目录</text>
+       </navLabel>
+       <content src="text00002.html"/>
+     </navPoint>
+     <navPoint id="id4" playOrder="4">
+       <navLabel>
+         <text>推荐</text>
+       </navLabel>
+       <content src="text00004.html"/>
+     </navPoint>
+     <navPoint id="id5" playOrder="5">
+       <navLabel>
+         <text>导读</text>
+       </navLabel>
+       <content src="text00004.html"/>
+     </navPoint>
+     <navPoint id="id6" playOrder="6">
+       <navLabel>
+         <text>专家与媒体热评</text>
+       </navLabel>
+       <content src="text00004.html"/>
+     </navPoint>
+     <navPoint id="id7" playOrder="7">
+       <navLabel>
+         <text>第一章</text>
+       </navLabel>
+       <content src="text00006.html#zw1"/>
+     <navPoint id="id8" playOrder="8">
+       <navLabel>
+         <text>关于黑猩猩的笑话</text>
+       </navLabel>
+       <content src="text00005.html"/>
+     </navPoint>
+     <navPoint id="id9" playOrder="9">
+       <navLabel>
+         <text>怀疑论者</text>
+       </navLabel>
+       <content src="text00006.html"/>
+     </navPoint>
+     <navPoint id="id10" playOrder="10">
+       <navLabel>
+         <text>乐观主义者</text>
+       </navLabel>
+       <content src="text00007.html"/>
+     </navPoint>
+     <navPoint id="id11" playOrder="11">
+       <navLabel>
+         <text>关于预测的预测</text>
+       </navLabel>
+       <content src="text00008.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id12" playOrder="12">
+       <navLabel>
+         <text>第二章</text>
+       </navLabel>
+       <content src="text00008.html#zhu1"/>
+     <navPoint id="id13" playOrder="13">
+       <navLabel>
+         <text>盲人辨色</text>
+       </navLabel>
+       <content src="text00009.html"/>
+     </navPoint>
+     <navPoint id="id14" playOrder="14">
+       <navLabel>
+         <text>让医学接受试验</text>
+       </navLabel>
+       <content src="text00009.html#zw1"/>
+     </navPoint>
+     <navPoint id="id15" playOrder="15">
+       <navLabel>
+         <text>思考之思考</text>
+       </navLabel>
+       <content src="text00009.html#zhu1"/>
+     </navPoint>
+     <navPoint id="id16" playOrder="16">
+       <navLabel>
+         <text>诱惑与转换</text>
+       </navLabel>
+       <content src="text00010.html"/>
+     </navPoint>
+     <navPoint id="id17" playOrder="17">
+       <navLabel>
+         <text>眨眨眼，想一想</text>
+       </navLabel>
+       <content src="text00011.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id18" playOrder="18">
+       <navLabel>
+         <text>第三章</text>
+       </navLabel>
+       <content src="text00012.html"/>
+     <navPoint id="id19" playOrder="19">
+       <navLabel>
+         <text>“大毁灭……将会到来”</text>
+       </navLabel>
+       <content src="text00013.html"/>
+     </navPoint>
+     <navPoint id="id20" playOrder="20">
+       <navLabel>
+         <text>判断之判断</text>
+       </navLabel>
+       <content src="text00013.html"/>
+     </navPoint>
+     <navPoint id="id21" playOrder="21">
+       <navLabel>
+         <text>数学的含义</text>
+       </navLabel>
+       <content src="text00014.html"/>
+     </navPoint>
+     <navPoint id="id22" playOrder="22">
+       <navLabel>
+         <text>专家的政治预测</text>
+       </navLabel>
+       <content src="text00015.html"/>
+     </navPoint>
+     <navPoint id="id23" playOrder="23">
+       <navLabel>
+         <text>关于研究结果</text>
+       </navLabel>
+       <content src="text00015.html"/>
+     </navPoint>
+     <navPoint id="id24" playOrder="24">
+       <navLabel>
+         <text>蜻蜓的复眼</text>
+       </navLabel>
+       <content src="text00023.html#zw1"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id25" playOrder="25">
+       <navLabel>
+         <text>第四章</text>
+       </navLabel>
+       <content src="text00017.html"/>
+     <navPoint id="id26" playOrder="26">
+       <navLabel>
+         <text>抗拒万有引力，但是能坚持多久？</text>
+       </navLabel>
+       <content src="text00018.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id27" playOrder="27">
+       <navLabel>
+         <text>第五章</text>
+       </navLabel>
+       <content src="text00019.html"/>
+     <navPoint id="id28" playOrder="28">
+       <navLabel>
+         <text>费米方式</text>
+       </navLabel>
+       <content src="text00019.html#zw1"/>
+     </navPoint>
+     <navPoint id="id29" playOrder="29">
+       <navLabel>
+         <text>谋杀谜案</text>
+       </navLabel>
+       <content src="text00019.html#zhu1"/>
+     </navPoint>
+     <navPoint id="id30" playOrder="30">
+       <navLabel>
+         <text>从外部视角开始</text>
+       </navLabel>
+       <content src="text00020.html"/>
+     </navPoint>
+     <navPoint id="id31" playOrder="31">
+       <navLabel>
+         <text>内部视角</text>
+       </navLabel>
+       <content src="text00021.html"/>
+     </navPoint>
+     <navPoint id="id32" playOrder="32">
+       <navLabel>
+         <text>假设与反面假设相结合</text>
+       </navLabel>
+       <content src="text00022.html"/>
+     </navPoint>
+     <navPoint id="id33" playOrder="33">
+       <navLabel>
+         <text>蜻蜓式预测</text>
+       </navLabel>
+       <content src="text00023.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id34" playOrder="34">
+       <navLabel>
+         <text>第六章</text>
+       </navLabel>
+       <content src="text00023.html#zw1"/>
+     <navPoint id="id35" playOrder="35">
+       <navLabel>
+         <text>本·拉登在哪里？</text>
+       </navLabel>
+       <content src="text00023.html#zw2"/>
+     </navPoint>
+     <navPoint id="id36" playOrder="36">
+       <navLabel>
+         <text>第三种设定</text>
+       </navLabel>
+       <content src="text00023.html#zhu1"/>
+     </navPoint>
+     <navPoint id="id37" playOrder="37">
+       <navLabel>
+         <text>石器时代的概率</text>
+       </navLabel>
+       <content src="text00024.html"/>
+     </navPoint>
+     <navPoint id="id38" playOrder="38">
+       <navLabel>
+         <text>信息时代的概率</text>
+       </navLabel>
+       <content src="text00024.html"/>
+     </navPoint>
+     <navPoint id="id39" playOrder="39">
+       <navLabel>
+         <text>超级不确定性</text>
+       </navLabel>
+       <content src="text00024.html#zw1"/>
+     </navPoint>
+     <navPoint id="id40" playOrder="40">
+       <navLabel>
+         <text>但是这到底意味着什么？</text>
+       </navLabel>
+       <content src="text00024.html#zw1"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id41" playOrder="41">
+       <navLabel>
+         <text>第七章</text>
+       </navLabel>
+       <content src="text00024.html#zhu1"/>
+     <navPoint id="id42" playOrder="42">
+       <navLabel>
+         <text>过犹不及</text>
+       </navLabel>
+       <content src="text00025.html"/>
+     </navPoint>
+     <navPoint id="id43" playOrder="43">
+       <navLabel>
+         <text>反应不足</text>
+       </navLabel>
+       <content src="text00025.html#zw1"/>
+     </navPoint>
+     <navPoint id="id44" playOrder="44">
+       <navLabel>
+         <text>反应过度</text>
+       </navLabel>
+       <content src="text00025.html#zhu1"/>
+     </navPoint>
+     <navPoint id="id45" playOrder="45">
+       <navLabel>
+         <text>明托队长</text>
+       </navLabel>
+       <content src="text00026.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id46" playOrder="46">
+       <navLabel>
+         <text>第八章</text>
+       </navLabel>
+       <content src="text00026.html#zw2"/>
+     <navPoint id="id47" playOrder="47">
+       <navLabel>
+         <text>总是在颠覆</text>
+       </navLabel>
+       <content src="text00027.html"/>
+     </navPoint>
+     <navPoint id="id48" playOrder="48">
+       <navLabel>
+         <text>尝试</text>
+       </navLabel>
+       <content src="text00028.html"/>
+     </navPoint>
+     <navPoint id="id49" playOrder="49">
+       <navLabel>
+         <text>失败</text>
+       </navLabel>
+       <content src="text00029.html"/>
+     </navPoint>
+     <navPoint id="id50" playOrder="50">
+       <navLabel>
+         <text>分析和调整</text>
+       </navLabel>
+       <content src="text00030.html"/>
+     </navPoint>
+     <navPoint id="id51" playOrder="51">
+       <navLabel>
+         <text>韧劲</text>
+       </navLabel>
+       <content src="text00031.html"/>
+     </navPoint>
+     <navPoint id="id52" playOrder="52">
+       <navLabel>
+         <text>总结</text>
+       </navLabel>
+       <content src="text00032.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id53" playOrder="53">
+       <navLabel>
+         <text>第九章</text>
+       </navLabel>
+       <content src="text00033.html"/>
+     <navPoint id="id54" playOrder="54">
+       <navLabel>
+         <text>组团还是不组团？</text>
+       </navLabel>
+       <content src="text00034.html"/>
+     </navPoint>
+     <navPoint id="id55" playOrder="55">
+       <navLabel>
+         <text>超级团队</text>
+       </navLabel>
+       <content src="text00035.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id56" playOrder="56">
+       <navLabel>
+         <text>第十章</text>
+       </navLabel>
+       <content src="text00035.html"/>
+     <navPoint id="id57" playOrder="57">
+       <navLabel>
+         <text>毛奇的遗产</text>
+       </navLabel>
+       <content src="text00036.html"/>
+     </navPoint>
+     <navPoint id="id58" playOrder="58">
+       <navLabel>
+         <text>我喜欢艾森豪威尔</text>
+       </navLabel>
+       <content src="text00037.html"/>
+     </navPoint>
+     <navPoint id="id59" playOrder="59">
+       <navLabel>
+         <text>企业的任务导向指挥系统</text>
+       </navLabel>
+       <content src="text00038.html"/>
+     </navPoint>
+     <navPoint id="id60" playOrder="60">
+       <navLabel>
+         <text>特殊的谦卑之心</text>
+       </navLabel>
+       <content src="text00039.html"/>
+     </navPoint>
+     <navPoint id="id61" playOrder="61">
+       <navLabel>
+         <text>补充</text>
+       </navLabel>
+       <content src="text00040.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id62" playOrder="62">
+       <navLabel>
+         <text>第十一章</text>
+       </navLabel>
+       <content src="text00040.html"/>
+     <navPoint id="id63" playOrder="63">
+       <navLabel>
+         <text>黑天鹅出现</text>
+       </navLabel>
+       <content src="text00041.html"/>
+     </navPoint>
+     <navPoint id="id64" playOrder="64">
+       <navLabel>
+         <text>求同存异</text>
+       </navLabel>
+       <content src="text00042.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id65" playOrder="65">
+       <navLabel>
+         <text>第十二章</text>
+       </navLabel>
+       <content src="text00043.html"/>
+     <navPoint id="id66" playOrder="66">
+       <navLabel>
+         <text>“谁—谁”现状</text>
+       </navLabel>
+       <content src="text00043.html"/>
+     </navPoint>
+     <navPoint id="id67" playOrder="67">
+       <navLabel>
+         <text>变革</text>
+       </navLabel>
+       <content src="text00044.html"/>
+     </navPoint>
+     <navPoint id="id68" playOrder="68">
+       <navLabel>
+         <text>人文主义者的反对</text>
+       </navLabel>
+       <content src="text00045.html"/>
+     </navPoint>
+     <navPoint id="id69" playOrder="69">
+       <navLabel>
+         <text>重要的问题</text>
+       </navLabel>
+       <content src="text00045.html"/>
+     </navPoint>
+     <navPoint id="id70" playOrder="70">
+       <navLabel>
+         <text>最后一个点子</text>
+       </navLabel>
+       <content src="text00046.html"/>
+     </navPoint>
+     </navPoint>
+     <navPoint id="id71" playOrder="71">
+       <navLabel>
+         <text>后记</text>
+       </navLabel>
+       <content src="text00047.html"/>
+     </navPoint>
+     <navPoint id="id72" playOrder="72">
+       <navLabel>
+         <text>附录 给志向远大的超级预测家的“十诫”</text>
+       </navLabel>
+       <content src="text00048.html"/>
+     </navPoint>
+     <navPoint id="id73" playOrder="73">
+       <navLabel>
+         <text>致谢</text>
+       </navLabel>
+       <content src="text00048.html#zw1"/>
+     </navPoint>
+     <navPoint id="id74" playOrder="74">
+       <navLabel>
+         <text>注释</text>
+       </navLabel>
+       <content src="text00049.html"/>
+     </navPoint>
+   </navMap>
+</ncx>

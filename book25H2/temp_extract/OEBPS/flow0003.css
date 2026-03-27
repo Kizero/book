@@ -1,0 +1,28 @@
+
+h1{color:#00a0e9 !important;}
+
+h2{color:#00a0e9 !important;}
+h3{color:#00a0e9 !important;
+font-size:1.3em !important;
+}
+h4{
+margin-left:2em !important;
+font-size:1.1em !important;
+}
+
+.skycolor{color:#00a0e9;}
+.skycolorl{background-color:#9fd9f6;}
+.delete{text-decoration:line-through;}
+
+.skycolorshadow{
+padding:0.8em;
+border:1px solid #00a0e9 !important;
+margin:1em 0.5em 1em 0.5em !important;
+-moz-box-shadow: 2px 2px 2px #00a0e9 !important;
+-webkit-box-shadow: 2px 2px 2px #00a0e9 !important;
+box-shadow: 2px 2px 2px #00a0e9 !important;
+}
+
+.shadow h3{text-indent:0;text-align:left;margin-bottom:0;padding:0.2em;}
+
+.shadow p.songti{margin-top:0em;}

@@ -1,0 +1,503 @@
+/* CITIC电子书中心20131208 */
+/* 辅助样式表 */
+/*=========================段落格式=========================*/
+
+/* 标题一 篇*/
+h1{font-size: !important;
+	font-family:songti !important;
+	margin-top: !important;
+	margin-bottom: !important;
+margin-left: !important;
+color: !important;
+line-height: !important;
+text-indent: !important;
+	}
+
+/* 标题二 章*/
+h2{font-size: !important;
+	font-family:heiti !important;
+	margin-top: 1em!important;
+	margin-bottom: !important;
+margin-right: !important;
+color: !important;
+line-height: !important;
+font-weight: !important;
+	}
+
+/* 标题三 节*/
+h3{font-size: !important;
+font-family:songti !important;
+margin-top: !important;
+margin-bottom: !important;
+text-align: !important;
+text-indent: !important;
+text-justify: !important;
+font-weight: !important;
+}
+
+/* 标题四 小标题*/
+h4{
+    font-size: !important;
+    font-family:heiti !important;
+	margin:2em 0em 1em 0em;
+	text-align: !important;
+	text-indent: !important;
+    font-weight: !important;
+	color: !important;
+}
+
+/* 标题五 图表标题*/
+h5{
+font-size: !important;
+font-weight: !important;
+text-align: left;
+text-indent: !important;
+margin: !important;
+} 
+/* 标题 与图间隔*/
+.chatu + h5{margin-top: !important;}
+h5 + table{margin-top: !important;}
+h5 + table.narrow{margin-top: !important;}
+table + h5{margin-top: !important;}
+.tushuo + h5{margin-top: !important;}
+/* 标题 与正文间隔*/
+h5 + p{margin-top: !important;}
+p + h5{margin-top: !important;}
+h5 + blockquote{margin-top: !important;}
+blockquote + h5{margin-top: !important;}
+
+
+/* 标题六 */
+h6{
+font-size: !important;
+margin: !important;
+text-align: !important;
+text-indent: !important;
+line-height: !important;
+font-weight: !important;
+}
+h6 + table{margin-top: !important;}
+table + h6{margin-top: !important;}
+h5 + h6{margin-top: !important;}
+h6 + p{margin-top: !important;}
+table + p{margin-top: !important;}
+h6 + h6{margin-top: !important;}
+/* 图表说-楷体 */
+.tushuo{font-size: 1.15em!important;margin: !important;text-align: center!important;text-indent: !important;line-height: !important;}
+.tushuo + table{margin-top: !important;}
+table + .tushuo{margin-top: !important;}
+h5 + .tushuo{margin-top: !important;}
+.tushuo + p{margin-top: !important;}
+table + p{margin-top: !important;}
+.tushuo + .tushuo{margin-top: !important;}
+
+/* 正文 */
+p{font-size: !important;
+text-align: !important;
+text-indent: !important;
+margin-top: !important;
+margin-bottom: !important;
+text-justify: !important;
+line-height: !important;
+letter-spacing: !important;}
+
+/* 引文 */
+blockquote{margin-top: !important;margin-bottom: !important;margin-left: !important;margin-right: !important;}
+blockquote p{
+font-size: !important;
+padding-left: !important;
+margin-bottom: !important;
+text-indent: !important;
+text-align: !important;
+font-weight: !important;
+line-height: !important;
+text-justify: !important;}
+/* 引文 与正文间隔*/
+p + blockquote{margin-top: !important;}
+blockquote + p{margin-top: !important;}
+div blockquote{margin: !important;}
+div p + blockquote{margin-top: !important;}
+div blockquote + p{margin-top: !important;}
+div p{margin: !important;}
+blockquote + blockquote{margin-top: !important;}
+/* 段中引文 */
+i{font-weight: !important;font-style: !important;font-size: !important;}
+
+/* 表格 黑色边框 */
+table{border-collapse: !important;
+border: !important;
+margin: !important;
+width: !important;}
+td,th {border: !important;padding: !important;font-size: !important;word-break: !important;} 
+td p{margin: !important;font-size: !important;text-indent: !important;text-align: !important;text-justify: !important;word-break: !important;} 
+td p b{font-size: !important;} 
+table + p{margin-top: !important;}
+/* 无竖线表格 */
+table.halfline{border-left: !important;border-right: !important;}
+table.halfline td{border-left: !important;border-right: !important;}
+table.halfline th{border-left: !important;border-right: !important;}
+/* 仅边框表格 */
+table.borderline td{border-left: !important;border-right: !important;border-top: !important;border-bottom: !important;}
+table.borderline td{border-left: !important;border-right: !important;border-top: !important;}
+/* 无线表格 */
+table.noline{border: !important;}
+table.noline td{border: !important;}
+table.noline th{border: !important;}
+/* 平均分布各列 */
+.average{table-layout: !important;}
+/* 表格不撑满宽度 */
+.narrow{margin: !important;width: !important; }
+
+/* 脚注 */
+.fnote{
+		font-size: !important;
+		text-align: !important;
+		text-indent: !important;
+		line-height: !important;
+		margin-top: !important;
+		margin-bottom: !important;
+}
+p + .fnote{margin-top: !important;padding-top: !important;border-top: !important;}
+div + .fnote{margin-top: !important;}
+h6 + .fnote{margin-top: !important;}
+blockquote + .fnote{margin-top: !important;}
+.fnote p{font-size: !important;text-align: !important;text-indent: !important;line-height: !important;margin-top: !important;margin-bottom: !important;}
+.fnote + .fnote{margin-top: !important;}
+
+/* 避免标题重影 */
+
+
+/* 部分图书的目录 */
+li{font-size: !important;
+margin-bottom: !important;
+margin-top: !important;
+}
+
+
+
+/*=========================字体调整=========================*/
+
+/* 局部文字变化 */
+/* 粗体 */
+b{font-weight: !important;font-size: !important;}
+td b{font-size: !important;}
+/* 标红 颜色可改 */
+strike{color: !important;text-decoration: !important;}
+/* 橙色高亮  颜色可改 */
+.highlight{background: !important;}
+/* 目录链接改成黑色 */
+a{color: !important;}
+/* 段落首字放大*/
+span.dropcap {float: !important; font-size: !important; line-height: !important; margin-right: !important; margin-bottom: !important; }
+/* 注释以外的上标 */
+span.sbiao{margin-left: !important;font-size: !important;vertical-align: !important;}
+
+/* 字体类型 */
+
+
+/* 字体颜色 */
+
+
+/* 文字特效 */
+/* 灰色阴影 */
+.shadowt{text-shadow: !important;}
+/* 蓝色光晕 */
+.glow{text-shadow: !important;}
+/* 灰色浮雕，仅适用有色背景 */
+.relief{color: !important;text-shadow: !important;}
+/* 文字模糊 */
+.blur{color: !important;text-shadow: !important;}
+/* 红色描边 */
+.bordert{text-shadow: !important;}
+
+/* 文字位置 */
+/* 居中 */
+.center{text-align: !important;text-indent: !important;}
+*[style~="text-align: !important;"]{text-indent: !important;}
+*[style="text-align: !important;"]{text-indent: !important;}
+/* 居右 */
+.right{text-align: !important;
+font-family:kaiti!important;
+}
+/* 段前空两字 */
+.indent{text-indent: !important;}
+/* 段前不空两字 */
+.noindent{text-indent: !important;}
+
+/* 标题边框，可用于标题、div和span，颜色可改 */
+/* 背景色 */
+.biaoti1{padding: !important;background-color: !important;}
+/* 圆角背景 */
+.biaoti2{padding: !important;-webkit-border-radius: !important;border-radius: !important;background-color: !important;text-indent: !important;}
+/* 左下半框 */
+.biaoti3{border-left: !important;border-bottom: !important;padding: !important;text-align: !important;text-indent: !important;}
+/* 下方虚线 */
+.biaoti4{padding: !important;border-bottom: !important;text-indent: !important;}
+/* 下方实线 */
+.biaoti5{padding: !important;border-bottom: !important;text-indent: !important;}
+/* 虚线全框 */
+.biaoti6{padding: !important;border: !important;text-indent: !important;}
+/* 双线全框 */
+.biaoti7{padding: !important;border: !important;text-indent: !important;}
+.biaoti7 + h3,.biaoti7 + h2{margin-top: !important;margin-bottom: !important;}
+/* 右侧方块 */
+.biaoti8{padding: !important;border-right: !important;text-indent: !important;text-align: !important;}
+/* 带白框灰色框 */
+.biaoti9{padding: !important;border: !important;background-color: !important;}
+/* 非满宽度框，与以上各项或div同时使用 */
+.narrowdiv{display: !important;margin: !important;}
+
+
+
+/*=========================文字框=========================*/
+
+/*背景色，body可用*/
+
+/* 灰色圆角背景*/
+.greybg{
+background-color: !important;margin: !important;padding: !important;
+-moz-border-radius: !important;
+-webkit-border-radius: !important;
+border-radius: !important;
+ }
+
+/* 无边框，结合底色使用 */
+.noborder {border: !important;margin: !important;padding: !important; }
+/* 单线边框 */
+.solid {border: !important;margin: !important;padding: !important; }
+/* 虚线边框 */
+.dashed {border: !important;margin: !important;padding: !important; }
+/* 点边框 */
+.dotted {border: !important;margin: !important;padding: !important; }
+/* 上下双线 */
+.dualline {border-top: !important;border-bottom: !important;margin: !important;padding: !important;}
+/* 左右单线 */
+.doubleline {border-left: !important;border-right: !important;margin: !important;padding: !important;}
+/* 边框带阴影 */
+.shadow{
+padding: !important;
+border: !important;
+margin: !important;
+-moz-box-shadow: !important;
+-webkit-box-shadow: !important;
+box-shadow: !important;
+}
+p .shadow{margin-top: !important;margin-bottom: !important;}
+div .shadow{margin-top: !important;margin-bottom: !important;}
+/* 圆角 */
+.round{
+margin: !important;padding: !important;
+-moz-border-radius: !important;
+-webkit-border-radius: !important;
+border-radius: !important;}
+/* 向右倾斜 */
+.lean{
+-webkit-transform: !important;
+-moz-transform: !important;
+-o-transform: !important;
+}
+
+
+/* 框内标题边距 */
+div[class~="solid"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="shadow"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="doubleline"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="dotted"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="dashed"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="noborder"] h1{margin-top: !important;margin-bottom: !important;}
+div[class~="solid"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="shadow"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="doubleline"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="dotted"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="dashed"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="noborder"] h2{margin-top: !important;margin-bottom: !important;}
+div[class~="solid"] h3{margin-top: !important;}
+div[class~="shadow"] h3{margin-top: !important;}
+div[class~="doubleline"] h3{margin-top: !important;}
+div[class~="dotted"] h3{margin-top: !important;}
+div[class~="dashed"] h3{margin-top: !important;}
+div[class~="noborder"] h3{margin-top: !important;}
+
+
+
+/*=========================图片=========================*/
+
+/* 一般横线 */
+hr{width: !important;color: !important;size: !important;margin: !important;width: !important;}
+
+/* 图片 */
+img{  padding: !important;margin: !important;}
+
+/* 封面图片 宽度撑满*/
+.full{padding: !important;margin: !important;width: !important;}
+.full img { 
+	position: !important;
+        left: !important;
+        top: !important;   
+        margin: !important;   
+        width: !important;  
+        padding: !important;     
+    } 
+
+/* 插图 居中*/
+div.chatu{margin-left: !important;margin-right: !important;text-align: !important;}
+
+
+/* 插图与正文间隔*/
+.chatu + p{margin-top: !important;}
+h1 + .chatu{margin-top: !important;}
+h2 + .chatu{margin-top: !important;}
+h3 + .chatu{margin-top: !important;}
+h4 + .chatu{margin-top: !important;}
+h5 + .chatu{margin-top: !important;}
+h6 + .chatu{margin-top: !important;}
+.tushuo + .chatu{margin-top: !important;}
+p + .chatu{margin-top: !important;}
+blockquote + .chatu{margin-top: !important;}
+.chatu + .chatu{margin-top: !important;}
+.chatu + .tushuo{margin-top: !important;}
+.chatu + h6{margin-top: !important;}
+
+
+
+/*=========================杂项=========================*/
+div.sgc-toc-level-1{font-weight: !important;margin: !important;font-size: !important;}
+div.sgc-toc-level-2{font-weight: !important;margin: !important;font-size: !important;}
+div.sgc-toc-level-3{font-weight: !important;margin: !important;font-size: !important;}
+div.clear{clear: !important;}
+.juzhong p{font-size: !important;margin: !important;text-align: !important;text-indent: !important;line-height: !important;}
+
+
+/*=========================特殊定位=========================*/
+
+/* 单行垂直居中 */
+div.juzhong1{
+margin-top: !important;
+text-align: !important;
+width: !important;
+padding-right: !important;
+}
+.juzhong1 p{text-align: !important;text-indent: !important;}
+
+/* 单行垂直居中2 */
+div.juzhong2{
+position: !important;
+top: !important;
+text-align: !important;
+width: !important;
+padding-right: !important;
+}
+
+/* 书名 */
+div.shuming{
+margin-top: !important;
+
+text-align: !important;
+text-indent: !important;
+}
+
+/* 出版社 */
+div.chubanshe{
+position: !important;
+bottom: !important;
+
+font-size: !important;
+text-align: !important;
+width: !important;
+left: !important;
+margin-left: !important;
+}
+
+/* 左浮动 */
+div.fleft{float: !important; width: !important;margin: !important;text-align: !important;}
+/* 右浮动 */
+div.fright{float: !important; width: !important;margin: !important;text-align: !important;}
+.fleft + .fleft{margin: !important;}
+.fleft img{width: !important;}
+.fright img{width: !important;}
+
+/* 以下样式在小尺寸屏幕上显示效果不佳，文字较多需慎用 */
+/* 多行垂直居中 */
+div.juzhong{
+width: !important;
+ 
+position: !important;
+height: !important;
+top: !important;
+left: !important;
+margin-left: !important;
+margin-top: !important;
+text-align: !important;
+}
+
+/* 靠左垂直居中 */
+.kaozuo{
+position: !important;
+  width: !important;
+  height: !important;
+margin-left: !important;
+  left: !important;
+  top: !important;
+  margin-top: !important;
+color: !important;
+  height: !important;
+width: !important;
+margin-right: !important;
+  right: !important;
+  top: !important;
+  margin-top: !important;
+}
+
+/* 在页面最底部 */
+.dibu{
+position: !important;
+bottom: !important;
+width: !important;
+}
+
+/* 距顶部30% */
+.dingbian{
+margin-top: !important;
+}
+
+/* 带背景标题 */
+div.zhang{
+background-size: !important;
+background-image: !important;
+background-repeat: !important;
+background-position: !important;
+width: !important;
+padding: !important;
+margin: !important;
+text-align: !important;
+}
+.poem
+{ /**内容居中格式 */
+	font-size:1em;
+	line-height: 1.5em;
+	text-align:center;
+	font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+	font-style: normal;
+}
+/*注释标题*/
+.noteTitle {
+	font-family:"楷体";
+	font-size:80%;
+	line-height:1.5em;
+	font-weight:bold;
+	text-align:left;
+	text-indent:0;
+	letter-spacing:auto;
+} 
+/*注释内容*/
+.noteContent {
+	font-family:"楷体";
+	font-size:80%;
+	line-height:1.5em;
+	text-align:left;
+	text-indent:2em;
+	letter-spacing:auto;
+} 
