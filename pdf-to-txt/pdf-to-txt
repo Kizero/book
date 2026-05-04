@@ -1,0 +1,26 @@
+#!/bin/zsh
+set -euo pipefail
+
+SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" && pwd)
+BUILD_DIR="$SCRIPT_DIR/.build"
+MODULE_CACHE="$BUILD_DIR/module-cache"
+BINARY="$BUILD_DIR/pdf-to-txt"
+SOURCE="$SCRIPT_DIR/pdf_to_txt.m"
+
+mkdir -p "$BUILD_DIR" "$MODULE_CACHE"
+
+if [[ ! -x "$BINARY" || "$SOURCE" -nt "$BINARY" ]]; then
+  clang \
+    -fobjc-arc \
+    -fmodules \
+    -fmodules-cache-path="$MODULE_CACHE" \
+    -framework Foundation \
+    -framework AppKit \
+    -framework CoreGraphics \
+    -framework PDFKit \
+    -framework Vision \
+    "$SOURCE" \
+    -o "$BINARY"
+fi
+
+exec "$BINARY" "$@"
