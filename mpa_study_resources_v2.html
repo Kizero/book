@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MPA 备考资料库 v2 · 2027考研</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a1a;
+    --ink-muted: #666;
+    --ink-faint: #999;
+    --rule: #e0e0e0;
+    --bg: #fafaf8;
+    --accent: #c0392b;
+    --link: #2c5f8a;
+    --gh: #24292e;
+  }
+  body {
+    font-family: 'Noto Sans SC', -apple-system, sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 60px 24px 100px;
+  }
+  .page { max-width: 600px; margin: 0 auto; }
+
+  header {
+    margin-bottom: 52px;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 20px;
+  }
+  header h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  header p { font-size: 13px; color: var(--ink-muted); margin-top: 6px; }
+  .meta { display: flex; gap: 18px; margin-top: 12px; font-size: 12px; color: var(--ink-faint); }
+  .meta span::before { content: '— '; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label::after { content: ''; flex: 1; height: 0.5px; background: var(--rule); }
+
+  section { margin-bottom: 44px; }
+
+  .phase-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 3px; }
+  .phase-title { font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 600; }
+  .phase-date { font-size: 12px; color: var(--ink-faint); }
+  .phase-note { font-size: 13px; color: var(--ink-muted); margin-bottom: 12px; }
+
+  ul.res { list-style: none; }
+  ul.res li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 0.5px solid var(--rule);
+  }
+  ul.res li:last-child { border-bottom: none; }
+
+  .tag {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 2px 7px;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+  .tag.math  { background:#eef2fb; color:#3a5a9e; }
+  .tag.logic { background:#f0eefc; color:#5a3a9e; }
+  .tag.write { background:#fdf0ee; color:#9e4a3a; }
+  .tag.eng   { background:#eefaf2; color:#2a7a4a; }
+  .tag.exam  { background:#fdf8ee; color:#8a6a1a; }
+  .tag.admin { background:#f5f5f5; color:#555; }
+  .tag.gh    { background:#eef1f3; color:#24292e; }
+
+  .res-body { flex: 1; min-width: 0; }
+  .res-name { font-size: 14px; line-height: 1.4; }
+  .res-name a { color: var(--link); text-decoration: none; }
+  .res-name a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .res-name a.gh-link { color: var(--gh); }
+  .res-desc { font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+
+  .divider { height: 0.5px; background: var(--rule); margin: 36px 0; }
+
+  .key-dates { display: grid; grid-template-columns: 80px 1fr; font-size: 13px; }
+  .key-dates .dt { font-weight: 500; color: var(--accent); padding: 7px 0; border-bottom: 0.5px solid var(--rule); }
+  .key-dates .dd { padding: 7px 0 7px 14px; border-bottom: 0.5px solid var(--rule); color: var(--ink); }
+  .key-dates .dt:last-of-type, .key-dates .dd:last-of-type { border-bottom: none; }
+
+  .score-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--rule); border: 0.5px solid var(--rule); margin-bottom: 24px; }
+  .score-cell { background: var(--bg); padding: 11px 13px; }
+  .score-label { font-size: 11px; color: var(--ink-faint); margin-bottom: 3px; }
+  .score-val { font-size: 18px; font-weight: 500; font-family: 'Noto Serif SC', serif; }
+  .score-sub { font-size: 11px; color: var(--ink-faint); margin-top: 2px; }
+
+  .gh-banner {
+    background: #f6f8fa;
+    border: 0.5px solid #d0d7de;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #57606a;
+    line-height: 1.6;
+  }
+  .gh-banner strong { color: var(--gh); font-weight: 500; }
+
+  footer {
+    margin-top: 60px;
+    padding-top: 18px;
+    border-top: 0.5px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>MPA 备考资料库 <span style="font-weight:300;font-size:16px;">v2</span></h1>
+    <p>北京城市学院 · 公共管理硕士 · 非全日制 · 2027考研</p>
+    <div class="meta">
+      <span>目标 185+</span>
+      <span>初试 2026年12月</span>
+      <span>学费 4万 · 2年</span>
+      <span>新增 GitHub 资源</span>
+    </div>
+  </header>
+
+  <!-- 时间节点 -->
+  <section>
+    <div class="section-label">关键时间节点</div>
+    <div class="key-dates">
+      <div class="dt">10月上旬</div><div class="dd">研招网预报名 → 正式报名截止 10月27日</div>
+      <div class="dt">11月中旬</div><div class="dd">网上确认（必做，逾期报名作废）</div>
+      <div class="dt">12月中旬</div><div class="dd">下载准考证，确认考场</div>
+      <div class="dt">12月26日</div><div class="dd">初试 · 上午英语二 · 下午管综199</div>
+      <div class="dt">次年3-4月</div><div class="dd">复试 · 面试为主 · 过线即录</div>
+    </div>
+  </section>
+
+  <!-- 分数 -->
+  <section>
+    <div class="section-label">目标分数</div>
+    <div class="score-grid">
+      <div class="score-cell"><div class="score-label">管综目标</div><div class="score-val">110+</div><div class="score-sub">满分 200</div></div>
+      <div class="score-cell"><div class="score-label">英语二目标</div><div class="score-val">75+</div><div class="score-sub">满分 100</div></div>
+      <div class="score-cell"><div class="score-label">院校录取线</div><div class="score-val">~173</div><div class="score-sub">近三年持续下降</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 官方入口 -->
+  <section>
+    <div class="section-label">报名 · 官方入口</div>
+    <ul class="res">
+      <li>
+        <span class="tag admin">报名</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://yz.chsi.com.cn">中国研究生招生信息网（研招网）</a></div>
+          <div class="res-desc">10月报名入口。填报考单位"北京城市学院"、专业代码125200、学习方式"非全日制"、报考点"1155"</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag admin">简章</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.eduego.com/school560/jianzhang/19402.html">北京城市学院 MPA 非全日制招生简章（2026版）</a></div>
+          <div class="res-desc">学费4万 · 2年 · 周末班 · 无工作年限要求</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag admin">积分</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://fuwu.rsj.beijing.gov.cn/integraltool/tool/simulation">北京积分落户官方模拟计算器</a></div>
+          <div class="res-desc">用真实信息跑一遍，确认实际积分，是本次备考决策的基础数据</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- GitHub专区 -->
+  <section>
+    <div class="section-label">GitHub 开源资源专区</div>
+    <div class="gh-banner">
+      <strong>说明：</strong>管理类联考（MPA/MBA）没有专属的高星 GitHub 仓库（考试受众和开发者群体重合度低）。以下精选的是与备考直接相关的英语学习类高质量开源项目，以及历年真题的 GitHub 存档，均可免费使用。
+    </div>
+    <ul class="res">
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/zwd1216/yingyuer">zwd1216/yingyuer · 历年考研英语二真题</a></div>
+          <div class="res-desc">GitHub 仓库，收录历年考研英语二真题文件，可直接 clone 或下载，无需注册账号</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/Kaiyiwing/qwerty-learner">Kaiyiwing/qwerty-learner · 单词打字练习</a></div>
+          <div class="res-desc">68K+ Stars · 通过打字来记单词，内置考研词库，可直接在浏览器使用，无需安装。适合碎片时间背考研英语词汇</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/byoungd/English-level-up-tips">byoungd/English-level-up-tips · 离谱的英语学习指南</a></div>
+          <div class="res-desc">68K+ Stars · 覆盖单词、阅读、写作全流程的英语自学体系，作者高考英语江苏省第一，有专门的考研英语备考章节，可借鉴阅读和写作方法</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/LinXueyuanStdio/DictionaryData">LinXueyuanStdio/DictionaryData · 400本单词书开源词库</a></div>
+          <div class="res-desc">包含考研英语词汇书的完整词库数据，可导入 Anki 或其他背词软件使用，考研词汇约5500词</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/iChochy/NCE">iChochy/NCE · 新概念英语全四册在线点读</a></div>
+          <div class="res-desc">纯静态网页，支持课文朗读、单句点读、中英对照，适合英语基础偏弱时用第三册做阅读语感训练，免费无广告</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag gh">GitHub</span>
+        <div class="res-body">
+          <div class="res-name"><a class="gh-link" href="https://github.com/knowledgefxg/learning-english">knowledgefxg/learning-english · 英语学习资源合集</a></div>
+          <div class="res-desc">精选英语听说读写资源列表，含考研备考适用工具，包括免费词典、阅读平台、语法练习等</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 第一阶段 -->
+  <section>
+    <div class="section-label">第一阶段 · 6月—7月底 · 摸底建基础</div>
+    <div class="phase-header"><span class="phase-title">摸底 + 框架建立</span><span class="phase-date">每天 1.5 小时</span></div>
+    <p class="phase-note">先做一套真题判断薄弱点，再系统过基础知识。</p>
+    <ul class="res">
+      <li>
+        <span class="tag exam">真题</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://zhuanlan.zhihu.com/p/1907567304037896213">2009—2025 管综历年真题 + 解析合集（知乎）</a></div>
+          <div class="res-desc">含真题PDF + 解析PDF 共34份，先下载2022—2025年的4套做摸底</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag exam">真题</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://download.kaoyan.com/download-1069507p1">管综历年真题免费下载（考研网）</a></div>
+          <div class="res-desc">2025年管综真题及答案完整版，免费下载</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag exam">真题</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.chinakaoyan.com/info/article/id/527323.shtml">2024年管综真题完整版（中国考研网）</a></div>
+          <div class="res-desc">含数学、逻辑、写作三部分完整题目，可在线阅读</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag math">数学</span>
+        <div class="res-body">
+          <div class="res-name">《数学高分指南》— 陈剑（购买纸质版）</div>
+          <div class="res-desc">管综数学最主流教材，算术→代数→几何→数据分析系统过一遍</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/zwd1216/yingyuer">GitHub · 历年考研英语二真题（zwd1216）</a></div>
+          <div class="res-desc">直接 clone 或下载，先做一篇2023年阅读感受题型，每天配合 Qwerty Learner 背50个考研单词</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.zcjsj8.com/kaoyany/1072.html">英语二历年真题百度网盘（1980—2025）</a></div>
+          <div class="res-desc">提取码 jsza，完整PDF打包，可无限打印</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 第二阶段 -->
+  <section>
+    <div class="section-label">第二阶段 · 8月—9月中旬 · 专项强化</div>
+    <div class="phase-header"><span class="phase-title">分科目专项突破</span><span class="phase-date">每天 2 小时</span></div>
+    <p class="phase-note">数学按题型专项，逻辑系统学，英语计时练阅读。</p>
+    <ul class="res">
+      <li>
+        <span class="tag math">数学</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.zhongkaiedu.com/mba/3026.html">管综数学命题规律分析：815道真题考点归纳（众凯）</a></div>
+          <div class="res-desc">归纳约100种命题特点，避免题海战术，精准打击高频考点</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag math">数学</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://m.kaoyan.com/mpacc/beikao/5d2ef311ee73e.html">上岸学长：数学过4-5遍的实战路径（考研帮）</a></div>
+          <div class="res-desc">第一遍基础→第二遍提高→真题按考点分类→套卷→改错，亲测有效路径</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag logic">逻辑</span>
+        <div class="res-body">
+          <div class="res-name">《逻辑要点精编》— 老吕（购买纸质版）</div>
+          <div class="res-desc">形式推理+论证推理分章节攻破，配套练习册比逻辑分册好用</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag logic">逻辑</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.zhongkaiedu.com/mba/2314.html">形式逻辑必备公式汇总（众凯考研）</a></div>
+          <div class="res-desc">假言命题、三段论等核心公式整理，可收藏随时查阅</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag write">写作</span>
+        <div class="res-body">
+          <div class="res-name">《写作分册》— 老吕（购买纸质版）</div>
+          <div class="res-desc">论证有效性分析结构固定，此阶段开始看并模仿框架</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/byoungd/English-level-up-tips">GitHub · 英语学习指南（68K Stars）</a></div>
+          <div class="res-desc">重点阅读「阅读篇」和「写作篇」章节，提取适合考研英语的阅读技巧和写作句式积累方法</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/Kaiyiwing/qwerty-learner">GitHub · Qwerty Learner 单词打字记忆（68K Stars）</a></div>
+          <div class="res-desc">选择考研词库，每天打字背词20分钟，打错的词自动加频，适合通勤或碎片时间</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://blog.csdn.net/qq_45988151/article/details/148616690">2025年英语二真题完整PDF 72页（CSDN）</a></div>
+          <div class="res-desc">最新一年真题，此阶段开始计时做阅读，每篇限时12分钟</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 第三阶段 -->
+  <section>
+    <div class="section-label">第三阶段 · 9月16日—10月31日 · 真题实战</div>
+    <div class="phase-header"><span class="phase-title">做近五年真题 + 完成报名</span><span class="phase-date">每天 2 小时</span></div>
+    <p class="phase-note">每套严格限时180分钟，做完逐题分析错因。10月完成网上报名。</p>
+    <ul class="res">
+      <li>
+        <span class="tag exam">真题</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://blog.csdn.net/qq_45988151/article/details/148051628">2009—2025管综真题+解析34份打包（CSDN）</a></div>
+          <div class="res-desc">此阶段重点做2020—2025年6套，每套严格180分钟，错题分类记录</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag exam">真题</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://m.juyingonline.com/news/356520.html">2025年管综真题及答案（聚创考研）</a></div>
+          <div class="res-desc">最新一年完整版，含答案解析</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.cnblogs.com/slgkaifa/p/19226970">1980—2025英语一、二真题及解析PDF（博客园）</a></div>
+          <div class="res-desc">夸克网盘分享，完整版可打印，此阶段开始做完形填空专项</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://zhuanlan.zhihu.com/p/1962816505495418149">2025年英语二真题及答案解析PDF（知乎）</a></div>
+          <div class="res-desc">含完整解析，重点研究阅读文章的选词和论证结构，对写作也有帮助</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag write">写作</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.mbachina.com/html/xw/202507/626796.html">2026管综写作备考策略：论证有效性分析漏洞清单（MBAChina）</a></div>
+          <div class="res-desc">含常见逻辑漏洞类型整理，本阶段开始每周写一篇论说文</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag admin">报名</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://yz.chsi.com.cn">10月10日起：研招网预报名入口</a></div>
+          <div class="res-desc">正式报名10月16—27日。报考单位"北京城市学院"，专业125200，学习方式"非全日制"，报考点"1155"</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 第四阶段 -->
+  <section>
+    <div class="section-label">第四阶段 · 11月 · 全真模拟</div>
+    <div class="phase-header"><span class="phase-title">每周整套模考 + 网上确认</span><span class="phase-date">每天 2.5 小时</span></div>
+    <p class="phase-note">11月中旬完成网上确认，否则报名自动作废。</p>
+    <ul class="res">
+      <li>
+        <span class="tag exam">模考</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.educity.cn/mba/1993332.html">MBA历年联考真题及解析汇总（希赛网）</a></div>
+          <div class="res-desc">含逻辑16套真题讲解、数学题库在线刷题，模考阶段查漏补缺用</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag logic">逻辑</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://m.kaoyan.com/www/book/56e7968acd4f1.html">管综历年真题权威详解（考研帮书店）</a></div>
+          <div class="res-desc">逻辑题附【题干概括】【考点与要领】，逐题整理错题本，此阶段重点攻逻辑</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/LinXueyuanStdio/DictionaryData">GitHub · 考研词库数据（可导入Anki）</a></div>
+          <div class="res-desc">从 book.csv 中提取考研词汇导入 Anki，冲刺期每天用Anki复习高频错词</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag admin">确认</span>
+        <div class="res-body">
+          <div class="res-name">11月中旬：网上确认（北京约11月上中旬，关注北京城市学院研招网公告）</div>
+          <div class="res-desc">需上传照片确认信息，逾期不补办。北京考点选"1155北京城市学院"</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 第五阶段 -->
+  <section>
+    <div class="section-label">第五阶段 · 12月1—26日 · 冲刺回归</div>
+    <div class="phase-header"><span class="phase-title">只看错题 + 背作文范文</span><span class="phase-date">每天 2-3 小时</span></div>
+    <p class="phase-note">停止做新题。数学公式默写检验，作文模板烂熟于胸。</p>
+    <ul class="res">
+      <li>
+        <span class="tag exam">冲刺</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.zaizhiyanjiushengwang.com/glllkwtjd/917.html">管综冲刺阶段备考经验（在职研究生网）</a></div>
+          <div class="res-desc">含数学公式默写法、逻辑错题归类复盘、写作框架检验清单</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag write">写作</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://jixun.iqihang.com/info/yyzd/2024588399.html">2025年英语二小作文真题及范文（启航考研）</a></div>
+          <div class="res-desc">邀请信模板，背5篇高分范文句式，大小作文各准备2套备用框架</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">英语</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/iChochy/NCE">GitHub · 新概念英语在线点读（NCE）</a></div>
+          <div class="res-desc">冲刺期每天精读一篇NCE第三册课文，保持英语语感，不超过15分钟</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag admin">准备</span>
+        <div class="res-body">
+          <div class="res-name">12月15日起：研招网下载打印准考证</div>
+          <div class="res-desc">确认考场（北京城市学院），备好2B铅笔、黑色签字笔、身份证原件</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 考试当天 -->
+  <section>
+    <div class="section-label">考试当天 · 12月26日</div>
+    <ul class="res">
+      <li>
+        <span class="tag eng">上午</span>
+        <div class="res-body">
+          <div class="res-name">8:30—11:30 · 英语二（满分100，180分钟）</div>
+          <div class="res-desc">阅读Part A → Part B新题型 → 翻译 → 大作文 → 小作文 → 完形（最后做）</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag math">下午</span>
+        <div class="res-body">
+          <div class="res-name">14:00—17:00 · 管综199（满分200，180分钟）</div>
+          <div class="res-desc">数学25题（≤50分钟）→ 逻辑30题（约60分钟）→ 写作（剩余≥70分钟，论证有效性分析先写）</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 延伸参考 -->
+  <section>
+    <div class="section-label">延伸参考 · 攻略与工具</div>
+    <ul class="res">
+      <li>
+        <span class="tag exam">攻略</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://zhuanlan.zhihu.com/p/159413968">管联245分超全备考指南（知乎·含教材推荐）</a></div>
+          <div class="res-desc">从摸底140分到245分的完整路径，含各科书目选择、刷题轮次建议</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag exam">题库</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.educity.cn/mpa/5281795.html">MPA备考指南 + 在线逻辑/数学题库（希赛网）</a></div>
+          <div class="res-desc">含数学题库、逻辑历年真题在线刷题，碎片时间可用手机刷</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag eng">工具</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://github.com/knowledgefxg/learning-english">GitHub · 英语学习工具资源合集</a></div>
+          <div class="res-desc">精选听说读写免费工具清单，含考研备考适用的语法练习、阅读平台等</div>
+        </div>
+      </li>
+      <li>
+        <span class="tag exam">经验</span>
+        <div class="res-body">
+          <div class="res-name"><a href="https://www.mbachina.com/html/xw/202408/594952.html">管联备考全攻略：资料·时间·心态（MBAChina）</a></div>
+          <div class="res-desc">在职考生版，含每天时间分配和各阶段侧重建议</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 书目 -->
+  <section>
+    <div class="section-label">核心书目 · 购买清单</div>
+    <ul class="res">
+      <li><span class="tag math">数学</span><div class="res-body"><div class="res-name">《数学高分指南》— 陈剑</div><div class="res-desc">主力教材，过4-5遍，重点攻几何和排列组合</div></div></li>
+      <li><span class="tag logic">逻辑</span><div class="res-body"><div class="res-name">《逻辑要点精编》— 老吕</div><div class="res-desc">形式推理+论证推理，配套练习册比逻辑分册好用</div></div></li>
+      <li><span class="tag write">写作</span><div class="res-body"><div class="res-name">《写作分册》— 老吕（或王诚《写作基础》）</div><div class="res-desc">论证有效性分析套路固定，背熟框架即可得高分</div></div></li>
+      <li><span class="tag eng">英语</span><div class="res-body"><div class="res-name">《考研英语二历年真题》— 张剑黄皮书</div><div class="res-desc">英语二主力真题书，阅读是核心（占40分），重点投入</div></div></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>北京城市学院 MPA · 非全日制 · 2027考研 · 目标185分</p>
+    <p style="margin-top:5px;">报名 yz.chsi.com.cn &nbsp;·&nbsp; 积分计算器 fuwu.rsj.beijing.gov.cn/integraltool/tool/simulation</p>
+    <p style="margin-top:5px;">v2 新增：6个 GitHub 开源资源（单词、真题、英语学习指南）</p>
+  </footer>
+
+</div>
+</body>
+</html>
