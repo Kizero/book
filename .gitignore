@@ -1,0 +1,16 @@
+# macOS metadata
+.DS_Store
+
+# Local model weights and Python environments
+.models/
+.venv*/
+*.safetensors
+
+# Generated audio and build artifacts
+*.wav
+**/.build/
+__pycache__/
+*.py[cod]
+
+# Temporary working files
+tmp/
