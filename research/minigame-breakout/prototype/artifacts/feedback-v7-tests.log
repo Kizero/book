@@ -1,0 +1,47 @@
+✔ journal persists unique completed places and the tea-party badge (1.857792ms)
+✔ invalid or blocked storage never blocks gameplay (0.473ms)
+✔ suction removes dirt and shells and makes firing possible (12.150209ms)
+✔ bare enemy is vulnerable to suction even with no floor ammo (2.786875ms)
+✔ hostile mud projectile can be caught for ammunition (1.053083ms)
+✔ chain deaths are resolved once and clean their surrounding floor (0.63225ms)
+✔ all rooms, offered upgrades and final automatic cleanup complete a run (35.889916ms)
+✔ pause freezes simulation; death prevents firing; restart owns fresh state (1.537083ms)
+✔ large update gaps are capped and player stays inside room (15.627666ms)
+✔ wide and power upgrades modify distinct mechanics and persist to next room (8.190208ms)
+✔ 90 percent cleanliness wins with enemies alive and does not count them as kills (2.094791ms)
+✔ generated rooms never start near the cleanliness victory threshold (57.579208ms)
+✔ three starter weapons have different ammo and projectile behavior (0.727292ms)
+✔ splitter produces two children and each enemy has a unique id (0.413667ms)
+✔ foam cleans ground, pierce does not hit the same target twice, and bounce survives a wall (2.222292ms)
+✔ capacity and refund upgrades apply without negative or overflowing ammo (0.529292ms)
+✔ bubble chain pops once per bubble, frees captives and cleans the impact area (0.605709ms)
+✔ electricity traverses connected foam, hits each enemy once and does not jump a gap (0.666958ms)
+✔ mop redirects a shot once; repeated contact cannot multiply its damage again (0.785834ms)
+✔ duck collects dirt into bounded ammo and transports bubbles toward enemies (0.582625ms)
+✔ new equipment caps, partner offers, pause and restart preserve ownership (1.141666ms)
+✔ double mouth trades reach for rear suction; compressor changes fire cadence and projectile (0.258584ms)
+✔ returning projectile refunds only once and never overflows the ammo cap (0.763375ms)
+✔ bucket relocation conserves outstanding dirt, then a shot completes collection (0.602209ms)
+✔ bucket cargo stays dirty while packed and is accounted once when its bubble pops (0.6675ms)
+✔ brush carries foam; evolved washing creates trails without preexisting foam (0.360375ms)
+✔ preview kits persist on restart and leave no effects when returning to normal (1.797208ms)
+✔ backpack converts some suction yield to bubbles without starving all ammo (4.639833ms)
+✔ charged duck delivery evolves only at required levels and combo effects reset (1.76125ms)
+✔ rule modification cards are unique and never appear again once owned (1.023083ms)
+✔ charger locks its warning direction, dashes across it and is interrupted by bubbles (7.303208ms)
+✔ lobber snapshots a delayed landing; moving away avoids damage, standing still takes one hit (18.666625ms)
+✔ mender repairs living nearby shells, cannot exceed cap or resurrect enemies (0.814458ms)
+✔ foam charges a manual garbage shot once and impact carries foam onward (3.160833ms)
+✔ both victory routes cancel pending landings and restart leaves no hazards (10.9995ms)
+✔ commission layouts differ and fit landscape and portrait arenas (3.097375ms)
+✔ tea-party boss telegraphs bounded mud landings and remains defeatable (1.10475ms)
+✔ feedback expires, pauses and resets without mutating gameplay (1.543667ms)
+✔ many same-frame combo events do not flood labels; separated kills do not pretend to be a streak (0.525708ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 329.920833

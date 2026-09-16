@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-04-hardy-bibliographic-verification",
+  "captured_at": "2026-09-04T11:30:00+08:00",
+  "artifact": {
+    "title": "A Mathematician's Apology 书目信息核验",
+    "kind": "primary_source_verification_note",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-04-hardy-bibliographic-verification.md",
+    "source_url": "https://www.cambridge.org/core/books/mathematicians-apology/A344F9D097F5AFF45BDA21B57B54BDCA",
+    "additional_sources": [
+      "https://assets.cambridge.org/97811076/04636/frontmatter/9781107604636_frontmatter.pdf",
+      "https://www.cp.com.cn/book/7-100-05152-5_20.html"
+    ],
+    "provenance": "official_publisher_pages",
+    "verification": "verified_primary",
+    "sha256": "455971d888e5a759806f646caf5b6feeed20b79bc234976e74187cec0845a999"
+  },
+  "entities": [
+    {
+      "id": "person:gh-hardy",
+      "name": "G. H. Hardy",
+      "type": "person",
+      "aliases": ["G·H·哈代", "哈代"],
+      "status": "candidate",
+      "priority": 4,
+      "locator": "L11",
+      "context": "Cambridge 出版资料列明作者",
+      "confidence": "verified"
+    },
+    {
+      "id": "work:a-mathematicians-apology",
+      "name": "A Mathematician's Apology",
+      "type": "book_or_essay",
+      "aliases": ["一个数学家的辩白", "一个数学家的辩护"],
+      "status": "candidate",
+      "priority": 5,
+      "locator": "L11-L17",
+      "context": "英文首版与中文版本书目信息已由出版社页面核验",
+      "confidence": "verified"
+    },
+    {
+      "id": "person:cp-snow",
+      "name": "C. P. Snow",
+      "type": "person",
+      "aliases": ["C·P·斯诺"],
+      "status": "candidate",
+      "priority": 2,
+      "locator": "L11",
+      "context": "Cambridge 当前版本前言作者",
+      "confidence": "verified"
+    },
+    {
+      "id": "edition:mathematicians-apology-cn-2007",
+      "name": "《一个数学家的辩白》商务印书馆 2007 年版",
+      "type": "book_edition",
+      "aliases": [],
+      "status": "candidate",
+      "priority": 3,
+      "locator": "L15-L17",
+      "context": "商务印书馆中文版本",
+      "confidence": "verified"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:hardy-bibliography",
+      "text": "A Mathematician's Apology 的作者是 G. H. Hardy，第一版出版于 1940 年。",
+      "kind": "publisher_bibliography",
+      "locator": "L7-L11",
+      "evidence": "第一版出版于 1940 年",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "claim:hardy-cn-edition",
+      "text": "商务印书馆 2007 年版中文题名为《一个数学家的辩白》，王希勇译。",
+      "kind": "publisher_bibliography",
+      "locator": "L15-L17",
+      "evidence": "王希勇译，出版时间为 2007 年 6 月",
+      "confidence": "verified",
+      "priority": 4
+    }
+  ],
+  "methods": [],
+  "relations": [
+    {
+      "id": "relation:hardy-authored-apology-verified",
+      "from": "person:gh-hardy",
+      "type": "authored",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L7-L11",
+      "confidence": "verified"
+    },
+    {
+      "id": "relation:cn-edition-of-apology",
+      "from": "edition:mathematicians-apology-cn-2007",
+      "type": "edition_of",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L15-L17",
+      "confidence": "verified"
+    }
+  ],
+  "questions": [
+    "若进入精读，应进一步核验评论者关于哈代创造力衰退和写作动机的解释。"
+  ],
+  "actions": [
+    "将书目对象保留为待读候选，而不是仅保存一次性摘要"
+  ]
+}

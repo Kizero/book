@@ -1,0 +1,9 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH});const errors=[],results=[];
+try{for(const id of ['transport','wash','pinball','recycle']){
+ const p=await browser.newPage({viewport:{width:1440,height:1040}});p.on('pageerror',e=>errors.push(e.message));await p.clock.install();await p.goto('http://127.0.0.1:4177');await p.waitForFunction(()=>window.cleaningGame);
+ await p.locator('#preset-select').selectOption(id);await p.locator('#start').click();assert.equal((await p.evaluate(()=>window.cleaningGame.snapshot())).preset,id);
+ await p.keyboard.down('Space');await p.clock.runFor(2500);await p.keyboard.up('Space');await p.screenshot({path:`artifacts/combination-${id}.png`,animations:'disabled'});results.push(await p.evaluate(()=>window.cleaningGame.snapshot()));await p.close();
+}
+const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:4177');await p.waitForFunction(()=>window.cleaningGame);await p.screenshot({path:'artifacts/combinations-mobile-menu.png',animations:'disabled'});await p.locator('#preset-select').selectOption('wash');await p.locator('#start').click();assert.equal((await p.evaluate(()=>window.cleaningGame.snapshot())).preset,'wash');assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.equal(errors.length,0);
+fs.writeFileSync('artifacts/combinations-browser.json',JSON.stringify({results,errors,mobile:true},null,2));console.log('4 combination presets and mobile menu passed');}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

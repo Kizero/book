@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-07-hamming-reading-dossier",
+  "captured_at": "2026-09-07T09:58:00+08:00",
+  "artifact": {
+    "title": "You and Your Research 阅读档案",
+    "kind": "talk_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-07-hamming-reading-dossier.md",
+    "source_url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch",
+    "provenance": "full_text_and_research",
+    "sha256": "fe626b18b41928a607ef427c235558431598b11ac27161ee4f837a8fb85f847e"
+  },
+  "report_note": "依据 1986 年演讲转录；迁移建议和批评为本期判断。旧阅读记录只作关联线索，不判定掌握。",
+  "entities": [
+    {
+      "id": "work:you-and-your-research",
+      "name": "You and Your Research · 你与你的研究",
+      "type": "talk",
+      "aliases": [
+        "你与你的研究"
+      ],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "读得更多之后，要把精力投向哪里？今天用一场研究者的经验演讲，区分宏大的愿望与真正可以着手的问题。",
+      "why_it_matters": "你提出借 AI 加快阅读；本期补上“选择问题”这一环。旧笔记已有张益唐关于自得其乐的入口，今天与追求重要贡献的视角并读，不要求以名望取代兴趣。",
+      "recommended_action": "读关键段落即可。3—5 分钟读本期；15—20 分钟在原文依次搜索 important problem、Great Thoughts Time、library work，最后搜索 gloss over 阅读对机遇的质疑。读上下文，不必今天读完全文。"
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:hamming-life",
+      "about_entity": "work:you-and-your-research",
+      "title": "从解决计算难题，到思考研究者怎样工作",
+      "summary": "Hamming 不只是名字出现在编码课里的数学家。他参加过洛斯阿拉莫斯的计算工作，随后在贝尔实验室从事计算、编码等研究，后来在海军研究生院教学。他的经历横跨实际计算难题与培养研究者。理解这条路线，比记住奖项更有助于理解他为什么在意“怎样工作”。[NPS 生平介绍](https://nps.edu/-/iconic-researcher-teacher-richard-hamming-maintains-lasting-legacy-on-campus)",
+      "kind": "biography",
+      "locator": "L14",
+      "evidence": "Hamming 不只是",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "context:hamming-origin",
+      "about_entity": "work:you-and-your-research",
+      "title": "一份有立场的经验谈",
+      "summary": "1986 年的这次演讲，是他向研究人员回顾如何做出重要工作的经验。我的阅读定位：把它当作一个有鲜明偏好的实践者提出的挑战，不当作一套得到实验验证的成功学规律。[演讲原文](https://www.cs.virginia.edu/~robins/YouAndYourResearch)",
+      "kind": "origin",
+      "locator": "L16",
+      "evidence": "1986 年的",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "context:hamming-selection-bias",
+      "about_entity": "work:you-and-your-research",
+      "title": "成功者经验不能直接变成因果律",
+      "summary": "成功者经验不能直接变成因果律。演讲问答里，听众就追问他是否低估了进入洛斯阿拉莫斯和贝尔实验室的机遇。他也承认调查样本有偏。我们的批评是：若不比较同样努力却失败的人，就无法知道某种习惯贡献了多少，更不能用成果倒推个人品格。[问答原文](https://www.cs.virginia.edu/~robins/YouAndYourResearch)",
+      "kind": "counterpoint",
+      "locator": "L32",
+      "evidence": "成功者经验不能",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "context:hamming-values",
+      "about_entity": "work:you-and-your-research",
+      "title": "有价值，不等于有名望",
+      "summary": "重要性也不能只按名望排序。我的反例是维护、复现与教学：未必产生冠名成果，却可能使整个共同体可靠运转。选题框架有用，不表示接受它隐含的全部人生排序；内在乐趣也不是需要被纠正的低级目标。",
+      "kind": "counterpoint",
+      "locator": "L34",
+      "evidence": "重要性也不能",
+      "confidence": "likely",
+      "priority": 5
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:hamming-attack",
+      "about_entity": "work:you-and-your-research",
+      "title": "重要还要有切口",
+      "summary": "重要还要有切口。Hamming 区分后果宏大与存在合理进攻路线；读原文的 important problem 段落。我们的迁移：遇到宏大主题，另写一句“现在能检验的最小问题是什么”，没有答案时先探索，不急着立项目。",
+      "locator": "L20",
+      "evidence": "重要还要有切口。",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:hamming-direction",
+      "about_entity": "work:you-and-your-research",
+      "title": "给方向留时间",
+      "summary": "给方向留时间。他用固定时段思考领域往哪里走，而非只处理眼前任务。我们的迁移：少加一份书单，多问一次“本周的新材料改变了哪个问题的优先级”；没有变化也允许记录无变化。",
+      "locator": "L22",
+      "evidence": "给方向留时间。",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:hamming-class",
+      "about_entity": "work:you-and-your-research",
+      "title": "从单次答案走向可复用的方法",
+      "summary": "把单次答案提升为一类问题的方法。他反思连续解决孤立计算题的工作方式，转向可供后来者使用的方法。我们的迁移：阅读产物可以是一条带适用条件的区分，而不只是作者观点的复述；但不要为了通用而过度抽象。",
+      "locator": "L24",
+      "evidence": "把单次答案提升",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:hamming-reading",
+      "about_entity": "work:you-and-your-research",
+      "title": "给独立思考留位置",
+      "summary": "阅读也要给独立思考留位置。问答中，他建议先弄清问题、自己思考，再看他人解法。我们的迁移：读关键原文前先写一个猜测，读后只记录最重要的修正。这不是拒绝查资料，更不要求每次阅读都考试。",
+      "locator": "L26",
+      "evidence": "阅读也要",
+      "confidence": "likely",
+      "priority": 5
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:hamming-full",
+      "about_entity": "work:you-and-your-research",
+      "title": "",
+      "summary": "免费原文：[You and Your Research，大学教师网站公开转录](https://www.cs.virginia.edu/~robins/YouAndYourResearch)。本次已打开正文与问答；以下中文为导读，不是完整翻译。",
+      "locator": "L4",
+      "evidence": "免费原文：",
+      "confidence": "verified",
+      "priority": 5,
+      "label": "大学教师网站公开的英文全文",
+      "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch",
+      "note": "免费，无需登录；正文与问答均可阅读"
+    }
+  ],
+  "claims": [],
+  "relations": [],
+  "questions": [],
+  "actions": [],
+  "report_sections": [
+    {
+      "title": "两个理解问题",
+      "body": "1. 一个后果很重大的问题，什么情况下还不适合作为现在的研究题目？\n\n2. 如果一个人阅读量巨大却少有原创成果，除了“读得太多”，还可能有哪些解释，怎样区分它们？"
+    },
+    {
+      "title": "可选的十分钟小应用",
+      "body": "选一个你确实好奇的问题，写下“为什么在意 / 目前卡在哪里 / 一个可检验的切口”。让 AI 提一个最强反驳，自己决定是否修正。不必绑定工作，也不自动加入待办。"
+    }
+  ]
+}

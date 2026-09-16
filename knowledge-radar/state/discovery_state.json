@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "lane_cursor": 2,
+  "topic_cursor": 2,
+  "recent_featured": [
+    {"entity_id": "work:quick-dirty-programming", "date": "2026-09-16"},
+    {
+      "entity_id": "work:bacon-of-studies",
+      "date": "2026-09-15"
+    },
+    {
+      "entity_id": "work:vox-populi",
+      "date": "2026-09-14",
+      "mode": "backlog_delivery"
+    },
+    {
+      "entity_id": "work:the-bitter-lesson",
+      "date": "2026-09-12"
+    },
+    {
+      "entity_id": "work:big-world-hypothesis",
+      "date": "2026-09-12"
+    },
+    {
+      "entity_id": "work:ten-rules-successful-collaboration",
+      "date": "2026-09-11"
+    },
+    {
+      "entity_id": "work:poincare-mathematical-creation",
+      "date": "2026-09-10"
+    },
+    {
+      "entity_id": "work:organizing-computational-biology-projects",
+      "date": "2026-09-09"
+    },
+    {
+      "entity_id": "work:a-mathematicians-apology",
+      "date": "2026-09-04"
+    },
+    {
+      "entity_id": "work:programming-as-theory-building",
+      "date": "2026-09-05"
+    },
+    {
+      "entity_id": "work:ironies-of-automation",
+      "date": "2026-09-06"
+    },
+    {
+      "entity_id": "work:you-and-your-research",
+      "date": "2026-09-07"
+    },
+    {
+      "entity_id": "work:darwin-fawcett-1861-09-18",
+      "date": "2026-09-08"
+    }
+  ],
+  "recent_queries": [
+    "PLOS Ten simple rules testing software",
+    "software engineering reading list Parnas Dijkstra humble programmer",
+    "research advice reading list Medawar Sutherland",
+    "PLOS Ten simple rules research question",
+    "CMU advice research Sutherland Medawar Hamming",
+    "Bacon Of Studies full text Gutenberg",
+    "Pfungst Clever Hans Babbage Reflections decline science Gutenberg",
+    "Peirce Fixation of Belief Clifford Ethics of Belief full text",
+    "Lorenz social influence wisdom crowd Wang self consistency language models",
+    "Francis Galton Vox Populi original 1907",
+    "site.ucl.ac.uk Francis Galton 1822 1911 eugenics statistics",
+    "Richard Sutton Big World Hypothesis Oak lab original",
+    "Richard Sutton The Bitter Lesson 2019 original",
+    "The Big World Hypothesis OpenReview license",
+    "Ten Simple Rules Successful Collaboration Vicens Bourne",
+    "Priya Narasimhan research technical writing advice",
+    "PLOS ten simple rules collaboration software documentation",
+    "Poincare mathematical creation 1908 full text unconscious work",
+    "Clever Hans Pfungst original investigation",
+    "NIST generative AI profile automation bias",
+    "AlphaGeometry solving olympiad geometry without human demonstrations",
+    "Noble organizing computational biology projects reproducible research",
+    "CMU collected advice research writing Sutherland",
+    "DARPA Heilmeier catechism",
+    "Peter Naur Programming as Theory Building full text",
+    "Richard Hamming You and Your Research Bell Labs transcript",
+    "software engineering syllabus classics Parnas Brooks Naur",
+    "site.edu research advice Hamming Medawar",
+    "Licklider Man Computer Symbiosis 1960 full text",
+    "automation irony Bainbridge 1983 out of loop Endsley 1995",
+    "Wigner unreasonable effectiveness mathematics Hamming",
+    "Lakatos Proofs Refutations",
+    "Lisanne Bainbridge biography UCL psychology automation",
+    "research advice Hamming Sutherland technology courage",
+    "software engineering reading list Parnas rational design process",
+    "Richard Hamming biography NPS",
+    "Darwin Fawcett 18 September 1861 observation",
+    "Peirce fixation belief Bacon",
+    "Engelbart augmenting human intellect 1962",
+    "Bush As We May Think 1945"
+  ]
+}

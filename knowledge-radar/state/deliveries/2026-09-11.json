@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-11",
+  "status": "ready",
+  "verified_at": "2026-09-11T01:11:07.835Z",
+  "entity_id": "work:ten-rules-successful-collaboration",
+  "book_id": "8DCC5942-CAE2-450A-B4E0-B50DA1503FED",
+  "book_title": "成功合作的十条简单规则-中文全译",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-11.md",
+    "sha256": "0b5a2dab931d0e76d0f41190af3cf8ba7e3f7052422ee1aa19b26fcb97605ae5"
+  },
+  "record": {
+    "path": "records/2026-09-11-collaboration-reading-dossier.json",
+    "sha256": "5067a924619694436d4e9f6e4acb9c0dbef0ec252a2e5a0a66ce104293d74839"
+  },
+  "chinese": {
+    "path": "library/成功合作的十条简单规则-中文全译.md",
+    "sha256": "e7e3cd6da4504caf352463bc794a685a19b8dd9c3a7415e00e7e36504d411bcf"
+  },
+  "import_record": {
+    "path": "imports/2026-09-11-collaboration-zh.md",
+    "sha256": "f8e4b6fadc9122ee035ccb54c56e3b2a0c5519674c91cf0091f14b25ca31f892"
+  }
+}

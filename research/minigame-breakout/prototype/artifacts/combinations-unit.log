@@ -1,0 +1,40 @@
+
+> test
+> node --test tests/engine.test.js
+
+✔ suction removes dirt and shells and makes firing possible (3.274583ms)
+✔ bare enemy is vulnerable to suction even with no floor ammo (0.937916ms)
+✔ hostile mud projectile can be caught for ammunition (0.3785ms)
+✔ chain deaths are resolved once and clean their surrounding floor (0.26075ms)
+✔ six rooms, offered upgrades and final automatic cleanup complete a run (8.222292ms)
+✔ pause freezes simulation; death prevents firing; restart owns fresh state (0.268125ms)
+✔ large update gaps are capped and player stays inside room (5.251708ms)
+✔ wide and power upgrades modify distinct mechanics and persist to next room (2.616666ms)
+✔ 90 percent cleanliness wins with enemies alive and does not count them as kills (0.746375ms)
+✔ generated rooms never start near the cleanliness victory threshold (9.503292ms)
+✔ three starter weapons have different ammo and projectile behavior (0.279167ms)
+✔ splitter produces two children and each enemy has a unique id (0.103125ms)
+✔ foam cleans ground, pierce does not hit the same target twice, and bounce survives a wall (0.643833ms)
+✔ capacity and refund upgrades apply without negative or overflowing ammo (0.177583ms)
+✔ bubble chain pops once per bubble, frees captives and cleans the impact area (0.178292ms)
+✔ electricity traverses connected foam, hits each enemy once and does not jump a gap (0.179625ms)
+✔ mop redirects a shot once; repeated contact cannot multiply its damage again (0.118958ms)
+✔ duck collects dirt into bounded ammo and transports bubbles toward enemies (0.258625ms)
+✔ new equipment caps, partner offers, pause and restart preserve ownership (0.222417ms)
+✔ double mouth trades reach for rear suction; compressor changes fire cadence and projectile (0.075334ms)
+✔ returning projectile refunds only once and never overflows the ammo cap (0.204542ms)
+✔ bucket relocation conserves outstanding dirt, then a shot completes collection (0.213167ms)
+✔ bucket cargo stays dirty while packed and is accounted once when its bubble pops (0.137ms)
+✔ brush carries foam; evolved washing creates trails without preexisting foam (0.112833ms)
+✔ preview kits persist on restart and leave no effects when returning to normal (0.619708ms)
+✔ backpack converts some suction yield to bubbles without starving all ammo (1.332291ms)
+✔ charged duck delivery evolves only at required levels and combo effects reset (0.572375ms)
+✔ rule modification cards are unique and never appear again once owned (0.525958ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.176416

@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-04-jyy-ai-practice-unified",
+  "captured_at": "2026-09-04T11:06:53+08:00",
+  "artifact": {
+    "title": "蒋炎岩老师的 AI 实践与核心判断（统一总纲）",
+    "kind": "user_transcript",
+    "author": "用户现场转述（关于蒋炎岩）",
+    "raw_path": "inbox/2026-09-04-jyy-ai-practice-unified.md",
+    "source_url": null,
+    "provenance": "user_supplied",
+    "verification": "unverified_against_original_video",
+    "sha256": "2acb8f6a74db7b43ca99044c3db5b1d1a4425edc473c5ccbd3ae678977325a69"
+  },
+  "entities": [
+    {
+      "id": "person:jiang-yanyan",
+      "name": "蒋炎岩",
+      "type": "person",
+      "aliases": ["JYY"],
+      "status": "known",
+      "priority": 2,
+      "locator": "L1",
+      "context": "总纲讨论对象",
+      "confidence": "unverified"
+    },
+    {
+      "id": "concept:personal-intelligence-os",
+      "name": "个人智能操作系统",
+      "type": "concept",
+      "aliases": [],
+      "status": "known",
+      "priority": 5,
+      "locator": "L23-L29",
+      "context": "材料数字化、个人历史、增量、行动与验证闭环",
+      "confidence": "unverified"
+    },
+    {
+      "id": "work:a-philosophy-of-software-design",
+      "name": "A Philosophy of Software Design",
+      "type": "book",
+      "aliases": [],
+      "status": "known",
+      "priority": 3,
+      "locator": "L35",
+      "context": "深度阅读方法案例",
+      "confidence": "unverified"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:personal-os-loop",
+      "text": "个人智能操作系统应保留原始凭证、读取个人历史、提取可信增量，并让人驻守高风险判断接口。",
+      "kind": "source_claim",
+      "locator": "L25",
+      "evidence": "现实材料数字化并保留原始凭证",
+      "confidence": "unverified",
+      "priority": 5
+    },
+    {
+      "id": "claim:deep-reading-not-summary",
+      "text": "深度阅读不等于摘要，而要包含证据定位、对抗阅读、主动回忆、纠错和旧知识连接。",
+      "kind": "source_claim",
+      "locator": "L35",
+      "evidence": "深度阅读不等于摘要",
+      "confidence": "unverified",
+      "priority": 5
+    },
+    {
+      "id": "claim:paper-delta",
+      "text": "论文 review 应先建立人类已有知识基线，再剥离论文真正新增的部分。",
+      "kind": "source_claim",
+      "locator": "L37",
+      "evidence": "先把人类已有知识当作基线，再剥离论文相对基线真正新增的部分",
+      "confidence": "unverified",
+      "priority": 5
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:evidence-linked-reading",
+      "title": "证据可回跳的深度阅读",
+      "summary": "把观点、证据和原文位置绑定；摘要只能是派生视图，不能替代原始材料。",
+      "locator": "L35",
+      "evidence": "追踪结论和证据并能跳回原文",
+      "confidence": "unverified",
+      "priority": 5,
+      "acceptance": [
+        "每个重要判断都能返回段落、页码或视频时间码",
+        "原始材料改变时，证据哈希或定位校验会失败"
+      ]
+    },
+    {
+      "id": "method:knowledge-delta",
+      "title": "相对个人基线提取可信增量",
+      "summary": "先读取个人已有知识和判断，再从新材料中剥离真正新增、修正或冲突的部分。",
+      "locator": "L37",
+      "evidence": "删除已经掌握的内容，只保留可信的增量信息",
+      "confidence": "unverified",
+      "priority": 5,
+      "acceptance": [
+        "已知对象不会反复冒充新发现",
+        "每条新增都说明它补充、修正或冲突了哪条旧知识"
+      ]
+    },
+    {
+      "id": "method:adversarial-reading",
+      "title": "对抗阅读",
+      "summary": "不只复述作者，还要寻找遗漏前提、反例和作者可能面对的最强反驳。",
+      "locator": "L35",
+      "evidence": "寻找遗漏前提、反例和作者可能的最强反驳",
+      "confidence": "unverified",
+      "priority": 4,
+      "acceptance": [
+        "高优先级判断至少登记一个边界、反例或开放问题"
+      ]
+    },
+    {
+      "id": "method:active-recall",
+      "title": "主动回忆与原文纠错",
+      "summary": "阅读后合上材料接受口试，再依据原文修正记忆和理解偏差。",
+      "locator": "L35",
+      "evidence": "合上原文接受口试，再依据原文纠错",
+      "confidence": "unverified",
+      "priority": 4,
+      "acceptance": [
+        "重要材料能够生成不暴露答案的口试题",
+        "回答结果可以链接回纠错依据"
+      ]
+    },
+    {
+      "id": "method:workflow-self-bootstrap",
+      "title": "工作流自举",
+      "summary": "先观察真实操作，再从重复模式生成自动化，并通过回放、人工确认和异常反馈迭代。",
+      "locator": "L29",
+      "evidence": "观察或录屏日常操作 → 发现重复模式 → 生成自动化 → 回放验证",
+      "confidence": "unverified",
+      "priority": 4,
+      "acceptance": [
+        "自动化来自已经成功并被复核的真实轨迹",
+        "新异常会进入下一轮规则或脚本改进"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation:jyy-describes-personal-os",
+      "from": "person:jiang-yanyan",
+      "type": "describes",
+      "to": "concept:personal-intelligence-os",
+      "locator": "L23-L29",
+      "confidence": "unverified"
+    },
+    {
+      "id": "relation:jyy-reading-example-aposd",
+      "from": "person:jiang-yanyan",
+      "type": "uses_as_reading_example",
+      "to": "work:a-philosophy-of-software-design",
+      "locator": "L35",
+      "confidence": "unverified"
+    }
+  ],
+  "questions": [
+    "如何把个人已知知识表示成可持续更新、又不会把旧误判固化的基线？",
+    "哪些结论来自蒋炎岩原话，哪些是现场转述者的综合，需要回到原视频核验？"
+  ],
+  "actions": [
+    "把证据定位、实体状态、方法卡和反馈事件设计成可验证 IR",
+    "用本材料和 Hardy 评论线索跑通第一份日报"
+  ]
+}

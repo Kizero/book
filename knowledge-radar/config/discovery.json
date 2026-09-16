@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "goal": "每天发现一个能扩展用户思想谱系、且值得真正投入阅读的新对象，而不是围绕最近一次输入继续堆资料。",
+  "topic_frontier": [
+    {
+      "id": "software-systems",
+      "label": "软件工程、系统、PL 与计算机科学实践",
+      "seed_queries": [
+        "software engineering classic essays intellectual history",
+        "systems researchers books that changed how I think",
+        "programming languages oral history recommended reading"
+      ]
+    },
+    {
+      "id": "creation-career",
+      "label": "创造、学术职业、教学与共同体",
+      "seed_queries": [
+        "scientist memoir creativity decline career essay",
+        "research culture student creativity classic essay",
+        "craft intellectual autobiography science engineering"
+      ]
+    },
+    {
+      "id": "math-science-history",
+      "label": "数学、科学史及其与工程世界的桥梁",
+      "seed_queries": [
+        "mathematics culture classic essay historical context",
+        "scientific idea history later proved useful",
+        "mathematician essays philosophy of mathematics reading list"
+      ]
+    },
+    {
+      "id": "ai-knowledge-work",
+      "label": "AI、知识工作、工具与认知方法",
+      "seed_queries": [
+        "AI knowledge work evidence active reading primary source",
+        "human computer collaboration classic paper retrospective",
+        "tools for thought history primary sources"
+      ]
+    }
+  ],
+  "discovery_lanes": [
+    {
+      "id": "reference-graph",
+      "purpose": "从高信号人物的文章、访谈、讲座、课程和精选评论中抽取明确命名的作品与人物。"
+    },
+    {
+      "id": "canonical-maps",
+      "purpose": "从大学课程书单、领域史、学会奖项、口述史和带注释书目中寻找经时间筛选的入口。"
+    },
+    {
+      "id": "counter-history",
+      "purpose": "寻找后来被事实修正的著名判断、失败案例和历史反例，防止只收成功叙事。"
+    },
+    {
+      "id": "adjacent-bridge",
+      "purpose": "沿当前兴趣跨一步，不沿同一人物无限深挖；优先能连接软件、数学、历史和知识工作的材料。"
+    }
+  ],
+  "selection": {
+    "topic_exclusions": [
+      {
+        "id": "cooperation-as-main-topic",
+        "effective_from": "2026-09-15",
+        "rule": "不再收录以合作本身为核心主题的材料，例如合作原则、团队协作、科研合作和合作关系经营。评分前排除，不推荐、不生成阅读件、不导入LocalReader，也不以复习名义再次推送。",
+        "boundary": "按作品核心问题判断，不因正文偶尔出现合作或协作一词就排除；以其他知识或技术问题为主的材料仍正常筛选。用户明确点名的材料可按当次要求处理。",
+        "existing_materials": "保留已有文件、书库和批注；不追溯删除，不改变阅读或掌握状态。"
+      }
+    ],
+    "rotate_topics_per_run": 2,
+    "rotate_lanes_per_run": 2,
+    "max_featured_items": 1,
+    "exclude_entity_statuses": ["known", "reading", "read", "ignored"],
+    "exclude_recent_featured_days": 30,
+    "score_weights": {
+      "personal_novelty": 30,
+      "topic_relevance": 25,
+      "source_quality": 20,
+      "bridge_value": 15,
+      "full_text_access": 10
+    }
+  },
+  "enrichment_contract": [
+    "先获取作品本身或足以判断的原始材料，再写摘要。",
+    "补作者生平中真正影响作品理解的部分，不罗列头衔。",
+    "说明作品的成因、时代处境和要回答的问题。",
+    "从作品本身提取核心论证和可迁移判断工具。",
+    "至少找一个反例、过时判断或强批评。",
+    "如存在合法免费全文，给出一个经实际打开检查的版本。",
+    "书目元数据只放资料说明，不占日报正文。"
+  ]
+}

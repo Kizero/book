@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-16",
+  "status": "ready",
+  "entity_id": "work:quick-dirty-programming",
+  "book_id": "3B060590-5324-4D31-AC15-EA80C830C79B",
+  "book_title": "快速而不失严谨的科学编程-中文全译",
+  "group": "信息雷达",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-16.md",
+    "sha256": "e351c1297566208578ea42315580f8cbd2aaf69046ef2e25669f8ea1d20ed359"
+  },
+  "record": {
+    "path": "records/2026-09-16-quick-dirty-reading-dossier.json",
+    "sha256": "ac251d3a08b9fbf645604c2c1565ba09154dd8a485849293f43c7ecc7bf22c74"
+  },
+  "chinese": {
+    "path": "library/快速而不失严谨的科学编程-中文全译.md",
+    "sha256": "d61e656944b5727862f74891e7859003f2b81410fb3ccbc6410deeac98108b58"
+  },
+  "import_record": {
+    "path": "imports/2026-09-16-quick-dirty-zh.md",
+    "sha256": "814181fb11e896e8ca0b2a6b366f024708bdb0775c37a45b0d457a479b4055a7"
+  }
+}

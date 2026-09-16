@@ -1,0 +1,56 @@
+{
+  "scope": "Public review summaries; default off-topic activity exclusion; no sales inference",
+  "records": [
+    {
+      "appid": 1942280,
+      "title": "Brotato",
+      "url": "https://store.steampowered.com/appreviews/1942280?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=%2A",
+      "query": {
+        "json": 1,
+        "language": "all",
+        "purchase_type": "all",
+        "review_type": "all",
+        "filter": "recent",
+        "num_per_page": 1,
+        "cursor": "*"
+      },
+      "observed_at": "2026-09-11T08:17:15.142235+00:00",
+      "success": false,
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "appid": 1144910,
+      "title": "Space Gladiators",
+      "url": "https://store.steampowered.com/appreviews/1144910?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=%2A",
+      "query": {
+        "json": 1,
+        "language": "all",
+        "purchase_type": "all",
+        "review_type": "all",
+        "filter": "recent",
+        "num_per_page": 1,
+        "cursor": "*"
+      },
+      "observed_at": "2026-09-11T08:17:15.142679+00:00",
+      "success": false,
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "appid": 1365010,
+      "title": "Lost Potato",
+      "url": "https://store.steampowered.com/appreviews/1365010?json=1&language=all&purchase_type=all&review_type=all&filter=recent&num_per_page=1&cursor=%2A",
+      "query": {
+        "json": 1,
+        "language": "all",
+        "purchase_type": "all",
+        "review_type": "all",
+        "filter": "recent",
+        "num_per_page": 1,
+        "cursor": "*"
+      },
+      "observed_at": "2026-09-11T08:17:15.142764+00:00",
+      "success": false,
+      "error": "Remote end closed connection without response"
+    }
+  ]
+}

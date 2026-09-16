@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-05-naur-reading-dossier",
+  "captured_at": "2026-09-05T19:17:45+08:00",
+  "artifact": {
+    "title": "Programming as Theory Building 阅读档案",
+    "kind": "paper_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-05-naur-reading-dossier.md",
+    "source_url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+    "provenance": "full_text_and_research",
+    "sha256": "0a0781f416d32199112eec2be6b0d7e86bf8f212dfef57383f516321ada785bc"
+  },
+  "report_note": "论文原意与本期迁移建议已区分；中文标题为暂译。今天发现的是旧作品，不是新发表论文。",
+  "entities": [
+    {
+      "id": "work:programming-as-theory-building",
+      "name": "Programming as Theory Building",
+      "type": "paper",
+      "aliases": [
+        "编程即理论构建（暂译）"
+      ],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "代码和文档都交接了，为什么接手者还是容易把系统改坏？Peter Naur 在这篇 1985 年文章中，从程序员对问题和设计的理解出发讨论这个困境。",
+      "why_it_matters": "你已经关注设计理由、个人历史和 AI 协作。这篇文章提供了一个更早的思想入口：如何判断接手者真正掌握了系统，以及怎样帮助他获得这种能力。",
+      "recommended_action": "先读第 2 节案例、第 4 节三种能力、第 6 节程序的生死。约半小时即可进入核心问题；Hardy 仍保留在你的阅读中，不必急着开第二本书。"
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:naur-background",
+      "title": "从天文学计算走到程序设计",
+      "summary": "Naur 早年研究天文学，为 EDSAC 编写小行星运动计算程序，后来参与 ALGOL 60。他对程序理解的关注，有实际计算和系统建设的背景。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L11",
+      "evidence": "Peter Naur 原先研究天文学",
+      "confidence": "verified",
+      "priority": 5,
+      "kind": "biography"
+    },
+    {
+      "id": "context:naur-origin",
+      "title": "一次交接为什么成了哲学问题",
+      "summary": "有源码和文档的接手团队，仍可能看不出原设计可以怎样自然扩展。文章用编译器交接案例，把日常维护问题引向对“理解”的追问。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L15",
+      "evidence": "文章源自 1984 年",
+      "confidence": "verified",
+      "priority": 5,
+      "kind": "origin"
+    },
+    {
+      "id": "context:naur-limits",
+      "title": "交接困难，足以推出必须重写吗？",
+      "summary": "Naur 对程序复活的悲观结论值得质疑。新团队借观测、测试和修改建立有效的新理解，也可能成功维护系统；是否必须恢复原作者的全部理解，需要另行论证。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L31",
+      "evidence": "第 6 节关于仅靠文档",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "counterpoint"
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:naur-understanding-check",
+      "title": "用变更题检查理解",
+      "summary": "让接手者说明现实规则、设计理由和变化位置，再给一个未见过的需求检查预测。这是从论文引出的实践建议。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L23",
+      "evidence": "理解验收：",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:naur-apprentice-handoff",
+      "title": "让交接发生在共同修改中",
+      "summary": "先各自设计同一个小改动，再讨论方案差异，把原作者的取舍变成可讨论的具体例子。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L25",
+      "evidence": "协作式交接：",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:naur-ai-context-experiment",
+      "title": "把设计历史的价值做成实验",
+      "summary": "比较只给代码与补充设计理由、失败案例后的方案质量，观察后续变更是否保持一致。这是我们对 AI 协作的延伸。",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L27",
+      "evidence": "AI 协作实验：",
+      "confidence": "likely",
+      "priority": 5
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:naur-free-paper",
+      "title": "",
+      "summary": "",
+      "about_entity": "work:programming-as-theory-building",
+      "locator": "L7",
+      "evidence": "免费扫描全文",
+      "confidence": "verified",
+      "priority": 5,
+      "label": "免费论文全文（大学网站，14 页）",
+      "url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+      "note": "附有导读的扫描版；论文不是一本长书"
+    }
+  ],
+  "claims": [],
+  "relations": [],
+  "questions": [],
+  "actions": []
+}

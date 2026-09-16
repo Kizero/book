@@ -1,0 +1,85 @@
+{
+  "manual_v10": {
+    "combat": 12
+  },
+  "simulation_v10": {
+    "combat": 179,
+    "clean": 1
+  },
+  "simulation_policy": "nearest-enemy aim/movement; prefers chain/power upgrades; not a cleaning-seeking policy",
+  "evolution_events": [
+    {
+      "t": 147.92,
+      "room": 12,
+      "type": "evolution",
+      "id": "stormduck"
+    }
+  ],
+  "final_boss_events": [
+    {
+      "t": 147.93,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:0",
+      "act": "warning"
+    },
+    {
+      "t": 147.93,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:1",
+      "act": "warning"
+    },
+    {
+      "t": 149.02,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:0",
+      "act": "roll"
+    },
+    {
+      "t": 149.83,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:1",
+      "act": "roll"
+    },
+    {
+      "t": 149.87,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:0",
+      "act": "rest"
+    },
+    {
+      "t": 150.68,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:1",
+      "act": "rest"
+    },
+    {
+      "t": 152.88,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:0",
+      "act": "volley"
+    },
+    {
+      "t": 153.98,
+      "room": 12,
+      "type": "boss-pattern",
+      "id": "12:0",
+      "act": "rest"
+    }
+  ],
+  "final_result": {
+    "room": 12,
+    "reason": "combat",
+    "seconds": 8.07,
+    "remaining": 0,
+    "clean": 74.97,
+    "flavor": "收工庆典",
+    "parcels": 0
+  }
+}

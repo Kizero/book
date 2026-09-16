@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-04-hardy-reading-dossier",
+  "captured_at": "2026-09-04T16:30:00+08:00",
+  "artifact": {
+    "title": "《A Mathematician's Apology》阅读档案",
+    "kind": "book_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-04-hardy-reading-dossier.md",
+    "source_url": "https://web.njit.edu/~akansu/PAPERS/GHHardy-AMathematiciansApology.pdf",
+    "additional_sources": [
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Hardy/",
+      "https://mathshistory.st-andrews.ac.uk/Extras/Hardy_apology/",
+      "https://www.lindahall.org/about/news/scientist-of-the-day/g-h-hardy/"
+    ],
+    "provenance": "full_text_and_research",
+    "verification": "full_text_checked_with_secondary_context",
+    "sha256": "4e2e343d1285f21ff6e04a33d950e52fe19c9f1e10038038363894f3271cee7d"
+  },
+  "report_note": "核心论证已对照完整英文电子版；生平和成书背景参考数学史资料。知乎评论只作为发现入口。",
+  "entities": [
+    {
+      "id": "work:a-mathematicians-apology",
+      "name": "A Mathematician's Apology",
+      "type": "book_or_essay",
+      "aliases": ["一个数学家的辩白", "一个数学家的辩护"],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "这不是一本讲数学知识的书，而是 63 岁的 Hardy 在原创能力衰退、身处战争的时刻，为纯数学，也为自己选择过的一生写下的辩护词。",
+      "why_it_matters": "它补上的不只是 JYY 标题致敬的出处，而是一组可以继续追问的判断：创造物凭什么值得、审美标准如何成立、短期无用是否足以成为价值辩护。",
+      "recommended_action": "只有 20 分钟就读第 1—3、10—11、18、28—29 节；有一小时则直接读完约 50 页正文。",
+      "locator": "L17-L21",
+      "context": "Hardy 的写作处境与自我辩护",
+      "confidence": "verified"
+    },
+    {
+      "id": "person:gh-hardy",
+      "name": "G. H. Hardy",
+      "type": "person",
+      "aliases": ["G·H·哈代", "哈代"],
+      "status": "candidate",
+      "priority": 4,
+      "locator": "L15-L17",
+      "context": "作者生平及晚年创作处境",
+      "confidence": "verified"
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:hardy-apology-local-full-pdf",
+      "about_entity": "work:a-mathematicians-apology",
+      "label": "本地完整 PDF（56 页）",
+      "local_path": "library/A-Mathematicians-Apology-full.pdf",
+      "note": "已检查封面、版本页、开头与结尾，正文完整可读",
+      "locator": "L9-L11",
+      "evidence": "本地完整 PDF",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "resource:hardy-apology-online-full-pdf",
+      "about_entity": "work:a-mathematicians-apology",
+      "label": "在线完整电子版",
+      "url": "https://web.njit.edu/~akansu/PAPERS/GHHardy-AMathematiciansApology.pdf",
+      "note": "University of Alberta Mathematical Sciences Society 2005 年电子版镜像",
+      "locator": "L9-L11",
+      "evidence": "在线来源",
+      "confidence": "verified",
+      "priority": 4
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:hardy-life-and-collaborations",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "Hardy 不是孤立的“天才老人”",
+      "summary": "他是分析与数论领域的重要纯数学家，与 Littlewood 和 Ramanujan 的合作构成其职业生命的核心；理解这层经历，才能看懂结尾那份既骄傲又脆弱的自我结算。",
+      "kind": "biography",
+      "locator": "L15-L17",
+      "evidence": "一生的决定性事件",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "context:hardy-apology-origin",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "这是 1940 年战争背景下的晚年自辩",
+      "summary": "Hardy 在 63 岁、原创能力衰退时写作；第 28 节又来自战争期间的短文。书同时承受个人衰老和时代危机两种压力。",
+      "kind": "origin",
+      "locator": "L17-L21",
+      "evidence": "63 岁的 Hardy 明确感到自己的原创能力已经衰退",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "context:hardy-jyy-bridge",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "JYY 类比有文本支撑，但只能走到一半",
+      "summary": "Hardy 确实因创造力流失而转向自述；学术内卷和学生失去创造乐趣则是评论者对当代处境的延伸，不是本书原意。",
+      "kind": "bridge",
+      "locator": "L59-L61",
+      "evidence": "并不是评论者凭空投射",
+      "confidence": "likely",
+      "priority": 4
+    },
+    {
+      "id": "context:hardy-elitism-and-usefulness",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "精英主义和“无用”崇拜不能照搬",
+      "summary": "他贬低解释者与应用研究，把原创纯数学和高贵强绑定；这更适合作为理解 Hardy 的材料，而不是今天评价知识工作的通用尺度。",
+      "kind": "counterpoint",
+      "locator": "L55-L57",
+      "evidence": "不能直接当作今天评价教师、工程师、解释者或应用研究的尺度",
+      "confidence": "verified",
+      "priority": 5
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:hardy-apology-late-life-defense",
+      "about_entity": "work:a-mathematicians-apology",
+      "text": "《辩白》既为纯数学辩护，也是在原创能力衰退后为 Hardy 自己的一生辩护。",
+      "kind": "textual_synthesis",
+      "locator": "L17-L21",
+      "evidence": "为数学辩护最终是在为自己的一生辩护",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "claim:hardy-quality-criteria",
+      "about_entity": "work:a-mathematicians-apology",
+      "text": "Hardy 用广度与深度衡量重要思想，用出人意料、不可避免和经济衡量好证明。",
+      "kind": "source_claim",
+      "locator": "L29-L31",
+      "evidence": "出人意料、不可避免、经济",
+      "confidence": "verified",
+      "priority": 5
+    },
+    {
+      "id": "claim:hardy-uselessness-falsified",
+      "about_entity": "work:a-mathematicians-apology",
+      "text": "Hardy 对数论和相对论长期无实用价值的预测，后来被密码学和物理技术史反驳。",
+      "kind": "historical_counterexample",
+      "locator": "L51-L53",
+      "evidence": "永远不会有用途是高风险预测",
+      "confidence": "verified",
+      "priority": 5
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:separate-motive-and-worth",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "把动机与价值拆开",
+      "summary": "分别回答“我为什么做”和“这件事是否值得”，避免用热爱替成果辩护，也避免用外部回报冒充内在动机。",
+      "locator": "L39-L41",
+      "evidence": "把“为什么做”与“是否值得”拆开",
+      "confidence": "verified",
+      "priority": 5,
+      "acceptance": []
+    },
+    {
+      "id": "method:connection-depth-economy",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "用连接、深度和经济性检查创造物",
+      "summary": "看一个设计是否连接更多问题、触及更底层结构，并用较少机制产生清晰结果，而不只看局部机巧。",
+      "locator": "L43-L45",
+      "evidence": "连接范围、下探深度、表达经济性",
+      "confidence": "likely",
+      "priority": 5,
+      "acceptance": []
+    },
+    {
+      "id": "method:self-defense-as-argument",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "把自我辩护写成可反驳的论证",
+      "summary": "公开价值排序、处境与假设，让读者能检查个人经验是否真的支撑价值结论。",
+      "locator": "L47-L49",
+      "evidence": "把自我辩护写成可反驳的论证",
+      "confidence": "likely",
+      "priority": 4,
+      "acceptance": []
+    },
+    {
+      "id": "method:current-uselessness-not-permanent",
+      "about_entity": "work:a-mathematicians-apology",
+      "title": "不要把当前无用外推成永久无用",
+      "summary": "“现在没有用途”与“永远不会有用途”是两种证据要求完全不同的判断，后者必须主动寻找历史反例。",
+      "locator": "L51-L53",
+      "evidence": "当前没有用途是事实判断，永远不会有用途是高风险预测",
+      "confidence": "verified",
+      "priority": 5,
+      "acceptance": []
+    }
+  ],
+  "relations": [],
+  "questions": [
+    "Hardy 在为数学辩护，还是在为自己辩护？",
+    "他的数学审美能否脱离共同体标准？",
+    "如果“无用”被历史反驳，他的价值论还剩下什么？"
+  ],
+  "actions": [
+    "优先阅读完整原文，而不是继续扩充书目元数据",
+    "将作品背景、内容方法和历史反例作为后续阅读档案的固定组成"
+  ]
+}

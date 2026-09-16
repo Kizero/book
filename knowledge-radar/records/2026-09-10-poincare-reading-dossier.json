@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-10-poincare-reading-dossier",
+  "captured_at": "2026-09-10T01:09:51.272Z",
+  "artifact": {
+    "title": "庞加莱《数学创造》阅读档案",
+    "kind": "essay_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-10-poincare-reading-dossier.md",
+    "source_url": "https://www.gutenberg.org/files/39713/39713-h/39713-h.htm#Page_383",
+    "provenance": "full_text_and_research",
+    "sha256": "b213127a4cafc8ae4a27866a43f7a6b03977ab3a052077f054383811eebcfacc"
+  },
+  "report_note": "采用公版 1913 年英译本，完整翻译《数学创造》一章。五个中文分节标题为阅读方便所加；原作者的心理假说和本期批评分开。",
+  "entities": [
+    {
+      "id": "work:poincare-mathematical-creation",
+      "name": "庞加莱《数学创造》：灵感之前与之后",
+      "type": "essay",
+      "aliases": [
+        "Mathematical Creation"
+      ],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "他苦想许久没有结果，却在踏上公共马车的一瞬间，突然看见两个数学领域的联系。最值得读的，不只是这个故事，而是他随后追问：为什么偏偏这个想法浮现出来？那种绝对确信的感觉，又值不值得信任？",
+      "why_it_matters": "今天从工作记录转向想法怎样产生。你的旧材料里已有“先创造、再评判”的线索；庞加莱把问题往前推了一步：在我们开始有意识评判之前，是否已经筛掉了大多数想法？它适合扩展认识，不必硬套成一套个人效率流程。",
+      "recommended_action": "读关键段落。3—5 分钟看本期导读；约 15—20 分钟读中文版第三、四节，先看亲身经历，再看他的解释。若还有兴趣，再读开头关于“怎样理解一个证明”的部分。数学术语可以先跳过，他自己也允许读者这样读。"
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:poincare-2",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "一位数学家，拿自己的头脑做观察材料",
+      "summary": "庞加莱并不是在教人如何提高日程表效率。他试图解释一个心理学问题：数学创造的念头究竟怎样产生？这篇文章从他写第一篇富克斯函数论文的亲身经历展开，讲到卡昂、地质旅行、海边散步和服兵役。那些数学名词不懂也没关系——他本人就请读者关注发现发生的情形，而不是先学会定理。",
+      "locator": "L13",
+      "evidence": "庞加莱并不是在教人如何提高日程表效率",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "origin"
+    },
+    {
+      "id": "context:poincare-3",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "他的自画像，和“算得特别快的天才”不一样",
+      "summary": "他承认自己做加法也会出错，下棋时可能忘掉刚才预见的危险。那么长证明为什么还能跟得上？他的解释是：他记住的不是一串孤立步骤，而是整个推理的组织次序，每一步在其中都有位置。这是理解他如何看待数学能力的好入口，而不是可用于测量所有人天赋的结论。",
+      "locator": "L17",
+      "evidence": "他承认自己做加法也会出错，下棋时可能",
+      "confidence": "likely",
+      "priority": 4,
+      "kind": "biography"
+    },
+    {
+      "id": "context:poincare-8",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "别把一位天才的回忆，当作已经验证的脑科学",
+      "summary": "他用顿悟前后的经历支持“无意识在工作”，但这些回忆本身不能区分：究竟是持续的无意识搜索、疲劳减轻，还是暂时离开错误思路起了作用。他没有给出可以比较这些解释的实验；结尾也承认自己的看法仍很有假说性质。因此可拿这篇提出问题，不能据它判断某人缺少审美感就永远不能创造。这是本期对论证的批评。",
+      "locator": "L37",
+      "evidence": "他用顿悟前后的经历支持“无意识在工作",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "counterpoint"
+    },
+    {
+      "id": "context:poincare-9",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "机器做不到？这句话必须放回年代里",
+      "summary": "他从“选择规则难以说清”走到“机器无论多完善也做不到”，这一步不能直接成立。一个具体对照是 AlphaGeometry：语言模型提出辅助构造，符号引擎继续推演；它在论文限定的平面几何题集上取得了可验证的结果。它没有证明机器拥有人的审美或能处理全部数学，却说明“不能把规则手写清楚”不等于“无法实现有效搜索”。 [对照论文](https://www.nature.com/articles/s41586-023-06747-5)",
+      "locator": "L41",
+      "evidence": "他从“选择规则难以说清”走到“机器无",
+      "confidence": "likely",
+      "priority": 4,
+      "kind": "counterpoint"
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:poincare-4",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "看懂每一步，还不等于看懂整个证明",
+      "summary": "他指出一个具体失误：前面得出的结论，到后面再次当作前提时，文字看似未变，意思或适用范围却可能被悄悄换掉。因此，把握推理要看每一步为什么在这里、接着哪一步，不只是逐句说“有道理”。前半是作者的分析，最后一句是本期阅读归纳。",
+      "locator": "L21",
+      "evidence": "他指出一个具体失误：前面得出的结论，",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:poincare-5",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "组合很多不难，难的是让哪些组合值得出现",
+      "summary": "把相距很远的概念放在一起，有时能揭示隐藏的共同结构；但庞加莱紧接着强调，大多数跨领域拼接毫无成果。他把创造的难处放在选择上，而不是数量上。甚至不是先穷举再挑选：他怀疑，进入意识之前已经发生过一道筛选。这个筛选机制是他的假说，不是直接观察到的脑内过程。",
+      "locator": "L25",
+      "evidence": "把相距很远的概念放在一起，有时能揭示",
+      "confidence": "likely",
+      "priority": 4
+    },
+    {
+      "id": "method:poincare-6",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "停一停，不是省掉投入",
+      "summary": "他先连续十五天尝试证明某类函数不存在，失败后却发现了它们的存在；后来旅行和散步又带来跨领域连接。由此他主张，有成果的灵感前面有自觉努力，后面还要有整理、推导和证明。可借鉴的是给卡住的问题留出间隔，不是以休息替代准备，也不是承诺休息一定产生答案。",
+      "locator": "L29",
+      "evidence": "他先连续十五天尝试证明某类函数不存在",
+      "confidence": "likely",
+      "priority": 3
+    },
+    {
+      "id": "method:poincare-7",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "确信感负责提醒你注意，不负责证明你正确",
+      "summary": "上马车的一瞬间，他非常确信自己找到了关键联系，但回到卡昂仍做了验证。随后他又承认，另一些灵感同样令人确信，写证明时却发现错了。按他自己的解释，美感像筛子，只把值得看的想法推到眼前；它不能为想法的真假盖章。",
+      "locator": "L33",
+      "evidence": "上马车的一瞬间，他非常确信自己找到了",
+      "confidence": "likely",
+      "priority": 2
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:poincare-zh",
+      "about_entity": "work:poincare-mathematical-creation",
+      "title": "数学创造中文全文",
+      "summary": "完整章节译文，非全书译文。",
+      "locator": "L9",
+      "evidence": "中文：",
+      "confidence": "verified",
+      "priority": 5,
+      "label": "打开《数学创造》中文全译",
+      "url": "https://www.gutenberg.org/files/39713/39713-h/39713-h.htm#Page_383",
+      "local_path": "library/庞加莱-数学创造-中文全译.md",
+      "note": "公版原作与英译本；已保留全部论证、个人经历及括注。"
+    }
+  ],
+  "claims": [],
+  "relations": [],
+  "questions": [],
+  "actions": [],
+  "report_sections": [
+    {
+      "title": "两个可以带着读的问题",
+      "body": "1. 假设两个想法都令你感到“优美而且肯定正确”，其中一个后来被推翻。庞加莱的筛选假说怎样解释这件事？又留下了什么没解释？\n\n2. 他先努力、后休息、再突然想通。只凭这个顺序，可以排除哪些解释、不能排除哪些解释？"
+    },
+    {
+      "title": "一个可选的小尝试",
+      "body": "遇到一个暂时卡住的问题，先写下具体障碍和已经试过的两条路，再放一放。下次冒出新想法，分别记“为什么它吸引我”和“怎样检查它”。这是本期建议，不是灵感保证书，也不必新增待办。"
+    },
+    {
+      "title": "今天的阅读件",
+      "body": "[完整中文版](../library/庞加莱-数学创造-中文全译.md)已经导入 LocalReader，书名“庞加莱-数学创造-中文全译”。实际首、中、尾回读及文件哈希核对通过。只是材料准备完成，不记作你已读或已掌握。"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "source:jyy-zhihu",
+      "name": "蒋炎岩知乎文章",
+      "kind": "person_feed",
+      "url": "https://www.zhihu.com/people/jiang-yan-yan-75/posts",
+      "cadence": "weekly",
+      "capture_mode": "browser_on_demand",
+      "content_policy": "正文增量；评论仅收作者回复、明确引用或跨领域高价值线索",
+      "trust_role": "观点与引用发现，不作为书目信息的最终核验源"
+    },
+    {
+      "id": "source:cambridge-books",
+      "name": "Cambridge University Press",
+      "kind": "primary_verifier",
+      "url": "https://www.cambridge.org/",
+      "cadence": "on_demand",
+      "capture_mode": "direct",
+      "content_policy": "用于作者、版本、出版时间和出版社说明核验",
+      "trust_role": "原始出版来源"
+    },
+    {
+      "id": "source:commercial-press",
+      "name": "商务印书馆",
+      "kind": "primary_verifier",
+      "url": "https://www.cp.com.cn/",
+      "cadence": "on_demand",
+      "capture_mode": "direct",
+      "content_policy": "用于中文译名、译者、ISBN 和版本核验",
+      "trust_role": "中文原始出版来源"
+    }
+  ]
+}

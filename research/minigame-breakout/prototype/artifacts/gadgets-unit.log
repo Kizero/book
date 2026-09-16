@@ -1,0 +1,31 @@
+
+> test
+> node --test tests/engine.test.js
+
+✔ suction removes dirt and shells and makes firing possible (3.169667ms)
+✔ bare enemy is vulnerable to suction even with no floor ammo (1.056167ms)
+✔ hostile mud projectile can be caught for ammunition (0.348375ms)
+✔ chain deaths are resolved once and clean their surrounding floor (0.191458ms)
+✔ six rooms, offered upgrades and final automatic cleanup complete a run (7.875084ms)
+✔ pause freezes simulation; death prevents firing; restart owns fresh state (0.273958ms)
+✔ large update gaps are capped and player stays inside room (5.098958ms)
+✔ wide and power upgrades modify distinct mechanics and persist to next room (2.649584ms)
+✔ 90 percent cleanliness wins with enemies alive and does not count them as kills (0.730416ms)
+✔ generated rooms never start near the cleanliness victory threshold (9.624917ms)
+✔ three starter weapons have different ammo and projectile behavior (0.229792ms)
+✔ splitter produces two children and each enemy has a unique id (0.100292ms)
+✔ foam cleans ground, pierce does not hit the same target twice, and bounce survives a wall (0.624875ms)
+✔ capacity and refund upgrades apply without negative or overflowing ammo (0.282625ms)
+✔ bubble chain pops once per bubble, frees captives and cleans the impact area (0.198375ms)
+✔ electricity traverses connected foam, hits each enemy once and does not jump a gap (0.192667ms)
+✔ mop redirects a shot once; repeated contact cannot multiply its damage again (0.106875ms)
+✔ duck collects dirt into bounded ammo and transports bubbles toward enemies (0.1555ms)
+✔ new equipment caps, partner offers, pause and restart preserve ownership (0.196167ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73.91775

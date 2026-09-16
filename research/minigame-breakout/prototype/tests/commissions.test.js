@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {loadJournal,rememberRoom} from '../src/commissions.js';
+test('journal persists unique completed places and the tea-party badge',()=>{let data;const store={getItem:()=>data,setItem:(k,v)=>data=v};let j=loadJournal(store);j=rememberRoom(store,j,1);j=rememberRoom(store,j,1);j=rememberRoom(store,j,4);assert.deepEqual(loadJournal(store),{completed:[1,4],teaParty:true});});
+test('invalid or blocked storage never blocks gameplay',()=>{assert.deepEqual(loadJournal({getItem:()=>'{bad'}),{completed:[],teaParty:false});const j=rememberRoom({setItem:()=>{throw Error('blocked');}},{completed:[],teaParty:false},2);assert.deepEqual(j.completed,[2]);});

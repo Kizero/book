@@ -1,0 +1,76 @@
+{
+  "source": "Built-in image_gen; project-generated art, not Kenney CC0",
+  "files": [
+    {
+      "file": "cleaner.webp",
+      "bytes": 33334,
+      "sha256": "77d40fe996269f84c9e5806ffd5b412373b89b6f55ce17f046509c9955c0d7c0"
+    },
+    {
+      "file": "courtyard.webp",
+      "bytes": 212618,
+      "sha256": "d00d09e553d1e5a692105df93aa8c56baed2eab6d73ba334f623fb9a9b04ca5f"
+    },
+    {
+      "file": "moss-spitter.webp",
+      "bytes": 39788,
+      "sha256": "0445a64ca281082547d71f3808f1b03f3a77a26e29acdae5439facb3a212b494"
+    },
+    {
+      "file": "mud.webp",
+      "bytes": 45992,
+      "sha256": "4524f5c2bed12a390f37e1887a1ebbb8eb29c665a9888eb67749d9466a94086b"
+    },
+    {
+      "file": "mudling.webp",
+      "bytes": 33018,
+      "sha256": "0869fe2a0fce675af69205928f938c9d9e56b63e93da7732b4ddff29da16f900"
+    },
+    {
+      "file": "vacuum.webp",
+      "bytes": 19850,
+      "sha256": "e67aca5d8580c6de9fe9f8ba85b079e4e71ddc7311b1e3fe6dcfdce698b093e8"
+    },
+    {
+      "file": "tea-courtyard-v2.webp",
+      "bytes": 196990,
+      "sha256": "5574a9db5d51474689033025215690234f8fd0509e9ad49829e71f4675f667cf"
+    },
+    {
+      "file": "scatter-v1.webp",
+      "bytes": 37928,
+      "sha256": "5014510e73b35af92f06494c23c71d729bde592a8f33ab0a86ffaa63474729ce"
+    },
+    {
+      "file": "duck-v1.webp",
+      "bytes": 22416,
+      "sha256": "4c8d22652e9cff06c78998f2d2f639c8ce5f51d795d191f81a55585a8b25a093"
+    },
+    {
+      "file": "greenhouse-v1.webp",
+      "bytes": 231428,
+      "sha256": "e6cc7d8707d741d2b8f59b1c6ecc6a7d826a995ccbed597d091cf7b0d8e8fc41"
+    },
+    {
+      "file": "workshop-v1.webp",
+      "bytes": 208600,
+      "sha256": "357dcbaadcb5bee23f6ff330b6a1fe5d52187c20e8b09c6416814bf54ac1d9df"
+    },
+    {
+      "file": "foam-v1.webp",
+      "bytes": 36834,
+      "sha256": "bf0f7b61dd51e87ca7bb7ab8c384703dff38bb9452380375b8686a2e4618411b"
+    },
+    {
+      "file": "cleaner-recoil-v1.webp",
+      "bytes": 31100,
+      "sha256": "dcb3905d398dafb710e5fcb765eff23d38466807f83a1f4ac05fa413896d9394"
+    },
+    {
+      "file": "cleaner-suction-v1.webp",
+      "bytes": 30610,
+      "sha256": "8dfd6871123243845a13ee4d320bee4f2820b8e3ca3c5ce380e27160a17bb336"
+    }
+  ],
+  "runtimeBytes": 384600
+}

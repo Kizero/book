@@ -1,0 +1,268 @@
+{
+  "summary": {
+    "version": 4,
+    "preset": "normal",
+    "rules": [],
+    "equipment": {
+      "bubble": 1,
+      "electric": 0,
+      "mop": 0,
+      "duck": 0,
+      "brush": 0,
+      "bucket": 0
+    },
+    "weapon": "foam",
+    "roomResults": [
+      {
+        "room": 1,
+        "reason": "clean",
+        "seconds": 7.83,
+        "remaining": 2,
+        "clean": 90.17
+      }
+    ],
+    "seed": 1789313868471,
+    "state": "clearing",
+    "room": 1,
+    "seconds": 7.8,
+    "stats": {
+      "shots": 27,
+      "kills": 3,
+      "cleaned": 402.1445609219701,
+      "hits": 0,
+      "chains": 0,
+      "rooms": 1,
+      "bubblePops": 3
+    },
+    "loadout": [
+      "bubble"
+    ],
+    "events": [
+      {
+        "t": 0,
+        "room": 1,
+        "type": "start"
+      },
+      {
+        "t": 0.42,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 0.65,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 0.85,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 1.08,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 1.28,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 1.5,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 1.7,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 1.93,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 2.17,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 2.42,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 2.65,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 2.85,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 3.1,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 3.33,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 3.87,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 4.53,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 5.4,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 5.6,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 5.83,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 6.15,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 6.37,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 6.57,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 6.78,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 6.9,
+        "room": 1,
+        "type": "kill",
+        "enemy": "blob",
+        "kind": "suction"
+      },
+      {
+        "t": 6.98,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 7.22,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 7.28,
+        "room": 1,
+        "type": "kill",
+        "enemy": "blob",
+        "kind": "shot"
+      },
+      {
+        "t": 7.43,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 7.52,
+        "room": 1,
+        "type": "kill",
+        "enemy": "blob",
+        "kind": "bubble"
+      },
+      {
+        "t": 7.65,
+        "room": 1,
+        "type": "fire",
+        "charge": 20,
+        "weapon": "foam"
+      },
+      {
+        "t": 7.83,
+        "room": 1,
+        "type": "clear",
+        "reason": "clean",
+        "seconds": 7.83,
+        "remaining": 2,
+        "clean": 90.17
+      }
+    ]
+  },
+  "errors": []
+}

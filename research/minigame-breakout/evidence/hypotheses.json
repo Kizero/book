@@ -1,0 +1,95 @@
+[
+  {
+    "id": "H1",
+    "claim": "降低攻击操作负担有利于理解构筑",
+    "competing_explanation": "移除操作也可能降低参与感",
+    "evidence_ids": [
+      "S1",
+      "S2"
+    ],
+    "next_test": "同一原型自动与手动攻击比较",
+    "disconfirmation": "玩家不能更好解释选择，或主动参与明显下降",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H2",
+    "claim": "可见升级变化有利于观看理解和游玩决策",
+    "competing_explanation": "可能只有视觉刺激而无决策价值",
+    "evidence_ids": [
+      "S2",
+      "S10"
+    ],
+    "next_test": "同强度升级的表现与机制比较",
+    "disconfirmation": "观看理解改善但游玩选择仍随机或无感",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H3",
+    "claim": "短波次和选择间隙有利于归因与重开",
+    "competing_explanation": "可能打断节奏",
+    "evidence_ids": [
+      "S2"
+    ],
+    "next_test": "连续与分段波次比较",
+    "disconfirmation": "无法改善失败归因且重开意愿下降",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H4",
+    "claim": "局外轻成长能扩大可接受人群",
+    "competing_explanation": "可能使玩家将失败归因于付费或数值门槛",
+    "evidence_ids": [
+      "S5"
+    ],
+    "next_test": "核心循环成立后有无轻成长比较",
+    "disconfirmation": "策略感下降且没有观察到目标人群获益",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H5",
+    "claim": "展示承诺与体验一致有利于持续游玩",
+    "competing_explanation": "渠道的人群选择与加载差异可能主导结果",
+    "evidence_ids": [
+      "S5",
+      "S11"
+    ],
+    "next_test": "素材理解到自主重开的链路观察",
+    "disconfirmation": "控制渠道和技术因素后差异不成立",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H6",
+    "claim": "易展示的结果降低内容传播制作成本",
+    "competing_explanation": "可能仅专业创作者能讲清",
+    "evidence_ids": [
+      "S1",
+      "S10"
+    ],
+    "next_test": "无提示观看复述与自主讲解",
+    "disconfirmation": "看得懂但没有可自主表达的兴趣或内容",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  },
+  {
+    "id": "H7",
+    "claim": "经解释的代码切片降低后续变化成本",
+    "competing_explanation": "过度抽象或版本错配可能提高成本",
+    "evidence_ids": [],
+    "next_test": "需求／原则／切片三条件工程对照",
+    "disconfirmation": "只改善表面风格，后续改动成本或缺陷增加",
+    "status": "待证",
+    "evidence_strength": "候选机制，未实施因果验证",
+    "updated_on": "2026-09-11"
+  }
+]

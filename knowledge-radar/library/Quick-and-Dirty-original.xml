@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="editorial" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Comput Biol</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">ploscomp</journal-id>
+<journal-title-group>
+<journal-title>PLOS Computational Biology</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1553-734X</issn>
+<issn pub-type="epub">1553-7358</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008549</article-id>
+<article-id pub-id-type="publisher-id">PCOMPBIOL-D-20-01237</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Editorial</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Computer software</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Engineering and technology</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Computer software</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject><subj-group><subject>Computer applications</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Engineering and technology</subject><subj-group><subject>Technology development</subject><subj-group><subject>Prototypes</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Optimization</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject><subj-group><subject>Software engineering</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Engineering and technology</subject><subj-group><subject>Software engineering</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Software development</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Engineering and technology</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Software development</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Computer and information sciences</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Programming languages</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Engineering and technology</subject><subj-group><subject>Software engineering</subject><subj-group><subject>Programming languages</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Ten simple rules for quick and dirty scientific programming</article-title>
+<alt-title alt-title-type="running-head">Ten simple rules for quick and dirty scientific programming</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0002-6794-9611</contrib-id>
+<name name-style="western">
+<surname>Balaban</surname>
+<given-names>Gabriel</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0001-8941-942X</contrib-id>
+<name name-style="western">
+<surname>Grytten</surname>
+<given-names>Ivar</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0003-3359-7619</contrib-id>
+<name name-style="western">
+<surname>Rand</surname>
+<given-names>Knut Dagestad</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0001-8900-075X</contrib-id>
+<name name-style="western">
+<surname>Scheffer</surname>
+<given-names>Lonneke</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0002-4959-1409</contrib-id>
+<name name-style="western">
+<surname>Sandve</surname>
+<given-names>Geir Kjetil</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Biomedical Informatics Group, Department of Informatics, University of Oslo, Oslo, Norway</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>PharmaTox Strategic Research Initiative, Faculty of Mathematics and Natural Sciences, University of Oslo, Oslo, Norway</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Institute of Medical Microbiology, Oslo University Hospital, Rikshospitalet, Oslo, Norway</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Markel</surname>
+<given-names>Scott</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Dassault Systemes BIOVIA, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">geirksa@ifi.uio.no</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>11</day>
+<month>3</month>
+<year>2021</year>
+</pub-date>
+<pub-date pub-type="collection">
+<month>3</month>
+<year>2021</year>
+</pub-date>
+<volume>17</volume>
+<issue>3</issue>
+<elocation-id>e1008549</elocation-id>
+<permissions>
+<copyright-year>2021</copyright-year>
+<copyright-holder>Balaban et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pcbi.1008549"/>
+<funding-group>
+<funding-statement>The author(s) received no specific funding for this work.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="10"/>
+<table-count count="0"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>The manuscript does not include or refer to any underlying data.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<disp-quote>
+<p>This is a <italic>PLOS Computational Biology</italic> Software paper.</p>
+</disp-quote>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Any textbook or course in programming will tell you to write programs that are well structured, well documented, and thoroughly tested, to ensure correctness and ease of maintenance. However, when faced with time pressures and the eagerness of reaching a scientific result, you may instead find yourself coding in a quick and dirty style that does not live up to the ideal. Indeed, coding quickly can be a good way to deal with the uncertain and explorative nature of computational research. The quicker you code, the more scientific ideas you can potentially test and publish. However, if coding quickly means coding sloppily, then bugs, false conclusions, and article retractions [<xref ref-type="bibr" rid="pcbi.1008549.ref001">1</xref>] may be the result. Furthermore, if your code becomes increasingly complex and messy over time, then adapting it to new tasks will be difficult, potentially stalling your research progress. Effective scientific programming therefore requires a constant balance between the needs of the present and the needs of the future, with a coding style that is quick and dirty but rigorous enough.</p>
+<p>In our guide, we focus on software development speed and formulate a set of 10 simple rules for writing good enough quality code with minimal effort, with the aim to increase research productivity. We follow in the tradition of promoting software competence among scientists [<xref ref-type="bibr" rid="pcbi.1008549.ref002">2</xref>–<xref ref-type="bibr" rid="pcbi.1008549.ref004">4</xref>] and build on previous installments in the Ten Simple Rules Series, which aim to make scientific software more robust [<xref ref-type="bibr" rid="pcbi.1008549.ref005">5</xref>], useable [<xref ref-type="bibr" rid="pcbi.1008549.ref006">6</xref>], reproducible [<xref ref-type="bibr" rid="pcbi.1008549.ref007">7</xref>], open [<xref ref-type="bibr" rid="pcbi.1008549.ref008">8</xref>], and effective [<xref ref-type="bibr" rid="pcbi.1008549.ref009">9</xref>].</p>
+<p>Our rules are based on our personal experiences with scientific software development, and on industrial software methodologies [<xref ref-type="bibr" rid="pcbi.1008549.ref010">10</xref>–<xref ref-type="bibr" rid="pcbi.1008549.ref014">14</xref>], which we have applied to various computational biology research projects over the last decade. While we found that many software industry practices were applicable to our research, we also experienced that they could not be applied blindly and needed some adaptation. This is because scientific software development is typically done by relatively few individuals, who are also domain experts and intimately familiar with the software requirements. In contrast, the industrial setting most often involves large teams of developers who rely on separate business experts to define their goals. We therefore focus on the subset of industrial software engineering practices that we found most useful, and bring them to you in a condensed form.</p>
+<p>Software engineering requirements can vary greatly in computational biology applications (<xref ref-type="fig" rid="pcbi.1008549.g001">Fig 1</xref>), ranging from simple scripts for routine data analysis with preexisting tools and software packages, up to sophisticated general purpose frameworks [<xref ref-type="bibr" rid="pcbi.1008549.ref015">15</xref>–<xref ref-type="bibr" rid="pcbi.1008549.ref017">17</xref>], which seek to automate and simplify a wide range of computing tasks. We kindly refer readers learning to program to [<xref ref-type="bibr" rid="pcbi.1008549.ref018">18</xref>] and readers working on large general purpose scientific computing frameworks to the software engineering literature [<xref ref-type="bibr" rid="pcbi.1008549.ref010">10</xref>–<xref ref-type="bibr" rid="pcbi.1008549.ref014">14</xref>].</p>
+<fig id="pcbi.1008549.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title/>
+<p>Levels of scientific software engineering sophistication in computational biology.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g001" xlink:type="simple"/>
+</fig>
+<p>Our advice is intended for researchers who already know how to code and are working on focused scientific projects that require experimentation with computational and or data processing methods. Throughout our guide, we assume familiarity with basic Software Carpentry concepts [<xref ref-type="bibr" rid="pcbi.1008549.ref004">4</xref>], such as version control [<xref ref-type="bibr" rid="pcbi.1008549.ref019">19</xref>] and data management [<xref ref-type="bibr" rid="pcbi.1008549.ref020">20</xref>].</p>
+<sec id="sec002">
+<title>Rule 1: Think before you code</title>
+<disp-quote>
+<p>“<italic>Preparation</italic>, <italic>I have often said</italic>, <italic>is rightly two-thirds of any venture</italic>.<italic>”—Amelia Earhart</italic></p>
+</disp-quote>
+<p>Computer programming is a world of details and decisions, and it is good to take stock of where you are before you enter. Why are you coding and how does your code help you to achieve your scientific goals? Once an idea pops up, it can be tempting to just start working, since the process of programming provides a feeling of producing something. However, constantly doing something does not necessarily mean that you are doing the right things.</p>
+<p>Try to get as much relevant information as you can before starting to write code, as suggested in [<xref ref-type="bibr" rid="pcbi.1008549.ref009">9</xref>]. This should include a literature review of the computational methods and application domain that you will be working with, as well as a search for preexisting software implementations which you can use in your project. Also, consider the expertise of other people in your team or community and whether there are any potential collaborations which would benefit your project. Organize your relevant information into sketches, mind maps, wikis, or lists which you can consult regularly to see the big picture. A few hours of literature review or discussion with colleagues can save you weeks of programming and should not be underestimated. Also, a good knowledge of your research topic and the people that work in it will allow you to make better technical decisions, leading to simpler software designs and effort invested in the right places.</p>
+<p>If you are working with datasets, try to become aware of the strengths and weaknesses of your data as early as possible. This is especially relevant if your data was collected by collaborators, who may have important knowledge that you are currently unaware of. We recommend that you start your data analysis with simple exploratory techniques, such as summary statistics, histograms, and pair-plots, to quickly get an overview. Such information is useful for discussions with collaborators and for informing further analysis.</p>
+</sec>
+<sec id="sec003">
+<title>Rule 2: Start with prototypes and expand them in short development cycles</title>
+<disp-quote>
+<p>“<italic>Do the simplest thing that could possibly work</italic>.<italic>”—Kent Beck</italic></p>
+</disp-quote>
+<p>Research projects are like start-up businesses in that they often rely on a critical set of assumptions. For example, a typical better methods research project assumes that the existing methods can be improved upon, whereas an applied project assumes that publishable interpretations can be made from the analysis of some data. It is important to test your key assumptions as early as possible before committing too much of your time and effort. In the computational setting, this can be accomplished by prototyping techniques.</p>
+<p>The start-up literature [<xref ref-type="bibr" rid="pcbi.1008549.ref021">21</xref>] recommends the use of a Minimum Viable Product (MVP), the smallest program (in terms of required effort) you need to test your key project assumptions. Such a prototype can provide you with valuable information while minimizing the time invested in it, thereby allowing you to decide whether a research project is worth pursuing as it is or whether it needs to be modified or dropped. If a project is worth pursuing, then the prototype serves as a basis for future development and can provide valuable insights into the data, methods, and technologies that you are working with.</p>
+<p>It can be tempting to implement a few extra features speculatively for the future at the prototype stage of your project. However, you should avoid doing this (<xref ref-type="fig" rid="pcbi.1008549.g002">Fig 2</xref>), as the best way to prepare for the future is to make the currently required code as clear and straightforward as possible [<xref ref-type="bibr" rid="pcbi.1008549.ref013">13</xref>,<xref ref-type="bibr" rid="pcbi.1008549.ref022">22</xref>]. To keep your prototype simple, reuse existing tools and libraries (see Rule 3) and create mocks [<xref ref-type="bibr" rid="pcbi.1008549.ref023">23</xref>] which simulate the outputs of code that you do not need to write at the moment. Mock code can always be replaced with full implementations later on. Also, using high-level programming languages (e.g., Python or R) can be very beneficial at this stage, as you can build your prototype more quickly and with less code than with low-level languages.</p>
+<fig id="pcbi.1008549.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title/>
+<p>Minimize your prototypes by focusing on the core questions that you are trying to answer at the moment. Avoid implementing features speculatively for the future.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g002" xlink:type="simple"/>
+</fig>
+<p>Once your prototype has been finished, you should assess what you have learned and use this information to guide what to do next. From here, we suggest that continued development should be done in short cycles, focusing on the current most critical assumptions that need to be tested. Each cycle should start with a plan to write the minimal set of code to reach the next goal and should end with a critical assessment of the results and useful information for what to do next. Such short development cycles allow you to frequently reassess the situation and keep you on the right track [<xref ref-type="bibr" rid="pcbi.1008549.ref021">21</xref>].</p>
+</sec>
+<sec id="sec004">
+<title>Rule 3: Look for opportunities for code reuse</title>
+<disp-quote>
+<p>“<italic>Measuring programming progress by lines of code is like measuring aircraft building progress by weight</italic>.<italic>”—Bill Gates</italic></p>
+</disp-quote>
+<p>Reuse of existing code can be a powerful way to keep development time short and get working solutions quickly (<xref ref-type="fig" rid="pcbi.1008549.g003">Fig 3</xref>). Code reuse comes in many forms, ranging from importing and using existing libraries, running existing tools, reusing your own code (see Rule 9), and cloning/extending existing code bases to simply copying short snippets of code that others have written. All of these ways of reusing existing code can potentially save you hours of development time. Beyond this immediate benefit, code reuse also centralizes or outsources maintenance of the reused code, potentially saving you time and effort in the future. For example, if you import and use the functionality from a well-known package such as scikit-learn [<xref ref-type="bibr" rid="pcbi.1008549.ref016">16</xref>] instead of developing your own code, you can be assured that this code will most likely gradually improve and be thoroughly maintained over the coming years.</p>
+<fig id="pcbi.1008549.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title/>
+<p>An ideal computational research project has a high amount of code reuse and a publishable innovation implemented in a small amount of new code.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g003" xlink:type="simple"/>
+</fig>
+<p>It is human nature to trust your own code more than code written by somebody else. When this is taken to the extreme, it can result in the “not invented here” syndrome [<xref ref-type="bibr" rid="pcbi.1008549.ref024">24</xref>], an irrational preference for self-made solutions (<xref ref-type="fig" rid="pcbi.1008549.g004">Fig 4</xref>). Though you may be more comfortable working with something you wrote yourself, you should consider that well-established and regularly updated code bases are typically the result of countless hours of solving minor problems and edge-cases that you may not yet even be aware of, as well as a shared effort to remove nontrivial bugs. Reusing high-quality code bases can therefore save you from hitting the mistakes and pitfalls that have been previously solved by others.</p>
+<fig id="pcbi.1008549.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title/>
+<p>Not invented here syndrome.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g004" xlink:type="simple"/>
+</fig>
+<p>On the other hand, implementing an algorithm yourself can be a fantastic way to broaden your knowledge, especially when you can compare your implementation to a preexisting reference. Also, writing your own code can allow you to avoid dependency issues associated with external packages (also known as dependency hell). You should therefore weigh the benefits of external packages against the expected effort of managing any dependencies. Thankfully, modern dependency management tools such as Packrat for R or pipenv for Python have made the job of managing dependencies much easier than in the past, allowing you to more comfortably make use of external packages in your code.</p>
+<p>You can find opportunities for code reuse by browsing the literature, searching online, and talking to colleagues or other experts. When evaluating an external library or tool, consider the effort required to install it and integrate it with your own code, as well as whether any underlying assumptions hold in your case. A good indicator of library/tool quality is a substantial user base and recent development and/or updates. However, even if a tool or library is not a perfect fit, it may be worth using it in the early phases of your project to make progress. You can always replace the imperfect tool or library later on with something better.</p>
+</sec>
+<sec id="sec005">
+<title>Rule 4: Modularize your code</title>
+<disp-quote>
+<p>“<italic>The art of programming is the art of organizing complexity</italic>, <italic>of mastering multitude and avoiding its bastard chaos as effectively as possible</italic>.<italic>”—Edsger Dijkstra</italic></p>
+</disp-quote>
+<p>Modularization is the process of organizing your code into reusable and parametrizable components. Even when you are trying to code quickly, modularization is a good idea; it prevents errors, makes your code more readable and testable, and facilitates code reuse over unnecessary duplication (<xref ref-type="fig" rid="pcbi.1008549.g005">Fig 5</xref>). With a bit of practice and a few guidelines, modularization can become second nature to you and will not slow down your coding.</p>
+<fig id="pcbi.1008549.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title/>
+<p>Working with a badly designed code base is difficult. Modularize your code to avoid getting lost and to prevent bugs.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g005" xlink:type="simple"/>
+</fig>
+<p>A good way to begin with modularization is to observe the DRY (Do not Repeat Yourself) principle [<xref ref-type="bibr" rid="pcbi.1008549.ref010">10</xref>], which says to avoid unnecessary duplication of code. Reusable functions can be used instead of duplicate code, which also makes your code more readable and generalizable ([<xref ref-type="bibr" rid="pcbi.1008549.ref012">12</xref>]; Chapter 7). A simple rule of thumb is to not let your functions become more than a screen long. This will keep your functions manageable and focused on a specific task. A little bit of thinking is sometimes required when breaking up large functions. However, if you make it a regular habit, you will ultimately achieve simpler code designs with minimal effort.</p>
+<p>If you are using an object-oriented language such as Python or C++, then you can further modularize your code with classes. An easy way to do this is to start with procedural code, and then group together related variables and functions into classes. Using object-orientation this way allows you to encapsulate technical details, better manage complexity, and more easily reuse code across projects. Beyond simply organizing functions and variables, object-oriented code can be made more sophisticated by exploiting polymorphic behavior, inheritance, object composition, and design patterns [<xref ref-type="bibr" rid="pcbi.1008549.ref025">25</xref>,<xref ref-type="bibr" rid="pcbi.1008549.ref026">26</xref>]. These strategies facilitate flexible code with highly dynamic run-time behavior.</p>
+<p>That being said, there is always the risk of overengineering object-oriented programs, which results in overly complex code which is difficult to understand and modify. To avoid overengineering, you should always try first to avoid complexity before using advanced object-oriented strategies to deal with complexity. Be concrete with what you want to achieve and keep your scientific goals in mind. Finally, consider the advantages of programs based on low-level loops and arrays, which can be simpler and faster than object-oriented code.</p>
+<p>The way that you modularize your code into functions and classes forms a high-level design of your code. We recommend that you let your design evolve as you code by adding functions and classes as you need them, rather than trying to develop your design a priori. When done properly, such an ad-hoc design process is very efficient and will give you only the modularization that you actually need ([<xref ref-type="bibr" rid="pcbi.1008549.ref013">13</xref>]; Chapter 17), which helps to prevent overengineering. Furthermore, “perfect” software designs can be very time consuming to develop and often require that existing functionality be rewritten many times. For most scientific applications, and especially for prototyping, a “good enough” design is all that is needed ([<xref ref-type="bibr" rid="pcbi.1008549.ref010">10</xref>]; Chapter 1).</p>
+</sec>
+<sec id="sec006">
+<title>Rule 5: Avoid premature optimization</title>
+<disp-quote>
+<p>“<italic>Premature optimization is the root of all evil</italic>.<italic>”—Donald Knuth</italic></p>
+</disp-quote>
+<p>It has become increasingly common to work with large datasets, which can greatly slow down the execution of computer programs. In these situations and any others where code is running slowly, it may be tempting to optimize the code to make it more efficient. However, optimizing code comes with risks: it can be time consuming, you might break the code, and you may end up making the code more complex or specialized in order to speed it up (<xref ref-type="fig" rid="pcbi.1008549.g006">Fig 6</xref>). Before you optimize code, you should consider the alternatives.</p>
+<fig id="pcbi.1008549.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title/>
+<p>Premature optimization, avoid it like the plague.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g006" xlink:type="simple"/>
+</fig>
+<p>The best alternative to code optimization is reducing the size of the computation/data. If you are working with large datasets, try to subsample them or replace them with smaller datasets. In the early phases of a research project, small synthetic datasets are often the best way to go. Only scale up the input data when you are sure that your code does what you want. You may then find that you only need to analyze your large dataset a limited number of times, so that you may be able to live with the long run-time after all.</p>
+<p>Another good alternative to code optimization is doing other things while a program with a long execution time runs. If the program runs for hours, then you can always catch up on the latest research articles while you wait. If the program takes a day or two, consider running it over the weekend or on a high-performance cluster. Your time is more valuable than your computer’s, and you should have a very good reason to trade your time spent on run-time optimization for your computer’s execution time.</p>
+<p>If you end up pursuing run-time optimization, it is worthwhile to start by profiling your program to find the critical spots which are running slowly. While profiling, make sure your program inputs are sufficiently large, as some algorithms only become inefficient with a large enough problem size. Look for low-hanging algorithmic optimizations first, that is a better algorithm that reduces the number of operations that need to be performed. Before carrying out an optimization, have a test in mind that you can use to check that you have not introduced a bug. If your optimization is complex, use an automated unit test (see Rule 6). If you are using a high-level language such as Python or R and no better algorithm exists for your bottleneck, consider using a low-level language such as C. Look for existing wrappers to low-level code first, and only create your own low-level implementations as a last resort.</p>
+</sec>
+<sec id="sec007">
+<title>Rule 6: Use automated unit testing for critical components</title>
+<disp-quote>
+<p>“<italic>More than the act of testing</italic>, <italic>the act of designing tests is one of the best bug preventers known</italic>.<italic>”—Boris Beizer</italic></p>
+</disp-quote>
+<p>Unit tests are small pieces of code which test that a given function produces an expected output given a set of predetermined inputs. Unit tests are considered software engineering best practice [<xref ref-type="bibr" rid="pcbi.1008549.ref027">27</xref>], because they provide a quick and automated way for future developers (including yourself) to verify that your code has not been broken after an update.</p>
+<p>Unit tests can play a valuable role in your exploratory and experimental scientific coding. This is because your code may change as a result of your varying research priorities, which may cause you to inadvertently introduce bugs. You would not want to abandon a good research direction because your “quick and dirty” code erroneously reported little to no signal. Conversely, reporting flawed results due to programming errors is bad science and has led to article retractions in the past [<xref ref-type="bibr" rid="pcbi.1008549.ref001">1</xref>]. Unit tests can help to avoid such problems, because they instantly make you aware of broken functionality before it becomes a problem.</p>
+<p>An easy way to get started with unit testing is to practice the “test-first approach,” which consists of designing a test before implementing productive code. In practice, before writing a function, you can write a small code piece that calls the function with some test data. This code piece can then be turned into an automated test by adding an assert statement to check if the function output meets some expected criteria. An example unit test demonstrating this idea is given in <xref ref-type="fig" rid="pcbi.1008549.g007">Fig 7</xref>. In order for your unit tests to be useful, they should be simple, quick to run, and give unambiguous error messages when they fail. Stochastic test data should be fixed with consistent seed values, to avoid randomness in unit test results.</p>
+<fig id="pcbi.1008549.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Demonstration of the test-first approach to writing automated unit tests.</title>
+<p>The desired function should calculate the reverse complement of a DNA sequence and also be case insensitive. (A) The test code in the top panel is written first, along with a skeleton reverse complement function in the bottom panel, which initially fails the test. (B) The reverse complement code can then be written and should pass its unit test when it is complete.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g007" xlink:type="simple"/>
+</fig>
+<p>Writing and maintaining test code requires some effort, which is why we recommend you focus your testing on critical parts of your code which might produce errors with scientific consequences (<xref ref-type="fig" rid="pcbi.1008549.g008">Fig 8</xref>), rather than testing everything as per industry best practice. For example, miscalculating a <italic>P</italic> value is a potential problem, whereas an error in a progress bar is relatively harmless. Numerical optimization methods and partial differential equation solvers are good examples of code which should be tested automatically. Fortunately, the availability of good open-source scientific packages means that many critical calculations can be outsourced away from your project code, leaving only a small number of functions which may need to be verified by unit testing.</p>
+<fig id="pcbi.1008549.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title/>
+<p>Many computational research projects contain just a few critical components responsible for important scientific calculations. Try to identify these critical components and write automated unit tests for them to avoid potential bugs and errors.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g008" xlink:type="simple"/>
+</fig>
+<p>Note that if you work on a larger project with many components, you may also find it useful to automatically test several components together to see how they interact. Such tests are called integration tests. Depending on your project and your personality, it may be more convenient to write higher-level integration tests rather than lower-level unit tests. For maximum safety, use both.</p>
+</sec>
+<sec id="sec008">
+<title>Rule 7: Refactor frequently</title>
+<disp-quote>
+<p>“<italic>An ounce of prevention is worth a pound of cure</italic>.<italic>”—Benjamin Franklin</italic></p>
+</disp-quote>
+<p>Modern software development methodologies have embraced frequent changes in goals and requirements, and recommend the iterative evolution of a software system rather than the implementation of a prespecified and inflexible plan [<xref ref-type="bibr" rid="pcbi.1008549.ref014">14</xref>]. A consequence of this is the need for frequent refactoring, which is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure [<xref ref-type="bibr" rid="pcbi.1008549.ref022">22</xref>]. Frequent refactoring ensures that the design of a software system stays simple and fit for purpose, without unnecessary complexity or duplication. This helps to prevent errors and facilitates future changes to the system.</p>
+<p>For some scientists, frequent refactoring may be a tall order. After all, the goal of a research project is science and not coding, and if the system ain’t broke, then why fix it? Nevertheless, frequently changing requirements are a common feature of many research projects, and reusing code is more efficient than constantly starting from scratch. Most importantly, a few minutes spent refactoring can save hours of future debugging. So if you find yourself spending too much time on debugging and managing your code, you should consider refactoring more frequently (<xref ref-type="fig" rid="pcbi.1008549.g009">Fig 9</xref>).</p>
+<fig id="pcbi.1008549.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title/>
+<p>Refactoring can save you from debugging and is also more fun. However, it can also be overdone, so try to find the right balance.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g009" xlink:type="simple"/>
+</fig>
+<p>A good way to get started with refactoring is to consult lists of “code smells”—general characteristics of code that is unnecessarily complex and could be simplified ([<xref ref-type="bibr" rid="pcbi.1008549.ref012">12</xref>]; Section 24.2). Examples of such code smells include duplicated code, long functions, long parameter lists, or the need to make synchronized changes at distinct places in your codebase. Many types of code smells can be detected automatically by various tools [<xref ref-type="bibr" rid="pcbi.1008549.ref028">28</xref>], which can aid you in your programming. You should also be particularly wary of situations where you have developed code with a particular aim and then had to repurpose the code; the assumptions you originally made may no longer be relevant and may need to be refactored out of your software.</p>
+<p>To succeed with refactoring, focus on making small changes with little risk of breaking the code or introducing bugs. Some examples of such small and easy refactoring are giving variables better names, making global variables local to a function, eliminating obvious duplicate code, breaking up large functions into smaller ones, grouping related functions into classes, and reorganizing functions and classes into appropriate files. Such changes can be made in a few minutes and will not slow down your coding very much. Furthermore, frequent refactoring in small amounts saves you from having to make larger and riskier changes in the future. In the case that you do need to make larger changes, automated tests can be very helpful, as they can quickly let you know if you have broken something in the code while you refactor. Finally, make sure to version control your code, so that if your refactoring goes badly, you can always go back to your latest working version.</p>
+</sec>
+<sec id="sec009">
+<title>Rule 8: Write self-documenting code for programmers and a readme file for users</title>
+<disp-quote>
+<p>“<italic>It is not enough for code to work</italic>.<italic>”—Robert C</italic>. <italic>Martin</italic>, <italic>Clean Code</italic></p>
+</disp-quote>
+<p>Code documentation is information about a computer program that is intended for human consumption and will not be used by the computer for the program’s execution. It can take the form of external documents, such as user manuals or code vignettes, or code-level information, which are the code itself and inline comments. In the early experimental phases of a research project, there can be a lot of changes to the codebase, and we therefore recommend sticking to code-level documentation in the early phases of your project, rather than creating external documents. This is because it is much easier to keep code-level documentation in-sync with your changes.</p>
+<p>The majority of useful code-level information is contained within the code itself. You can maximize this information by using good program structure, clear variable and function names, named constants instead of literal numbers, and by minimizing the complexity of control-flow statements and data structures ([<xref ref-type="bibr" rid="pcbi.1008549.ref012">12</xref>]; Section 32). Improving your code via refactoring (see Rule 7) is therefore also a form of documentation, and it is better to simplify a complex code, rather than trying to explain it with extensive documentation.</p>
+<p>To increase the readability of your code, try to imitate human sentences. This can be facilitated by using verbs to name your functions, nouns to name your variables, and by giving boolean variables the prefix “is.” An example of bad versus self-documenting code style is given in <xref ref-type="fig" rid="pcbi.1008549.g010">Fig 10</xref>. Finally, do not be afraid to use long names; most modern code editors have auto-complete and search and replace features that make working with long names easy.</p>
+<fig id="pcbi.1008549.g010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008549.g010</object-id>
+<label>Fig 10</label>
+<caption>
+<title/>
+<p>Example Python code written in (A) a bad style with unnecessary comments and in (B) a better self-documenting style.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008549.g010" xlink:type="simple"/>
+</fig>
+<p>The use of in-line comments is a personal choice, but ideally, computer code should explain itself. If you do use in-line comments, try to explain your intentions or summarize your code, rather than repeating the information contained within the code itself ([<xref ref-type="bibr" rid="pcbi.1008549.ref012">12</xref>]; Section 32). A good trick is to write out your algorithm in pseudocode first, before implementing it in computer code. The pseudocode comments can help you to organize your thoughts and can guide later programmers to the relevant parts of your code if it needs to be updated.</p>
+<p>You can use references to external documents, such as published research papers and technical manuals, to further minimize your documentation efforts. This is particularly relevant when implementing mathematical formulas and algorithms. In these situations, try to keep your variable names consistent with the external reference, and note the reference and the location of the relevant algorithm or formula as an inline comment. This minimizes the amount of documentation that you need to write and allows you to use short variable names like “x” and “y” that make your code read like a mathematical equation.</p>
+<p>When your computational experiments or analyses have settled into a publishable form, you may want to share some of your code with other researchers by making it publicly available. At this point, changes to your code should be less frequent, and it is worthwhile to create basic external documentation for your “end users,” who will not want to read your code-level documentation. A basic readme file is the quickest way to create external documentation, which will most likely be automatically displayed on your repository pages by code hosting services such as Github. Your readme file should include a statement of purpose, installation instructions, and some simple use-case examples to get your users started.</p>
+</sec>
+<sec id="sec010">
+<title>Rule 9: Grow your libraries and tools organically from your research</title>
+<disp-quote>
+<p>“<italic>A rock pile ceases to be a rock pile the moment a single man contemplates it</italic>, <italic>bearing within him the image of a cathedral</italic>.<italic>”—Antoine de Saint-Exupery</italic>, <italic>The Little Prince</italic></p>
+</disp-quote>
+<p>During the course of a computational research project, you typically write computer code to perform tasks and solve problems. Some of this code could be useful for other research projects, and you may want to store it for future use. In the long run, this can be an incredibly powerful strategy, as it helps you to develop a niche, an area where you can quickly and efficiently carry out research by reusing the fruits of your past projects.</p>
+<p>We therefore recommend organizing your code into two categories: project code and library code. Project code should address a specific research question, whereas library code should contain reusable components for ongoing and future projects. This has the benefit of simplifying your research code, as technical tasks such as data handling and preprocessing can be off-loaded to your libraries. You may also want to maintain a set of tools, that is programs with user interfaces for carrying out practical tasks (e.g., a data format conversion). Tools can often be quickly spun out of a library by connecting an appropriate function to a user interface. In most circumstances, we recommend command line interfaces over graphical interfaces, as command line interfaces are technically simpler and allow you to easily chain together your tools via automated scripts.</p>
+<p>Library code has higher-quality requirements than project code. This is because research projects are uncertain and typically have limited lifespans, whereas your libraries need to be maintained in the long term. When building a library, you should plan for the possibility of future changes in any dependent software packages. Such changes may force you to perform maintenance work. Prepare for such future changes by being ruthless about eliminating duplicate code, as this simplifies future code updates and makes them less error prone. Also, consider writing automated unit tests for your more critical library components [<xref ref-type="bibr" rid="pcbi.1008549.ref027">27</xref>].</p>
+<p>Due to the higher-quality demands of library code, we recommend being selective about which code you put into a library. Do not try to build your libraries before your research projects, as it is very difficult to predict which software components you will want to reuse. Instead, grow your libraries organically from your research projects, that is, move a software component into a library only after it has proven its worth. For instance, if you find yourself writing the same class in 2 different research projects, you can move the class into a library instead, and use the library in your projects. If you build your libraries in this way, you will only need to maintain the code that you truly need.</p>
+</sec>
+<sec id="sec011">
+<title>Rule 10: Go explore and be rigorous when you publish</title>
+<disp-quote>
+<p>“<italic>The sea is dangerous and its storms terrible</italic>, <italic>but these obstacles have never been sufficient reason to remain ashore</italic>.<italic>”—Ferdinand Magellan</italic></p>
+</disp-quote>
+<p>The rules of this guide are designed to allow you to explore computational ideas in an uncertain environment by programming efficiently. Psychologically, this can allow you to limit your investment in an idea until it proves valuable and to avoid the fallacy of sunk costs [<xref ref-type="bibr" rid="pcbi.1008549.ref029">29</xref>], which is continuing an endeavor as a result of previously invested resources rather than the endeavor’s merit. The less time and effort that you spend on testing an idea, the easier it will be to change it or give it up in favor of a more fruitful direction.</p>
+<p>At the same time, your programming speed must be combined with quality: to avoid misleading errors, false scientific conclusions, and nonreproducible results. Although you can be “quick and dirty” in the early phases of your projects, you should ensure quality and reproducibility when you publish [<xref ref-type="bibr" rid="pcbi.1008549.ref007">7</xref>]. In particular, you should have a scripted computational workflow that reproduces each publishable result after the exploratory phase of your project is done and your conclusions are drawn. Such scripts can be made using shell programming (Bash), computational notebooks (e.g., Jupyter [<xref ref-type="bibr" rid="pcbi.1008549.ref030">30</xref>]), or workflow description languages such as NextFlow [<xref ref-type="bibr" rid="pcbi.1008549.ref031">31</xref>] or Snakemake [<xref ref-type="bibr" rid="pcbi.1008549.ref032">32</xref>]. Finally, in the very least, your results should be free from programming errors and meet the standards of your field.</p>
+</sec>
+</sec>
+<sec id="sec012" sec-type="conclusions">
+<title>Conclusion</title>
+<p>Developing a fast programming style with high-quality code is a lifelong endeavor, and our rules serve as a starting point. To become truly proficient, you should experiment and learn what works for you. We hope that integrating our advice into your programming style will help you to develop as a computational biologist and become better equipped to take on the scientific challenges of your field.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank the members of the Tuesday bioinformatics meetings and the members of the Sandve lab research craft sessions at the University of Oslo for discussion and feedback. Special thanks to Victor Greiff and Eleonora Piersanti for their opinions which helped shape the article.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pcbi.1008549.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miller</surname> <given-names>G.</given-names></name> <article-title>A scientist’s nightmare: Software problem leads to five retractions</article-title>. <source>Science</source>. <year>2006</year>;<volume>314</volume>(<issue>5807</issue>):<fpage>1856</fpage>–<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1126/science.314.5807.1856" xlink:type="simple">10.1126/science.314.5807.1856</ext-link></comment> <object-id pub-id-type="pmid">17185570</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilson</surname> <given-names>GV</given-names></name>. <article-title>Where’s the real bottleneck in scientific computing?</article-title> <source>Am Sci</source>. <year>2006</year>;<volume>94</volume>(<issue>1</issue>):<fpage>5</fpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilson</surname> <given-names>GV</given-names></name>, <name name-style="western"><surname>Aruliah</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Brown</surname> <given-names>CT</given-names></name>, <name name-style="western"><surname>Hong</surname> <given-names>NPC</given-names></name>, <name name-style="western"><surname>Davis</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Guy</surname> <given-names>RT</given-names></name>, <etal>et al</etal>. <article-title>Best practices for scientific computing</article-title>. <source>PLoS Biol</source>. <year>2014</year>;<volume>12</volume>(<issue>1</issue>):<fpage>e1001745</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pbio.1001745" xlink:type="simple">10.1371/journal.pbio.1001745</ext-link></comment> <object-id pub-id-type="pmid">24415924</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilson</surname> <given-names>GV</given-names></name>, <name name-style="western"><surname>Bryan</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Cranston</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Kitzes</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Nederbragt</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Teal</surname> <given-names>TK</given-names></name>. <article-title>Good enough practices in scientific computing</article-title>. <source>PLoS Comput Biol</source>. <year>2017</year>;<volume>13</volume>(<issue>6</issue>):<fpage>e1005510</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1005510" xlink:type="simple">10.1371/journal.pcbi.1005510</ext-link></comment> <object-id pub-id-type="pmid">28640806</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Taschuk</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Wilson</surname> <given-names>GV</given-names></name>. <article-title>Ten simple rules for making research software more robust</article-title>. <source>PLoS Comput Biol</source>. <year>2017</year>;<volume>13</volume>(<issue>4</issue>):<fpage>e1005412</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1005412" xlink:type="simple">10.1371/journal.pcbi.1005412</ext-link></comment> <object-id pub-id-type="pmid">28407023</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>List</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ebert</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Albrecht</surname> <given-names>F</given-names></name>. <article-title>Ten simple rules for developing usable software in computational biology</article-title>. <source>PLoS Comput Biol</source>. <year>2017</year>;<volume>13</volume>(<issue>1</issue>):<fpage>e1005265</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1005265" xlink:type="simple">10.1371/journal.pcbi.1005265</ext-link></comment> <object-id pub-id-type="pmid">28056032</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sandve</surname> <given-names>GK</given-names></name>, <name name-style="western"><surname>Nekrutenko</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Taylor</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Hovig</surname> <given-names>E</given-names></name>. <article-title>Ten simple rules for reproducible computational research.</article-title> <source>PLoS Comput Biol</source>. <year>2013</year>;<volume>9</volume>(<issue>10</issue>):<fpage>e1003285</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1003285" xlink:type="simple">10.1371/journal.pcbi.1003285</ext-link></comment> <object-id pub-id-type="pmid">24204232</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prlić</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Procter</surname> <given-names>JB</given-names></name>. <article-title>Ten simple rules for the open development of scientific software</article-title>. <source>PLoS Comput Biol</source>. <year>2012</year>;<volume>8</volume>(<issue>12</issue>):<fpage>e1002802</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1002802" xlink:type="simple">10.1371/journal.pcbi.1002802</ext-link></comment> <object-id pub-id-type="pmid">23236269</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Osborne</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Bernabeu</surname> <given-names>MO</given-names></name>, <name name-style="western"><surname>Bruna</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Calderhead</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Cooper</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Dalchau</surname> <given-names>N</given-names></name>, <etal>et al</etal>. <article-title>Ten simple rules for effective computational research</article-title>. <source>PLoS Comput Biol</source>. <year>2014</year>;<volume>10</volume>(<issue>13</issue>):<fpage>e1003506</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1003506" xlink:type="simple">10.1371/journal.pcbi.1003506</ext-link></comment> <object-id pub-id-type="pmid">24675742</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref010"><label>10</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Hunt</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Thomas</surname> <given-names>D</given-names></name>. <source>The pragmatic programmer</source>. <publisher-name>Addison-Welsely</publisher-name>; <year>2000</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref011"><label>11</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Martin</surname> <given-names>RC</given-names></name>. <chapter-title>Agile software development: principles, patterns, and practices</chapter-title>. <publisher-name>Prentice Hall</publisher-name>; <year>2002</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref012"><label>12</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>McConnell</surname> <given-names>S.</given-names></name> <chapter-title>Code complete</chapter-title>. <publisher-name>Pearson Education</publisher-name>. <year>2004</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref013"><label>13</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Beck</surname> <given-names>K.</given-names></name> <chapter-title>Extreme programming explained: embrace change</chapter-title>. <publisher-name>Addison-Wesley Professional</publisher-name>; <year>2000</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beck</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Beedle</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Van Bennekum</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cockburn</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cunningham</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Fowler</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Manifesto for agile software Development</article-title>; <year>2001</year>. Available from: <ext-link ext-link-type="uri" xlink:href="https://agilemanifesto.org/" xlink:type="simple">https://agilemanifesto.org/</ext-link>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blankenberg</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Kuster</surname> <given-names>GV</given-names></name>, <name name-style="western"><surname>Coraor</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Ananda</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Lazarus</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Mangan</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Galaxy: a web-based genome analysis tool for experimentalists</article-title>. <source>Curr Protoc Mol Biol</source>. <year>2010</year>;<volume>89</volume>(<issue>1</issue>):<fpage>19</fpage>–<lpage>0</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/0471142727.mb1910s89" xlink:type="simple">10.1002/0471142727.mb1910s89</ext-link></comment> <object-id pub-id-type="pmid">20069535</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pedregosa</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Varoquaux</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Gramfort</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Michel</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Thirion</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Grisel</surname> <given-names>O</given-names></name>, <etal>et al</etal>. <article-title>Scikit-learn: Machine learning in Python</article-title>. <source>J Mach Learn Res</source>. <year>2011</year>;<volume>12</volume>:<fpage>2825</fpage>–<lpage>30</lpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McKinney</surname> <given-names>W</given-names></name>, <etal>et al</etal>. <article-title>pandas: a foundational Python library for data analysis and statistics</article-title>. <source>Python for High Performance and Scientific. Computing</source>. <year>2011</year>;<volume>14</volume>(<issue>9</issue>).</mixed-citation></ref>
+<ref id="pcbi.1008549.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carey</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Papin</surname> <given-names>JA</given-names></name>. <source>Ten simple rules for biologists learning to program</source>. <year>2018</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Perez-Riverol</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Gatto</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Sachsenberg</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Uszkoreit</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>FdV</surname> <given-names>L</given-names></name>, <etal>et al</etal>. <source>Ten simple rules for taking advantage of Git and GitHub</source>. <year>2016</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Goodman</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Pepe</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Blocker</surname> <given-names>AW</given-names></name>, <name name-style="western"><surname>Borgman</surname> <given-names>CL</given-names></name>, <name name-style="western"><surname>Cranmer</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Crosas</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Ten simple rules for the care and feeding of scientific data</article-title>. <source>PLoS Comput Biol</source>. <year>2014</year>;<volume>10</volume>(<issue>4</issue>):<fpage>e1003542</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1003542" xlink:type="simple">10.1371/journal.pcbi.1003542</ext-link></comment> <object-id pub-id-type="pmid">24763340</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref021"><label>21</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Ries</surname> <given-names>E.</given-names></name> <chapter-title>The lean startup: How today’s entrepreneurs use continuous innovation to create radically successful businesses</chapter-title>. <publisher-name>Crown Publishing Group</publisher-name>; <year>2011</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref022"><label>22</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Fowler</surname> <given-names>M.</given-names></name> <chapter-title>Refactoring: improving the design of existing code</chapter-title>. <publisher-name>Addison-Wesley Professional</publisher-name>; <year>2018</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomas</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Hunt</surname> <given-names>A</given-names></name>. <article-title>Mock objects</article-title>. <source>IEEE Softw</source>. <year>2002</year>;<volume>19</volume>(<issue>3</issue>):<fpage>22</fpage>–<lpage>4</lpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Katz</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Allen</surname> <given-names>TJ</given-names></name>. <article-title>Investigating the Not Invented Here(NIH) syndrome: A look at the performance, tenure, and communication patterns of 50 R&amp;D Project Groups</article-title>. <source>R&amp;D Manag</source>. <year>1982</year>;<volume>12</volume>(<issue>1</issue>):<fpage>7</fpage>–<lpage>20</lpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref025"><label>25</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Gamma</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Helm</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Vlissides</surname> <given-names>J</given-names></name>. <source>Design Patterns: Elements of Reusable Object-Oriented Software</source>. <publisher-name>Addison-Welsely</publisher-name>; <year>1994</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref026"><label>26</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Freeman</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Robson</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bates</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Sierra</surname> <given-names>K</given-names></name>. <source>Head first design patterns</source>. <publisher-name>O’Reilly Media, Inc.</publisher-name>; <year>2008</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref027"><label>27</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Osherove</surname> <given-names>R.</given-names></name> <source>The Art of Unit Testing: With Examples <ext-link ext-link-type="uri" xlink:href="http://in.Net" xlink:type="simple">in.Net</ext-link></source>. <publisher-name>Manning Publications</publisher-name>; <year>2009</year>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref028"><label>28</label><mixed-citation publication-type="other" xlink:type="simple">Fernandes E, Oliveira J, Vale G, Paiva T, Figueiredo E. A review-based comparative study of bad smell detection tools. In: Proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering; 2016. p. 1–12.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arkes</surname> <given-names>HR</given-names></name>, <name name-style="western"><surname>Blumer</surname> <given-names>C</given-names></name>. <article-title>The psychology of sunk costs</article-title>. <source>Organ Behav Hum Decis Process</source>. <year>1985</year>;<volume>35</volume>(<issue>1</issue>):<fpage>124</fpage>–<lpage>40</lpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref030"><label>30</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Kluyver</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ragan-Kelley</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Pérez</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Granger</surname> <given-names>BE</given-names></name>, <name name-style="western"><surname>Bussonnier</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Frederic</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <source>Jupyter Notebooks-a publishing format for reproducible computational workflows</source>. In: <publisher-name>ELPUB</publisher-name>; <year>2016</year>. p. <fpage>87</fpage>–<lpage>90</lpage>.</mixed-citation></ref>
+<ref id="pcbi.1008549.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Di Tommaso</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Chatzou</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Floden</surname> <given-names>EW</given-names></name>, <name name-style="western"><surname>Barja</surname> <given-names>PP</given-names></name>, <name name-style="western"><surname>Palumbo</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Notredame</surname> <given-names>C</given-names></name>. <article-title>Nextflow enables reproducible computational workflows</article-title>. <source>Nat Biotechnol</source>. <year>2017</year>;<volume>35</volume>(<issue>4</issue>):<fpage>316</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nbt.3820" xlink:type="simple">10.1038/nbt.3820</ext-link></comment> <object-id pub-id-type="pmid">28398311</object-id></mixed-citation></ref>
+<ref id="pcbi.1008549.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Köster</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Rahmann</surname> <given-names>S</given-names></name>. <article-title>Snakemake—a scalable bioinformatics workflow engine</article-title>. <source>Bioinformatics</source>. <year>2012</year>;<volume>28</volume>(<issue>19</issue>):<fpage>2520</fpage>–<lpage>2</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1093/bioinformatics/bts480" xlink:type="simple">10.1093/bioinformatics/bts480</ext-link></comment> <object-id pub-id-type="pmid">22908215</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

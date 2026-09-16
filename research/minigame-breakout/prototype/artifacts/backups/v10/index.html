@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e9eee5">
+  <title>浣然一新 · Dust & Dash</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="polish.css?v=10"><link rel="icon" href="assets/illustrated/cleaner.webp" type="image/webp">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="浣然一新首页"><span class="brand-icon"><img src="assets/illustrated/cleaner.webp" alt=""/></span><span>浣然一新<small>DUST & DASH</small></span></a>
+      <div class="edition"><i></i> 森林清洁俱乐部 · 薄荷庭院</div>
+      <div class="header-actions"><button id="sound" class="icon-button" aria-label="打开声音">声音 关</button><button id="pause" class="icon-button" disabled>暂停 <kbd>ESC</kbd></button></div>
+    </header>
+    <section class="game-layout">
+      <aside class="sidebar">
+        <div class="eyebrow">TODAY'S LITTLE ADVENTURE</div>
+        <h1>把小世界，<br>洗得发光。</h1>
+        <p class="intro">背上清洁器，出发。<br>今天也要闪闪发光。</p>
+        <div class="route" id="route" aria-label="关卡进度"></div>
+        <div class="kit"><div class="eyebrow">你的清洁装备</div><div id="kit-items"><span class="kit-tag">橘子汽水</span></div></div>
+        <div class="field-note"><span>小诀窍</span><p id="tip">先吸掉泥壳，再把积攒的垃圾<br>压成一发大弹球。</p></div>
+        <div class="sidebar-bottom"><a href="ASSETS.md" target="_blank">素材来源与说明 ↗</a></div>
+      </aside>
+      <div class="game-column">
+        <div class="statusbar">
+          <div class="room-title"><span class="eyebrow" id="room-label">ROOM 01 / 12</span><strong id="room-name">薄荷后院</strong></div>
+          <div class="health-box"><span class="metric-label">浣熊体力</span><div id="hearts" aria-label="体力 5 / 5">♥ ♥ ♥ ♥ ♥</div></div>
+          <div class="enemies-box"><span class="metric-label">剩余捣蛋鬼</span><strong id="enemy-count">4 <small>只</small></strong></div>
+          <div class="clean-box"><span class="metric-label">清洁目标 <b>90%</b></span><strong id="clean-percent">—<small>%</small></strong><div class="clean-track"><i id="clean-fill"></i><span></span></div></div>
+        </div>
+        <div class="arena" id="arena">
+          <canvas id="game" width="960" height="600" aria-label="清洁战斗场地：WASD 移动，鼠标瞄准，单击或空格发射" tabindex="0"></canvas>
+          <div id="toast" class="toast" role="status"></div>
+          <div class="room-badge"><span id="room-badge">后院 · 午后</span><i>✦</i></div>
+          <div class="overlay" id="overlay">
+            <div class="modal start-modal">
+              <p id="commission-record" class="commission-record"></p><div class="welcome-head"><img src="assets/illustrated/cleaner.webp" alt="浣熊清洁员"/><div><span class="modal-eyebrow">FOREST CLEANING CLUB</span><h2>选好装备，我们开工。</h2><p>清洁达到 90%，或赶走所有捣蛋鬼。<br>十二个小院子，每次出发都有新的组合。</p></div></div>
+              <div class="weapon-choices" id="weapon-choices"></div>
+              <label class="preset-label">本次出发<select id="preset-select" aria-label="正常成长或组合试玩"></select></label><div class="gadget-label">再带一件小帮手 · 开局即生效</div><div id="gadget-choices" class="gadget-choices"></div><button class="primary" id="start" disabled>准备装备中… <span>↗</span></button>
+              <small class="start-hint">WASD 移动 · 鼠标瞄准 · 单击 / 空格发射 · 吸入持续开启<br>触屏：摇杆移动 · 自动瞄准 · 按钮发射</small>
+            </div>
+          </div>
+          <div class="touch-controls" id="touch-controls"><div id="joystick" aria-label="移动摇杆"><span id="stick"></span></div><button id="touch-fire" aria-label="发射垃圾弹">发射<span>垃圾弹</span></button></div>
+        </div>
+        <div class="toolbar"><div class="ammo-icon"><img id="equipped-icon" src="assets/original/pressure.svg" alt="当前清洁器"/></div><div class="ammo-block"><div class="ammo-label"><strong id="equipped-name">橘子汽水 · 高压弹球</strong><span id="ammo-text">0 / 100</span></div><div class="ammo-track"><div id="ammo-fill"></div><i></i></div></div><span class="shot-state" id="shot-state">吸一吸，装点弹药</span><div class="controls-legend"><kbd>W A S D</kbd> 移动 <span>·</span> <kbd>SPACE</kbd> 发射</div></div>
+        <details class="evolution-guide"><summary>查看高级连携配方 · 达标自动生效</summary><div id="evolution-list"></div></details><div id="synergy-status" class="synergy-status" role="status"></div><footer class="game-footer"><span><i></i> 清洁 90% 或清空怪物，任一达成即可过关</span><button id="restart">重新开始 ↻</button></footer>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="src/main.js?v=10"></script>
+</body>
+</html>

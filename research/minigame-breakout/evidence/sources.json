@@ -1,0 +1,152 @@
+[
+  {
+    "id": "S1",
+    "title": "「Hello! インディー」なぜ1プレイが30分で終わるのか？『Vampire Survivors』開発者インタビュー",
+    "url": "https://www.nintendo.com/jp/topics/article/3f3d9c44-6cc5-4197-a31b-1397f229c03b",
+    "citation": "Nintendo，采访 Luca Galante。[「Hello! インディー」なぜ1プレイが30分で終わるのか？『Vampire Survivors』開発者インタビュー](https://www.nintendo.com/jp/topics/article/3f3d9c44-6cc5-4197-a31b-1397f229c03b)，2024-01-25。当事人访谈。",
+    "accessed_on": "2026-09-11",
+    "type": "developer_interview",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S2",
+    "title": "Brotato 官方商店页",
+    "url": "https://store.steampowered.com/app/1942280/Brotato/",
+    "citation": "Blobfish / Steam。[Brotato 官方商店页](https://store.steampowered.com/app/1942280/Brotato/)，动态页面。用于当前产品结构，不作为首发版本完整证据。",
+    "accessed_on": "2026-09-11",
+    "type": "store_page",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S3",
+    "title": "Space Gladiators 官方商店页",
+    "url": "https://store.steampowered.com/app/1144910/Space_Gladiators/",
+    "citation": "Blobfish / Steam。[Space Gladiators 官方商店页](https://store.steampowered.com/app/1144910/Space_Gladiators/)，动态页面。用于同开发者对照候选身份。",
+    "accessed_on": "2026-09-11",
+    "type": "store_page",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S4",
+    "title": "Lost Potato 官方商店页",
+    "url": "https://store.steampowered.com/app/1365010/Lost_Potato/",
+    "citation": "Blobfish / Steam。[Lost Potato 官方商店页](https://store.steampowered.com/app/1365010/Lost_Potato/)，动态页面。用于同开发者对照候选身份。",
+    "accessed_on": "2026-09-11",
+    "type": "store_page",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S5",
+    "title": "爆款小游戏《向僵尸开炮》立项研发复盘，内容型产品如何做长线运营？",
+    "url": "https://www.sohu.com/a/848411709_100136645",
+    "citation": "罗斯基 / 搜狐，整理制作人廖明辉分享。[爆款小游戏《向僵尸开炮》立项研发复盘，内容型产品如何做长线运营？](https://www.sohu.com/a/848411709_100136645)，2025-01-13，相关演讲于 2025-01-09。属于媒体整理的当事人自述。",
+    "accessed_on": "2026-09-11",
+    "type": "transcribed_developer_talk",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S6",
+    "title": "The Hybridcasual Gaming Market of 2023",
+    "url": "https://sensortower.com/blog/the-hybridcasual-gaming-market-of-2023",
+    "citation": "Phillip Lagoc / Sensor Tower。[The Hybridcasual Gaming Market of 2023](https://sensortower.com/blog/the-hybridcasual-gaming-market-of-2023)，2024-03。分析机构估计；报告未采用其存在口径疑点的全品类下载汇总。",
+    "accessed_on": "2026-09-11",
+    "type": "vendor_estimate",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S7",
+    "title": "Squad Busters Development is Ending",
+    "url": "https://supercell.com/en/news/squad-development-ending/",
+    "citation": "Supercell。[Squad Busters Development is Ending](https://supercell.com/en/news/squad-development-ending/)，2025-10-30。开发商公告。",
+    "accessed_on": "2026-09-11",
+    "type": "developer_announcement",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S8",
+    "title": "The growth model behind Duolingo",
+    "url": "https://blog.duolingo.com/growth-model-duolingo/",
+    "citation": "Duolingo。[The growth model behind Duolingo](https://blog.duolingo.com/growth-model-duolingo/)，发布日期未核实，文中包含 2023 年历史背景。公司方法论文章。",
+    "accessed_on": "2026-09-11",
+    "type": "company_method_article",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S9",
+    "title": "Q2 2026 Shareholder Letter",
+    "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026053299/q2fy26duolingo6-30x26share.htm",
+    "citation": "Duolingo。[Q2 2026 Shareholder Letter](https://www.sec.gov/Archives/edgar/data/1562088/000162828026053299/q2fy26duolingo6-30x26share.htm)，2026 年第二季度，公司文件，由 SEC 托管。管理层解释并非独立实验报告。",
+    "accessed_on": "2026-09-11",
+    "type": "company_filing",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S10",
+    "title": "【抖音IAA小游戏】内容创意玩法风向标2026年第1期",
+    "url": "https://developer.open-douyin.com/forum/bulletin/post/698d9852a9441abeb0d4c8e0",
+    "citation": "抖音开放平台团队。[【抖音IAA小游戏】内容创意玩法风向标2026年第1期](https://developer.open-douyin.com/forum/bulletin/post/698d9852a9441abeb0d4c8e0)，2026-02-12。平台精选案例。",
+    "accessed_on": "2026-09-11",
+    "type": "platform_selected_cases",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S11",
+    "title": "开放平台下单指南",
+    "url": "https://partner.open-douyin.com/docs/resource/zh-CN/mini-game/guide/business-guide/advertiser/pub/minigame",
+    "citation": "抖音开放平台。[开放平台下单指南](https://partner.open-douyin.com/docs/resource/zh-CN/mini-game/guide/business-guide/advertiser/pub/minigame)，发布日期未标注。CPA 按日去重定义见文档计费说明；实际使用前需复核。",
+    "accessed_on": "2026-09-11",
+    "type": "platform_documentation",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S12",
+    "title": "Tencent Announces 2026 Second Quarter Results",
+    "url": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html",
+    "citation": "Tencent，PR Newswire 发布。[Tencent Announces 2026 Second Quarter Results](https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html)，2026-08-12。公司发布的业绩新闻稿。",
+    "accessed_on": "2026-09-11",
+    "type": "company_release",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S13",
+    "title": "2026小游戏开发者限时内容激励政策（七至八月）",
+    "url": "https://partner.open-douyin.com/docs/resource/zh-CN/mini-game/guide/business-guide/revenue/sharingclause/2026mini-gamedeveloperlimited-timecontentincentivepolicyjuly-august",
+    "citation": "抖音开放平台。[2026小游戏开发者限时内容激励政策（七至八月）](https://partner.open-douyin.com/docs/resource/zh-CN/mini-game/guide/business-guide/revenue/sharingclause/2026mini-gamedeveloperlimited-timecontentincentivepolicyjuly-august)，适用窗口 2026-07-01 至 2026-08-31；已超出该窗口。",
+    "accessed_on": "2026-09-11",
+    "type": "expired_platform_policy",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S14",
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "url": "https://arxiv.org/abs/2408.03314",
+    "citation": "Charlie Snell、Jaehoon Lee、Kelvin Xu、Aviral Kumar。[Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314)，2024-08-06。特定任务下的计算策略研究，非商业成功预测。",
+    "accessed_on": "2026-09-11",
+    "type": "research_paper",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  },
+  {
+    "id": "S15",
+    "title": "Measuring AI Ability to Complete Long Software Tasks",
+    "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "citation": "METR。[Measuring AI Ability to Complete Long Software Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)，2025-03-19。任务评测研究，不能直接代表当前模型在本项目上的能力。",
+    "accessed_on": "2026-09-11",
+    "type": "research_evaluation",
+    "status": "read",
+    "independence_note": "转载同一原始事件不增加独立证据；具体边界见 citation 和报告对应段落。"
+  }
+]

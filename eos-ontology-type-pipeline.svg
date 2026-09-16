@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1280" viewBox="0 0 1600 1280" role="img" aria-labelledby="title desc">
+  <title id="title">EOS Ontology 类型系统：实际例子与建议设计逐层对照</title>
+  <desc id="desc">左侧以 Employee.salary 字段级安全策略为例，右侧给出 Ontology Language 与 Compiler 的对应职责。从表层定义、名称绑定、类型检查、带类型快照、多目标编译到运行时执行逐层对齐。</desc>
+
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#14213d" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #172033; }
+      .title { font-size: 31px; font-weight: 750; letter-spacing: .2px; }
+      .subtitle { font-size: 16px; fill: #5b667c; }
+      .column-title { font-size: 21px; font-weight: 750; fill: #ffffff; }
+      .column-subtitle { font-size: 14px; fill: #e9efff; }
+      .banner-text { font-size: 16px; font-weight: 700; fill: #ffffff; }
+      .card-title { font-size: 19px; font-weight: 750; }
+      .body { font-size: 15px; fill: #344054; }
+      .small { font-size: 13px; fill: #59657a; }
+      .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #162033; }
+      .code-small { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 12.5px; fill: #162033; }
+      .phase-num { font-size: 20px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
+      .phase-label { font-size: 12px; font-weight: 700; fill: #49566e; text-anchor: middle; }
+      .tag { font-size: 12px; font-weight: 700; text-anchor: middle; }
+      .bottom-title { font-size: 18px; font-weight: 750; }
+      .bottom-body { font-size: 14px; fill: #39465d; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1280" fill="#f6f8fc"/>
+  <circle cx="1490" cy="40" r="170" fill="#e9efff"/>
+  <circle cx="80" cy="1230" r="210" fill="#ecfdf3"/>
+
+  <text id="main-title" class="title" x="800" y="45" text-anchor="middle">EOS Ontology 类型：一个 salary 例子，左右逐层对上</text>
+  <text class="subtitle" x="800" y="74" text-anchor="middle">左边是系统里真实会出现的形态；右边是每一步应该归属的语言/编译器职责</text>
+
+  <rect x="145" y="92" width="1310" height="48" rx="24" fill="#18233a"/>
+  <text class="banner-text" x="800" y="122" text-anchor="middle">
+    不是“Core 把所有格式互转”；而是“Typed Snapshot 固化语义，Compiler 生成制品，Core Runtime 执行制品”
+  </text>
+
+  <!-- Column headers -->
+  <rect x="45" y="158" width="680" height="68" rx="15" fill="#3156a3" filter="url(#shadow)"/>
+  <text class="column-title" x="75" y="187">左：实际业务链路</text>
+  <text class="column-subtitle" x="75" y="211">例子：Employee 对象的字段级策略选中 salary</text>
+
+  <rect x="875" y="158" width="680" height="68" rx="15" fill="#6347a8" filter="url(#shadow)"/>
+  <text class="column-title" x="905" y="187">右：对应的系统设计</text>
+  <text class="column-subtitle" x="905" y="211">Ontology Language Kernel + Compiler + Runtime</text>
+
+  <!-- vertical process arrows -->
+  <path d="M385 345 L385 366" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M1215 345 L1215 366" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M385 480 L385 501" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M1215 480 L1215 501" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M385 620 L385 641" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M1215 620 L1215 641" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M385 755 L385 776" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M1215 755 L1215 776" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M385 930 L385 951" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M1215 930 L1215 951" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- ROW 1 -->
+  <rect x="45" y="245" width="680" height="100" rx="15" fill="#eef4ff" stroke="#9bb6ef" filter="url(#shadow)"/>
+  <rect x="45" y="245" width="9" height="100" rx="4" fill="#3b6fc4"/>
+  <text class="card-title" x="75" y="275">Manager 表层输入</text>
+  <rect x="75" y="289" width="348" height="37" rx="8" fill="#ffffff" stroke="#c7d6f4"/>
+  <text class="code" x="92" y="313">propertyApiNames: ["salary"]</text>
+  <text class="small" x="445" y="303">面向人编辑：短、可读、可改名</text>
+  <text class="small" x="445" y="323">此时 salary 还只是名字</text>
+
+  <rect x="875" y="245" width="680" height="100" rx="15" fill="#f5f1ff" stroke="#baa8e7" filter="url(#shadow)"/>
+  <rect x="875" y="245" width="9" height="100" rx="4" fill="#7757bd"/>
+  <text class="card-title" x="905" y="275">Surface Definition / AST</text>
+  <rect x="905" y="289" width="425" height="37" rx="8" fill="#ffffff" stroke="#d4c8ef"/>
+  <text class="code" x="922" y="313">SelectedPropertiesByName(["salary"])</text>
+  <text class="small" x="1350" y="303">保留来源位置</text>
+  <text class="small" x="1350" y="323">尚未声称合法</text>
+
+  <line x1="725" y1="295" x2="875" y2="295" stroke="#9aabc3" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="800" cy="276" r="22" fill="#3b6fc4"/>
+  <text class="phase-num" x="800" y="283">1</text>
+  <text class="phase-label" x="800" y="320">表层定义</text>
+
+  <!-- ROW 2 -->
+  <rect x="45" y="370" width="680" height="110" rx="15" fill="#f2edff" stroke="#bba9ea" filter="url(#shadow)"/>
+  <rect x="45" y="370" width="9" height="110" rx="4" fill="#805ad5"/>
+  <text class="card-title" x="75" y="400">在 Ontology Snapshot Σ 中找“salary”</text>
+  <text class="body" x="75" y="429">Σ(Employee, "salary")  →  prop-salary-rid</text>
+  <text class="body" x="75" y="454">同时得到：owner = Employee，valueType = Decimal</text>
+
+  <rect x="875" y="370" width="680" height="110" rx="15" fill="#f7f3ff" stroke="#c6b5ed" filter="url(#shadow)"/>
+  <rect x="875" y="370" width="9" height="110" rx="4" fill="#805ad5"/>
+  <text class="card-title" x="905" y="400">Resolver + Symbol Table</text>
+  <text class="body" x="905" y="429">名字必须依赖某个版本的定义环境才能绑定到身份</text>
+  <rect x="905" y="441" width="472" height="28" rx="7" fill="#ffffff" stroke="#d3c7ee"/>
+  <text class="code-small" x="919" y="460">PropertyRef&lt;Employee&gt;("prop-salary-rid")</text>
+  <text class="small" x="1392" y="460">valueType = Decimal</text>
+
+  <line x1="725" y1="425" x2="875" y2="425" stroke="#9aabc3" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="800" cy="406" r="22" fill="#805ad5"/>
+  <text class="phase-num" x="800" y="413">2</text>
+  <text class="phase-label" x="800" y="450">名称绑定</text>
+  <text x="800" y="467" text-anchor="middle" font-size="11.5" font-weight="700" fill="#805ad5">不是 decode</text>
+
+  <!-- ROW 3 -->
+  <rect x="45" y="505" width="680" height="115" rx="15" fill="#fff6e8" stroke="#edbd72" filter="url(#shadow)"/>
+  <rect x="45" y="505" width="9" height="115" rx="4" fill="#d9851f"/>
+  <text class="card-title" x="75" y="535">检查字段级策略的业务不变量</text>
+  <text class="body" x="75" y="563">✓ 属于 Employee　✓ 不是主键　✓ 无重复</text>
+  <text class="body" x="75" y="590">✓ selected-properties 非空　✓ 同一字段不落入冲突策略</text>
+
+  <rect x="875" y="505" width="680" height="115" rx="15" fill="#fff9ee" stroke="#efc67f" filter="url(#shadow)"/>
+  <rect x="875" y="505" width="9" height="115" rx="4" fill="#d9851f"/>
+  <text class="card-title" x="905" y="535">Type Checker + Semantic Refinement</text>
+  <text class="body" x="905" y="561">通过检查后，普通列表被精化成业务类型：</text>
+  <rect x="905" y="573" width="555" height="34" rx="7" fill="#ffffff" stroke="#ead3a9"/>
+  <text class="code-small" x="918" y="587">SelectedProperties&lt;</text>
+  <text class="code-small" x="1039" y="601">NonEmptySet&lt;PropertyRef&lt;Employee&gt;&gt;&gt;</text>
+
+  <line x1="725" y1="562" x2="875" y2="562" stroke="#9aabc3" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="800" cy="543" r="22" fill="#d9851f"/>
+  <text class="phase-num" x="800" y="550">3</text>
+  <text class="phase-label" x="800" y="587">类型/语义检查</text>
+
+  <!-- ROW 4 -->
+  <rect x="45" y="645" width="680" height="110" rx="15" fill="#ecfdf3" stroke="#83d1a2" filter="url(#shadow)"/>
+  <rect x="45" y="645" width="9" height="110" rx="4" fill="#239b63"/>
+  <text class="card-title" x="75" y="675">归一化后的兼容表示</text>
+  <rect x="75" y="688" width="402" height="31" rx="7" fill="#ffffff" stroke="#b7dfc8"/>
+  <text class="code-small" x="89" y="708">propertyRids: ["prop-salary-rid"]</text>
+  <text class="body" x="75" y="741">LIST&lt;STRING&gt; 只是存储/接口形状，不是完整业务类型。</text>
+
+  <rect x="875" y="645" width="680" height="110" rx="15" fill="#effcf5" stroke="#87d5aa" filter="url(#shadow)"/>
+  <rect x="875" y="645" width="9" height="110" rx="4" fill="#239b63"/>
+  <text class="card-title" x="905" y="675">Immutable Typed Definition Snapshot</text>
+  <text class="body" x="905" y="703">保存：稳定身份 + 已判定类型 + 约束证明 + source map</text>
+  <text class="body" x="905" y="730">附带：revision / contentHash / compilerVersion</text>
+  <rect x="1375" y="684" width="138" height="44" rx="22" fill="#d9f7e6"/>
+  <text x="1444" y="711" text-anchor="middle" font-size="13" font-weight="800" fill="#16794a">语义检查点</text>
+
+  <line x1="725" y1="700" x2="875" y2="700" stroke="#239b63" stroke-width="2.4"/>
+  <circle cx="800" cy="681" r="22" fill="#239b63"/>
+  <text class="phase-num" x="800" y="688">4</text>
+  <text class="phase-label" x="800" y="725">带类型快照</text>
+  <text x="800" y="742" text-anchor="middle" font-size="11.5" font-weight="800" fill="#16794a">唯一语义事实</text>
+
+  <!-- ROW 5 -->
+  <rect x="45" y="780" width="680" height="150" rx="15" fill="#eafafd" stroke="#84ccd8" filter="url(#shadow)"/>
+  <rect x="45" y="780" width="9" height="150" rx="4" fill="#238fa3"/>
+  <text class="card-title" x="75" y="810">同一语义，落成不同运行形态</text>
+  <rect x="75" y="826" width="280" height="37" rx="9" fill="#ffffff" stroke="#b7dce2"/>
+  <text class="code-small" x="91" y="850">Policy IR: fields:["salary"]</text>
+  <rect x="372" y="826" width="150" height="37" rx="9" fill="#ffffff" stroke="#b7dce2"/>
+  <text class="code-small" x="390" y="850">GraphQL: [String]</text>
+  <rect x="75" y="877" width="205" height="37" rx="9" fill="#ffffff" stroke="#b7dce2"/>
+  <text class="code-small" x="92" y="901">PostgreSQL: jsonb</text>
+  <rect x="297" y="877" width="318" height="37" rx="9" fill="#ffffff" stroke="#b7dce2"/>
+  <text class="code-small" x="314" y="901">OSDK/MCP: generated contract</text>
+
+  <rect x="875" y="780" width="680" height="150" rx="15" fill="#effbfe" stroke="#8fd1dc" filter="url(#shadow)"/>
+  <rect x="875" y="780" width="9" height="150" rx="4" fill="#238fa3"/>
+  <text class="card-title" x="905" y="810">Compiler 的多个 Target Backend</text>
+  <rect x="905" y="826" width="280" height="37" rx="9" fill="#dff6fa"/>
+  <text class="tag" x="1045" y="850" fill="#176b7a">Policy Compiler</text>
+  <rect x="1202" y="826" width="280" height="37" rx="9" fill="#dff6fa"/>
+  <text class="tag" x="1342" y="850" fill="#176b7a">GraphQL Lowering</text>
+  <rect x="905" y="877" width="280" height="37" rx="9" fill="#dff6fa"/>
+  <text class="tag" x="1045" y="901" fill="#176b7a">Storage Compiler</text>
+  <rect x="1202" y="877" width="280" height="37" rx="9" fill="#dff6fa"/>
+  <text class="tag" x="1342" y="901" fill="#176b7a">SDK / MCP Generator</text>
+
+  <line x1="725" y1="855" x2="875" y2="855" stroke="#9aabc3" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="800" cy="836" r="22" fill="#238fa3"/>
+  <text class="phase-num" x="800" y="843">5</text>
+  <text class="phase-label" x="800" y="880">编译 / Lowering</text>
+  <text x="800" y="897" text-anchor="middle" font-size="11.5" font-weight="700" fill="#238fa3">通常有损，不可逆</text>
+
+  <!-- ROW 6 -->
+  <rect x="45" y="955" width="680" height="110" rx="15" fill="#edf1f7" stroke="#aab5c7" filter="url(#shadow)"/>
+  <rect x="45" y="955" width="9" height="110" rx="4" fill="#475569"/>
+  <text class="card-title" x="75" y="985">运行时消费制品</text>
+  <text class="body" x="75" y="1013">Core：执行 Query / Policy / Logic，并做最终鉴权</text>
+  <text class="body" x="75" y="1040">DB：存取数据　Manager：继续维护 authoring definition</text>
+
+  <rect x="875" y="955" width="680" height="110" rx="15" fill="#f0f3f8" stroke="#adb8ca" filter="url(#shadow)"/>
+  <rect x="875" y="955" width="9" height="110" rx="4" fill="#475569"/>
+  <text class="card-title" x="905" y="985">Core Runtime 的准确边界</text>
+  <text class="body" x="905" y="1010">加载已发布、版本匹配的 artifacts</text>
+  <text class="body" x="905" y="1033">执行前校验输入、版本与权限；不重建 Ontology 语义</text>
+  <text class="small" x="905" y="1053">可以做边界 decode / validation，但不是 Ontology 编译器本体</text>
+
+  <line x1="725" y1="1010" x2="875" y2="1010" stroke="#9aabc3" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="800" cy="991" r="22" fill="#475569"/>
+  <text class="phase-num" x="800" y="998">6</text>
+  <text class="phase-label" x="800" y="1035">运行时执行</text>
+
+  <!-- Bottom conclusions -->
+  <rect x="45" y="1095" width="735" height="145" rx="16" fill="#fff1f1" stroke="#e6a0a0"/>
+  <text class="bottom-title" x="75" y="1127" fill="#a32929">不要形成四个“类型真相”</text>
+  <text class="bottom-body" x="75" y="1156">Manager 说 ARRAY、Core 猜 LIST&lt;JSON&gt;、Logic 再解释一遍、DB 只剩 STRING/jsonb。</text>
+  <text class="bottom-body" x="75" y="1183">这不是“一种类型的多种表示”，而是多个组件各自发明语义，最终必然漂移。</text>
+  <rect x="75" y="1200" width="428" height="26" rx="13" fill="#fbdada"/>
+  <text x="289" y="1218" text-anchor="middle" font-size="12.5" font-weight="800" fill="#982828">判断信号：同一条规则被复制到两个以上组件</text>
+
+  <rect x="820" y="1095" width="735" height="145" rx="16" fill="#ecfdf3" stroke="#84d2a5"/>
+  <text class="bottom-title" x="850" y="1127" fill="#16794a">建议先“独立内核”，不急着“独立微服务”</text>
+  <text class="bottom-body" x="850" y="1156">① Kernel：normalize / resolve / typecheck（纯函数、版本化）</text>
+  <text class="bottom-body" x="850" y="1183">② Worker：从 Typed Snapshot 生成多目标制品，并原子发布</text>
+  <text class="bottom-body" x="850" y="1210">③ Runtime：加载、校验版本、执行、鉴权；不拥有 authoring 语义</text>
+
+  <text x="800" y="1266" text-anchor="middle" font-size="13" fill="#657187">
+    一句话：名字属于表层语言，身份与约束属于 Typed Snapshot，GraphQL / DB / Logic 形态属于编译目标。
+  </text>
+</svg>

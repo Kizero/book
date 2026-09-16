@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "yyyy-mm-dd-short-slug",
+  "captured_at": "YYYY-MM-DDTHH:MM:SS+08:00",
+  "artifact": {
+    "title": "原始材料标题",
+    "kind": "article|video_transcript|comment_thread_excerpt|user_transcript|verification_note",
+    "author": "作者或来源",
+    "raw_path": "inbox/YYYY-MM-DD-short-slug.md",
+    "source_url": null,
+    "provenance": "user_supplied|direct|official_publisher_pages",
+    "verification": "unverified|verified_primary",
+    "sha256": "填写原始文件 SHA-256"
+  },
+  "entities": [
+    {
+      "id": "work:stable-english-id",
+      "name": "规范名称",
+      "type": "book",
+      "aliases": ["中文译名"],
+      "status": "candidate",
+      "priority": 3,
+      "locator": "L10-L12",
+      "context": "为什么在这里出现",
+      "confidence": "unverified"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:stable-id",
+      "text": "完整、克制的判断",
+      "kind": "source_claim",
+      "locator": "L10-L12",
+      "evidence": "原文中逐字存在的短语",
+      "confidence": "unverified",
+      "priority": 3
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:stable-id",
+      "about_entity": "work:stable-english-id",
+      "title": "可迁移的方法名",
+      "summary": "从这个作品本身导出的判断工具；不要写采集系统的方法",
+      "locator": "L20",
+      "evidence": "原文证据短语",
+      "confidence": "unverified",
+      "priority": 3,
+      "acceptance": ["可判定的完成条件"]
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:stable-id",
+      "about_entity": "work:stable-english-id",
+      "title": "真正帮助理解作品的背景",
+      "summary": "作者生平、成书处境、跨领域桥梁或重要反例，而不是出版社元数据",
+      "kind": "biography|origin|bridge|counterpoint",
+      "locator": "L15-L18",
+      "evidence": "原文中逐字存在的短语",
+      "confidence": "verified",
+      "priority": 4
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:stable-id",
+      "about_entity": "work:stable-english-id",
+      "label": "完整免费版本",
+      "url": "https://example.com/full-text.pdf",
+      "local_path": null,
+      "note": "已经实际打开检查",
+      "locator": "L5-L8",
+      "evidence": "原文中逐字存在的短语",
+      "confidence": "verified",
+      "priority": 5
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation:stable-id",
+      "from": "work:stable-english-id",
+      "type": "references",
+      "to": "work:another-local-entity-id",
+      "locator": "L10-L12",
+      "confidence": "unverified"
+    }
+  ],
+  "questions": ["最重要的未决问题"],
+  "actions": ["下一步动作"]
+}

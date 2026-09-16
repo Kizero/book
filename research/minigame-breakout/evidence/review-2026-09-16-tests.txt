@@ -1,0 +1,66 @@
+
+> test
+> node --test tests/*.test.js
+
+✔ journal persists unique completed places and the tea-party badge (1.012125ms)
+✔ invalid or blocked storage never blocks gameplay (0.107875ms)
+✔ late encounters expose every opponent immediately and preserve combat victory (15.76ms)
+✔ guarded groups wake on approach or damage; damaged ranged enemies stop fleeing (0.187333ms)
+✔ recap distinguishes actual reactions from equipped but unused synergies (1.299083ms)
+✔ a newly completed evolution announces exactly once when crossing its threshold (1.322875ms)
+✔ suction removes dirt and shells and makes firing possible (5.879125ms)
+✔ bare enemy is vulnerable to suction even with no floor ammo (1.337958ms)
+✔ hostile mud projectile can be caught for ammunition (0.847375ms)
+✔ chain deaths are resolved once and clean their surrounding floor (0.282083ms)
+✔ all rooms, offered upgrades and final automatic cleanup complete a run (24.349708ms)
+✔ pause freezes simulation; death prevents firing; restart owns fresh state (0.39125ms)
+✔ large update gaps are capped and player stays inside room (6.295333ms)
+✔ wide and power upgrades modify distinct mechanics and persist to next room (2.887875ms)
+✔ 90 percent cleanliness wins with enemies alive and does not count them as kills (0.736292ms)
+✔ generated rooms never start near the cleanliness victory threshold (158.687417ms)
+✔ three starter weapons have different ammo and projectile behavior (0.280583ms)
+✔ splitter produces two children and each enemy has a unique id (0.116041ms)
+✔ foam cleans ground, pierce does not hit the same target twice, and bounce survives a wall (0.670208ms)
+✔ capacity and refund upgrades apply without negative or overflowing ammo (0.497709ms)
+✔ bubble chain pops once per bubble, frees captives and cleans the impact area (0.202792ms)
+✔ electricity traverses connected foam, hits each enemy once and does not jump a gap (0.184916ms)
+✔ mop redirects a shot once; repeated contact cannot multiply its damage again (0.106083ms)
+✔ duck collects dirt into bounded ammo and transports bubbles toward enemies (0.159584ms)
+✔ new equipment caps, partner offers, pause and restart preserve ownership (0.277625ms)
+✔ double mouth trades reach for rear suction; compressor changes fire cadence and projectile (0.103208ms)
+✔ returning projectile refunds only once and never overflows the ammo cap (0.29975ms)
+✔ bucket relocation conserves outstanding dirt, then a shot completes collection (0.16825ms)
+✔ bucket cargo stays dirty while packed and is accounted once when its bubble pops (0.149417ms)
+✔ brush carries foam; evolved washing creates trails without preexisting foam (0.133167ms)
+✔ preview kits persist on restart and leave no effects when returning to normal (0.60825ms)
+✔ backpack converts some suction yield to bubbles without starving all ammo (1.944459ms)
+✔ charged duck delivery evolves only at required levels and combo effects reset (0.649334ms)
+✔ rule modification cards are unique and never appear again once owned (0.3925ms)
+✔ charger locks its warning direction, dashes across it and is interrupted by bubbles (1.88025ms)
+✔ lobber snapshots a delayed landing; moving away avoids damage, standing still takes one hit (4.246916ms)
+✔ mender repairs living nearby shells, cannot exceed cap or resurrect enemies (0.166375ms)
+✔ foam charges a manual garbage shot once and impact carries foam onward (0.777292ms)
+✔ both victory routes cancel pending landings and restart leaves no hazards (2.1755ms)
+✔ commission layouts differ and fit landscape and portrait arenas (1.511834ms)
+✔ tea-party boss telegraphs bounded mud landings and remains defeatable (0.258542ms)
+✔ feedback expires, pauses and resets without mutating gameplay (0.509875ms)
+✔ many same-frame combo events do not flood labels; separated kills do not pretend to be a streak (0.968459ms)
+✔ firing across a clear and reward screen never becomes button activation or scrolling (0.49ms)
+✔ menu Enter/Tab and ready-screen Space remain native; resumed combat can fire (0.080917ms)
+✔ holding Escape pauses once instead of oscillating between pause and play (0.053417ms)
+✔ packing visible parcels conserves dirt and opening is accounted only once (4.749917ms)
+✔ creating parcels moves existing dirt without changing cleanliness (2.176666ms)
+✔ combat victory still clears unopened parcels and a clean victory can end a boss act (5.666958ms)
+✔ wind carries bubbles; belt moves player; pause freezes both (2.672417ms)
+✔ late boss locks its telegraph, travels, rests and never becomes invulnerable (1.459ms)
+✔ action keyframes freeze on pause and recover without changing game simulation (0.090917ms)
+✔ fan telegraphs a fixed gust and a captured fan cannot keep blowing (1.287459ms)
+✔ all packaged action frames share an identical planted-foot baseline (0.542375ms)
+ℹ tests 54
+ℹ suites 0
+ℹ pass 54
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 276.46925

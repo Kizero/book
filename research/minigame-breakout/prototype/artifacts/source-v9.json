@@ -1,0 +1,22 @@
+{
+  "src/gadgets.js": "040f17f4209803553cc19ca8963bea59dbd0e1aec4168b264247842b283ec4e3",
+  "src/upgrade-feedback.js": "4b1f7b1d7910304f059e4dbdc4759f28c3c09f6d85efb79d8348073c3614be93",
+  "src/feedback.js": "d1717852395b9065fa937d5ca7477afeabf689a1b218055db1ff82a74ed288a7",
+  "src/illustrated-art.js": "5737a4ab14849110d4463bfd1c8fa7f88bf052c65248d10f7a7bd49c8ea24aff",
+  "src/sound.js": "61b5a3d316b71d55aa037fe2dc5da47b56a9be99080bf1239d85963b4aba673c",
+  "src/render.js": "ea91d365490e0590ec969c12e9357c9c42ab50aff574b2dfaaefc5f8a1cf02a9",
+  "src/commissions.js": "cf1b9d271a31da60e946caa3742eac12daa39668f90ba8640e5c4572fce4bb6a",
+  "src/recap.js": "91016787c32bb608bee93d02dadf5eae0fa604b88ce50e1a3ee62c116df9c1ed",
+  "src/combinations.js": "48a94912343bad079302f2f7d1f70390f88a53481f6081186e304b5cdc8b2fbf",
+  "src/gadget-render.js": "cbbd647699b1f7cc046915e5e0b803f6092541740e6b3a65395ba64150642b8e",
+  "src/main.js": "979fb1985e323551e473d9a8769386fc04d77fbd6aa95a70f37a68f38ff81390",
+  "src/keyboard.js": "37e94d3805689bcb3502261b71709fc0ff0b9c78716f0167ff3ef9416426496f",
+  "src/encounters.js": "080f2077a3027b3eafc9b57ecdcae91338980c03d695f53742be052bdaaa7f12",
+  "src/enemy-behaviors.js": "7c0f48b778dee95ad3201f56ff5599d98f9c64c7b3db7a38e969d3eb18c58bc2",
+  "src/engine.js": "23c6551d958fc546dbee5a451a36bda9dbdac512b6b4b470e471a7e887a00ac3",
+  "src/content.js": "c8457e91e98758def635dff1e77402c071d620e7e9df406c6f0fbf06a2fc642a",
+  "src/assets.js": "4f0f16fac4cf87dc4acf1ce4a14060d8e92ce0237bbbe91ad84a7a369d2b95b2",
+  "index.html": "a39148db81be765c54b02b54cbeeeb82b48762ddc8274e7b935e477068db615c",
+  "style.css": "4719c0b34253c18308ae7e6070517fb26cadb276e19d7b39b2f6cbf84b178af6",
+  "polish.css": "0d702cbad147ebdd0405cffb03861efcbe31eb9f42463bd0238ac8c29094d97c"
+}

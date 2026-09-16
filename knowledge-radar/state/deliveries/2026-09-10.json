@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-10",
+  "status": "ready",
+  "verified_at": "2026-09-10T01:11:40.686Z",
+  "entity_id": "work:poincare-mathematical-creation",
+  "book_id": "B5276DAD-B39E-46C1-8B3A-69B658AE1839",
+  "book_title": "庞加莱-数学创造-中文全译",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-10.md",
+    "sha256": "56be596a131646d4c65609bad21041a2a91f1956202c2c892e67b48530286836"
+  },
+  "record": {
+    "path": "records/2026-09-10-poincare-reading-dossier.json",
+    "sha256": "e9ebad2f422d3c54e77f8e6958dd412ae748ce346ed9d204d8667247a6ff89f6"
+  },
+  "chinese": {
+    "path": "library/庞加莱-数学创造-中文全译.md",
+    "sha256": "a68b677514488dc941c1d55e2ac5d2e43e35bfd7be13535a1347c7db1993db7b"
+  },
+  "import_record": {
+    "path": "imports/2026-09-10-poincare-zh.md",
+    "sha256": "a52f5483d7176c48120e80d8380502bcae6dbb87837d8c4205afe084fd3a0035"
+  }
+}

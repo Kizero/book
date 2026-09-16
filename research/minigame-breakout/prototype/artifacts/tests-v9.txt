@@ -1,0 +1,58 @@
+
+> test
+> node --test tests/*.test.js
+
+✔ journal persists unique completed places and the tea-party badge (2.420125ms)
+✔ invalid or blocked storage never blocks gameplay (0.539791ms)
+✔ late encounters expose every opponent immediately and preserve combat victory (19.889875ms)
+✔ guarded groups wake on approach or damage; damaged ranged enemies stop fleeing (0.549042ms)
+✔ recap distinguishes actual reactions from equipped but unused synergies (3.993333ms)
+✔ a newly completed evolution announces exactly once when crossing its threshold (2.264333ms)
+✔ suction removes dirt and shells and makes firing possible (17.046791ms)
+✔ bare enemy is vulnerable to suction even with no floor ammo (2.949333ms)
+✔ hostile mud projectile can be caught for ammunition (1.227167ms)
+✔ chain deaths are resolved once and clean their surrounding floor (1.49ms)
+✔ all rooms, offered upgrades and final automatic cleanup complete a run (46.002459ms)
+✔ pause freezes simulation; death prevents firing; restart owns fresh state (1.263792ms)
+✔ large update gaps are capped and player stays inside room (22.082708ms)
+✔ wide and power upgrades modify distinct mechanics and persist to next room (10.338084ms)
+✔ 90 percent cleanliness wins with enemies alive and does not count them as kills (2.284292ms)
+✔ generated rooms never start near the cleanliness victory threshold (72.307625ms)
+✔ three starter weapons have different ammo and projectile behavior (0.799542ms)
+✔ splitter produces two children and each enemy has a unique id (0.463ms)
+✔ foam cleans ground, pierce does not hit the same target twice, and bounce survives a wall (3.01525ms)
+✔ capacity and refund upgrades apply without negative or overflowing ammo (1.022125ms)
+✔ bubble chain pops once per bubble, frees captives and cleans the impact area (0.739958ms)
+✔ electricity traverses connected foam, hits each enemy once and does not jump a gap (0.65475ms)
+✔ mop redirects a shot once; repeated contact cannot multiply its damage again (0.338958ms)
+✔ duck collects dirt into bounded ammo and transports bubbles toward enemies (0.674666ms)
+✔ new equipment caps, partner offers, pause and restart preserve ownership (0.970458ms)
+✔ double mouth trades reach for rear suction; compressor changes fire cadence and projectile (0.306541ms)
+✔ returning projectile refunds only once and never overflows the ammo cap (1.910791ms)
+✔ bucket relocation conserves outstanding dirt, then a shot completes collection (0.827625ms)
+✔ bucket cargo stays dirty while packed and is accounted once when its bubble pops (0.473917ms)
+✔ brush carries foam; evolved washing creates trails without preexisting foam (0.41425ms)
+✔ preview kits persist on restart and leave no effects when returning to normal (1.679166ms)
+✔ backpack converts some suction yield to bubbles without starving all ammo (5.801167ms)
+✔ charged duck delivery evolves only at required levels and combo effects reset (1.954292ms)
+✔ rule modification cards are unique and never appear again once owned (1.971083ms)
+✔ charger locks its warning direction, dashes across it and is interrupted by bubbles (9.237209ms)
+✔ lobber snapshots a delayed landing; moving away avoids damage, standing still takes one hit (20.613666ms)
+✔ mender repairs living nearby shells, cannot exceed cap or resurrect enemies (0.586334ms)
+✔ foam charges a manual garbage shot once and impact carries foam onward (3.120625ms)
+✔ both victory routes cancel pending landings and restart leaves no hazards (14.110917ms)
+✔ commission layouts differ and fit landscape and portrait arenas (3.379084ms)
+✔ tea-party boss telegraphs bounded mud landings and remains defeatable (1.945667ms)
+✔ feedback expires, pauses and resets without mutating gameplay (2.144ms)
+✔ many same-frame combo events do not flood labels; separated kills do not pretend to be a streak (1.689042ms)
+✔ firing across a clear and reward screen never becomes button activation or scrolling (2.721167ms)
+✔ menu Enter/Tab and ready-screen Space remain native; resumed combat can fire (0.378542ms)
+✔ holding Escape pauses once instead of oscillating between pause and play (0.349084ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 399.309959

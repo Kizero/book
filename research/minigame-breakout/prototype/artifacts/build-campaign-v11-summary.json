@@ -1,0 +1,229 @@
+[
+  {
+    "seed": 21,
+    "goal": "washstorm",
+    "state": "won",
+    "room": 12,
+    "final": 8.63,
+    "formed": [
+      {
+        "id": "washstorm",
+        "room": 11,
+        "at": 40.36666666666566,
+        "activeSeconds": 12.6,
+        "uses": 9,
+        "firstUseAt": 40.81666666666563
+      }
+    ],
+    "rerolls": 0,
+    "hits": 0
+  },
+  {
+    "seed": 21,
+    "goal": "stormduck",
+    "state": "won",
+    "room": 12,
+    "final": 17.15,
+    "formed": [
+      {
+        "id": "stormduck",
+        "room": 5,
+        "at": 41.09999999999895,
+        "activeSeconds": 77.38,
+        "uses": 24,
+        "firstUseAt": 43.89999999999879
+      },
+      {
+        "id": "washstorm",
+        "room": 9,
+        "at": 75.33333333333034,
+        "activeSeconds": 43.15,
+        "uses": 6,
+        "firstUseAt": 85.19999999999645
+      }
+    ],
+    "rerolls": 2,
+    "hits": 1
+  },
+  {
+    "seed": 21,
+    "goal": "pinball",
+    "state": "won",
+    "room": 12,
+    "final": 14.42,
+    "formed": [
+      {
+        "id": "pinball",
+        "room": 4,
+        "at": 12.983333333333558,
+        "activeSeconds": 68.82,
+        "uses": 7,
+        "firstUseAt": 20.283333333333463
+      },
+      {
+        "id": "washstorm",
+        "room": 6,
+        "at": 26.733333333333096,
+        "activeSeconds": 55.07,
+        "uses": 15,
+        "firstUseAt": 32.18333333333279
+      }
+    ],
+    "rerolls": 3,
+    "hits": 1
+  },
+  {
+    "seed": 42,
+    "goal": "washstorm",
+    "state": "won",
+    "room": 12,
+    "final": 9.7,
+    "formed": [
+      {
+        "id": "washstorm",
+        "room": 4,
+        "at": 8.800000000000017,
+        "activeSeconds": 42.85,
+        "uses": 33,
+        "firstUseAt": 8.950000000000024
+      }
+    ],
+    "rerolls": 2,
+    "hits": 0
+  },
+  {
+    "seed": 42,
+    "goal": "stormduck",
+    "state": "won",
+    "room": 12,
+    "final": 14.57,
+    "formed": [
+      {
+        "id": "stormduck",
+        "room": 5,
+        "at": 25.34999999999984,
+        "activeSeconds": 59.7,
+        "uses": 23,
+        "firstUseAt": 27.866666666666365
+      },
+      {
+        "id": "washstorm",
+        "room": 10,
+        "at": 56.69999999999806,
+        "activeSeconds": 28.35,
+        "uses": 10,
+        "firstUseAt": 58.566666666664624
+      }
+    ],
+    "rerolls": 3,
+    "hits": 0
+  },
+  {
+    "seed": 42,
+    "goal": "pinball",
+    "state": "won",
+    "room": 12,
+    "final": 11.13,
+    "formed": [
+      {
+        "id": "pinball",
+        "room": 4,
+        "at": 12.950000000000223,
+        "activeSeconds": 83.13,
+        "uses": 11,
+        "firstUseAt": 22.350000000000012
+      },
+      {
+        "id": "washstorm",
+        "room": 8,
+        "at": 54.09999999999821,
+        "activeSeconds": 41.98,
+        "uses": 12,
+        "firstUseAt": 57.666666666664675
+      }
+    ],
+    "rerolls": 3,
+    "hits": 0
+  },
+  {
+    "seed": 63,
+    "goal": "washstorm",
+    "state": "won",
+    "room": 12,
+    "final": 5.5,
+    "formed": [
+      {
+        "id": "washstorm",
+        "room": 4,
+        "at": 8.71666666666668,
+        "activeSeconds": 33.12,
+        "uses": 28,
+        "firstUseAt": 8.933333333333357
+      },
+      {
+        "id": "pinball",
+        "room": 9,
+        "at": 24.549999999999887,
+        "activeSeconds": 17.28,
+        "uses": 0,
+        "firstUseAt": null
+      }
+    ],
+    "rerolls": 2,
+    "hits": 0
+  },
+  {
+    "seed": 63,
+    "goal": "stormduck",
+    "state": "won",
+    "room": 12,
+    "final": 17.22,
+    "formed": [
+      {
+        "id": "stormduck",
+        "room": 5,
+        "at": 41.96666666666557,
+        "activeSeconds": 83.58,
+        "uses": 25,
+        "firstUseAt": 46.69999999999863
+      },
+      {
+        "id": "washstorm",
+        "room": 12,
+        "at": 108.33333333332847,
+        "activeSeconds": 17.22,
+        "uses": 4,
+        "firstUseAt": 110.34999999999502
+      }
+    ],
+    "rerolls": 2,
+    "hits": 0
+  },
+  {
+    "seed": 63,
+    "goal": "pinball",
+    "state": "won",
+    "room": 12,
+    "final": 16.37,
+    "formed": [
+      {
+        "id": "pinball",
+        "room": 4,
+        "at": 13.150000000000233,
+        "activeSeconds": 93.9,
+        "uses": 12,
+        "firstUseAt": 15.383333333333677
+      },
+      {
+        "id": "washstorm",
+        "room": 9,
+        "at": 60.26666666666453,
+        "activeSeconds": 46.78,
+        "uses": 10,
+        "firstUseAt": 60.899999999997824
+      }
+    ],
+    "rerolls": 2,
+    "hits": 0
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-06-bainbridge-reading-dossier",
+  "captured_at": "2026-09-06T09:04:52+08:00",
+  "artifact": {
+    "title": "Ironies of Automation 阅读档案",
+    "kind": "paper_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-06-bainbridge-reading-dossier.md",
+    "source_url": "https://www.complexcognition.co.uk/2021/06/ironies-of-automation.html",
+    "provenance": "full_text_and_research",
+    "sha256": "61dc91deed315ec77fd031a347711be8d0ab45b40c6f761711d40ab1f80452d5"
+  },
+  "report_note": "1983 年的工业自动化研究；迁移到 AI 阅读的建议为本期推论。没有阅读反馈，不认定已掌握。",
+  "entities": [
+    {
+      "id": "work:ironies-of-automation",
+      "name": "Ironies of Automation",
+      "type": "paper",
+      "aliases": [
+        "自动化的反讽（暂译）"
+      ],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "自动化接手日常操作后，人的练习与状态理解可能减少，异常却仍要求他及时判断、接手。这篇短文让我们检查：人机分工有没有为留下来的责任准备足够能力。",
+      "why_it_matters": "我们刚决定用 AI 加快阅读和掌握。今天这个反问值得一起带上：提速之后，哪一步仍让你亲自生成判断并得到反馈？",
+      "recommended_action": "读关键段落即可，不新增精读负担。3—5 分钟读本期；15—20 分钟在原文搜索 1.1.2、2.3、3.4，再读结论。"
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:bainbridge-background",
+      "title": "一位关心实际操作的心理学者",
+      "summary": "Bainbridge 曾在 UCL 任 Reader。她在履历里回忆，院系偏重实验心理学，甚至不愿把这篇应用研究列入出版物。这段作者自述，让人看到学科边界与实际问题之间的张力。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L8",
+      "evidence": "Bainbridge 是研究",
+      "confidence": "verified",
+      "priority": 5,
+      "kind": "biography"
+    },
+    {
+      "id": "context:bainbridge-origin",
+      "title": "她面对的是正常自动、异常人工的控制系统",
+      "summary": "工业过程和驾驶舱的这种分工，是论文的具体背景。把结论用于 AI 阅读，需要检验相应机制是否存在。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L10",
+      "evidence": "论文面对的是",
+      "confidence": "verified",
+      "priority": 5,
+      "kind": "origin"
+    },
+    {
+      "id": "context:bainbridge-limit",
+      "title": "自动化也可能增加练习机会",
+      "summary": "作者并不主张减少所有自动化。我们的反例设想是：让 AI 出变更题、反例并纠错，可能增加主动练习。应检查结果是否改善理解，不能仅凭用了 AI 就认定能力退化。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L25",
+      "evidence": "我们的反例设想",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "counterpoint"
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:bainbridge-remaining-task",
+      "title": "检查留给人的任务能否胜任",
+      "summary": "迁移建议：把“人工审核”细化成事实核查、论证检查或范围判断，并提供所需证据与时间。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L16",
+      "evidence": "先审查留下来的工作",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:bainbridge-practice",
+      "title": "在答案之前保留一次自己的判断",
+      "summary": "迁移建议：先预测或解释，再用原文和反馈纠错。让少量阅读留下可检验的理解。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L18",
+      "evidence": "为理解保留一次生成机会",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:bainbridge-response-time",
+      "title": "给接手留出理解时间",
+      "summary": "迁移建议：能暂停的任务先暂停、展示状态再交接；来不及理解的环节需要事先设计响应机制。",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L20",
+      "evidence": "按允许的响应时间安排责任",
+      "confidence": "likely",
+      "priority": 5
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:bainbridge-author-full",
+      "title": "",
+      "summary": "",
+      "about_entity": "work:ironies-of-automation",
+      "locator": "L4",
+      "evidence": "免费原文",
+      "confidence": "verified",
+      "priority": 5,
+      "label": "作者网站免费全文",
+      "url": "https://www.complexcognition.co.uk/2021/06/ironies-of-automation.html",
+      "note": "已阅读全文；原刊五页"
+    }
+  ],
+  "claims": [],
+  "relations": [],
+  "report_sections": [
+    {
+      "title": "两个理解问题",
+      "body": "1. 一个系统九成九的时间都运转良好，为什么剩余时刻的人机协作仍需单独设计？请给出因果链，不只回答“人会生疏”。\n\n2. 若 AI 把一篇论文解释得十分清楚，你会怎样区分“我能跟着解释走”和“我能够独立使用这个观点”？"
+    },
+    {
+      "title": "可选的十分钟小应用",
+      "body": "选昨天 Naur 文章中的一个判断。先不看解释，用三句话说明一个真实模块为什么这样设计；让 AI 只提出一个变更场景，自己预测影响；再查代码或原文纠错。记录一次具体修正即可，约十分钟，不必新增待办。"
+    },
+    {
+      "title": "周日消化回顾",
+      "body": "这是本周雷达已覆盖的三期，不代表本周全部活动。Hardy 的选择是“准备阅读”，系统以 reading 表示；具体已读到哪里、掌握了什么未知。Naur 尚无阅读反馈；今天这篇仍只是候选。\n\n三个入口可以连成一个问题：Hardy 让我们问工作为何值得；Naur 让我们问理解体现在哪里；Bainbridge 让我们问分工是否保留获得这种理解的机会。这是我们的跨文连接，不是三位作者共同提出的理论。\n\n本周只保留一个值得继续验证的问题：AI 接手更多过程后，我们凭什么判断自己的理解在增加？可以先用上面的小应用得到一条证据，无须为了完成雷达同时读完三篇作品。"
+    }
+  ],
+  "questions": [],
+  "actions": []
+}

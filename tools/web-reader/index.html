@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网页正文读取器</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3ea;
+      --ink: #20201d;
+      --muted: #6f6b61;
+      --line: #d8d1c3;
+      --accent: #ba4a2f;
+      --ok: #2f7257;
+      --bad: #a43e32;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(186, 74, 47, .10), transparent 26rem),
+        var(--paper);
+      font: 16px/1.65 ui-serif, Georgia, "Noto Serif SC", serif;
+    }
+    main { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 80px; }
+    h1 { margin: 0; font-size: clamp(30px, 5vw, 50px); line-height: 1.12; letter-spacing: -.04em; }
+    .lead { max-width: 720px; margin: 14px 0 30px; color: var(--muted); }
+    .reader-form { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+    input, button {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font: 15px/1.3 ui-sans-serif, system-ui, sans-serif;
+    }
+    input { min-width: 0; padding: 14px 15px; color: var(--ink); background: rgba(255,255,255,.72); }
+    input:focus { outline: 2px solid color-mix(in srgb, var(--accent), transparent 55%); border-color: var(--accent); }
+    button { padding: 13px 18px; color: white; background: var(--ink); cursor: pointer; }
+    button:hover { background: var(--accent); }
+    button:disabled { opacity: .55; cursor: wait; }
+    .reddit-tools {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,.36);
+    }
+    .reddit-home { color: var(--ink); background: transparent; }
+    .reddit-search-form { display: grid; grid-template-columns: 1fr minmax(130px, .42fr) auto; gap: 8px; }
+    .reddit-help { grid-column: 1 / -1; margin: 0; color: var(--muted); font: 12px/1.45 ui-sans-serif, system-ui, sans-serif; }
+    .status { min-height: 30px; margin: 18px 0 8px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+    .attempts { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .attempt {
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font: 13px/1.35 ui-sans-serif, system-ui, sans-serif;
+      background: rgba(255,255,255,.45);
+    }
+    .attempt.ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok), white 55%); }
+    .attempt.bad { color: var(--bad); border-color: color-mix(in srgb, var(--bad), white 55%); }
+    .confirmation {
+      margin: 16px 0 22px;
+      padding: 16px;
+      border: 1px solid color-mix(in srgb, var(--accent), white 35%);
+      border-radius: 12px;
+      background: rgba(186, 74, 47, .08);
+      font: 14px/1.55 ui-sans-serif, system-ui, sans-serif;
+    }
+    .confirmation[hidden] { display: none; }
+    .confirmation p { margin: 0 0 12px; }
+    .result { display: none; }
+    .result.visible { display: block; }
+    .result-head { display: flex; justify-content: space-between; align-items: end; gap: 18px; margin: 28px 0 12px; }
+    .result h2 { margin: 0; font-size: 22px; line-height: 1.35; }
+    .source { color: var(--muted); font: 13px/1.4 ui-sans-serif, system-ui, sans-serif; overflow-wrap: anywhere; }
+    .actions { display: flex; gap: 8px; flex: none; }
+    .actions button { padding: 8px 11px; color: var(--ink); background: transparent; }
+    .links-panel { margin: 18px 0; }
+    .links-panel[hidden] { display: none; }
+    .links-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 9px; }
+    .links-head h3 { margin: 0; font: 700 16px/1.4 ui-sans-serif, system-ui, sans-serif; }
+    .links-count { color: var(--muted); font: 13px/1.4 ui-sans-serif, system-ui, sans-serif; }
+    .link-list { display: grid; gap: 8px; }
+    .pager-list { display: flex; gap: 8px; margin-bottom: 10px; }
+    .pager-list:empty { display: none; }
+    .read-link {
+      display: grid;
+      gap: 3px;
+      width: 100%;
+      padding: 11px 13px;
+      text-align: left;
+      color: var(--ink);
+      background: rgba(255,255,255,.52);
+    }
+    .read-link:hover { color: white; }
+    .read-link-title { font-weight: 650; }
+    .read-link-url { overflow: hidden; color: var(--muted); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+    .read-link:hover .read-link-url { color: rgba(255,255,255,.78); }
+    .pager-link { width: auto; min-width: 120px; color: white; background: var(--accent); }
+    .pager-link .read-link-url { display: none; }
+    pre {
+      margin: 0;
+      padding: clamp(18px, 4vw, 36px);
+      max-height: 68vh;
+      overflow: auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.64);
+      font: 15px/1.72 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    @media (max-width: 640px) {
+      main { padding-top: 32px; }
+      .reader-form, .reddit-search-form, .reddit-tools { grid-template-columns: 1fr; }
+      .result-head { align-items: start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>网页打不开，正文先拿回来。</h1>
+    <p class="lead">粘贴公开网页地址。普通网页默认使用远程正文通道；Reddit 帖子优先读取公开归档；失败后再逐级回退。它不会绕过登录、付费墙或验证码。</p>
+    <form id="reader-form" class="reader-form">
+      <input id="url" name="url" type="url" inputmode="url" autocomplete="url" required
+             placeholder="https://example.com/article">
+      <button id="submit" type="submit">读取正文</button>
+    </form>
+    <section class="reddit-tools" aria-label="Reddit 只读浏览">
+      <button id="reddit-home" class="reddit-home" type="button">Reddit 首页</button>
+      <form id="reddit-search-form" class="reddit-search-form">
+        <input id="reddit-query" type="search" required placeholder="搜索 Reddit，例如 deepseek harness">
+        <input id="reddit-community" type="text" placeholder="社区（可选）">
+        <button type="submit">搜索 Reddit</button>
+      </form>
+      <p class="reddit-help">社区可填 DeepSeek 或 r/DeepSeek；明确填写社区时优先使用归档搜索，避免全站搜索限流。</p>
+    </section>
+    <div id="status" class="status" role="status"></div>
+    <div id="attempts" class="attempts"></div>
+    <section id="confirmation" class="confirmation" hidden>
+      <p>Scriptbin 要求由你本人确认已达到所在地阅读成人内容的法定年龄，并接受其页面条款。工具不会在后台替你确认。</p>
+      <button id="confirm-access" type="button">我符合条件，确认并读取正文</button>
+    </section>
+    <section id="result" class="result">
+      <div class="result-head">
+        <div>
+          <h2 id="title">读取结果</h2>
+          <a id="source" class="source" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="actions">
+          <button id="back" type="button" hidden>← 返回</button>
+          <button id="copy" type="button">复制</button>
+          <button id="download" type="button">下载 .md</button>
+        </div>
+      </div>
+      <section id="links-panel" class="links-panel" hidden>
+        <div class="links-head">
+          <h3>继续阅读</h3>
+          <span id="links-count" class="links-count"></span>
+        </div>
+        <div id="pager-list" class="pager-list"></div>
+        <div id="link-list" class="link-list"></div>
+      </section>
+      <pre id="content"></pre>
+    </section>
+  </main>
+  <script>
+    const form = document.querySelector('#reader-form');
+    const redditSearchForm = document.querySelector('#reddit-search-form');
+    const redditHome = document.querySelector('#reddit-home');
+    const redditQuery = document.querySelector('#reddit-query');
+    const redditCommunity = document.querySelector('#reddit-community');
+    const urlInput = document.querySelector('#url');
+    const submit = document.querySelector('#submit');
+    const status = document.querySelector('#status');
+    const attempts = document.querySelector('#attempts');
+    const confirmation = document.querySelector('#confirmation');
+    const confirmAccess = document.querySelector('#confirm-access');
+    const result = document.querySelector('#result');
+    const title = document.querySelector('#title');
+    const source = document.querySelector('#source');
+    const content = document.querySelector('#content');
+    const back = document.querySelector('#back');
+    const copy = document.querySelector('#copy');
+    const download = document.querySelector('#download');
+    const linksPanel = document.querySelector('#links-panel');
+    const linksCount = document.querySelector('#links-count');
+    const linkList = document.querySelector('#link-list');
+    const pagerList = document.querySelector('#pager-list');
+    let latest = null;
+    let scriptbinAccessConfirmed = false;
+    const readingHistory = [];
+
+    function showAttempts(items = []) {
+      attempts.replaceChildren(...items.map(item => {
+        const node = document.createElement('span');
+        node.className = `attempt ${item.ok ? 'ok' : 'bad'}`;
+        node.textContent = `${item.ok ? '✓' : '×'} ${item.route} · ${item.detail} · ${item.elapsed_ms} ms`;
+        return node;
+      }));
+    }
+
+    function showLinks(items = []) {
+      function createLink(item, navigation = false) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = `read-link${navigation ? ' pager-link' : ''}`;
+        const linkTitle = document.createElement('span');
+        linkTitle.className = 'read-link-title';
+        linkTitle.textContent = item.title;
+        const linkUrl = document.createElement('span');
+        linkUrl.className = 'read-link-url';
+        linkUrl.textContent = item.url;
+        button.append(linkTitle, linkUrl);
+        button.addEventListener('click', () => readUrl(item.url, true));
+        return button;
+      }
+      const navigation = items.filter(item => item.kind === 'navigation');
+      const readable = items.filter(item => item.kind !== 'navigation');
+      pagerList.replaceChildren(...navigation.map(item => createLink(item, true)));
+      linkList.replaceChildren(...readable.map(item => createLink(item)));
+      linksCount.textContent = `${readable.length} 个可读链接`;
+      linksPanel.hidden = items.length === 0;
+    }
+
+    async function readUrl(targetUrl, rememberCurrent) {
+      const previous = latest;
+      const shouldRemember = Boolean(
+        rememberCurrent && previous && previous.source_url !== targetUrl
+      );
+      if (shouldRemember) readingHistory.push(previous.source_url);
+      urlInput.value = targetUrl;
+      submit.disabled = true;
+      submit.textContent = '读取中…';
+      status.textContent = '正在选择可用读取通道；Reddit 帖子会优先尝试公开归档。';
+      confirmation.hidden = true;
+      showAttempts();
+      try {
+        let adultConfirmed = false;
+        try {
+          adultConfirmed = scriptbinAccessConfirmed && ['scriptbin.works', 'www.scriptbin.works'].includes(new URL(targetUrl).hostname);
+        } catch (_error) {}
+        const response = await fetch('/api/read', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({url: targetUrl, adult_confirmed: adultConfirmed})
+        });
+        const data = await response.json();
+        if (!response.ok || !data.ok) throw new Error(data.error || '读取失败');
+        latest = data;
+        showAttempts(data.attempts);
+        status.textContent = `已取回 ${data.content.length.toLocaleString()} 个字符，总耗时 ${data.elapsed_ms} ms。`;
+        title.textContent = data.title || '读取结果';
+        source.href = data.source_url;
+        source.textContent = data.source_url;
+        content.textContent = data.content;
+        showLinks(data.links || []);
+        confirmation.hidden = !data.requires_confirmation;
+        back.hidden = readingHistory.length === 0;
+        result.classList.add('visible');
+        window.scrollTo({top: result.offsetTop - 18, behavior: 'smooth'});
+      } catch (error) {
+        if (shouldRemember) readingHistory.pop();
+        status.textContent = `读取失败：${error.message}`;
+      } finally {
+        submit.disabled = false;
+        submit.textContent = '读取正文';
+      }
+    }
+
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      await readUrl(urlInput.value, true);
+    });
+
+    confirmAccess.addEventListener('click', async () => {
+      if (!latest?.requires_confirmation) return;
+      scriptbinAccessConfirmed = true;
+      await readUrl(latest.source_url, false);
+    });
+
+    redditHome.addEventListener('click', async () => {
+      await readUrl('https://www.reddit.com/', true);
+    });
+
+    redditSearchForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      const query = redditQuery.value.trim();
+      if (!query) return;
+      const community = redditCommunity.value.trim().replace(/^r\//i, '').replace(/[^A-Za-z0-9_]/g, '');
+      const path = community ? `/r/${community}/search/` : '/search/';
+      const params = new URLSearchParams({q: query, wr_offset: '0'});
+      if (community) params.set('restrict_sr', '1');
+      await readUrl(`https://www.reddit.com${path}?${params}`, true);
+    });
+
+    back.addEventListener('click', async () => {
+      if (!readingHistory.length) return;
+      const previousUrl = readingHistory.pop();
+      back.hidden = readingHistory.length === 0;
+      await readUrl(previousUrl, false);
+    });
+
+    copy.addEventListener('click', async () => {
+      if (!latest) return;
+      await navigator.clipboard.writeText(latest.content);
+      copy.textContent = '已复制';
+      setTimeout(() => copy.textContent = '复制', 1200);
+    });
+
+    download.addEventListener('click', () => {
+      if (!latest) return;
+      const blob = new Blob([latest.content], {type: 'text/markdown;charset=utf-8'});
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      const safeTitle = (latest.title || 'web-content').replace(/[\\/:*?"<>|]+/g, '-').slice(0, 80);
+      link.download = `${safeTitle}.md`;
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  </script>
+</body>
+</html>

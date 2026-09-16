@@ -1,0 +1,486 @@
+[
+  {
+    "run": "BV1tL4y1Y72y-p1",
+    "title": "CSAPP：malloc 的第一种实现",
+    "importFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/exports/localreader-20260907/CSAPP：malloc 的第一种实现 · 视频阅读报告.md",
+    "sourceFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/reading-guide.md",
+    "sourceSHA256": "7b8659026d2d3472e26afb4f65f4161e508ee4e4974c0a88046adb802318228f",
+    "supplementFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/code-verification.md",
+    "supplementSHA256": "cff3de3c2397f00418a4d44a928ce95cbe71c86b0a3177e93c85289feead443c",
+    "importSHA256": "4ea96fa258f30b9d6d0bbc8adc07b315a1ec0302719e87b5af802f462dbb1c31",
+    "images": [
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000005.jpg",
+        "sha256": "186f996b5779ee18be3a7193df0489072327d43ee96f056fae1784259d08349d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000010.jpg",
+        "sha256": "f91a4f9fe76a35ad8709d6737bf7a301d9627112ffe1c0471d5e57d0d4e96fb5"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000019.jpg",
+        "sha256": "fdf8537ba40e1473cd3da2890f2a8986b3e51d4d889a170137166cddd07f6765"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000025.jpg",
+        "sha256": "17ea466cc5b5b3beba1d401698f16cda8ad2dcf6daf4cca2a1c52040a66adfb4"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000033.jpg",
+        "sha256": "ff29d710f084d7197def113430283a2811205f9f5a2350802300660c10ad795c"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000046.jpg",
+        "sha256": "80605088acd5a887a9437f873f7bc04ba85f8349ad501e3f32abd45626919674"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000052.jpg",
+        "sha256": "9e78bba194b0bab7268f327fc3a2a20b61dd4d46fba4ee73c224234731e9f3e7"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000063.jpg",
+        "sha256": "ef2b0cfdd6e872c7864d82463e0296f206b88768b2791bbc9243c14e64036f1f"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000069.jpg",
+        "sha256": "c21862c153e53dfd8f8a2eae5c0b518869d0579b635f9d83c67f13626d4af916"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000079.jpg",
+        "sha256": "3bf58b61024e07a192ff681b3ed72551061c5cb4e2b5d16cb7e1466da1ec8037"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000082.jpg",
+        "sha256": "59d1732f77441ee60126fb8b4e1b37848a1328149650c9025d20a4858248c6bf"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000092.jpg",
+        "sha256": "c18aa7381b59796687473c186824fe638da42dec24452f6cced630a65920a5e6"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000097.jpg",
+        "sha256": "5a3d561b2caef8277ce1adc1ea66c81ce45c943be4642848a8ed88a067c97290"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000108.jpg",
+        "sha256": "3d48627c109b5ea51b672f479d8227dd9e8cfb23121adb5364f82d1ade48eb71"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1tL4y1Y72y-p1/frames/000109.jpg",
+        "sha256": "b0d0d2135c40b5aa6c5952be6fed17f95d9b6032170e15a0d970c66b120ac828"
+      }
+    ],
+    "captureID": "D71E6230-E50B-4162-98B5-40D962E5AB18",
+    "bookID": "BD484529-3D00-41E0-A095-887C9686C90F",
+    "topicCreation": {
+      "createdAt": "2026-09-07T06:27:04.860Z",
+      "id": "E2415D37-DA5D-6F7E-6756-38079A9F825B",
+      "question": "从块布局到切分与合并，如何用不变量检查 malloc 的第一稿？",
+      "sources": [],
+      "title": "CSAPP：malloc 的第一种实现",
+      "updatedAt": "2026-09-07T06:27:04.860Z"
+    },
+    "captureResult": {
+      "author": "assistant",
+      "body": "已导入《CSAPP：malloc 的第一种实现 · 视频阅读报告》。\n\n内容为本次视频阅读任务的 AI 整理报告，保留全文、15 张关键截图、章节时间定位及完整核验附录。\n\n[来源视频](https://www.bilibili.com/video/BV1tL4y1Y72y/?p=1)\n\n阅读入口：本主题的资料中打开《CSAPP：malloc 的第一种实现 · 视频阅读报告》，可继续高亮、批注与讨论。\n\n这是一份 AI 阅读材料；导入动作不记录为用户已理解。\n",
+      "createdAt": "2026-09-07T06:27:04.880Z",
+      "id": "D71E6230-E50B-4162-98B5-40D962E5AB18",
+      "kind": "想法",
+      "origin": "B 站视频阅读任务的 AI 报告；用户授权导入 LocalReader",
+      "relatedEntryIDs": [],
+      "schemaVersion": 1,
+      "sources": [
+        {
+          "bookID": "BD484529-3D00-41E0-A095-887C9686C90F",
+          "bookTitle": "CSAPP：malloc 的第一种实现 · 视频阅读报告",
+          "fileName": "BD484529-3D00-41E0-A095-887C9686C90F.md",
+          "kind": "markdown",
+          "quote": "",
+          "readerNote": "",
+          "sha256": "4ea96fa258f30b9d6d0bbc8adc07b315a1ec0302719e87b5af802f462dbb1c31"
+        }
+      ],
+      "topic": "CSAPP：malloc 的第一种实现",
+      "updatedAt": "2026-09-07T06:27:04.880Z"
+    },
+    "installedFile": "/Users/houguanqun/Library/Application Support/LocalReader/Books/BD484529-3D00-41E0-A095-887C9686C90F.md",
+    "verifiedSHA256": "4ea96fa258f30b9d6d0bbc8adc07b315a1ec0302719e87b5af802f462dbb1c31",
+    "verification": "File bytes and all embedded image hashes match; topic reference readable and version consistent."
+  },
+  {
+    "run": "BV1CQt365EzW-p1",
+    "title": "提示词工程：上下文、验证与个人增量",
+    "importFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/exports/localreader-20260907/提示词工程：上下文、验证与个人增量 · 视频阅读报告.md",
+    "sourceFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/reading-guide.md",
+    "sourceSHA256": "39451adfc49aec2fbf675102a9cbc6f6d0352f80cbaabdbbd81162d549e027ef",
+    "supplementFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/coverage-review.md",
+    "supplementSHA256": "380983b7bce3e60e8bc9f1e0574d7875ed29018910b7cf95b33154ee2d9dda5e",
+    "importSHA256": "c71e441aaab58a9dde28dc29f0f512692505a47e329d62476b582f756e3da10e",
+    "images": [
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000003.jpg",
+        "sha256": "0871c127edb717da6dfe8c2ddd217d3eda59efc959e1b7399a0654bed885025d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000010.jpg",
+        "sha256": "62b8cd98f4d9c0753fd14cdebf9370eb5131329c6b0abd396254058009d60dde"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000016.jpg",
+        "sha256": "4ef30a7114215a03f2f62dd23d4cbaadb66a78449c884d98cd554579d28b8187"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000023.jpg",
+        "sha256": "044a56da41dd7d3bdec192c8ac5a2ef180af6dfa7ea94163b29e961697d5ae86"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000035.jpg",
+        "sha256": "ae15c71ddaa89faf7709a12857c785c923726ba335e30dd7fac51f1351c1f0eb"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000042.jpg",
+        "sha256": "83a60682234a8f7b1f263b46daa2e568140f174adc20247fc5d1719ac814261b"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000046.jpg",
+        "sha256": "e99e6d315ad056aece5ca7b7953dc2be2807333a932b674e8a2b98a8bab4ba8d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000052.jpg",
+        "sha256": "9a43328eb77b6e9ccc2a6bad4009ad7f5c38717e59fd6877cee40d7e76b1f612"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000062.jpg",
+        "sha256": "0917a8d485812df4a53dd7b50b1ae0623838e43ed9ff3b446b7a8bec0674391f"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000071.jpg",
+        "sha256": "0baa1b8a328139c71b29be4d05aba39e5daf56ecdd8b09247ff8f909d93db860"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000078.jpg",
+        "sha256": "3338bf891029c97cde62808aeaafd8b5462855582ebc135f1c5796018f18db6c"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000085.jpg",
+        "sha256": "442452442671061a9e5aef4e0d1389dee35b11fe19472e1026935db6c4002052"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000092.jpg",
+        "sha256": "f792da28ddc4eccc277ffac1bf598fbe06f8d8ec4f998fca6f775281ec600346"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000095.jpg",
+        "sha256": "86f8b9f03d2840f5f791f0df05fe06b0d1b9e22889dda84e42d579435e9e0afd"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000102.jpg",
+        "sha256": "919a6dac191bcda6e14a940028de1b5f19b87a888f97a7313bc9e7ed051f52ed"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000106.jpg",
+        "sha256": "3e686715caa23f82d7b94cd7a9bcf471b73eda79935ce6a0542a704b42ddd372"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000111.jpg",
+        "sha256": "cda9a65c41106b2a8684d460c5d8780b85d7abe8fda6b35cab0f07e9ad5c88cb"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000114.jpg",
+        "sha256": "e277b18da516bd502f9ebcf3be23837bdad1a111d52e92d852da9898efc8c139"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000132.jpg",
+        "sha256": "ee548c8311d5d6ffb8cd533aa8aa8281bbc658abb871705f138ca99514c6fcda"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000140.jpg",
+        "sha256": "34cb7467115a7ddfce2dd539983f986f8cf10cfdc1ca48c18703014f1de5ba8d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000160.jpg",
+        "sha256": "5c1fb529b69e4678eb052cd415daa1dabc7767040fa594c2c330bba259914485"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000165.jpg",
+        "sha256": "f75cec8be6b0b1bd2add33dbcbacd81566b1c24cd929792d85f1c2f556d73979"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000172.jpg",
+        "sha256": "4cff64aa2fb86362870666f2163b4504475841d6fa320fceef509b6e52c8d6fc"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000181.jpg",
+        "sha256": "59a1a74ccacfb38ae3b445365b40c146df49fcd676c73c56e1721dd68e08fc59"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000187.jpg",
+        "sha256": "05bae32d721bbf8488c81ba93e91035b2e7f58b711aaa90de9959518919c8bf2"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000204.jpg",
+        "sha256": "507c9929cac63c0b88223b7228e58ffb19d3703a137bbf6adcf71e800cd76d41"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000216.jpg",
+        "sha256": "a2925711d741ccdf9c831afa04fe0846e98179d8214c8392192e2f7219914f52"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000225.jpg",
+        "sha256": "57add33d57a411bb7d89f3c0743eeee08afce6e292738736a5d839f6f29efb28"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000242.jpg",
+        "sha256": "e97822178da5872c887c6c4750c1cb44fd14e23715079f9e9e6db90dc3982244"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000251.jpg",
+        "sha256": "291bc440383fb78f58e70965e2378374c32148e0860d7be390ce4ad968b9be2d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000261.jpg",
+        "sha256": "36c71b65df342847b77213c9f02b35c9500c3f03abc5afd7cee721bdba555314"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000280.jpg",
+        "sha256": "c77396c1977febfd6c77ea632d6b80134d2f93d5458e6af87b197e243cc83628"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000287.jpg",
+        "sha256": "6735a55c334f486b9105462152001199269c41e15f62849c4da04366141a071d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000300.jpg",
+        "sha256": "cdf5142aa09db52c8be897798a45d9e452574101e9c28817348a91acf7231be6"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000308.jpg",
+        "sha256": "489680c5b92c63d0d0979f9b06d29962e035dec655212ae556092d6be3f849d4"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000312.jpg",
+        "sha256": "3934f019b7db4f3920a98869aad9265d2354105bb16caee60f65d479f3d027dd"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000322.jpg",
+        "sha256": "72128edc83d091108a4ab1be3ab477726422252a7462b3ab473ed0153469c91e"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000338.jpg",
+        "sha256": "f30f0a7f4b55374fa2769897c7be180c0bde48584b2a76945db13459d72f89e9"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000347.jpg",
+        "sha256": "e2efc2c796b2fbbf02e56da8660d52beddee137a4dd40668848eaec761fddefc"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000352.jpg",
+        "sha256": "2c4ffe7476ec82f8e3aa2d524ce1340210b50c92457d4c7db9850ac0aa52f890"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000367.jpg",
+        "sha256": "db87b6fe2cc3db88c3423c5876d3f2f85c56b19aaa487b8194e19ca11fac320d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000375.jpg",
+        "sha256": "5a93cde6263b5ff4b11ab0b9297c535293123b2b7ab181d69cc20a5ed11603cb"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000380.jpg",
+        "sha256": "cab2c5c4bdd8ad4b9648e85f404be52f53ce83d0e43691291ff55ca459893453"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000393.jpg",
+        "sha256": "4d6efc27ece8d8ff7f9667d12489df8b12ade40f77fa553b16e6e5c96da07bf6"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000398.jpg",
+        "sha256": "08f2d9e668740bca26af9e180c6df286405841c53acb883134a9863b34915911"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1CQt365EzW-p1/visual-scan/frames/000401.jpg",
+        "sha256": "2a6a3217bb10b58a88bf8503727f46157812697fcfd3bf85758701a656eead91"
+      }
+    ],
+    "captureID": "DFB4F6AB-A1E3-4D5B-93E3-E5CD6F97E6CC",
+    "bookID": "02A9E469-387E-434E-A950-DD1674175769",
+    "topicCreation": {
+      "createdAt": "2026-09-07T06:27:04.943Z",
+      "id": "6E964B9E-327B-1C7F-9704-27373DA19F36",
+      "question": "怎样用上下文、可核验反馈与个人记忆，让模型真正增加知识？",
+      "sources": [],
+      "title": "提示词工程：上下文、验证与个人增量",
+      "updatedAt": "2026-09-07T06:27:04.943Z"
+    },
+    "captureResult": {
+      "author": "assistant",
+      "body": "已导入《提示词工程：上下文、验证与个人增量 · 视频阅读报告》。\n\n内容为本次视频阅读任务的 AI 整理报告，保留全文、46 张关键截图、章节时间定位及完整核验附录。\n\n[来源视频](https://www.bilibili.com/video/BV1CQt365EzW/?p=1)\n\n阅读入口：本主题的资料中打开《提示词工程：上下文、验证与个人增量 · 视频阅读报告》，可继续高亮、批注与讨论。\n\n这是一份 AI 阅读材料；导入动作不记录为用户已理解。\n",
+      "createdAt": "2026-09-07T06:27:04.960Z",
+      "id": "DFB4F6AB-A1E3-4D5B-93E3-E5CD6F97E6CC",
+      "kind": "想法",
+      "origin": "B 站视频阅读任务的 AI 报告；用户授权导入 LocalReader",
+      "relatedEntryIDs": [],
+      "schemaVersion": 1,
+      "sources": [
+        {
+          "bookID": "02A9E469-387E-434E-A950-DD1674175769",
+          "bookTitle": "提示词工程：上下文、验证与个人增量 · 视频阅读报告",
+          "fileName": "02A9E469-387E-434E-A950-DD1674175769.md",
+          "kind": "markdown",
+          "quote": "",
+          "readerNote": "",
+          "sha256": "c71e441aaab58a9dde28dc29f0f512692505a47e329d62476b582f756e3da10e"
+        }
+      ],
+      "topic": "提示词工程：上下文、验证与个人增量",
+      "updatedAt": "2026-09-07T06:27:04.960Z"
+    },
+    "installedFile": "/Users/houguanqun/Library/Application Support/LocalReader/Books/02A9E469-387E-434E-A950-DD1674175769.md",
+    "verifiedSHA256": "c71e441aaab58a9dde28dc29f0f512692505a47e329d62476b582f756e3da10e",
+    "verification": "File bytes and all embedded image hashes match; topic reference readable and version consistent."
+  },
+  {
+    "run": "BV17K4y1N7Q2-p1",
+    "title": "CSAPP：无符号整数与二进制补码",
+    "importFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/exports/localreader-20260907/CSAPP：无符号整数与二进制补码 · 视频阅读报告.md",
+    "sourceFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/reading-guide.md",
+    "sourceSHA256": "3eb268df055c3b69213bd4f0af57da2cac0648902609c786ebf596ef2800fb59",
+    "supplementFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/integer-verification.md",
+    "supplementSHA256": "118a2dcc3fe9d9f03aeed0e69e7adf2e61f7124ec623e0fe0b7c3bf1df6bdd76",
+    "importSHA256": "2d2d32cae278ac8bd9ebd85f5be337a4a8be7cd562471e8708570f98d3242200",
+    "images": [
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000016.jpg",
+        "sha256": "4d2b14bc9dff1602cb3a9870c39a40cff8eae19ce88df1ebabda36448410edf5"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000029.jpg",
+        "sha256": "f9b82d2b95cfd6e3157bec3a99675a4fc3b49513b0570bed461202d65b4ed4b3"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000037.jpg",
+        "sha256": "5cbadfae7b9d1d81c5a3c0c80c8017840f8c1cf4f7184fc956452a82ac0677ba"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000049.jpg",
+        "sha256": "dd4272cc946e0046fe516e09e8b17ce3b1fee1ef66ed14d260e99a6db84233ce"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000054.jpg",
+        "sha256": "f5a1c6322b461c7a6fdea65b864859fd629c6b0016ac3c5b1ceb03f7b7d026ed"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000068.jpg",
+        "sha256": "a593720304d62033aba9207bb40e1bfc3146936876e7e0ccd9d413b05a33c2da"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000077.jpg",
+        "sha256": "7afd74e0f738535669f7cba75965e537c7ec07028bb0dd5f54679bedd6d686e6"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000083.jpg",
+        "sha256": "ca43e0cd61416ef173607a7e1a9f7308413c2f96fc6aec45fc2bfc1d0d292ab3"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000090.jpg",
+        "sha256": "5d8800f06ddde1b2a70c5f7a80960326243138f4effbfd25eb0a47539ec2c4bf"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000095.jpg",
+        "sha256": "649d2c3c6073ea733ce3eb76b79b01f12b360877aa4d187b897b87e5b720dd3c"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000102.jpg",
+        "sha256": "f1a03ccde68335c2114575a1149ded0682ecbd2e0aec016d3144c0191ac7c795"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000107.jpg",
+        "sha256": "20f19013182ee53c3b6314e2b9ff736e1b8eec149c6dc0ec3752a1a9b0a2afad"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000116.jpg",
+        "sha256": "a23025983ceffd63310cdeaa93aed1972b66567c99fae208dc18d2318e357a6d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000127.jpg",
+        "sha256": "c3079d328b316b86a2f1fc812722ac15c88ab09962d8ece2f1f75bdbf51e87d1"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000135.jpg",
+        "sha256": "48f3372af24db82757bb28aaf33b87ecd241d183555ce7730aec9e9365650c26"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000143.jpg",
+        "sha256": "11ecfc32a8120dc9482127518f2c2c982805f7d576cfc03590e51a067bfce39b"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000160.jpg",
+        "sha256": "f0ebd3e7cb0331f7d8439d6b3117f0fb70323086683c79644ee7be2919fc54e7"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000172.jpg",
+        "sha256": "afd064c9414153c35d4a0f3f62095130d724543a6db992b52e817a22edc4daa9"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000186.jpg",
+        "sha256": "9567eb4ba2a1fcec74a7adaa35f0974bae64f5a61d382c6e1e5c7fa40084d367"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000194.jpg",
+        "sha256": "b9bc5a5faedd0aa7e80a6b37e65cb0617f0936b96ecc245231a5a2de94e81145"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000201.jpg",
+        "sha256": "c710b2cb0f8872bedf0473de9c16a3c5f853df31e8e69ba50aeefbf9c746e23a"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000212.jpg",
+        "sha256": "cd0942da3f2971504c1283a1929aa0773f2de802ffa18a13c74fa1cc100b0e88"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000222.jpg",
+        "sha256": "192aefddb007ba454373b621d47ca8e835d7fef9713caa1d15c45bcfbfa1bc8d"
+      },
+      {
+        "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV17K4y1N7Q2-p1/frames/000232.jpg",
+        "sha256": "a77ca61bccb9245315cc705cdb7f7ebd04386f020190c9e86a9b4e85d50e8deb"
+      }
+    ],
+    "captureID": "9DE1C96E-225C-4345-8764-909BB1A9EFD0",
+    "bookID": "64085402-1A06-4672-B7D8-7161183DB30B",
+    "topicCreation": {
+      "createdAt": "2026-09-07T06:27:05.026Z",
+      "id": "CCCF2F9E-88A3-EC70-D41E-D55DC1E29285",
+      "question": "从位串与模运算推导补码，分清硬件进位与语言层面的溢出。",
+      "sources": [],
+      "title": "CSAPP：无符号整数与二进制补码",
+      "updatedAt": "2026-09-07T06:27:05.026Z"
+    },
+    "captureResult": {
+      "author": "assistant",
+      "body": "已导入《CSAPP：无符号整数与二进制补码 · 视频阅读报告》。\n\n内容为本次视频阅读任务的 AI 整理报告，保留全文、24 张关键截图、章节时间定位及完整核验附录。\n\n[来源视频](https://www.bilibili.com/video/BV17K4y1N7Q2/?p=1)\n\n阅读入口：本主题的资料中打开《CSAPP：无符号整数与二进制补码 · 视频阅读报告》，可继续高亮、批注与讨论。\n\n这是一份 AI 阅读材料；导入动作不记录为用户已理解。本篇仅覆盖合集默认 P1。\n",
+      "createdAt": "2026-09-07T06:27:05.045Z",
+      "id": "9DE1C96E-225C-4345-8764-909BB1A9EFD0",
+      "kind": "想法",
+      "origin": "B 站视频阅读任务的 AI 报告；用户授权导入 LocalReader",
+      "relatedEntryIDs": [],
+      "schemaVersion": 1,
+      "sources": [
+        {
+          "bookID": "64085402-1A06-4672-B7D8-7161183DB30B",
+          "bookTitle": "CSAPP：无符号整数与二进制补码 · 视频阅读报告",
+          "fileName": "64085402-1A06-4672-B7D8-7161183DB30B.md",
+          "kind": "markdown",
+          "quote": "",
+          "readerNote": "",
+          "sha256": "2d2d32cae278ac8bd9ebd85f5be337a4a8be7cd562471e8708570f98d3242200"
+        }
+      ],
+      "topic": "CSAPP：无符号整数与二进制补码",
+      "updatedAt": "2026-09-07T06:27:05.045Z"
+    },
+    "installedFile": "/Users/houguanqun/Library/Application Support/LocalReader/Books/64085402-1A06-4672-B7D8-7161183DB30B.md",
+    "verifiedSHA256": "2d2d32cae278ac8bd9ebd85f5be337a4a8be7cd562471e8708570f98d3242200",
+    "verification": "File bytes and all embedded image hashes match; topic reference readable and version consistent."
+  }
+]

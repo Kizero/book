@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-11-collaboration-reading-dossier",
+  "captured_at": "2026-09-11T01:08:11.395Z",
+  "artifact": {
+    "title": "《成功合作的十条简单规则》阅读档案",
+    "kind": "essay_reading_dossier",
+    "author": "信息雷达",
+    "raw_path": "inbox/2026-09-11-collaboration-reading-dossier.md",
+    "source_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030044",
+    "provenance": "full_text_and_research",
+    "sha256": "ada3959038946bf58b287e5dbb7f7a088be4d2b4f84afc01dce5f0f5cf90acec"
+  },
+  "report_note": "2007年作者经验短文，非普遍定律；原作CC BY，中文为AI全文翻译。举例与批评已另作区分。",
+  "entities": [
+    {
+      "id": "work:ten-rules-successful-collaboration",
+      "name": "成功合作的十条简单规则：别把擅自改计划当成惊喜",
+      "type": "essay",
+      "aliases": [
+        "Ten Simple Rules for a Successful Collaboration"
+      ],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "你发现了一个更好的方向，兴冲冲改了计划；合作伙伴却因此停工。这篇短文值得读的地方，是把“合作要有诚意”拆成具体的承诺：谁做什么、变化怎么商量、功劳怎么分，以及什么情况下应该退出。",
+      "why_it_matters": "你曾写过“要先从计划开始”。今天不再重复这一点，而往后追问：开始时说清楚了，过程中变了怎么办？作者谈科研合作，但不要求你一定迁移到自己的项目；看清共同工作如何成立，本身就值得。",
+      "recommended_action": "读关键段落即可。先花3—5分钟看本期导读；愿意深入时，用约15分钟读规则二、三、五、七、八，再对照下面的批评。原文只有两页，不必为凑时长继续扩展阅读。"
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:collaboration-2",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "一篇关于合作的文章，本身就是一次合作",
+      "summary": "当时维森斯在科罗拉多大学博尔德分校从事研究，伯恩则是期刊主编。文末透露：送到主编手里的不是一句“你能不能写写合作”，而是一份只需小改的规则草稿。两人共同署名，并用这件事说明第八条——贡献应该得到承认。这段成文经过，比列头衔更能说明他们说的合作是什么。",
+      "locator": "L13",
+      "evidence": "当时维森斯在科罗拉多大学博尔德分校从",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "origin"
+    },
+    {
+      "id": "context:collaboration-3",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "问题越来越复杂，合作者也越来越多",
+      "summary": "文章用1981—2001年PNAS论文平均作者数从3.9增至8.4的资料开场：要理解复杂生命系统，需要不同领域的专家。这是作者在2007年面对的背景，不是今天的最新统计。十条规则不是实验验证的定律，而是他们试图把合作中的经验说清楚。",
+      "locator": "L17",
+      "evidence": "文章用1981—2001年PNAS论",
+      "confidence": "likely",
+      "priority": 4,
+      "kind": "biography"
+    },
+    {
+      "id": "context:collaboration-8",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "说“不”的自由，并不是人人都有",
+      "summary": "“给三次机会再走”是作者的经验建议，并无证据表明三次对所有合作都合适。若一位早期研究者的经费、数据或毕业进度依赖资深合作者，退出就不只是减少下一篇论文的联系；反过来，严重的不当行为也不需要等够三次。书面约定能减少误解，却不能自动改变谁能决定署名、谁承担延期成本。阅读时应补问：谁有权调整，谁有可行退路，争议由谁处理？这是本期批评，不是原文已解决的方案。",
+      "locator": "L37",
+      "evidence": "“给三次机会再走”是作者的经验建议，",
+      "confidence": "likely",
+      "priority": 5,
+      "kind": "counterpoint"
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:collaboration-4",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "先谈贡献与分工，也给变化留一个入口",
+      "summary": "作者要求一开始说明谁做什么，尽早讨论署名预期，但又允许新想法改变合作。关键是变化后重新讨论时间和贡献分配，而不是把第一次分工当成永不能改的合同。只有热情相投，却对各自承诺理解不同，后面仍可能冲突。",
+      "locator": "L21",
+      "evidence": "作者要求一开始说明谁做什么，尽早讨论",
+      "confidence": "likely",
+      "priority": 5
+    },
+    {
+      "id": "method:collaboration-5",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "更好的方案，也可能是一次违约",
+      "summary": "设想甲答应周五给乙一批数据，乙据此安排分析。甲突然发现更有意思的问题，转去研究，觉得新结果会让乙惊喜。乙却只知道原来的约定，到周五才发现自己的安排落空。问题不在新想法好不好，而在甲改变了乙赖以行动的条件，却没有先商量。这个情境是本期举例；原文规则三明确提醒，别以为合作者必然欢迎你未经讨论的创新。",
+      "locator": "L25",
+      "evidence": "设想甲答应周五给乙一批数据，乙据此安",
+      "confidence": "likely",
+      "priority": 4
+    },
+    {
+      "id": "method:collaboration-6",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "尊重不是客气，是让对方来得及重排工作",
+      "summary": "文章把尊重落在一件具体事上：知道自己要延期，就告知等待数据的合作者，让他能作别的安排。共享数据和实验方案，也让双方能够共同理解问题，而不是只在最后交换成品。这里的信任靠可观察的行为维持，不只是关系融洽。",
+      "locator": "L29",
+      "evidence": "文章把尊重落在一件具体事上：知道自己",
+      "confidence": "likely",
+      "priority": 3
+    },
+    {
+      "id": "method:collaboration-7",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "退出与继续，都不该只看此刻的情绪",
+      "summary": "作者同时提醒两件事：不要无限拖着已经失效的合作，也不要因为一次危机就放弃可能产生突破的关系。值得留下的不只是论文，还有双方逐渐理解彼此工作习惯、长短处的积累。继续还是退出，需要判断问题能否修复，而不是只数共同发表了几篇。",
+      "locator": "L33",
+      "evidence": "作者同时提醒两件事：不要无限拖着已经",
+      "confidence": "likely",
+      "priority": 2
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:collaboration-zh",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "title": "完整中文阅读件",
+      "summary": "全文、致谢及五项参考文献均保留。",
+      "locator": "L9",
+      "evidence": "中文：",
+      "confidence": "verified",
+      "priority": 5,
+      "label": "打开完整中文版",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030044",
+      "local_path": "library/成功合作的十条简单规则-中文全译.md",
+      "note": "原作按CC BY许可发布；译文与导读分开。"
+    }
+  ],
+  "claims": [],
+  "relations": [],
+  "questions": [],
+  "actions": [],
+  "report_sections": [
+    {
+      "title": "两个可以带着读的问题",
+      "body": "1. 作者一面说任务可以演变，一面说不要擅自改计划。这两条在什么条件下并不矛盾？\n\n2. 如果一方掌握经费和数据，另一方没有现实的退出选择，哪些规则还能帮助后者，哪些就不够用了？"
+    },
+    {
+      "title": "可选的五分钟小尝试",
+      "body": "拿一项熟悉的合作作例子，只补完一句话：“如果我改变了___，谁会据此重新安排___，所以我应当在___之前告诉他。”不用整理完整制度，先找出一个容易被漏掉的依赖。这个尝试是本期建议，不是待办。"
+    },
+    {
+      "title": "今天的阅读件",
+      "body": "[完整中文版](../library/成功合作的十条简单规则-中文全译.md)已导入LocalReader，书名“成功合作的十条简单规则-中文全译”。开头、中段、结尾显示正常，实际副本与library文件一致。不改变你的阅读状态。"
+    }
+  ]
+}

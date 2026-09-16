@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><base href="../"><title>茶会委托 · 画面检查</title><style>body{margin:16px;background:#e9ecd9;color:#315745;font:14px system-ui}canvas{width:min(100%,960px);aspect-ratio:960/600;display:block}button{padding:10px;margin:8px}</style><h2>茶会委托 · 固定画面检查</h2><button id="before">首领与落点预警</button><button id="after">收工茶会</button><canvas id="scene" aria-label="茶会委托画面"></canvas><script type="module">
+import {Game} from './src/engine.js';import {Renderer} from './src/render.js';import {loadAssets} from './src/assets.js?v=7';
+const g=new Game({seed:96});g.room=4;g.setupRoom();const r=new Renderer(document.querySelector('canvas'),g,await loadAssets());
+document.querySelector('#before').onclick=()=>{g.state='playing';g.setupRoom();g.enemies.find(e=>e.type==='boss').bucketTimer=0;g.update(1/60);g.state='paused';};
+document.querySelector('#after').onclick=()=>{g.state='playing';g.finishRoom('clean');for(let i=0;i<100;i++)g.update(1/60);};
+document.querySelector('#before').click();function draw(){for(const event of g.drainEvents())r.event(event);r.draw(1/60);requestAnimationFrame(draw);}draw();
+</script></html>

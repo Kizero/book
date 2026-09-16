@@ -1,0 +1,333 @@
+{
+  "results": [
+    {
+      "gadget": "bubble",
+      "weapon": "pressure",
+      "summary": {
+        "version": 3,
+        "equipment": {
+          "bubble": 1,
+          "electric": 0,
+          "mop": 0,
+          "duck": 0
+        },
+        "weapon": "pressure",
+        "roomResults": [],
+        "seed": 1789371972357,
+        "state": "playing",
+        "room": 1,
+        "seconds": 2.3,
+        "stats": {
+          "shots": 4,
+          "kills": 2,
+          "cleaned": 114.64095063664266,
+          "hits": 0,
+          "chains": 0,
+          "rooms": 0,
+          "bubblePops": 1
+        },
+        "loadout": [
+          "bubble"
+        ],
+        "events": [
+          {
+            "t": 0,
+            "room": 1,
+            "type": "start"
+          },
+          {
+            "t": 0.22,
+            "room": 1,
+            "type": "fire",
+            "charge": 26,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.07,
+            "room": 1,
+            "type": "fire",
+            "charge": 22,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.08,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "bubble"
+          },
+          {
+            "t": 1.48,
+            "room": 1,
+            "type": "fire",
+            "charge": 70,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.65,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "shot"
+          },
+          {
+            "t": 1.9,
+            "room": 1,
+            "type": "fire",
+            "charge": 39,
+            "weapon": "pressure"
+          }
+        ]
+      }
+    },
+    {
+      "gadget": "electric",
+      "weapon": "foam",
+      "summary": {
+        "version": 3,
+        "equipment": {
+          "bubble": 0,
+          "electric": 1,
+          "mop": 0,
+          "duck": 0
+        },
+        "weapon": "foam",
+        "roomResults": [],
+        "seed": 1789371974267,
+        "state": "playing",
+        "room": 1,
+        "seconds": 2.3,
+        "stats": {
+          "shots": 5,
+          "kills": 1,
+          "cleaned": 75.41837716592734,
+          "hits": 0,
+          "chains": 0,
+          "rooms": 0,
+          "conducted": 2
+        },
+        "loadout": [
+          "electric"
+        ],
+        "events": [
+          {
+            "t": 0,
+            "room": 1,
+            "type": "start"
+          },
+          {
+            "t": 0.22,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "foam"
+          },
+          {
+            "t": 0.42,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "foam"
+          },
+          {
+            "t": 0.57,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "suction"
+          },
+          {
+            "t": 0.83,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "foam"
+          },
+          {
+            "t": 1.9,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "foam"
+          },
+          {
+            "t": 2.1,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "foam"
+          }
+        ]
+      }
+    },
+    {
+      "gadget": "mop",
+      "weapon": "pressure",
+      "summary": {
+        "version": 3,
+        "equipment": {
+          "bubble": 0,
+          "electric": 0,
+          "mop": 1,
+          "duck": 0
+        },
+        "weapon": "pressure",
+        "roomResults": [],
+        "seed": 1789371976256,
+        "state": "playing",
+        "room": 1,
+        "seconds": 2.3,
+        "stats": {
+          "shots": 5,
+          "kills": 2,
+          "cleaned": 141.94685386226467,
+          "hits": 0,
+          "chains": 0,
+          "rooms": 0,
+          "relays": 1
+        },
+        "loadout": [
+          "mop"
+        ],
+        "events": [
+          {
+            "t": 0,
+            "room": 1,
+            "type": "start"
+          },
+          {
+            "t": 0.22,
+            "room": 1,
+            "type": "fire",
+            "charge": 42,
+            "weapon": "pressure"
+          },
+          {
+            "t": 0.57,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "suction"
+          },
+          {
+            "t": 0.63,
+            "room": 1,
+            "type": "fire",
+            "charge": 41,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.05,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.28,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "shot"
+          },
+          {
+            "t": 1.47,
+            "room": 1,
+            "type": "fire",
+            "charge": 20,
+            "weapon": "pressure"
+          },
+          {
+            "t": 2.1,
+            "room": 1,
+            "type": "fire",
+            "charge": 28,
+            "weapon": "pressure"
+          }
+        ]
+      }
+    },
+    {
+      "gadget": "duck",
+      "weapon": "pressure",
+      "summary": {
+        "version": 3,
+        "equipment": {
+          "bubble": 0,
+          "electric": 0,
+          "mop": 0,
+          "duck": 1
+        },
+        "weapon": "pressure",
+        "roomResults": [],
+        "seed": 1789371978211,
+        "state": "playing",
+        "room": 1,
+        "seconds": 2.4,
+        "stats": {
+          "shots": 4,
+          "kills": 2,
+          "cleaned": 125.92205714833023,
+          "hits": 0,
+          "chains": 0,
+          "rooms": 0,
+          "duckCleaned": 4.220003187656403
+        },
+        "loadout": [
+          "duck"
+        ],
+        "events": [
+          {
+            "t": 0,
+            "room": 1,
+            "type": "start"
+          },
+          {
+            "t": 0.22,
+            "room": 1,
+            "type": "fire",
+            "charge": 42,
+            "weapon": "pressure"
+          },
+          {
+            "t": 0.58,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "suction"
+          },
+          {
+            "t": 0.63,
+            "room": 1,
+            "type": "fire",
+            "charge": 39,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.27,
+            "room": 1,
+            "type": "fire",
+            "charge": 21,
+            "weapon": "pressure"
+          },
+          {
+            "t": 1.48,
+            "room": 1,
+            "type": "kill",
+            "enemy": "blob",
+            "kind": "shot"
+          },
+          {
+            "t": 1.9,
+            "room": 1,
+            "type": "fire",
+            "charge": 30,
+            "weapon": "pressure"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "mobileStart": true
+}

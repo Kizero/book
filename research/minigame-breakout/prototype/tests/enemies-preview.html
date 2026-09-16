@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><base href="../"><title>新怪物与预警 · 开发检查</title><style>body{background:#e9ecd9;color:#315745;font:14px system-ui;margin:16px}canvas{width:100%;aspect-ratio:960/600;border-radius:18px}p{line-height:1.8}button{padding:10px;margin:6px}</style><h2>新怪物与预警 · 开发检查</h2><p>左：冲撞怪的锁定路径；中：落泥怪与落点圈；右：补壳怪的修补范围。此页是固定画面的渲染检查，不计入正式游戏。</p><canvas id="preview" aria-label="三种新怪物的固定渲染检查"></canvas><script type="module">
+import {Game} from './src/engine.js';import {Renderer} from './src/render.js';import {loadAssets} from './src/assets.js?v=7';
+const g=new Game({seed:87});g.room=9;g.setupRoom();g.enemies=[];g.dirt.fill(.3);g.player.x=480;g.player.y=480;
+const a=g.spawnEnemy('charger',220,200);a.windup=.5;a.chargeAngle=.8;
+const b=g.spawnEnemy('lobber',480,200);g.hazards.push({x:480,y:365,r:48,life:.5,duration:1.15});
+const c=g.spawnEnemy('mender',740,200);c.repairFlash=.15;
+const r=new Renderer(document.getElementById('preview'),g,await loadAssets());function draw(){r.draw(0);requestAnimationFrame(draw);}draw();
+</script></html>

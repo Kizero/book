@@ -1,0 +1,137 @@
+[
+  {
+    "seed": 21,
+    "preset": "normal",
+    "state": "won",
+    "room": 12,
+    "seconds": 104.5,
+    "hits": 0,
+    "foamShots": 1
+  },
+  {
+    "seed": 21,
+    "preset": "wash",
+    "state": "won",
+    "room": 12,
+    "seconds": 37.1,
+    "hits": 0,
+    "foamShots": 0
+  },
+  {
+    "seed": 21,
+    "preset": "transport",
+    "state": "won",
+    "room": 12,
+    "seconds": 60.6,
+    "hits": 0,
+    "foamShots": 3
+  },
+  {
+    "seed": 21,
+    "preset": "pinball",
+    "state": "won",
+    "room": 12,
+    "seconds": 49.7,
+    "hits": 0,
+    "foamShots": 24
+  },
+  {
+    "seed": 21,
+    "preset": "recycle",
+    "state": "won",
+    "room": 12,
+    "seconds": 69.2,
+    "hits": 0,
+    "foamShots": 13
+  },
+  {
+    "seed": 42,
+    "preset": "normal",
+    "state": "won",
+    "room": 12,
+    "seconds": 66.5,
+    "hits": 1,
+    "foamShots": 17
+  },
+  {
+    "seed": 42,
+    "preset": "wash",
+    "state": "won",
+    "room": 12,
+    "seconds": 39.4,
+    "hits": 0,
+    "foamShots": 0
+  },
+  {
+    "seed": 42,
+    "preset": "transport",
+    "state": "won",
+    "room": 12,
+    "seconds": 51.9,
+    "hits": 0,
+    "foamShots": 12
+  },
+  {
+    "seed": 42,
+    "preset": "pinball",
+    "state": "won",
+    "room": 12,
+    "seconds": 59.7,
+    "hits": 0,
+    "foamShots": 2
+  },
+  {
+    "seed": 42,
+    "preset": "recycle",
+    "state": "won",
+    "room": 12,
+    "seconds": 81.2,
+    "hits": 0,
+    "foamShots": 7
+  },
+  {
+    "seed": 63,
+    "preset": "normal",
+    "state": "won",
+    "room": 12,
+    "seconds": 54.4,
+    "hits": 0,
+    "foamShots": 8
+  },
+  {
+    "seed": 63,
+    "preset": "wash",
+    "state": "won",
+    "room": 12,
+    "seconds": 42.1,
+    "hits": 0,
+    "foamShots": 0
+  },
+  {
+    "seed": 63,
+    "preset": "transport",
+    "state": "won",
+    "room": 12,
+    "seconds": 37,
+    "hits": 0,
+    "foamShots": 10
+  },
+  {
+    "seed": 63,
+    "preset": "pinball",
+    "state": "won",
+    "room": 12,
+    "seconds": 44,
+    "hits": 0,
+    "foamShots": 17
+  },
+  {
+    "seed": 63,
+    "preset": "recycle",
+    "state": "won",
+    "room": 12,
+    "seconds": 49.2,
+    "hits": 0,
+    "foamShots": 9
+  }
+]

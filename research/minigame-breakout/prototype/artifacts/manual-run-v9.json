@@ -1,0 +1,2513 @@
+{
+  "version": 9,
+  "preset": "normal",
+  "rules": [],
+  "equipment": {
+    "bubble": 2,
+    "electric": 3,
+    "mop": 2,
+    "duck": 2,
+    "brush": 3,
+    "bucket": 0
+  },
+  "weapon": "foam",
+  "roomResults": [
+    {
+      "room": 1,
+      "reason": "combat",
+      "seconds": 7.9,
+      "remaining": 0,
+      "clean": 75.81
+    },
+    {
+      "room": 2,
+      "reason": "combat",
+      "seconds": 4.93,
+      "remaining": 0,
+      "clean": 74.87
+    },
+    {
+      "room": 3,
+      "reason": "combat",
+      "seconds": 9.07,
+      "remaining": 0,
+      "clean": 72.66
+    },
+    {
+      "room": 4,
+      "reason": "combat",
+      "seconds": 8.7,
+      "remaining": 0,
+      "clean": 83.92
+    },
+    {
+      "room": 5,
+      "reason": "combat",
+      "seconds": 9.88,
+      "remaining": 0,
+      "clean": 85.85
+    },
+    {
+      "room": 6,
+      "reason": "combat",
+      "seconds": 8.12,
+      "remaining": 0,
+      "clean": 83.07
+    },
+    {
+      "room": 7,
+      "reason": "combat",
+      "seconds": 10.12,
+      "remaining": 0,
+      "clean": 90.57
+    },
+    {
+      "room": 8,
+      "reason": "combat",
+      "seconds": 7.07,
+      "remaining": 0,
+      "clean": 86.84
+    },
+    {
+      "room": 9,
+      "reason": "combat",
+      "seconds": 13.33,
+      "remaining": 0,
+      "clean": 86.63
+    },
+    {
+      "room": 10,
+      "reason": "combat",
+      "seconds": 14.9,
+      "remaining": 0,
+      "clean": 92.16
+    },
+    {
+      "room": 11,
+      "reason": "combat",
+      "seconds": 5.5,
+      "remaining": 0,
+      "clean": 91.91
+    },
+    {
+      "room": 12,
+      "reason": "clean",
+      "seconds": 4.98,
+      "remaining": 9,
+      "clean": 90.23
+    }
+  ],
+  "seed": 1789460594550,
+  "state": "won",
+  "room": 12,
+  "seconds": 104.5,
+  "stats": {
+    "shots": 117,
+    "kills": 183,
+    "cleaned": 7932.565132156481,
+    "hits": 4,
+    "chains": 82,
+    "rooms": 12,
+    "conducted": 617,
+    "electricHits": 131,
+    "bubblePops": 28,
+    "duckCleaned": 103.31872479617596,
+    "foamTrails": 308,
+    "relays": 13,
+    "chargedPops": 12,
+    "discRelays": 5
+  },
+  "loadout": [
+    "electric",
+    "bubble",
+    "duck",
+    "brush",
+    "electric",
+    "electric",
+    "mop",
+    "bubble",
+    "duck",
+    "mop",
+    "brush",
+    "brush"
+  ],
+  "events": [
+    {
+      "t": 0,
+      "room": 1,
+      "type": "start"
+    },
+    {
+      "t": 0.3,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 0.5,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 0.7,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 0.8,
+      "room": 1,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 0.9,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 0.92,
+      "room": 1,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 0.92,
+      "room": 1,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 1.35,
+      "room": 1,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 7.08,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 7.28,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 7.5,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 7.72,
+      "room": 1,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 7.9,
+      "room": 1,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "shot"
+    },
+    {
+      "t": 7.9,
+      "room": 1,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 7.9,
+      "remaining": 0,
+      "clean": 75.81
+    },
+    {
+      "t": 7.9,
+      "room": 1,
+      "type": "upgrade"
+    },
+    {
+      "t": 7.9,
+      "room": 1,
+      "type": "upgrade",
+      "id": "bubble"
+    },
+    {
+      "t": 8.17,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 8.4,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 8.7,
+      "room": 2,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 8.82,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 9.02,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 9.23,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 9.43,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 9.67,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 9.68,
+      "room": 2,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 10.57,
+      "room": 2,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 10.77,
+      "room": 2,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 10.77,
+      "room": 2,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 10.77,
+      "room": 2,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 10.9,
+      "room": 2,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 12.83,
+      "room": 2,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 12.83,
+      "room": 2,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 4.93,
+      "remaining": 0,
+      "clean": 74.87
+    },
+    {
+      "t": 12.83,
+      "room": 2,
+      "type": "upgrade"
+    },
+    {
+      "t": 12.83,
+      "room": 2,
+      "type": "upgrade",
+      "id": "duck"
+    },
+    {
+      "t": 12.93,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 13.13,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 13.27,
+      "room": 3,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 13.33,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 13.58,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 13.82,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 13.9,
+      "room": 3,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "shot"
+    },
+    {
+      "t": 14.02,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 14.22,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 14.32,
+      "room": 3,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "shot"
+    },
+    {
+      "t": 14.32,
+      "room": 3,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 14.42,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 14.73,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 14.92,
+      "room": 3,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 15.37,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 15.55,
+      "room": 3,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "suction"
+    },
+    {
+      "t": 15.7,
+      "room": 3,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 15.7,
+      "room": 3,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 17.83,
+      "room": 3,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 21.9,
+      "room": 3,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 21.9,
+      "room": 3,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 21.9,
+      "room": 3,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 9.07,
+      "remaining": 0,
+      "clean": 72.66
+    },
+    {
+      "t": 21.9,
+      "room": 3,
+      "type": "upgrade"
+    },
+    {
+      "t": 21.9,
+      "room": 3,
+      "type": "upgrade",
+      "id": "brush"
+    },
+    {
+      "t": 22,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 22.2,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 22.35,
+      "room": 4,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 22.4,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 22.6,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 22.82,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 22.9,
+      "room": 4,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 23.02,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 23.22,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 23.42,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 23.5,
+      "room": 4,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 23.62,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 23.67,
+      "room": 4,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 23.83,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 24.03,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 24.23,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 24.32,
+      "room": 4,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 24.68,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 24.93,
+      "room": 4,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "shot"
+    },
+    {
+      "t": 25.35,
+      "room": 4,
+      "type": "hurt",
+      "hp": 4,
+      "source": "没躲开落泥"
+    },
+    {
+      "t": 25.98,
+      "room": 4,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "suction"
+    },
+    {
+      "t": 25.98,
+      "room": 4,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "suction"
+    },
+    {
+      "t": 26.05,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 26.27,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 26.83,
+      "room": 4,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 27.4,
+      "room": 4,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 30.6,
+      "room": 4,
+      "type": "kill",
+      "enemy": "boss",
+      "kind": "suction"
+    },
+    {
+      "t": 30.6,
+      "room": 4,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 8.7,
+      "remaining": 0,
+      "clean": 83.92
+    },
+    {
+      "t": 30.6,
+      "room": 4,
+      "type": "upgrade"
+    },
+    {
+      "t": 30.6,
+      "room": 4,
+      "type": "upgrade",
+      "id": "electric"
+    },
+    {
+      "t": 30.7,
+      "room": 5,
+      "type": "pause"
+    },
+    {
+      "t": 30.7,
+      "room": 5,
+      "type": "resume"
+    },
+    {
+      "t": 30.73,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 30.93,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 31.02,
+      "room": 5,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "bubble"
+    },
+    {
+      "t": 31.17,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 31.37,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 31.4,
+      "room": 5,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 31.4,
+      "room": 5,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 31.58,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 31.78,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 31.98,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 32.18,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 32.4,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 32.6,
+      "room": 5,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "shot"
+    },
+    {
+      "t": 32.6,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 32.8,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 33,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 33.25,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 33.33,
+      "room": 5,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "shot"
+    },
+    {
+      "t": 33.92,
+      "room": 5,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 34.7,
+      "room": 5,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 35.13,
+      "room": 5,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 35.13,
+      "room": 5,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 35.13,
+      "room": 5,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 35.13,
+      "room": 5,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 38.67,
+      "room": 5,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 38.67,
+      "room": 5,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 38.67,
+      "room": 5,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 40.48,
+      "room": 5,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 40.48,
+      "room": 5,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 40.48,
+      "room": 5,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 9.88,
+      "remaining": 0,
+      "clean": 85.85
+    },
+    {
+      "t": 40.48,
+      "room": 5,
+      "type": "upgrade"
+    },
+    {
+      "t": 40.48,
+      "room": 5,
+      "type": "upgrade",
+      "id": "electric"
+    },
+    {
+      "t": 40.55,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 41.18,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 41.28,
+      "room": 6,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 41.28,
+      "room": 6,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 41.28,
+      "room": 6,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 41.7,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 41.83,
+      "room": 6,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 42.42,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 42.62,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 42.85,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 44.42,
+      "room": 6,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "electric"
+    },
+    {
+      "t": 45.7,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 45.95,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 45.98,
+      "room": 6,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 45.98,
+      "room": 6,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 45.98,
+      "room": 6,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 45.98,
+      "room": 6,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 45.98,
+      "room": 6,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "chain"
+    },
+    {
+      "t": 46.35,
+      "room": 6,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 46.35,
+      "room": 6,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 47.55,
+      "room": 6,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 47.55,
+      "room": 6,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 47.55,
+      "room": 6,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 47.83,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 48.03,
+      "room": 6,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 48.6,
+      "room": 6,
+      "type": "kill",
+      "enemy": "boss",
+      "kind": "shot"
+    },
+    {
+      "t": 48.6,
+      "room": 6,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 8.12,
+      "remaining": 0,
+      "clean": 83.07
+    },
+    {
+      "t": 48.6,
+      "room": 6,
+      "type": "upgrade"
+    },
+    {
+      "t": 48.6,
+      "room": 6,
+      "type": "upgrade",
+      "id": "mop"
+    },
+    {
+      "t": 48.97,
+      "room": 7,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 49.4,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 50,
+      "room": 7,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 50.37,
+      "room": 7,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 50.97,
+      "room": 7,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 50.97,
+      "room": 7,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 51.2,
+      "room": 7,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 53.12,
+      "room": 7,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 53.6,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 54.1,
+      "room": 7,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 54.1,
+      "room": 7,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 54.1,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 54.1,
+      "room": 7,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "brush"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 10.12,
+      "remaining": 0,
+      "clean": 90.57
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "upgrade"
+    },
+    {
+      "t": 58.72,
+      "room": 7,
+      "type": "upgrade",
+      "id": "bubble"
+    },
+    {
+      "t": 58.82,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 59.1,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 59.38,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 59.42,
+      "room": 8,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 59.52,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 60.27,
+      "room": 8,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "brush"
+    },
+    {
+      "t": 60.27,
+      "room": 8,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 60.65,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 61.08,
+      "room": 8,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "electric"
+    },
+    {
+      "t": 61.28,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 61.48,
+      "room": 8,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 63.53,
+      "room": 8,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "suction"
+    },
+    {
+      "t": 64.22,
+      "room": 8,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 64.22,
+      "room": 8,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "electric"
+    },
+    {
+      "t": 64.22,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 65.18,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "brush"
+    },
+    {
+      "t": 65.18,
+      "room": 8,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "chain"
+    },
+    {
+      "t": 65.18,
+      "room": 8,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "chain"
+    },
+    {
+      "t": 65.18,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "chain"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 7.07,
+      "remaining": 0,
+      "clean": 86.84
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "upgrade"
+    },
+    {
+      "t": 65.78,
+      "room": 8,
+      "type": "upgrade",
+      "id": "duck"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "suction"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "suction"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "suction"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 66.67,
+      "room": 9,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 71.28,
+      "room": 9,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 72.2,
+      "room": 9,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "bubble"
+    },
+    {
+      "t": 72.5,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 72.75,
+      "room": 9,
+      "type": "hurt",
+      "hp": 4,
+      "source": "没躲开落泥"
+    },
+    {
+      "t": 72.8,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 72.85,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 73.05,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 73.32,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 73.37,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "brush"
+    },
+    {
+      "t": 73.53,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 75.42,
+      "room": 9,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 75.6,
+      "room": 9,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "shot"
+    },
+    {
+      "t": 75.98,
+      "room": 9,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "electric"
+    },
+    {
+      "t": 75.98,
+      "room": 9,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 76.72,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "suction"
+    },
+    {
+      "t": 78.6,
+      "room": 9,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "brush"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "electric"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 13.33,
+      "remaining": 0,
+      "clean": 86.63
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "upgrade"
+    },
+    {
+      "t": 79.12,
+      "room": 9,
+      "type": "upgrade",
+      "id": "mop"
+    },
+    {
+      "t": 79.28,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 79.6,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 79.8,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "shot"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 79.92,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 80.18,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 80.45,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 80.83,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 81.08,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 81.3,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 81.38,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 82.25,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 84.13,
+      "room": 10,
+      "type": "hurt",
+      "hp": 4,
+      "source": "没躲开落泥"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "chain"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 84.62,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 84.83,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 85.03,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 85.38,
+      "room": 10,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 87.62,
+      "room": 10,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 89.32,
+      "room": 10,
+      "type": "kill",
+      "enemy": "boss",
+      "kind": "electric"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 14.9,
+      "remaining": 0,
+      "clean": 92.16
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "upgrade"
+    },
+    {
+      "t": 94.02,
+      "room": 10,
+      "type": "upgrade",
+      "id": "brush"
+    },
+    {
+      "t": 94.2,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 94.57,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 94.77,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 94.82,
+      "room": 11,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "electric"
+    },
+    {
+      "t": 94.97,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 95.32,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 95.32,
+      "room": 11,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "chain"
+    },
+    {
+      "t": 95.33,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 95.5,
+      "room": 11,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "shot"
+    },
+    {
+      "t": 95.5,
+      "room": 11,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 95.5,
+      "room": 11,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 95.5,
+      "room": 11,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 95.62,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 95.9,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 96.18,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 96.47,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "electric"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 97.95,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 98.25,
+      "room": 11,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "lobber",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "clear",
+      "reason": "combat",
+      "seconds": 5.5,
+      "remaining": 0,
+      "clean": 91.91
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "upgrade"
+    },
+    {
+      "t": 99.52,
+      "room": 11,
+      "type": "upgrade",
+      "id": "brush"
+    },
+    {
+      "t": 99.63,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 99.97,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 100.17,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 100.27,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 100.32,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 100.37,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 100.75,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 100.95,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 101.02,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 101.15,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 101.45,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 101.65,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 101.77,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "shot"
+    },
+    {
+      "t": 101.77,
+      "room": 12,
+      "type": "kill",
+      "enemy": "spitter",
+      "kind": "chain"
+    },
+    {
+      "t": 101.77,
+      "room": 12,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 101.77,
+      "room": 12,
+      "type": "kill",
+      "enemy": "mender",
+      "kind": "chain"
+    },
+    {
+      "t": 101.77,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "electric"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "splitter",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "runner",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "charger",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "blob",
+      "kind": "chain"
+    },
+    {
+      "t": 101.88,
+      "room": 12,
+      "type": "kill",
+      "enemy": "mini",
+      "kind": "chain"
+    },
+    {
+      "t": 102.18,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 103.93,
+      "room": 12,
+      "type": "hurt",
+      "hp": 4,
+      "source": "没躲开落泥"
+    },
+    {
+      "t": 104.1,
+      "room": 12,
+      "type": "fire",
+      "charge": 20,
+      "weapon": "foam"
+    },
+    {
+      "t": 104.5,
+      "room": 12,
+      "type": "clear",
+      "reason": "clean",
+      "seconds": 4.98,
+      "remaining": 9,
+      "clean": 90.23
+    },
+    {
+      "t": 104.5,
+      "room": 12,
+      "type": "won"
+    }
+  ]
+}

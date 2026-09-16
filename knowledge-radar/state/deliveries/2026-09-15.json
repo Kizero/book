@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-15",
+  "status": "ready",
+  "entity_id": "work:bacon-of-studies",
+  "book_id": "87C43369-C926-4D71-ABEC-91820B585548",
+  "book_title": "培根-论读书-中文全译",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-15.md",
+    "sha256": "1d3618f48c1cd461f10489fdbc10a365ca19858c4a6063a2daab56994a8eaa78"
+  },
+  "record": {
+    "path": "records/2026-09-15-bacon-reading-dossier.json",
+    "sha256": "a56a7c7930e7088b749033dffba4934e00cd2a692f114b6e38ed0609123c8c36"
+  },
+  "chinese": {
+    "path": "library/培根-论读书-中文全译.md",
+    "sha256": "a2bae4f5e4965fd7c849ca1dcd2a81ff723cfc13916a5ed9688eab37033244a3"
+  },
+  "import_record": {
+    "path": "imports/2026-09-15-bacon-zh.md",
+    "sha256": "804a1151e22cf784f8de9066079d589f762afb740c1c59afd15122923101ec7e"
+  }
+}

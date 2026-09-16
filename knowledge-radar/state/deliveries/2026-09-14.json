@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-14",
+  "status": "ready",
+  "entity_id": "work:vox-populi",
+  "book_id": "3B579B52-C323-4077-9AA6-CD6B0CE22660",
+  "book_title": "民众之声-中文全译",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-14.md",
+    "sha256": "34011ce0335c147e3766787c126441dc31cc7ffd28b87f171a473d926e12d717"
+  },
+  "record": {
+    "path": "records/2026-09-14-vox-populi-reading-dossier.json",
+    "sha256": "9da7bec5e8ddc498f4edc95be39b6916709d0a09671fce012e59c8c2f3f7ac7f"
+  },
+  "chinese": {
+    "path": "library/民众之声-中文全译.md",
+    "sha256": "721827ff6a2aa519540aff3fe9a49c42f78031352cfbf0af170b25d752279825"
+  },
+  "import_record": {
+    "path": "imports/2026-09-14-vox-populi-zh.md",
+    "sha256": "1be9ae8a54a5e1ecc12aa4bb2860e9c5fafe14e2f77c590c44fe138bdb1a57d4"
+  },
+  "mode": "backlog_delivery",
+  "outstanding_previous_delivery": "2026-09-12 Sutton Chinese translations and imports remain blocked"
+}

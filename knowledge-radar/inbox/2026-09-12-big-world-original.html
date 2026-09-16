@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="icons/favicon.png" rel="icon" type="image/png">
+    <link href="icons/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="icons/favicon.png" rel="apple-touch-icon" sizes="180x180">
+    <title>
+        The Big World Hypothesis
+    </title>
+    <meta name="theme-color" content="#34607a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+
+<body class="flex min-h-screen flex-col bg-fixed bg-background bg-radial from-background-radial-start via-background-mid to-background-deep font-sans text-ink antialiased selection:bg-accent/15 selection:text-ink">
+    <main class="mx-auto w-full max-w-6xl flex-1 px-6 pt-8 pb-8 sm:px-10 sm:pt-10 sm:pb-10 lg:px-12 lg:pt-12 lg:pb-12">
+        <header class="flex w-full flex-wrap items-center justify-between gap-x-8 gap-y-4" data-animate data-delay="0">
+            <a href="./" data-scroll-top class="site-wordmark flex shrink-0 items-center rounded-sm py-0.5">
+                <span class="font-serif text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl">Khurram Javed</span>
+            </a>
+            <nav class="site-header-nav" aria-label="External links">
+                <a href="./">Home</a>
+                <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+                <a href="mailto:hi@khurramjaved.com" class="site-header-email">hi@khurramjaved.com</a>
+            </nav>
+        </header>
+
+        <article class="mt-3 flex flex-col gap-8 sm:mt-4 lg:mt-5">
+            <header class="flex flex-col gap-4" data-scroll-reveal data-animate>
+                <a href="./" class="site-back-link">
+                    <svg class="h-4 w-7 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M19 12H5"/>
+                        <path d="M12 19l-7-7 7-7"/>
+                    </svg>
+                    Home
+                </a>
+                <h1 class="font-serif text-2xl font-medium leading-snug tracking-tight text-balance text-accent sm:text-3xl lg:text-4xl">The Big World Hypothesis and its Ramifications for Artificial Intelligence</h1>
+                <p class="mt-4 font-serif text-lg text-ink-muted">Khurram Javed & Richard S. Sutton</p>
+                <p class="mt-2 font-serif italic text-sm text-ink/60 sm:text-base">First appeared at the Finding the Frame workshop at RLC 2024</p>
+            </header>
+
+            <div class="mt-12 space-y-5 font-serif text-lg leading-relaxed text-ink-muted sm:text-xl">
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">The Big World Hypothesis</h2>
+                <p class="text-left font-serif text-ink-muted">
+                
+                    <span class="font-serif italic">The big world hypothesis</span> says that in many decision-making problems the agent is orders
+                    of magnitude smaller than the environment. It can neither fully perceive the state of the world
+                    nor can it represent the value or optimal action for every state. Instead, it must learn to make
+                    sound decisions using its limited understanding of the environment. The key research challenge
+                    for achieving goals in big worlds is to come up with solution methods that efficiently use the
+                    limited resources of the agent.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    An opposing view to the big world hypothesis is that real-world decision-making problems have
+                    simple solutions. The agent is not only capable of representing the simple solution but also has
+                    additional capacity that can be used to search for the solution more efficiently---it is
+                    <span class="font-serif italic">over-parameterized</span>. The key research challenge for achieving goals with
+                    over-parameterized agents is to find solutions that enable optimal decision-making in
+                    perpetuity.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    There are many problems that satisfy the big world hypothesis and many that do not. The problem
+                    of finding roots of a second-degree polynomial admits a simple solution that always works.
+                    Representing the value function of the game of Go for all states does not have a simple
+                    solution. The big world hypothesis is more a statement about the class of problems we should
+                    care about than a fact about all decision-making problems. It can be made true or false by
+                    exercising control over the design of the environment and the agent (<span class="font-serif italic">e.g.</span>, when
+                    developing benchmarks).
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Developing algorithms for big worlds poses unique challenges. The best algorithms for big worlds
+                    might prefer fast approximate solutions over slow exact ones. They might learn incorrect
+                    simplistic models that are sufficient for achieving the agent's goals over causally correct
+                    complex models (<span class="font-serif italic">e.g.</span>, Newtonian physics as opposed to quantum mechanics). They might
+                    forgo knowledge that is not frequently used by the agent to make room for knowledge used more
+                    often. Such trade-offs do not exist for over-parameterized agents.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    The big world hypothesis is not a novel proposition. Over the past few years, several
+                    independent works have entertained the idea of small-bounded agents learning in large unbounded
+                    environments. Sutton (2020) argued that the world is large and complex and an agent cannot learn
+                    everything there is to learn exactly. He proposed embracing function approximation for learning
+                    values, policies, models, and states. Dong et al. (2022) theoretically studied the performance of
+                    a reinforcement learning algorithm without making simplifying assumptions about the environment.
+                    Their work shifts the focus from making assumptions about the environment to making assumptions
+                    about the capabilities of the agent. Javed et al. (2023) empirically studied the performance of
+                    small agents in large environments. They found that approximate algorithms that use less
+                    computation can outperform exact algorithms that use more computation in big worlds. Kumar
+                    et al. (2023) showed that continual learning is a necessary element of reinforcement learning
+                    when the agent is computationally constrained.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Is the big world hypothesis a temporary artifact of the limitations of our current computers? Or
+                    would it have relevance even as computational resources grow? I argue that
+                    the big world hypothesis is here to stay irrespective of the rate at which computational
+                    resources grow.
+                </p>
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">The Big World Hypothesis and
+                    Exponentially Growing Computation</h2>
+                <p class="text-left font-serif text-ink-muted">
+                    Historically access to computation has increased exponentially. With continuing growth computers
+                    of the future could be sufficiently powerful to solve all problems we care about using
+                    over-parameterized agents. I see two problems with this view.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    First, it is not just our agents that are constrained by compute. The sensors used by our agents
+                    are also constrained by compute. A rise in computation makes it possible to sense the world with
+                    more precision and at a higher frequency. For example, within the last decade the camera sensors
+                    in our phones have gone from sensing 640 x 420 pixels at 30 fps---around 7 million pixels per
+                    second---to sensing in 4k at 60 fps---around 500 million pixels per second. To put these numbers
+                    in perspective, a modern smartphone camera sensor in 2024 can generate more data in a week than
+                    that used to train GPT-3 (Brown et al., 2020). Even with these massive increases in the ability
+                    to sense the world, our agents are not close to sensing the world at its full scale. I
+                    speculate that as computational resources grow so would the appetite to sense the world at
+                    higher fidelity, making the decision-making problem more challenging.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    The second problem with waiting for compute to grow is that as compute becomes more readily
+                    available, the world itself becomes more complex. From the perspective of an agent, the world
+                    consists of everything outside of itself. This includes other equally complex agents and
+                    computers. An agent that interacts with multiple other agents of similar capabilities would be
+                    unable to model the world exactly regardless of the rate at which computation grows.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    A concrete example of the world getting more complex as computation grows is that of an agent
+                    playing the game of Go against an opponent. If the opponent picks moves randomly, then it is
+                    fairly simple for the agent to model the environment exactly. The dynamics of the environment
+                    can be simulated with a short program. However, if the opponent is more complex, such as an
+                    AlphaZero (Silver et al., 2015) agent, then the only way to model the dynamics of the environment
+                    correctly is to be able to represent the policy of the large AlphaZero agent accurately.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+
+                <p
+                    class="p-4  rounded-xl bg-white/30 backdrop-blur-sm text-left font-serif text-ink-muted">
+                    As computational resources increase so does the complexity of the world. The big world
+                    hypothesis is not a temporary artifact of the limitations of our current computers. For many
+                    problems, the world will always be much larger than any single agent.
+                </p>
+
+
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">Evidence Consistent with the Big
+                    World Hypothesis</h2>
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    There is some indirect evidence that the behavior of our learning algorithms on large problems
+                    is consistent with the big world hypothesis.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Silver et al. (2017) trained a large neural network to learn the value function for the game of
+                    Go. They found that even after extensive training the performance of the system could be
+                    improved if the decisions were taken by combining the value function with a planner.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    If the neural network had the capacity to represent the optimal value function of Go, and it had
+                    been trained for a sufficiently long time, then decision-time planning should not have improved
+                    performance. Perhaps the neural network did not have sufficient capacity to represent the value
+                    function correctly for all states and the planner was able to fill in the gaps.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    The second and more direct evidence comes from the work of Brown et al. (2020). They showed a
+                    clear trend between the model size and performance of neural networks when fitting large
+                    language datasets. They found that the train error and validation error on the dataset could be
+                    reduced by increasing the number of parameters in the network. Their findings make little sense
+                    if the neural networks were over-parameterized.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Neither of the two papers directly set out to test the big world hypothesis and their results
+                    have other explanations. However, they don't contradict it and provide circumstantial evidence
+                    for its relevance.</p>
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">
+                    Ramifications of the Big World Hypothesis</h2>
+                <p class="text-left font-serif text-ink-muted">
+                    The big world hypothesis is only worth discussing if accepting it would directly impact how we
+                    do research in AI. In the next subsections, I discuss three ways accepting the hypothesis can
+                    influence research today.</p>
+                <h3 class="mt-5 text-xl font-serif text-accent mb-6 text-left">
+                    Online continual learning for achieving goals in big worlds</h3>
+                <p class="text-left font-serif text-ink-muted">
+                    The need for online continual learning in big worlds is intuitive---if the agent does not have
+                    the resources to learn and retain everything important about the world simultaneously, then it
+                    can learn aspects that are important for decision-making at the current time and discard them
+                    when they are no longer. In the over-parameterized setting, on the other hand, there is no need
+                    for online continual learning. Once the agent has found the underlying optimal solution it can
+                    use it forever without changing.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Learning things when they are needed and discarding them when they are not is sometimes called
+                    <span class="font-serif italic">tracking</span>. Tracking has been empirically demonstrated to be superior to fixed solutions
+                    in partially observable environments by Sutton, Koop, & Silver (2007) and Silver, Sutton, &
+                    Müller (2008).
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    A key requirement for tracking to be effective is <span class="font-serif italic">temporal coherence.</span> Temporal
+                    coherence means that parts of the world the agent experiences from one step to the next are
+                    correlated. An agent learning online can exploit the temporal coherence to direct its resources
+                    to learn about the states of the world that are temporally close at the expense of those that
+                    are far away. Tracking can be a powerful solution method in temporally coherent big worlds.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+
+                <div id="box-1"
+                    class="p-4  rounded-xl bg-white/100 backdrop-blur-sm text-left font-serif text-ink-muted">
+                    <h3 class="mt-5 text-xl font-serif text-accent mb-6 text-left">Humans extensively rely on tracking in everyday life</h3>
+                    Humans are continually learning agents. We extensively rely on tracking to achieve our goals. An
+                    intuitive example is that of exams. Given the choice between taking exams of different subjects
+                    on different days or taking them all on the same day, most of us would pick the former.
+                    Intuitively, it feels easier to have to only have to learn and remember the material for one
+                    exam at a time. This is exactly the behavior we should expect from a tracking agent in a big
+                    world.
+                </div>
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    An analogy of a tracking system is the cache used by a CPU. The cache is much smaller than the
+                    memory and can only store a small fraction of instructions and data used by a program. However,
+                    by retaining the right pieces of information and discarding the least useful ones, a small cache
+                    can have a high hit ratio. A high hit ratio is only possible when a program accesses memory
+                    predictably, akin to having temporal coherence in big worlds.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    If we are to accept the hypothesis then we have to develop algorithms that can learn online and
+                    continually. This is a significant departure from the current practice of training agents
+                    offline and then deploying them.
+                </p>
+
+                <h3 class="mt-5 text-xl font-serif text-accent mb-6 text-left">Need for Computationally Efficient
+                    Learning Algorithms</h3>
+                <p class="text-left font-serif text-ink-muted">
+                    In big worlds, increasing the size of the agent can improve performance. This raises an
+                    important trade-off between the complexity of the learning algorithm and the size of the agent.
+                    A trivial example is the mini-batch size of a deep RL algorithm, such as DQN (Mnih et al., 2015).
+                    For a fixed amount of resources, an agent can double the number of parameters by halving the
+                    mini-batch size.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    Javed, Shah, Sutton, & White (2023) empirically demonstrated that approximate but efficient
+                    learning algorithms can outperform computationally expensive exact algorithms in big worlds. In
+                    their experiments, they evaluated tiny recurrent networks on the Arcade Learning
+                    Environment (Bellemare et al., 2013). They constrained all algorithms to use the same amount of
+                    per-step computation and found that a simple algorithm that used less computation was able to
+                    outperform a more complex algorithm by repurposing the saved computation to increase the size of
+                    the network.
+                <div id="box-3"
+                    class="p-4  rounded-xl bg-white/100 backdrop-blur-sm text-left font-serif text-ink-muted">
+                    Accepting the big world hypothesis means we should actively look for more computationally efficient
+                    learning
+                    algorithms.
+                </div>
+                <h3 class="mt-5 text-xl font-serif text-accent mb-6 text-left">
+                    Benchmarking Algorithms in Big Worlds</h3>
+                <p class="text-left font-serif text-ink-muted">
+                    A common way to evaluate algorithms is to run them on a standardized benchmark. A good benchmark
+                    is an accurate proxy for the problem we care about and allows us to do careful experiments.
+                    Designing a benchmark for big worlds requires a different approach than designing a benchmark
+                    for over-parameterized agents.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    One way to evaluate algorithms for big worlds is to test them on complex environments so that
+                    even our largest agents on the latest hardware are not over-parameterized. While this approach
+                    has merit, it makes it difficult to do careful and reproducible experiments.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    The alternative is to restrict the computational capabilities of the agents instead of making
+                    the environments larger. The primary limitation of restricting agents is that we might miss out
+                    on emergent properties of large agents. However, a small agent learning in a non-trivial
+                    environment is still a better proxy for learning in big worlds than a large over-parameterized
+                    agent learning in the same environment.
+                </p>
+
+                <div id="box-2" class="rounded-xl border border-ink/10 bg-surface p-4 sm:p-6 mt-5 text-ink-muted">
+                    <p class="text-left font-serif text-xl font-medium text-accent">Example: A typical DQN agent for Atari
+                        users orders of magnitude more computation than
+                        the environment.</p>
+                    <p class="text-left font-serif text-ink-muted">
+                        Arcade learning environment (Bellemare et al., 2013) is a popular benchmark for reinforcement
+                        learning. A typical game in the benchmark can run at around 7000 frames per second on a
+                        modern
+                        CPU core. A DQN agent (Mnih et al., 2014), on the other hand, runs at 300 frames per second
+                        on a
+                        modern GPU. While it is hard to directly compare different implementations of the agent and
+                        the
+                        environment running on different hardware, it is clear that the agent uses orders of
+                        magnitude
+                        more computation than the environment in this case.
+                    </p>
+                </div>
+
+                <p class="text-left font-serif text-ink-muted">
+                    Restricting the computational capabilities of the agents is not trivial. There is no consensus
+                    on what aspects of the agents should be restricted. We could restrict the number of operations,
+                    the amount of memory, the amount of memory bandwidth, or the amount of energy the agent can use.
+                    The choice of constraints can have a significant impact on algorithms that win.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    One option is to match the constraints on the agent with the constraints imposed by current
+                    computers. For example, if memory is cheaper than CPU cycles, then we might want to restrict the
+                    CPU cycles. Alternatively, if accessing the memory is a bottleneck, then we might want to
+                    restrict the memory bandwidth.
+                </p>
+                <p class="text-left font-serif text-ink-muted">
+                    A second option is to limit energy usage. Energy is a universal constraint that can take into
+                    account the evolution of hardware over time and can even drive research for designing better
+                    hardware for our agents. The downside of using energy as a constraint is that it is difficult to
+                    measure. Normally the computer running the agent is also running the environment, an operating
+                    system, and other unrelated processes, and isolating the energy used by the agent from
+                    background tasks is challenging.
+                </p>
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">Conclusions</h2>
+                <p class="text-left font-serif text-ink-muted">
+                    The big world hypothesis has direct implications on what we choose to study and how we evaluate
+                    our algorithms. It is not a temporary artifact of the current limitations of our computers. It
+                    is imperative that we develop algorithms that can allow agents to achieve goals in big worlds.
+                    This requires developing computationally efficient algorithms for learning continually and
+                    rethinking the way we benchmark our algorithms.
+                </p>
+                <h2 class="mt-8 font-serif text-2xl font-medium text-accent sm:text-3xl">References</h2>
+            <ul class="mt-4 list-none p-0 text-left font-serif text-ink text-sm sm:text-base space-y-3">
+                <li class="leading-relaxed">
+                    Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., ... & Amodei, D. (2020).
+                    Language models are few-shot learners. <i>Advances in Neural Information Processing Systems, 33</i>, 1877-1901.
+                </li>
+                <li class="leading-relaxed">
+                    Dong, S., Van Roy, B., & Zhou, Z. (2022). Simple agent, complex environment: Efficient reinforcement learning with agent states. <i>Journal of Machine Learning Research, 23(255)</i>, 1-54.
+                </li>
+                <li class="leading-relaxed">
+                    Javed, K., Shah, H., Sutton, R. S., & White, M. (2023). Scalable real-time recurrent learning using columnar-constructive networks. <i>Journal of Machine Learning Research, 24</i>, 1-34.
+                </li>
+                <li class="leading-relaxed">
+                    Kumar, S., Marklund, H., Rao, A., Zhu, Y., Jeon, H. J., Liu, Y., & Van Roy, B. (2023). Continual learning as computationally constrained reinforcement learning. <i>arXiv preprint arXiv:2307.04345</i>.
+                </li>
+                <li class="leading-relaxed">
+                    Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Hassabis, D. (2015). Human-level control through deep reinforcement learning. <i>Nature, 518(7540)</i>, 529-533.
+                </li>
+                <li class="leading-relaxed">
+                    Silver, D., Hubert, T., Schrittwieser, J., Antonoglou, I., Lai, M., Guez, A., ... & Hassabis, D. (2017). Mastering chess and shogi by self-play with a general reinforcement learning algorithm. <i>arXiv preprint arXiv:1712.01815</i>.
+                </li>
+                <li class="leading-relaxed">
+                    Silver, D., Sutton, R. S., & Müller, M. (2008, July). Sample-based learning and search with permanent and transient memories. In <i>Proceedings of the 25th International Conference on Machine Learning</i> (pp. 968-975).
+                </li>
+                <li class="leading-relaxed">
+                    Sutton, R. S. (2020). Rich Sutton, Are You Ready to Fully Embrace Approximation? (June 8, 2020) [Video]. YouTube. <a href="https://www.youtube.com/watch?v=g80wiWvOtvI" class="site-link" target="_blank" rel="noopener">Link</a>
+                </li>
+                <li class="leading-relaxed">
+                    Sutton, R. S., Koop, A., & Silver, D. (2007, June). On the role of tracking in stationary environments. In <i>Proceedings of the 24th International Conference on Machine Learning</i> (pp. 871-878).
+                </li>
+            </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer id="site-footer" class="mt-auto text-ink/70">
+        <div class="mx-auto w-full max-w-6xl px-6 sm:px-10 lg:px-12">
+            <div class="site-footer-rule">
+                <div class="flex flex-wrap items-center justify-end gap-x-5 gap-y-2">
+                    <nav aria-label="Footer" class="site-footer-nav flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-sm">
+                        <a class="inline-flex items-center gap-1.5" href="https://twitter.com/kjaved_" target="_blank" rel="noopener noreferrer">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.659l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/>
+                            </svg>
+                            <span>kjaved_</span>
+                        </a>
+                        <a class="inline-flex items-center gap-1.5" href="mailto:hi@khurramjaved.com">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="M3 7l9 6 9-6"/>
+                            </svg>
+                            <span>hi@khurramjaved.com</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site-chrome.js"></script>
+    <script src="js/page-animations.js"></script>
+</body>
+
+</html>

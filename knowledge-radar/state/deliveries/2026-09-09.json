@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-09",
+  "status": "ready",
+  "verified_at": "2026-09-09T01:12:42.555Z",
+  "entity_id": "work:organizing-computational-biology-projects",
+  "book_id": "FFB13826-0931-4DB5-928D-AC3C06729F7A",
+  "book_title": "计算生物学项目组织简明指南-中文全译",
+  "readback": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "report": {
+    "path": "reports/2026-09-09.md",
+    "sha256": "d0fe1f628cdf5792cb9ea23b9b579d56813c604bc54d373afd3ca7dd288b0ee1"
+  },
+  "record": {
+    "path": "records/2026-09-09-noble-reading-dossier.json",
+    "sha256": "340b79b16d55523c54a320f1b8dfa382c169ba14fde19ab5064041e7e6da64ab"
+  },
+  "chinese": {
+    "path": "library/计算生物学项目组织简明指南-中文全译.md",
+    "sha256": "955fabb3557a759c56acd70604bf747ed0b8f4864ca6eaac723457020e5b7545"
+  },
+  "import_record": {
+    "path": "imports/2026-09-09-noble-zh.md",
+    "sha256": "b51565c5b81ebd2464c35fa920d4faaa22f04b63225cda0cb8ad6a04185e14d1"
+  }
+}

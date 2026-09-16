@@ -1,0 +1,522 @@
+{
+  "title": "软件仓库管理：Git、原子改动与 Agent 协作 · 视频阅读报告",
+  "importFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/exports/localreader-20260909/软件仓库管理：Git、原子改动与 Agent 协作 · 视频阅读报告.md",
+  "sourceFile": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/reading-guide.md",
+  "sourceSHA256": "dd1d2777cb91d3099e5870b29e7eab4b0d8ee6717473028c034a98f869cdb3e7",
+  "importSHA256": "d4bd6701b37e5093bd9990695af41303726e9f62d03e3aa4e8e98aa6212e87bb",
+  "images": [
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000002.jpg",
+      "sha256": "910dc0600d19920f3d389c64a4ecd3f9e10cd0bf813b74854ba938ff2cc72ee8"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000002.jpg",
+      "sha256": "910dc0600d19920f3d389c64a4ecd3f9e10cd0bf813b74854ba938ff2cc72ee8"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000005.jpg",
+      "sha256": "efc7519582e2c7ea62a5f8ac7b086a3ba2ffc50d0797f32caf08c35e66cab001"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000010.jpg",
+      "sha256": "390f596d74fc48a75cfebdc5cbacb9a157017cf501cd66afacbe4594abe4c937"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000013.jpg",
+      "sha256": "01b97addd58fd1940cfd57eabe87623151d676d00be02dd74653d97c0d92dd55"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000013.jpg",
+      "sha256": "01b97addd58fd1940cfd57eabe87623151d676d00be02dd74653d97c0d92dd55"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000016.jpg",
+      "sha256": "b7f2c9a7d8d403b3389bc4bc6af96647a3830fd428152530e6b53a6b003cb9c6"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000018.jpg",
+      "sha256": "5e2ce80ac6d553e58cf84c32c70da8c472bda53bcb793c35dc9d5f30793ed727"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000022.jpg",
+      "sha256": "35304935bbb496221f4a088ebbb3ac8428e10939305f4982b3f4d1ac14f3ff18"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000022.jpg",
+      "sha256": "35304935bbb496221f4a088ebbb3ac8428e10939305f4982b3f4d1ac14f3ff18"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000025.jpg",
+      "sha256": "c5b22bb8ad9be0faa77aba573a9e84116bbb45372e43fdce9dfe3399744b0b16"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000028.jpg",
+      "sha256": "a78e4709a9ef793d52486424db9ac061f0c16d1f55e1687c7d6107cab18a8dc4"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000032.jpg",
+      "sha256": "02b9a61103a2a02fcde9a5a416c612289903ecf2c100aebf69c25a5e8f7d9231"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000035.jpg",
+      "sha256": "e0587bad082377128f7682100abcd302b5cdcd4077d74d9fcf50c3fc979f6494"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000035.jpg",
+      "sha256": "e0587bad082377128f7682100abcd302b5cdcd4077d74d9fcf50c3fc979f6494"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000038.jpg",
+      "sha256": "a6e5ce5b997c55e14d78d93cc7c1d4c92d2bfe8007670acd36945bb0ec148526"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000040.jpg",
+      "sha256": "af131f6630eccf0b0b5142b95417df88658cdde22a9c7c86e4d459d137b46676"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000041.jpg",
+      "sha256": "3783bcc67781263b253eccad57f53f02c94d6c6c55495ec428555ed92d5aedb9"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000042.jpg",
+      "sha256": "e5ec3c7983c9331a29cb4bb6be05af63ade2225cd58bf3801697168f8320dd27"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000042.jpg",
+      "sha256": "e5ec3c7983c9331a29cb4bb6be05af63ade2225cd58bf3801697168f8320dd27"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000044.jpg",
+      "sha256": "7b8a07397bb55c58e499e064ba1d360ff9988fdea509e99310eaf8f116b6b8d1"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000049.jpg",
+      "sha256": "5d2daaf6773de23f852617276957d4c54468a9eb85b9353a5d37b680a1d9e2f9"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000051.jpg",
+      "sha256": "56d76500778f2ca53beeb5a4bae2acc622ed6ffe4511d86056f0a468f47e56d1"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000054.jpg",
+      "sha256": "c37ce636fea0659636903f634fe97fb09b3ff00e53a73cb700f6f2ea7aaee3dd"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000056.jpg",
+      "sha256": "ef8a4099bd586a0093a5007df8f738c340bc018f4f66d4f27ed012753d83fb1c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000058.jpg",
+      "sha256": "4f0869493a300ba37d6ac93ea880a0721069ad23c9b6aab98f36fbaaf2689430"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000061.jpg",
+      "sha256": "7d5441617eb6a0cba99f1d8e3424e7f2f8e55256b664776675f1ff11cb15acbe"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000062.jpg",
+      "sha256": "3766b01def73f1e49614e7ca9a3367b6ec25269cf82cc1c2fcd005bdaeeb94a1"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000063.jpg",
+      "sha256": "e91b3f0aa8de036ae0a759c697a9cf4a976ba9e7c4409b97e8d0ad26994c3d89"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000066.jpg",
+      "sha256": "4e55dec3328a445bb549b3928cc2f6099afeeadb581262e6793efbe878b2e3bd"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000074.jpg",
+      "sha256": "e7a2c32022a50ce21adf32fba08cb9f9943472a8e78699409fa416277fd4329d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000075.jpg",
+      "sha256": "c923a46eadf6791bd40e88fc07a84f347326eaa6437a47cb71cec93910146ba0"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000077.jpg",
+      "sha256": "6d4715b3b3f2baeb75b6135008d86bbf572629ece40ec27d168b3dd62b7f8f9d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000082.jpg",
+      "sha256": "7b85f7cc4f649177fc7071a81db49b6e97ac491b44b48ffdaf106e2dc9441022"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000085.jpg",
+      "sha256": "3493170d830ab8b94d5d8b1a27e57735d42d7e266deeaa9c5c762ba2a13f2747"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000088.jpg",
+      "sha256": "96768a814c9d0ab203cbe7be9ff5a676dda8aeed0c4fc1ed721b72d76e2b7ec8"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000093.jpg",
+      "sha256": "a51ac1b54f6a6429649b3e950c2d1395f2be3941f7eefe6508a639bf69eedc25"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000094.jpg",
+      "sha256": "2369e3a75db39877e3443aa057cdd4ef973fadfd4919d861373562d8b742ce48"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000095.jpg",
+      "sha256": "0e9acfacd9aa4314b6459d99c1fe672acaa3bad2bde84d4444b0c9dfd5c053d0"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000096.jpg",
+      "sha256": "a69b00388f025ce508bc171ff94b34d1c5b54e75ee95a1f25ff8b212ef613b3b"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000094.jpg",
+      "sha256": "2369e3a75db39877e3443aa057cdd4ef973fadfd4919d861373562d8b742ce48"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000095.jpg",
+      "sha256": "0e9acfacd9aa4314b6459d99c1fe672acaa3bad2bde84d4444b0c9dfd5c053d0"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000098.jpg",
+      "sha256": "aeba126dd34023276b4fca3a8a1ea84d0d0c886b0ae2396398c0ba8fcf7af130"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000101.jpg",
+      "sha256": "a162ed0e488ef773965b05dec830e897ede472aac6c362daf03fdadd4b385a72"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000103.jpg",
+      "sha256": "546946243ae07114e396cd5c399e512a015a45a38d0ddb8279fda7bf60a78ff1"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000103.jpg",
+      "sha256": "546946243ae07114e396cd5c399e512a015a45a38d0ddb8279fda7bf60a78ff1"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000104.jpg",
+      "sha256": "0d754f8a679fbc59a0bef2b57fd4107015bb8d70b3bbc80250f1b95c63cde470"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000105.jpg",
+      "sha256": "6b68978bae8a85f2d301f523a9622f06156f3bb4845bc3c71197c8e9ee9b8787"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000106.jpg",
+      "sha256": "daf1776359f19c4cfdbb56607300917d92a64251b00b6e1de37f115f08212333"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000107.jpg",
+      "sha256": "7d94ca01dcb15adfac0b11248f974557c0bf41344221041a5dba66663e6e6014"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000110.jpg",
+      "sha256": "5ba6e43705dfd8c64813fc79aeba9afe752e35848ecc630a3d4288b8596afea0"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000113.jpg",
+      "sha256": "cf4eb8302638892f9342a13c4c409ca303a157d3aba07e075c988dd874134024"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000111.jpg",
+      "sha256": "4fb9b4bdc189ba6838a1bb069ac5cb7479cce119d1ba559de656329585d68f9f"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000113.jpg",
+      "sha256": "cf4eb8302638892f9342a13c4c409ca303a157d3aba07e075c988dd874134024"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000113.jpg",
+      "sha256": "cf4eb8302638892f9342a13c4c409ca303a157d3aba07e075c988dd874134024"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000116.jpg",
+      "sha256": "3025299325d2ffd17a7ecf8719080112e262e69d3a95dd4bbc18d0a734d11051"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000001.jpg",
+      "sha256": "b8dec65705a5eb6b71c0427e5d8969a5ed06f690eaa8511db84c104d8dba918f"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000003.jpg",
+      "sha256": "5ff119de120cc2797860f82167c05b18eaf2574d5e7aa18763e9e7986cde7a12"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000004.jpg",
+      "sha256": "a45f2ad535bb9481efe6526d8dbcaebe38171e618edc653caee1479d6ddcdd8f"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000006.jpg",
+      "sha256": "41b6812234d933778b4538153b0dbf3ebd59b48533fa3db0177dbc095f81b49e"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000007.jpg",
+      "sha256": "e9d395d59f592163a420c1b3f714aa5ea54b9cd33c6973be6ec1a1f2d16d9c77"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000008.jpg",
+      "sha256": "0b65cc1c53d1474bb3cc0320aa430bbcf63dd6b248e3c3aaaa11c702a5a9a588"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000009.jpg",
+      "sha256": "f517778a459fbc938863d81d6dab32acd85d2c0c0aed3a922d5ec2ad78b4e54a"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000011.jpg",
+      "sha256": "41f9fd224e60782adbbfdd9cd35591bbd0c5cbee27f0cc777e054e64f0b0e8f7"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000012.jpg",
+      "sha256": "d6a1ca3d7b331eb539cce20f0c211c804521c8ca5a6e7c3df295738cb2a6470a"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000014.jpg",
+      "sha256": "81b6fe84e05c9ca0e5fd8cf060c0fb2970f86382a572af3060f9906c62032ff5"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000015.jpg",
+      "sha256": "b93e44c1c2f1c34b9e36d5ed774d1320d6107056206229ccf8539c586f70c265"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000017.jpg",
+      "sha256": "0fd64c05786fb7649f7744797328bc5ef7d3a8e8a71a84b2742b68e5d5e9cc1c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000019.jpg",
+      "sha256": "3e2e674afe0407a0cfda4445fd67e0dae2f79523da6a0f08ddae5998879c9c64"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000020.jpg",
+      "sha256": "f67056eba6a8d883239ec3069c141bffee718cb31aaa9a5af6bfc42d17e0dec9"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000021.jpg",
+      "sha256": "f54b35d80b32eee97c357a54d512a18dafca166b72b3998d78e56a42b04540fb"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000023.jpg",
+      "sha256": "399798bf2079d9a939a94f41c4be1419fd17a0dea04912b067256866b7c48231"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000024.jpg",
+      "sha256": "db9c683bd981d6edd4fdc94b14b3513425ffd2eb1779ff23073615801f682971"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000026.jpg",
+      "sha256": "ce23374432010a1ecd3d2c30f7956d5c1c55857299d96e5f0c13abc549bf2f21"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000027.jpg",
+      "sha256": "41e5db4a4d49e0ec40b15b0e6c5f6fd8ac1af6d966d62f2c0a14f4df10eec05c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000029.jpg",
+      "sha256": "f94b79686e1f61b7568d4e2a5a2567e7b979d52f3e7c0ab41af5e0828ed6d423"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000030.jpg",
+      "sha256": "5f159da2fc2e51fe2d4f43a13509aed630db96dea92e35090ec9f07f9cc6e010"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000031.jpg",
+      "sha256": "1aaa9371c798de2538c3b770f79ae36ba3131c330167590d910964d84cd19b19"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000033.jpg",
+      "sha256": "e10c5da81c39546c242c8fc8ec709c53976af84bc4757db988ac8df78c18383e"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000034.jpg",
+      "sha256": "7ffa51ddaf61e1fbeac657ed492e85d43539dff25d2dc00bb9d3221ebda2c6db"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000036.jpg",
+      "sha256": "71951d8d30737c200f6d415af4f3ac64cb763bbb162fb339519a76a1e4997165"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000037.jpg",
+      "sha256": "52041852574fbe55320c60d0bfb681bfa9e55d362d5de4f12656c9487893cb0b"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000039.jpg",
+      "sha256": "ff488a8a90bf220bbb327eb1b09528bde56e812c8f55502b7eec05a149097c1a"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000043.jpg",
+      "sha256": "2e85290d08c5741719cd9ba044b4046b281b610c034b7f11b40da5c9a6410ca3"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000045.jpg",
+      "sha256": "757b141ec77fd397b8cdf521167d1399a3bc9fbc9199fb955eca5e3802e5d75e"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000046.jpg",
+      "sha256": "647360253611eeeab008bbd81f741424ad279c98785b3c62b721ea1b7514057c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000047.jpg",
+      "sha256": "22d5abb7f12b5bb0934f9c6989d9cc9e5a5d96c12980fd788585b738a5ee8dc9"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000048.jpg",
+      "sha256": "7a39ce0cea24b1dace17445cfeebd526ac1eeb3336aabacd9a5bb9017b174a65"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000050.jpg",
+      "sha256": "c453057f38b1eb7a8071d73e6a4711a0a845db535d4d91fde090d1aca133e928"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000052.jpg",
+      "sha256": "429ab93fc4830b4b8cb7035905c20e2762b2598d24a2e9e598ec1f1e9bc06245"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000053.jpg",
+      "sha256": "4a876b8434754a7d62c89d42f9cc84208c7c84714e24b3fbd383a46ee35c59b2"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000055.jpg",
+      "sha256": "babf1a77c818e6a173486a07da7d92cb2ad9c6c0269af64edcfeabf6b35c09b4"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000057.jpg",
+      "sha256": "6550bcb5894672eb4b6d8c413ac88a2730cf7504cf51c97903b54ce4651354e5"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000059.jpg",
+      "sha256": "86e0a082ea271ab80e2441bf56f79b8af956ffb426f8c39095a6cb4b0e86918d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000060.jpg",
+      "sha256": "0c89c55ccbc96afae47179201c2b4cddd36aa777ba5b3190497eab1cdb306f40"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000064.jpg",
+      "sha256": "9f38e61dc5ac1b7fa39309872016bdf652555d30f77bdd11e6ad62da9e64319d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000065.jpg",
+      "sha256": "7002a926cd127c59ca035f20e9b1fc05aaa8bb79e008cfa6278aac877be73a6c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000067.jpg",
+      "sha256": "8f45893e202c9bae139e17ea804a14ac5ddfd44c7875f3ab02bb92652ccd2e2d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000068.jpg",
+      "sha256": "5101b3c145c8d9ef89f44019cf88263b7c3251f6b7e9b7692a87cab6b2302297"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000069.jpg",
+      "sha256": "40d2e4969059fcdb7eedab114fae9ddfc0fbcc53f74715947f18d3b8458542be"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000070.jpg",
+      "sha256": "3b4eefba3d4ba24af90289a553c12c9a8e1b78b0d6836ac45c326ee2becdaa4e"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000071.jpg",
+      "sha256": "e14ebdef1229b41d0dca9f80d701b0ae33dbb47386a9fc9c2e9d7cb5e991390c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000072.jpg",
+      "sha256": "d9b763084c7b692b627afc2265f8e26f46bf9569e5ef0390f54a17482ea52d20"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000073.jpg",
+      "sha256": "fde5c987a8e6661a617b68c77c57c5d3d68605cf7503be85023f873a134abf78"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000076.jpg",
+      "sha256": "07f44f034d23d4df8b504105895a49c8a19b96bbd8c0fafcedcd2d77ececcdca"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000078.jpg",
+      "sha256": "f5f2a11b7c86ca6075f5324975aec530f590a377050cc19c71d43f636c2da1f8"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000079.jpg",
+      "sha256": "788f068a32dfdd36a2cde994cfe2dfcbdd8890d650d8c47874ebb1d07c91f671"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000080.jpg",
+      "sha256": "2b711632eaa322978aeecc48117be0c9d037c6d9028480cbef8100a51d052a23"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000081.jpg",
+      "sha256": "f5cd9b1d881bc1b9cc08164317d1eabf62b55f1135b97f395ac78ca3631de54d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000083.jpg",
+      "sha256": "65664c8ead116c037ccb809a6768bf7b990ecc3e692b57d2250c0070afc8074c"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000084.jpg",
+      "sha256": "9125bc30a3969f2a0c47dfde969e52d35d5cd63f892553fd659ae90c0e691970"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000086.jpg",
+      "sha256": "10dccc03cc75c5b4d90d8580fec6360639e86729ef4fed95502e8483d36ae377"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000087.jpg",
+      "sha256": "04ab8b61337f140f0c633daa6e90561c4f682a5c2eff9188dad4eb49b5fdad69"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000089.jpg",
+      "sha256": "821709d4698f39a79cd4fb30b7dae6fc906d50d531e6b6ff55d438badd7a8797"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000090.jpg",
+      "sha256": "07cb4987f48763c1600364f6d5027c7b167132976952c18eb0209a4053264cb3"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000091.jpg",
+      "sha256": "42138c84864b7fa310f373277dde6b89d13599a8d86088a0287d6833a7d89ba9"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000092.jpg",
+      "sha256": "5b6b055f8b61ff74be06efebfc97f77f1ef60fb1544b74884a865e82bec36ecb"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000097.jpg",
+      "sha256": "bea85d4b36ecac5c5902ccd6b4ca217939ce573248fe1c508ee9f8029718d21d"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000099.jpg",
+      "sha256": "761dc4d564850febf28b36ac5c1baa839619dd1a7a13564263b912f1732784aa"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000100.jpg",
+      "sha256": "927909fa0a1df56e25b90b444b7345df856e45756ec05863d45526c179fa4a97"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000102.jpg",
+      "sha256": "8258fedcb62af41b3eae8562c36510b85a2e6af19a6ca28f79a3347febc24b78"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000108.jpg",
+      "sha256": "2c53c3e3f60e6b7095765b6342d33f73407149427bb4fd500271efb124557950"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000109.jpg",
+      "sha256": "d00c2e9de6ce7535beddc6186eb4ad7faaf5e0566e59365aa713fd3f2d672dfe"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000112.jpg",
+      "sha256": "68bf93ff5b1f121f7a270f3ceb447f45d7299948fe4e0ddca91669e3024d4fe8"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000114.jpg",
+      "sha256": "67db10a0213102ac6eb2181446c72ed37acdc2274baf815a8c7d9d3452637206"
+    },
+    {
+      "path": "/Users/houguanqun/Downloads/book/book/tools/bili-reader/runs/BV1kybV6DE47-p1/frames/000115.jpg",
+      "sha256": "54b112438298e5935998493a79e2ff8e343d5ed1e36080042afa9336e047fdac"
+    }
+  ],
+  "uniqueImages": 116,
+  "status": "imported-and-verified",
+  "bookID": "0E460578-852C-4D66-A9FF-964392263F96",
+  "bookPath": "/Users/houguanqun/Library/Application Support/LocalReader/Books/0E460578-852C-4D66-A9FF-964392263F96.md",
+  "topicID": "82734D5E-0897-48E3-4BA2-6E4877FE51FC",
+  "noteID": "9F5DF0D9-F1C5-418D-AD45-5F88D8662E20",
+  "verifiedFileSHA256": "d4bd6701b37e5093bd9990695af41303726e9f62d03e3aa4e8e98aa6212e87bb",
+  "verifiedUniqueImages": 116,
+  "uiVerification": "Selected report and readable opening observed in LocalReader screenshot"
+}

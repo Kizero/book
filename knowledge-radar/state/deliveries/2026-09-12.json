@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-12",
+  "status": "ready",
+  "completed_at": "2026-09-15",
+  "entity_id": "work:big-world-hypothesis",
+  "book_id": "F8808899-6624-44F2-B09D-78393BF454BA",
+  "book_title": "大世界假说-中文全译",
+  "group": "信息雷达",
+  "readback": ["beginning", "middle", "end"],
+  "report": {"path": "reports/2026-09-12.md", "sha256": "681176cd81a50d84268950d5169a06bdd376d93e59160067a55aea863ab5346d"},
+  "record": {"path": "records/2026-09-12-sutton-reading-dossier.json", "sha256": "2420627a2a9483163ca69e21e447a96675acdb82df13e96aa459daf74fe357e6"},
+  "chinese": {"path": "library/大世界假说-中文全译.md", "sha256": "9f708e7cf2faf7c9884635ce4c26a4e375b466c0848ec4f7502177892c2947c7"},
+  "import_record": {"path": "imports/2026-09-15-sutton-zh.md", "sha256": "9340dcc2bfd1141fb179fc7d8563bb7e239bdce16293dd732c82e43de06c0d5e"},
+  "additional_deliveries": [{
+    "entity_id": "work:the-bitter-lesson",
+    "book_id": "6C132B23-D6C6-4388-AB8F-DD8CD77603C0",
+    "book_title": "苦涩的教训-中文全译",
+    "group": "信息雷达",
+    "chinese": {"path": "library/苦涩的教训-中文全译.md", "sha256": "54d5ba3daf7c8cc25c6dbeb861f66632dbd395585bc026edbae8755bf7ea07db"},
+    "readback": ["beginning", "middle", "end"],
+    "verification": "独立核验：CLI 唯一 ID、两端 SHA256 一致、原生 UI 分组确认；现有单篇 checker 不覆盖此附加条目。"
+  }],
+  "entity_ids": [
+    "work:big-world-hypothesis",
+    "work:the-bitter-lesson"
+  ],
+  "report_path": "reports/2026-09-12.md",
+  "import_record_path": "imports/2026-09-12-sutton-zh.md"
+}

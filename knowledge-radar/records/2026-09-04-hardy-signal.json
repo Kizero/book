@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-04-hardy-signal",
+  "captured_at": "2026-09-04T10:30:00+08:00",
+  "artifact": {
+    "title": "“一个软工人的自白”标题来源线索",
+    "kind": "comment_thread_excerpt",
+    "author": "stccdu、蒋炎岩",
+    "raw_path": "inbox/2026-09-04-hardy-signal.md",
+    "source_url": "https://zhuanlan.zhihu.com/p/1986494838795941546",
+    "provenance": "user_supplied_excerpt",
+    "verification": "comment_text_not_independently_archived",
+    "sha256": "d2cb6cb49fdd22fdae35741b16137b97764a27b4e7536708e547469529ea53ca"
+  },
+  "entities": [
+    {
+      "id": "person:jiang-yanyan",
+      "name": "蒋炎岩",
+      "type": "person",
+      "aliases": ["JYY"],
+      "status": "known",
+      "priority": 2,
+      "locator": "L13",
+      "context": "作者确认标题致敬关系",
+      "confidence": "unverified"
+    },
+    {
+      "id": "person:gh-hardy",
+      "name": "G. H. Hardy",
+      "type": "person",
+      "aliases": ["G·H·哈代", "哈代"],
+      "status": "candidate",
+      "priority": 4,
+      "locator": "L11-L13",
+      "context": "评论把软工人的自白与哈代联系起来",
+      "confidence": "unverified"
+    },
+    {
+      "id": "work:a-mathematicians-apology",
+      "name": "A Mathematician's Apology",
+      "type": "book_or_essay",
+      "aliases": ["一个数学家的辩白", "一个数学家的辩护"],
+      "status": "candidate",
+      "priority": 5,
+      "featured": true,
+      "blurb": "这是 G. H. Hardy 写于 1940 年的著作。它不是数学教材，而是一位数学家对创造、数学审美和职业生命的自我辩护。",
+      "why_it_matters": "你这次真正缺失的不是一本孤立的书，而是一条思想谱系：蒋炎岩借它的标题，把软件工程、创造的乐趣和学术制度联系了起来。",
+      "recommended_action": "先进入略读队列。阅读时重点判断评论者建立的两人类比是否真的得到原文支持，不必立刻扩展到所有相关人物。",
+      "locator": "L13",
+      "context": "蒋炎岩确认演讲标题向它致敬",
+      "confidence": "unverified"
+    },
+    {
+      "id": "talk:a-software-workers-apology",
+      "name": "一个软工人的自白",
+      "type": "talk",
+      "aliases": [],
+      "status": "known",
+      "priority": 4,
+      "locator": "L11-L13",
+      "context": "评论讨论的演讲标题",
+      "confidence": "unverified"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:jyy-title-homage",
+      "text": "蒋炎岩明确表示“一个软工人的自白”的标题致敬 A Mathematician's Apology。",
+      "kind": "author_reply_in_user_excerpt",
+      "locator": "L13",
+      "evidence": "我就是致敬了这个标题",
+      "confidence": "unverified",
+      "priority": 5
+    },
+    {
+      "id": "claim:commenter-hardy-parallel",
+      "text": "评论者将哈代对创造力流失的感受，与蒋炎岩对学术内卷和学生失去创造乐趣的无奈作类比。",
+      "kind": "commenter_interpretation",
+      "locator": "L11",
+      "evidence": "让我想起了哈代",
+      "confidence": "unverified",
+      "priority": 4
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:comment-reference-mining",
+      "title": "把精选评论当作跨领域引用传感器",
+      "summary": "评论不作为主知识库；优先提取明确命名作品、补充思想谱系且得到作者确认的线索。",
+      "locator": "L11-L13",
+      "evidence": "果然有懂哥读过 A Mathematician's Apology",
+      "confidence": "unverified",
+      "priority": 5,
+      "acceptance": [
+        "评论线索与正文事实分开标记",
+        "有作者确认的引用关系获得更高优先级",
+        "书目信息仍回到出版社或图书馆核验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation:talk-homage-hardy-book",
+      "from": "talk:a-software-workers-apology",
+      "type": "title_homage",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L13",
+      "confidence": "unverified"
+    },
+    {
+      "id": "relation:hardy-authored-apology",
+      "from": "person:gh-hardy",
+      "type": "associated_as_author_in_comment_context",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L11-L13",
+      "confidence": "unverified"
+    }
+  ],
+  "questions": [
+    "评论者对两位作者心境的类比是文本证据支持的解释，还是富有启发但尚未验证的投射？"
+  ],
+  "actions": [
+    "核验 A Mathematician's Apology 的原始书目信息",
+    "将作者回复过且包含明确作品名的评论纳入高优先级发现规则"
+  ]
+}

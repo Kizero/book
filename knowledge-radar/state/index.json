@@ -1,0 +1,2570 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-16",
+  "stats": {
+    "records": 15,
+    "entities": 20,
+    "candidate_entities": 15,
+    "methods": 51,
+    "context_cards": 40,
+    "resources": 14,
+    "relations": 6
+  },
+  "records": [
+    {
+      "id": "2026-09-04-hardy-bibliographic-verification",
+      "captured_at": "2026-09-04T11:30:00+08:00",
+      "artifact": {
+        "title": "A Mathematician's Apology 书目信息核验",
+        "kind": "primary_source_verification_note",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-04-hardy-bibliographic-verification.md",
+        "source_url": "https://www.cambridge.org/core/books/mathematicians-apology/A344F9D097F5AFF45BDA21B57B54BDCA",
+        "additional_sources": [
+          "https://assets.cambridge.org/97811076/04636/frontmatter/9781107604636_frontmatter.pdf",
+          "https://www.cp.com.cn/book/7-100-05152-5_20.html"
+        ],
+        "provenance": "official_publisher_pages",
+        "verification": "verified_primary",
+        "sha256": "455971d888e5a759806f646caf5b6feeed20b79bc234976e74187cec0845a999"
+      }
+    },
+    {
+      "id": "2026-09-04-hardy-signal",
+      "captured_at": "2026-09-04T10:30:00+08:00",
+      "artifact": {
+        "title": "“一个软工人的自白”标题来源线索",
+        "kind": "comment_thread_excerpt",
+        "author": "stccdu、蒋炎岩",
+        "raw_path": "inbox/2026-09-04-hardy-signal.md",
+        "source_url": "https://zhuanlan.zhihu.com/p/1986494838795941546",
+        "provenance": "user_supplied_excerpt",
+        "verification": "comment_text_not_independently_archived",
+        "sha256": "d2cb6cb49fdd22fdae35741b16137b97764a27b4e7536708e547469529ea53ca"
+      }
+    },
+    {
+      "id": "2026-09-04-jyy-ai-practice-unified",
+      "captured_at": "2026-09-04T11:06:53+08:00",
+      "artifact": {
+        "title": "蒋炎岩老师的 AI 实践与核心判断（统一总纲）",
+        "kind": "user_transcript",
+        "author": "用户现场转述（关于蒋炎岩）",
+        "raw_path": "inbox/2026-09-04-jyy-ai-practice-unified.md",
+        "source_url": null,
+        "provenance": "user_supplied",
+        "verification": "unverified_against_original_video",
+        "sha256": "2acb8f6a74db7b43ca99044c3db5b1d1a4425edc473c5ccbd3ae678977325a69"
+      }
+    },
+    {
+      "id": "2026-09-04-hardy-reading-dossier",
+      "captured_at": "2026-09-04T16:30:00+08:00",
+      "artifact": {
+        "title": "《A Mathematician's Apology》阅读档案",
+        "kind": "book_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-04-hardy-reading-dossier.md",
+        "source_url": "https://web.njit.edu/~akansu/PAPERS/GHHardy-AMathematiciansApology.pdf",
+        "additional_sources": [
+          "https://mathshistory.st-andrews.ac.uk/Biographies/Hardy/",
+          "https://mathshistory.st-andrews.ac.uk/Extras/Hardy_apology/",
+          "https://www.lindahall.org/about/news/scientist-of-the-day/g-h-hardy/"
+        ],
+        "provenance": "full_text_and_research",
+        "verification": "full_text_checked_with_secondary_context",
+        "sha256": "4e2e343d1285f21ff6e04a33d950e52fe19c9f1e10038038363894f3271cee7d"
+      }
+    },
+    {
+      "id": "2026-09-05-naur-reading-dossier",
+      "captured_at": "2026-09-05T19:17:45+08:00",
+      "artifact": {
+        "title": "Programming as Theory Building 阅读档案",
+        "kind": "paper_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-05-naur-reading-dossier.md",
+        "source_url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+        "provenance": "full_text_and_research",
+        "sha256": "0a0781f416d32199112eec2be6b0d7e86bf8f212dfef57383f516321ada785bc"
+      }
+    },
+    {
+      "id": "2026-09-06-bainbridge-reading-dossier",
+      "captured_at": "2026-09-06T09:04:52+08:00",
+      "artifact": {
+        "title": "Ironies of Automation 阅读档案",
+        "kind": "paper_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-06-bainbridge-reading-dossier.md",
+        "source_url": "https://www.complexcognition.co.uk/2021/06/ironies-of-automation.html",
+        "provenance": "full_text_and_research",
+        "sha256": "61dc91deed315ec77fd031a347711be8d0ab45b40c6f761711d40ab1f80452d5"
+      }
+    },
+    {
+      "id": "2026-09-07-hamming-reading-dossier",
+      "captured_at": "2026-09-07T09:58:00+08:00",
+      "artifact": {
+        "title": "You and Your Research 阅读档案",
+        "kind": "talk_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-07-hamming-reading-dossier.md",
+        "source_url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch",
+        "provenance": "full_text_and_research",
+        "sha256": "fe626b18b41928a607ef427c235558431598b11ac27161ee4f837a8fb85f847e"
+      }
+    },
+    {
+      "id": "2026-09-08-darwin-reading-dossier",
+      "captured_at": "2026-09-08T09:20:36.496Z",
+      "artifact": {
+        "title": "达尔文致福西特：观察与观点阅读档案",
+        "kind": "letter_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-08-darwin-reading-dossier.md",
+        "source_url": "https://darwin-editorial.darwinproject.ac.uk/view/letters/DCP-LETT-3257",
+        "provenance": "full_text_and_research",
+        "sha256": "66160cde250d9aa429bca853561def620ee6fd970714699fdf7f4f00c8266e36"
+      }
+    },
+    {
+      "id": "2026-09-09-noble-reading-dossier",
+      "captured_at": "2026-09-09T01:11:27.117Z",
+      "artifact": {
+        "title": "计算生物学项目组织简明指南：阅读档案",
+        "kind": "article_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-09-noble-reading-dossier.md",
+        "source_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424",
+        "provenance": "full_text_and_research",
+        "sha256": "462394a559de096851a1cbbc4557f080503b7cab6ed741a7baca146f5c21088d"
+      }
+    },
+    {
+      "id": "2026-09-10-poincare-reading-dossier",
+      "captured_at": "2026-09-10T01:09:51.272Z",
+      "artifact": {
+        "title": "庞加莱《数学创造》阅读档案",
+        "kind": "essay_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-10-poincare-reading-dossier.md",
+        "source_url": "https://www.gutenberg.org/files/39713/39713-h/39713-h.htm#Page_383",
+        "provenance": "full_text_and_research",
+        "sha256": "b213127a4cafc8ae4a27866a43f7a6b03977ab3a052077f054383811eebcfacc"
+      }
+    },
+    {
+      "id": "2026-09-11-collaboration-reading-dossier",
+      "captured_at": "2026-09-11T01:08:11.395Z",
+      "artifact": {
+        "title": "《成功合作的十条简单规则》阅读档案",
+        "kind": "essay_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-11-collaboration-reading-dossier.md",
+        "source_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030044",
+        "provenance": "full_text_and_research",
+        "sha256": "ada3959038946bf58b287e5dbb7f7a088be4d2b4f84afc01dce5f0f5cf90acec"
+      }
+    },
+    {
+      "id": "2026-09-12-sutton-reading-dossier",
+      "captured_at": "2026-09-12T01:06:54.121Z",
+      "artifact": {
+        "title": "Sutton双篇：苦涩的教训与大世界假说",
+        "kind": "paired_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-12-sutton-reading-dossier.md",
+        "source_url": "https://khurramjaved.com/papers/the_big_world_hypothesis.pdf",
+        "additional_sources": [
+          "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+          "https://khurramjaved.com/papers/the_big_world_hypothesis.pdf",
+          "https://khurramjaved.com/",
+          "https://oaklab.ai/mission",
+          "https://research.ibm.com/publications/deep-blue",
+          "https://sequoiacap.com/podcast/rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again"
+        ],
+        "provenance": "full_text_and_research",
+        "sha256": "3ecd570bd42ef3103825a9287f495abfa5f3ae4bf1e22f85e7ea37d8a208b3c9"
+      }
+    },
+    {
+      "id": "2026-09-14-vox-populi-reading-dossier",
+      "captured_at": "2026-09-14T09:06:00+08:00",
+      "artifact": {
+        "title": "《民众之声》补交与知识连接",
+        "kind": "essay_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-14-vox-populi-reading-dossier.md",
+        "source_url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Collective_Intelligence/Galton_1907_Vox_Populi.pdf",
+        "provenance": "full_text_and_research",
+        "sha256": "917db3daaf11038ee8fdbb88cca15c20175c69d2ddd214100e5808f878a5a60e"
+      }
+    },
+    {
+      "id": "2026-09-15-bacon-reading-dossier",
+      "captured_at": "2026-09-15T09:06:00+08:00",
+      "artifact": {
+        "title": "《论读书》阅读档案",
+        "kind": "essay_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-15-bacon-reading-dossier.md",
+        "source_url": "https://jacklynch.net/Texts/studies.html",
+        "provenance": "full_text_and_research",
+        "sha256": "feca90a86aa9dc54b013347fda375c5b21b1d17561aeac0d9ea003cefd69f71f"
+      }
+    },
+    {
+      "id": "2026-09-16-quick-dirty-reading-dossier",
+      "captured_at": "2026-09-16T09:12:00+08:00",
+      "artifact": {
+        "title": "快速而不失严谨的科学编程阅读档案",
+        "kind": "article_reading_dossier",
+        "author": "信息雷达",
+        "raw_path": "inbox/2026-09-16-quick-dirty-reading-dossier.md",
+        "source_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008549",
+        "provenance": "full_text_and_research",
+        "sha256": "d12a0266b47ce1d32ff9f1124a13d549c349e1e5cf7d71e63c1e7c770766a650"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "work:a-mathematicians-apology",
+      "name": "A Mathematician's Apology",
+      "type": "book_or_essay",
+      "aliases": [
+        "一个数学家的辩护",
+        "一个数学家的辩白"
+      ],
+      "status": "reading",
+      "max_priority": 5,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-bibliographic-verification",
+          "locator": "L11-L17",
+          "context": "英文首版与中文版本书目信息已由出版社页面核验",
+          "confidence": "verified"
+        },
+        {
+          "record_id": "2026-09-04-hardy-signal",
+          "locator": "L13",
+          "context": "蒋炎岩确认演讲标题向它致敬",
+          "confidence": "unverified"
+        },
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L17-L21",
+          "context": "Hardy 的写作处境与自我辩护",
+          "confidence": "verified"
+        }
+      ],
+      "featured": true,
+      "blurb": "这不是一本讲数学知识的书，而是 63 岁的 Hardy 在原创能力衰退、身处战争的时刻，为纯数学，也为自己选择过的一生写下的辩护词。",
+      "why_it_matters": "它补上的不只是 JYY 标题致敬的出处，而是一组可以继续追问的判断：创造物凭什么值得、审美标准如何成立、短期无用是否足以成为价值辩护。",
+      "recommended_action": "只有 20 分钟就读第 1—3、10—11、18、28—29 节；有一小时则直接读完约 50 页正文。",
+      "report_note": "核心论证已对照完整英文电子版；生平和成书背景参考数学史资料。知乎评论只作为发现入口。",
+      "last_feedback": {
+        "at": "2026-09-04T14:57:32+08:00",
+        "note": "用户确认准备阅读；保留完整 PDF 与阅读档案，后续不再作为新发现重复推荐"
+      }
+    },
+    {
+      "id": "work:ironies-of-automation",
+      "name": "Ironies of Automation",
+      "type": "paper",
+      "aliases": [
+        "自动化的反讽（暂译）"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-06",
+      "last_seen": "2026-09-06",
+      "mentions": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "自动化接手日常操作后，人的练习与状态理解可能减少，异常却仍要求他及时判断、接手。这篇短文让我们检查：人机分工有没有为留下来的责任准备足够能力。",
+      "why_it_matters": "我们刚决定用 AI 加快阅读和掌握。今天这个反问值得一起带上：提速之后，哪一步仍让你亲自生成判断并得到反馈？",
+      "recommended_action": "读关键段落即可，不新增精读负担。3—5 分钟读本期；15—20 分钟在原文搜索 1.1.2、2.3、3.4，再读结论。",
+      "report_note": "1983 年的工业自动化研究；迁移到 AI 阅读的建议为本期推论。没有阅读反馈，不认定已掌握。"
+    },
+    {
+      "id": "work:programming-as-theory-building",
+      "name": "Programming as Theory Building",
+      "type": "paper",
+      "aliases": [
+        "编程即理论构建（暂译）"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "mentions": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "代码和文档都交接了，为什么接手者还是容易把系统改坏？Peter Naur 在这篇 1985 年文章中，从程序员对问题和设计的理解出发讨论这个困境。",
+      "why_it_matters": "你已经关注设计理由、个人历史和 AI 协作。这篇文章提供了一个更早的思想入口：如何判断接手者真正掌握了系统，以及怎样帮助他获得这种能力。",
+      "recommended_action": "先读第 2 节案例、第 4 节三种能力、第 6 节程序的生死。约半小时即可进入核心问题；Hardy 仍保留在你的阅读中，不必急着开第二本书。",
+      "report_note": "论文原意与本期迁移建议已区分；中文标题为暂译。今天发现的是旧作品，不是新发表论文。"
+    },
+    {
+      "id": "work:big-world-hypothesis",
+      "name": "Sutton 双篇：算力会增长，为什么学习仍不能停止？",
+      "type": "paper",
+      "aliases": [
+        "Big World Hypothesis（大世界假说）",
+        "The Bitter Lesson（苦涩的教训）"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-12",
+      "last_seen": "2026-09-12",
+      "mentions": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "《苦涩的教训》讨论研究路线怎样利用不断增长的计算；“大世界假说”讨论能力有限的智能体怎样持续应对复杂环境。我的串联是：别只扩大已经装进去的知识，也要改进获得和修正知识的过程。这是本期概括，不是作者给两篇规定的统一口号。",
+      "why_it_matters": "你想看清的不是两个新名词，而是 Sutton 到底在押注哪条研究路线。本期先把两篇区别开，再核对 Oak Lab 的公开目标；不把传记背景或公司愿景当成证明。",
+      "recommended_action": "先用3—5分钟读下面两篇的中心问题。愿意深入，再用约15—20分钟读《苦涩的教训》开头和末两段、大世界假说第1节与第4.1节；最后看第3节如何限定证据。其余章节可留到感兴趣时，不新增强制待办。",
+      "report_note": "用户指定双篇专题；中文导读不是全文译文。掌握情况未知，原文与本期举例、批评分开。"
+    },
+    {
+      "id": "work:you-and-your-research",
+      "name": "You and Your Research · 你与你的研究",
+      "type": "talk",
+      "aliases": [
+        "你与你的研究"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "mentions": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "读得更多之后，要把精力投向哪里？今天用一场研究者的经验演讲，区分宏大的愿望与真正可以着手的问题。",
+      "why_it_matters": "你提出借 AI 加快阅读；本期补上“选择问题”这一环。旧笔记已有张益唐关于自得其乐的入口，今天与追求重要贡献的视角并读，不要求以名望取代兴趣。",
+      "recommended_action": "读关键段落即可。3—5 分钟读本期；15—20 分钟在原文依次搜索 important problem、Great Thoughts Time、library work，最后搜索 gloss over 阅读对机遇的质疑。读上下文，不必今天读完全文。",
+      "report_note": "依据 1986 年演讲转录；迁移建议和批评为本期判断。旧阅读记录只作关联线索，不判定掌握。"
+    },
+    {
+      "id": "concept:personal-intelligence-os",
+      "name": "个人智能操作系统",
+      "type": "concept",
+      "aliases": [],
+      "status": "known",
+      "max_priority": 5,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L23-L29",
+          "context": "材料数字化、个人历史、增量、行动与验证闭环",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    },
+    {
+      "id": "work:bacon-of-studies",
+      "name": "培根《论读书》：哪些可以代读，哪些不能只收下结论？",
+      "type": "essay",
+      "aliases": [
+        "Of Studies"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "mentions": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "培根一开始就承认读书的三种用途：愉悦、谈吐、处理事务的能力。他没有说所有阅读都必须换成产出。但若目标是判断问题，仅仅收下书里的规则就不够：规则往往过于宽泛，还需要观察和经验来限定。[原文](https://jacklynch.net/Texts/studies.html)",
+      "why_it_matters": "你的旧批注提过，让AI帮忙后“自己还是得思考”。今天不重复这句提醒，而看培根怎样区分阅读、讨论、写作，以及代读的边界。这是一次历史对照，不要求把四百年前的意见当成现代学习科学。",
+      "recommended_action": "值得精读这个短篇，不必读整部随笔集。先花3—5分钟看“代读”和“读谈写”两段；若愿意，用15分钟读完整中文版，再挑一个你不同意的判断写一句理由。文本很短，时间主要留给思考，不必凑阅读时长。",
+      "report_note": "公版单篇AI全译，不是整本随笔集；正文与本期迁移、批评分开。"
+    },
+    {
+      "id": "work:poincare-mathematical-creation",
+      "name": "庞加莱《数学创造》：灵感之前与之后",
+      "type": "essay",
+      "aliases": [
+        "Mathematical Creation"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "mentions": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "他苦想许久没有结果，却在踏上公共马车的一瞬间，突然看见两个数学领域的联系。最值得读的，不只是这个故事，而是他随后追问：为什么偏偏这个想法浮现出来？那种绝对确信的感觉，又值不值得信任？",
+      "why_it_matters": "今天从工作记录转向想法怎样产生。你的旧材料里已有“先创造、再评判”的线索；庞加莱把问题往前推了一步：在我们开始有意识评判之前，是否已经筛掉了大多数想法？它适合扩展认识，不必硬套成一套个人效率流程。",
+      "recommended_action": "读关键段落。3—5 分钟看本期导读；约 15—20 分钟读中文版第三、四节，先看亲身经历，再看他的解释。若还有兴趣，再读开头关于“怎样理解一个证明”的部分。数学术语可以先跳过，他自己也允许读者这样读。",
+      "report_note": "采用公版 1913 年英译本，完整翻译《数学创造》一章。五个中文分节标题为阅读方便所加；原作者的心理假说和本期批评分开。"
+    },
+    {
+      "id": "work:quick-dirty-programming",
+      "name": "快速而不失严谨的科学编程：先做出来，究竟要验证什么？",
+      "type": "article",
+      "aliases": [
+        "Ten simple rules for quick and dirty scientific programming"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-16",
+      "last_seen": "2026-09-16",
+      "mentions": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "你让AI做出了一个能运行的原型。现在最重要的问题可能不是“再加什么功能”，而是“它刚才替我们排除了哪一种不确定性”。这篇文章给出一个可操作的分界：把探索做小，把改变结论的错误查严，把长期复用的代码单独维护。[期刊原文](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008549)",
+      "why_it_matters": "最新检索命中的旧批注已经强调“让claude自己去check，而不是指望人的记忆”。所以今天不把自动检查当作新发现，而是往前问：检查目标怎样选择，原型怎样检验假设，什么代码值得升级成长期工具。你的实际掌握进度仍未知。[本轮个人依据](../inbox/2026-09-16-personal-context-0903.md)",
+      "recommended_action": "建议读关键段落，不新增整本书的债务。3—5分钟：读规则2与6，分别找出“检验想法”和“检查实现”在做什么。15—20分钟：连读规则2、6、7、9、10，再看本文末尾的两个反例；其余规则遇到需要时查阅。",
+      "report_note": "原作2021年发表于PLOS，CC BY 4.0；完整AI中文译文，图以中文描述及代码转录保留。作者经验建议与本期迁移、批评分开。"
+    },
+    {
+      "id": "work:ten-rules-successful-collaboration",
+      "name": "成功合作的十条简单规则：别把擅自改计划当成惊喜",
+      "type": "essay",
+      "aliases": [
+        "Ten Simple Rules for a Successful Collaboration"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "mentions": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "你发现了一个更好的方向，兴冲冲改了计划；合作伙伴却因此停工。这篇短文值得读的地方，是把“合作要有诚意”拆成具体的承诺：谁做什么、变化怎么商量、功劳怎么分，以及什么情况下应该退出。",
+      "why_it_matters": "你曾写过“要先从计划开始”。今天不再重复这一点，而往后追问：开始时说清楚了，过程中变了怎么办？作者谈科研合作，但不要求你一定迁移到自己的项目；看清共同工作如何成立，本身就值得。",
+      "recommended_action": "读关键段落即可。先花3—5分钟看本期导读；愿意深入时，用约15分钟读规则二、三、五、七、八，再对照下面的批评。原文只有两页，不必为凑时长继续扩展阅读。",
+      "report_note": "2007年作者经验短文，非普遍定律；原作CC BY，中文为AI全文翻译。举例与批评已另作区分。"
+    },
+    {
+      "id": "work:vox-populi",
+      "name": "民众之声：787个判断，究竟哪一步让结果变准？",
+      "type": "essay",
+      "aliases": [
+        "Vox Populi"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "mentions": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "1907年的短文记录了这样的过程：参赛者花六便士填卡，估计一头牛宰杀、整理后的胴体重量。高尔顿剔除13张填写不全或难辨的卡，统一单位，再把787个数字排序。中间那个数是1207磅，真实重量1198磅，相差9磅，约0.75%。这篇文章用的是中位数，不是把所有数字相加再除以人数的平均数。[原始扫描](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Collective_Intelligence/Galton_1907_Vox_Populi.pdf)",
+      "why_it_matters": "今天先消化并补齐昨天已经准备的短文，不另加一本。最新检索找到了《超预测》的相关旧材料，但其中有混合批注和AI候选，不能当成你已经理解的证据。这次回到一张具体的估重表，区分个人意见、汇总规则和真实结果。",
+      "recommended_action": "读关键段落即可。3—5分钟看本期四条收获与温度计反例；愿意深入，再用约15分钟读中文版的估重过程、表格中25/50/75百分位及最后三段。无需逐行记数字，也不要求追加阅读。",
+      "report_note": "补交昨日未完成材料 / 知识连接，不冒充今日新发现。中文为公版原文的AI全译，图示由完整表格与说明承载。"
+    },
+    {
+      "id": "work:organizing-computational-biology-projects",
+      "name": "计算生物学项目组织简明指南",
+      "type": "article",
+      "aliases": [
+        "A Quick Guide to Organizing Computational Biology Projects"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-09",
+      "last_seen": "2026-09-09",
+      "mentions": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "实验跑完了，图也保存了。三个月后，却说不清为什么当时认为它失败。今天这篇短文讲的不是生物学知识，而是如何让一次工作留下可以继续使用的操作和判断。",
+      "why_it_matters": "你已经提出把 Agent 的成功轨迹沉淀成工具。这篇补上容易遗漏的一半：除了让机器重新执行，还要让未来的自己找回当时的理由。个人旧记录里有实验停止标准的相关线索，但不足以判断你已经掌握本文的方法。",
+      "recommended_action": "读关键段落即可。先用 3—5 分钟看本期导读，再用约 15 分钟读中文版的“实验笔记”“开展单个实验”“处理与预防错误”。目录、脚本和版本控制部分需要时再查，不增加一本大书的负担。",
+      "report_note": "依据 2009 年开放许可原文全文。中文版为 AI 翻译；今天的工程补充与原作者建议分开，工具选择保留其时代背景。"
+    },
+    {
+      "id": "work:darwin-fawcett-1861-09-18",
+      "name": "达尔文致福西特：观察为什么需要观点",
+      "type": "letter",
+      "aliases": [
+        "To Henry Fawcett, 18 September 1861"
+      ],
+      "status": "candidate",
+      "max_priority": 5,
+      "first_seen": "2026-09-08",
+      "last_seen": "2026-09-08",
+      "mentions": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "“先多收集一些事实，总会有用吧？”达尔文用一封私人信件挑战这个直觉。但整封读完，比记住一句名言更有意思：他一边要求观察能反驳理论，一边也在讥讽反对者。",
+      "why_it_matters": "你最初想扩展信息源。这封信提供另一层问题：增加来源之后，什么使信息变成值得注意的证据？旧笔记已有“见解先于事实”和竞争假设的线索，今天主要补历史来龙去脉及这些原则的边界，不假定你没接触过相关方法。",
+      "recommended_action": "值得精读，但只是一封短信，不再加一本大书。3—5 分钟可读中文全信；若愿意花 15 分钟，再对读首段的观察原则、末尾附言的检验方式，以及中间对同行的评价。无须为了凑时长继续读。",
+      "report_note": "依据 1861 年信件手稿转录；译者标题、迁移与批评另作区分。准备好材料不等于读者已读。"
+    },
+    {
+      "id": "person:gh-hardy",
+      "name": "G. H. Hardy",
+      "type": "person",
+      "aliases": [
+        "G·H·哈代",
+        "哈代"
+      ],
+      "status": "candidate",
+      "max_priority": 4,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-bibliographic-verification",
+          "locator": "L11",
+          "context": "Cambridge 出版资料列明作者",
+          "confidence": "verified"
+        },
+        {
+          "record_id": "2026-09-04-hardy-signal",
+          "locator": "L11-L13",
+          "context": "评论把软工人的自白与哈代联系起来",
+          "confidence": "unverified"
+        },
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L15-L17",
+          "context": "作者生平及晚年创作处境",
+          "confidence": "verified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": "核心论证已对照完整英文电子版；生平和成书背景参考数学史资料。知乎评论只作为发现入口。"
+    },
+    {
+      "id": "work:the-bitter-lesson",
+      "name": "The Bitter Lesson · 苦涩的教训",
+      "type": "essay",
+      "aliases": [],
+      "status": "candidate",
+      "max_priority": 4,
+      "first_seen": "2026-09-12",
+      "last_seen": "2026-09-12",
+      "mentions": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": null,
+          "context": "",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": true,
+      "blurb": "Sutton 从棋类、语音和视觉的研究史中归纳：能随算力扩展的搜索与学习，长期往往胜过不断手工补充领域知识的路线。苦涩在于，研究者投入心血的聪明设计，可能不是最终突破的来源。他希望系统获得发现能力，而不只是装载人已经发现的内容。这是历史论辩，不是证明所有任务中某一方法必胜的定理。",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": "用户指定双篇专题；中文导读不是全文译文。掌握情况未知，原文与本期举例、批评分开。"
+    },
+    {
+      "id": "talk:a-software-workers-apology",
+      "name": "一个软工人的自白",
+      "type": "talk",
+      "aliases": [],
+      "status": "known",
+      "max_priority": 4,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-signal",
+          "locator": "L11-L13",
+          "context": "评论讨论的演讲标题",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    },
+    {
+      "id": "work:a-philosophy-of-software-design",
+      "name": "A Philosophy of Software Design",
+      "type": "book",
+      "aliases": [],
+      "status": "known",
+      "max_priority": 3,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L35",
+          "context": "深度阅读方法案例",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    },
+    {
+      "id": "edition:mathematicians-apology-cn-2007",
+      "name": "《一个数学家的辩白》商务印书馆 2007 年版",
+      "type": "book_edition",
+      "aliases": [],
+      "status": "candidate",
+      "max_priority": 3,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-bibliographic-verification",
+          "locator": "L15-L17",
+          "context": "商务印书馆中文版本",
+          "confidence": "verified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    },
+    {
+      "id": "person:cp-snow",
+      "name": "C. P. Snow",
+      "type": "person",
+      "aliases": [
+        "C·P·斯诺"
+      ],
+      "status": "candidate",
+      "max_priority": 2,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-bibliographic-verification",
+          "locator": "L11",
+          "context": "Cambridge 当前版本前言作者",
+          "confidence": "verified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    },
+    {
+      "id": "person:jiang-yanyan",
+      "name": "蒋炎岩",
+      "type": "person",
+      "aliases": [
+        "JYY"
+      ],
+      "status": "known",
+      "max_priority": 2,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "mentions": [
+        {
+          "record_id": "2026-09-04-hardy-signal",
+          "locator": "L13",
+          "context": "作者确认标题致敬关系",
+          "confidence": "unverified"
+        },
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L1",
+          "context": "总纲讨论对象",
+          "confidence": "unverified"
+        }
+      ],
+      "featured": false,
+      "blurb": "",
+      "why_it_matters": "",
+      "recommended_action": "",
+      "report_note": ""
+    }
+  ],
+  "methods": [
+    {
+      "id": "method:sutton12-2",
+      "title": "《苦涩的教训》到底苦在哪里",
+      "summary": "Sutton 从棋类、语音和视觉的研究史中归纳：能随算力扩展的搜索与学习，长期往往胜过不断手工补充领域知识的路线。苦涩在于，研究者投入心血的聪明设计，可能不是最终突破的来源。他希望系统获得发现能力，而不只是装载人已经发现的内容。这是历史论辩，不是证明所有任务中某一方法必胜的定理。 [原始依据](https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf)",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L26",
+          "confidence": "likely",
+          "about_entity": "work:big-world-hypothesis"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:big-world-hypothesis"
+      ]
+    },
+    {
+      "id": "method:current-uselessness-not-permanent",
+      "title": "不要把当前无用外推成永久无用",
+      "summary": "“现在没有用途”与“永远不会有用途”是两种证据要求完全不同的判断，后者必须主动寻找历史反例。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L51-L53",
+          "confidence": "verified",
+          "about_entity": "work:a-mathematicians-apology"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:a-mathematicians-apology"
+      ]
+    },
+    {
+      "id": "method:vox-4",
+      "title": "中心很准，不代表每个人都准",
+      "summary": "第一四分位数1162，第三四分位数1236；中间一半估计跨了74磅，而整体中位数距真值仅9磅。这是两种不同问题：集体输出准不准，个人判断散不散。不能把整体表现返还给每个人，认定大家都拥有同样可靠的知识。原文另一个值得保留的态度是：对于两侧误差为何不对称，作者明确说自己不够了解，未硬编心理解释。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L27",
+          "confidence": "likely",
+          "about_entity": "work:vox-populi"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:vox-populi"
+      ]
+    },
+    {
+      "id": "method:hamming-class",
+      "title": "从单次答案走向可复用的方法",
+      "summary": "把单次答案提升为一类问题的方法。他反思连续解决孤立计算题的工作方式，转向可供后来者使用的方法。我们的迁移：阅读产物可以是一条带适用条件的区分，而不只是作者观点的复述；但不要为了通用而过度抽象。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L24",
+          "confidence": "likely",
+          "about_entity": "work:you-and-your-research"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:you-and-your-research"
+      ]
+    },
+    {
+      "id": "method:vox-5",
+      "title": "保留原始判断，而不是只留下胜利故事",
+      "summary": "文章末尾不是再夸一遍群众，而是请展览组织者保存带编号的卡片，以便检查是否完整、继续研究。可迁移的做法是保留个人答案、剔除理由、汇总规则和实际结果；只有一个最终数字，就无法知道下次失败究竟发生在哪一步。这是本期提炼，不等于原始卡片现已由我们获得。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L31",
+          "confidence": "likely",
+          "about_entity": "work:vox-populi"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:vox-populi"
+      ]
+    },
+    {
+      "id": "method:vox-2",
+      "title": "先确保大家回答的是同一个问题",
+      "summary": "原文问的是胴体重量，不是眼前活牛的重量，高尔顿还统一了计量单位。由此可以提取一个检查动作：先写清对象、时点和口径，再汇总意见。若甲估毛重、乙估净重，数字分散未必表示谁判断差，可能只是题目不同。后半句是本期迁移，不是原文实验。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L19",
+          "confidence": "likely",
+          "about_entity": "work:vox-populi"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:vox-populi"
+      ]
+    },
+    {
+      "id": "method:collaboration-4",
+      "title": "先谈贡献与分工，也给变化留一个入口",
+      "summary": "作者要求一开始说明谁做什么，尽早讨论署名预期，但又允许新想法改变合作。关键是变化后重新讨论时间和贡献分配，而不是把第一次分工当成永不能改的合同。只有热情相投，却对各自承诺理解不同，后面仍可能冲突。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L21",
+          "confidence": "likely",
+          "about_entity": "work:ten-rules-successful-collaboration"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ten-rules-successful-collaboration"
+      ]
+    },
+    {
+      "id": "method:quick-dirty-1",
+      "title": "原型的单位是一个待检验假设，不是一张功能清单",
+      "summary": "规则2让每个短周期从关键假设开始，到评价结果结束。本期例子：若你要检验“这些资料能否改善检索”，先用一小批真实问题比较检索结果；登录页、标签系统和漂亮界面都不替你回答这个问题。mock可以省掉无关部分，但不能把本来要检验的检索能力也mock掉。后半句是本期边界提醒，不是作者给出的案例。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L15",
+          "confidence": "likely",
+          "about_entity": "work:quick-dirty-programming"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:quick-dirty-programming"
+      ]
+    },
+    {
+      "id": "method:darwin-silence",
+      "title": "可见意见不等于所有判断",
+      "summary": "他抱怨许多同行私下支持，却因科学声誉而等别人先开口。由此可作一个有限推断：公开可见的意见未必等于所有人的判断。但沉默不自动意味着支持，不能把他的私人转述当作同行立场的统计。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L15",
+          "confidence": "likely",
+          "about_entity": "work:darwin-fawcett-1861-09-18"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:darwin-fawcett-1861-09-18"
+      ]
+    },
+    {
+      "id": "method:bainbridge-practice",
+      "title": "在答案之前保留一次自己的判断",
+      "summary": "迁移建议：先预测或解释，再用原文和反馈纠错。让少量阅读留下可检验的理解。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L18",
+          "confidence": "likely",
+          "about_entity": "work:ironies-of-automation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ironies-of-automation"
+      ]
+    },
+    {
+      "id": "method:separate-motive-and-worth",
+      "title": "把动机与价值拆开",
+      "summary": "分别回答“我为什么做”和“这件事是否值得”，避免用热爱替成果辩护，也避免用外部回报冒充内在动机。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L39-L41",
+          "confidence": "verified",
+          "about_entity": "work:a-mathematicians-apology"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:a-mathematicians-apology"
+      ]
+    },
+    {
+      "id": "method:noble-4",
+      "title": "把未来的自己当成陌生同事",
+      "summary": "几个月后的你往往是最需要说明文档、却最不记得当时想法的人。因此作者要求文件足以让不熟悉项目的人理解做了什么、为什么做。日期目录解决“何时发生”，逻辑目录解决“属于什么”，文字说明才解释意图。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L21",
+          "confidence": "likely",
+          "about_entity": "work:organizing-computational-biology-projects"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:organizing-computational-biology-projects"
+      ]
+    },
+    {
+      "id": "method:comment-reference-mining",
+      "title": "把精选评论当作跨领域引用传感器",
+      "summary": "评论不作为主知识库；优先提取明确命名作品、补充思想谱系且得到作者确认的线索。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-signal",
+          "locator": "L11-L13",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "书目信息仍回到出版社或图书馆核验",
+        "有作者确认的引用关系获得更高优先级",
+        "评论线索与正文事实分开标记"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:naur-ai-context-experiment",
+      "title": "把设计历史的价值做成实验",
+      "summary": "比较只给代码与补充设计理由、失败案例后的方案质量，观察后续变更是否保持一致。这是我们对 AI 协作的延伸。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L27",
+          "confidence": "likely",
+          "about_entity": "work:programming-as-theory-building"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:programming-as-theory-building"
+      ]
+    },
+    {
+      "id": "method:bainbridge-remaining-task",
+      "title": "检查留给人的任务能否胜任",
+      "summary": "迁移建议：把“人工审核”细化成事实核查、论证检查或范围判断，并提供所需证据与时间。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L16",
+          "confidence": "likely",
+          "about_entity": "work:ironies-of-automation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ironies-of-automation"
+      ]
+    },
+    {
+      "id": "method:naur-understanding-check",
+      "title": "用变更题检查理解",
+      "summary": "让接手者说明现实规则、设计理由和变化位置，再给一个未见过的需求检查预测。这是从论文引出的实践建议。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L23",
+          "confidence": "likely",
+          "about_entity": "work:programming-as-theory-building"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:programming-as-theory-building"
+      ]
+    },
+    {
+      "id": "method:connection-depth-economy",
+      "title": "用连接、深度和经济性检查创造物",
+      "summary": "看一个设计是否连接更多问题、触及更底层结构，并用较少机制产生清晰结果，而不只看局部机巧。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L43-L45",
+          "confidence": "likely",
+          "about_entity": "work:a-mathematicians-apology"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:a-mathematicians-apology"
+      ]
+    },
+    {
+      "id": "method:knowledge-delta",
+      "title": "相对个人基线提取可信增量",
+      "summary": "先读取个人已有知识和判断，再从新材料中剥离真正新增、修正或冲突的部分。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L37",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "已知对象不会反复冒充新发现",
+        "每条新增都说明它补充、修正或冲突了哪条旧知识"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:poincare-4",
+      "title": "看懂每一步，还不等于看懂整个证明",
+      "summary": "他指出一个具体失误：前面得出的结论，到后面再次当作前提时，文字看似未变，意思或适用范围却可能被悄悄换掉。因此，把握推理要看每一步为什么在这里、接着哪一步，不只是逐句说“有道理”。前半是作者的分析，最后一句是本期阅读归纳。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L21",
+          "confidence": "likely",
+          "about_entity": "work:poincare-mathematical-creation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:poincare-mathematical-creation"
+      ]
+    },
+    {
+      "id": "method:bacon-2",
+      "title": "经验不是书的敌人，而是规则的边界",
+      "summary": "书给一般指引，经验帮助判断此处是否适用。举个本期例子：书说讨论能改善理解，但一群人只轮流复述同一句口号，不一定获得任何新认识。问题不是“讨论无用”，而是它是否真的发生了追问、区分与修正。作者的原则在原文第二段；这个具体条件是我们的展开，不是他做过的实验。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L18",
+          "confidence": "likely",
+          "about_entity": "work:bacon-of-studies"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:bacon-of-studies"
+      ]
+    },
+    {
+      "id": "method:bainbridge-response-time",
+      "title": "给接手留出理解时间",
+      "summary": "迁移建议：能暂停的任务先暂停、展示状态再交接；来不及理解的环节需要事先设计响应机制。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L20",
+          "confidence": "likely",
+          "about_entity": "work:ironies-of-automation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ironies-of-automation"
+      ]
+    },
+    {
+      "id": "method:hamming-direction",
+      "title": "给方向留时间",
+      "summary": "给方向留时间。他用固定时段思考领域往哪里走，而非只处理眼前任务。我们的迁移：少加一份书单，多问一次“本周的新材料改变了哪个问题的优先级”；没有变化也允许记录无变化。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L22",
+          "confidence": "likely",
+          "about_entity": "work:you-and-your-research"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:you-and-your-research"
+      ]
+    },
+    {
+      "id": "method:hamming-reading",
+      "title": "给独立思考留位置",
+      "summary": "阅读也要给独立思考留位置。问答中，他建议先弄清问题、自己思考，再看他人解法。我们的迁移：读关键原文前先写一个猜测，读后只记录最重要的修正。这不是拒绝查资料，更不要求每次阅读都考试。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L26",
+          "confidence": "likely",
+          "about_entity": "work:you-and-your-research"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:you-and-your-research"
+      ]
+    },
+    {
+      "id": "method:darwin-test",
+      "title": "给理论保留输掉的可能",
+      "summary": "关键不是“替观点找事实”，而是让观察能够支持或反对观点。信末，他期待化石专家研究腕足动物的谱系，并说这类工作最终会决定《物种起源》的命运，不论结果朝哪一边。不要只摘第一段的名句，漏掉这个判定出口。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L13",
+          "confidence": "likely",
+          "about_entity": "work:darwin-fawcett-1861-09-18"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:darwin-fawcett-1861-09-18"
+      ]
+    },
+    {
+      "id": "method:darwin-observation",
+      "title": "观点让细节变得可见",
+      "summary": "他用“去砂砾坑数石子、描述颜色”嘲讽没有问题意识的观察。事实不会自动告诉我们哪些差异值得解释；一种观点会让原本不起眼的细节变得可见。这里的价值不在于减少观察，而在于让观察有辨别力。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L11",
+          "confidence": "likely",
+          "about_entity": "work:darwin-fawcett-1861-09-18"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:darwin-fawcett-1861-09-18"
+      ]
+    },
+    {
+      "id": "method:naur-apprentice-handoff",
+      "title": "让交接发生在共同修改中",
+      "summary": "先各自设计同一个小改动，再讨论方案差异，把原作者的取舍变成可讨论的具体例子。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L25",
+          "confidence": "likely",
+          "about_entity": "work:programming-as-theory-building"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:programming-as-theory-building"
+      ]
+    },
+    {
+      "id": "method:evidence-linked-reading",
+      "title": "证据可回跳的深度阅读",
+      "summary": "把观点、证据和原文位置绑定；摘要只能是派生视图，不能替代原始材料。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L35",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "原始材料改变时，证据哈希或定位校验会失败",
+        "每个重要判断都能返回段落、页码或视频时间码"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:vox-3",
+      "title": "选定合并规则，才能谈集体答案",
+      "summary": "787个估计从小到大排列，取第394个，就是中位数。它不会因为某一个极端数字变得更极端而任意移动，但这不意味着它在任何任务都最准确。高尔顿以多数会嫌其他位置过高或过低解释选择；这是合并规则的理由，不是真值必在中间的证明。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L23",
+          "confidence": "likely",
+          "about_entity": "work:vox-populi"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:vox-populi"
+      ]
+    },
+    {
+      "id": "method:hamming-attack",
+      "title": "重要还要有切口",
+      "summary": "重要还要有切口。Hamming 区分后果宏大与存在合理进攻路线；读原文的 important problem 段落。我们的迁移：遇到宏大主题，另写一句“现在能检验的最小问题是什么”，没有答案时先探索，不急着立项目。",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L20",
+          "confidence": "likely",
+          "about_entity": "work:you-and-your-research"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:you-and-your-research"
+      ]
+    },
+    {
+      "id": "method:sutton12-3",
+      "title": "“大世界”不是单纯指数据很多",
+      "summary": "作者关注的是智能体相对环境太小：不能掌握所有状态，只能靠近似知识行动。算力增长时，感知的精度与其他智能体的复杂性也可能增长。他们因此主张研究持续学习、计算效率和资源受限的评测；同时明确，这不是关于所有决策问题的普遍事实。 [原始依据](https://khurramjaved.com/papers/the_big_world_hypothesis.pdf)",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L30",
+          "confidence": "likely",
+          "about_entity": "work:big-world-hypothesis"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:big-world-hypothesis"
+      ]
+    },
+    {
+      "id": "method:active-recall",
+      "title": "主动回忆与原文纠错",
+      "summary": "阅读后合上材料接受口试，再依据原文修正记忆和理解偏差。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L35",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "回答结果可以链接回纠错依据",
+        "重要材料能够生成不暴露答案的口试题"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:adversarial-reading",
+      "title": "对抗阅读",
+      "summary": "不只复述作者，还要寻找遗漏前提、反例和作者可能面对的最强反驳。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L35",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "高优先级判断至少登记一个边界、反例或开放问题"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:workflow-self-bootstrap",
+      "title": "工作流自举",
+      "summary": "先观察真实操作，再从重复模式生成自动化，并通过回放、人工确认和异常反馈迭代。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-jyy-ai-practice-unified",
+          "locator": "L29",
+          "confidence": "unverified",
+          "about_entity": null
+        }
+      ],
+      "acceptance": [
+        "新异常会进入下一轮规则或脚本改进",
+        "自动化来自已经成功并被复核的真实轨迹"
+      ],
+      "about_entities": []
+    },
+    {
+      "id": "method:self-defense-as-argument",
+      "title": "把自我辩护写成可反驳的论证",
+      "summary": "公开价值排序、处境与假设，让读者能检查个人经验是否真的支撑价值结论。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L47-L49",
+          "confidence": "likely",
+          "about_entity": "work:a-mathematicians-apology"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:a-mathematicians-apology"
+      ]
+    },
+    {
+      "id": "method:collaboration-5",
+      "title": "更好的方案，也可能是一次违约",
+      "summary": "设想甲答应周五给乙一批数据，乙据此安排分析。甲突然发现更有意思的问题，转去研究，觉得新结果会让乙惊喜。乙却只知道原来的约定，到周五才发现自己的安排落空。问题不在新想法好不好，而在甲改变了乙赖以行动的条件，却没有先商量。这个情境是本期举例；原文规则三明确提醒，别以为合作者必然欢迎你未经讨论的创新。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L25",
+          "confidence": "likely",
+          "about_entity": "work:ten-rules-successful-collaboration"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ten-rules-successful-collaboration"
+      ]
+    },
+    {
+      "id": "method:quick-dirty-2",
+      "title": "测试先保护会改变结论的地方",
+      "summary": "规则6并非只说“跑测试”，而是优先保护有科学后果的计算；作者对照了P值算错与进度条出错。也要防止另一种损失：代码错误让有效方法看起来无效，导致提前放弃。迁移到AI写代码时，可以先列出“哪个错误会让我作出相反判断”，再检查测试是否覆盖它；这比只看测试数量更有针对性。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L19",
+          "confidence": "likely",
+          "about_entity": "work:quick-dirty-programming"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:quick-dirty-programming"
+      ]
+    },
+    {
+      "id": "method:noble-5",
+      "title": "笔记保存判断，脚本保存操作",
+      "summary": "实验笔记不是成功截图集：结果是什么、如何知道实验失败、下一步想试什么，都要留下。驱动脚本则记录实际执行细节。只留脚本，能重跑却未必知道为什么；只留笔记，知道想法却未必还原得了操作。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L25",
+          "confidence": "likely",
+          "about_entity": "work:organizing-computational-biology-projects"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:organizing-computational-biology-projects"
+      ]
+    },
+    {
+      "id": "method:poincare-5",
+      "title": "组合很多不难，难的是让哪些组合值得出现",
+      "summary": "把相距很远的概念放在一起，有时能揭示隐藏的共同结构；但庞加莱紧接着强调，大多数跨领域拼接毫无成果。他把创造的难处放在选择上，而不是数量上。甚至不是先穷举再挑选：他怀疑，进入意识之前已经发生过一道筛选。这个筛选机制是他的假说，不是直接观察到的脑内过程。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L25",
+          "confidence": "likely",
+          "about_entity": "work:poincare-mathematical-creation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:poincare-mathematical-creation"
+      ]
+    },
+    {
+      "id": "method:bacon-3",
+      "title": "读的时候，别提前决定必须赞同或驳倒",
+      "summary": "培根既反对为反驳而读，也反对把书当现成真理，还反对只积攒谈资。他主张权衡与思考。这不是要求不批评，而是不要让预定的态度抢先替代审查。可以先把作者最强的理由说清，再判断它在哪个条件下站不住。最后这个操作是本期建议。",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L22",
+          "confidence": "likely",
+          "about_entity": "work:bacon-of-studies"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:bacon-of-studies"
+      ]
+    },
+    {
+      "id": "method:poincare-6",
+      "title": "停一停，不是省掉投入",
+      "summary": "他先连续十五天尝试证明某类函数不存在，失败后却发现了它们的存在；后来旅行和散步又带来跨领域连接。由此他主张，有成果的灵感前面有自觉努力，后面还要有整理、推导和证明。可借鉴的是给卡住的问题留出间隔，不是以休息替代准备，也不是承诺休息一定产生答案。",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L29",
+          "confidence": "likely",
+          "about_entity": "work:poincare-mathematical-creation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:poincare-mathematical-creation"
+      ]
+    },
+    {
+      "id": "method:bacon-4",
+      "title": "允许代读，但不要把代读当作同一种收获",
+      "summary": "原文明说，有的书只读部分，有的通读，有的细读，也有的可以由别人代读摘录。这与“每本都必须读完”不同。他同时给代读划了很窄的范围。今天可以把这个问题迁移到AI：需要知道一篇文章值不值得读时，摘要可能够用；要判断关键结论是否成立时，就得检查被摘要省掉的前提、证据和反例。这是今天的迁移，不是培根预言了AI。",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L26",
+          "confidence": "likely",
+          "about_entity": "work:bacon-of-studies"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:bacon-of-studies"
+      ]
+    },
+    {
+      "id": "method:quick-dirty-3",
+      "title": "别为了明天可能用的功能，拖慢今天的探索",
+      "summary": "规则4、7允许设计逐步长出来，但用小步重构保持结构清楚。规则9进一步区分短期项目代码与长期库代码：重复使用的价值已经出现，再抽成库，并承担更高的维护要求。不是反对架构，而是让长期维护的投入有实际依据。本期迁移：一次Agent成功轨迹，先证明会被再次使用，再决定哪些部分值得固化成工具。",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L23",
+          "confidence": "likely",
+          "about_entity": "work:quick-dirty-programming"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:quick-dirty-programming"
+      ]
+    },
+    {
+      "id": "method:noble-6",
+      "title": "半成品不能冒充结果",
+      "summary": "检查输入，遇错明确终止；先写临时文件，处理完成后再改成正式名字。长实验把运行和汇总分开，允许看见当前进度。这些做法解决同一个问题：不要让“有输出”含糊地同时表示正在做、做坏了和做完了。",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L29",
+          "confidence": "likely",
+          "about_entity": "work:organizing-computational-biology-projects"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:organizing-computational-biology-projects"
+      ]
+    },
+    {
+      "id": "method:collaboration-6",
+      "title": "尊重不是客气，是让对方来得及重排工作",
+      "summary": "文章把尊重落在一件具体事上：知道自己要延期，就告知等待数据的合作者，让他能作别的安排。共享数据和实验方案，也让双方能够共同理解问题，而不是只在最后交换成品。这里的信任靠可观察的行为维持，不只是关系融洽。",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L29",
+          "confidence": "likely",
+          "about_entity": "work:ten-rules-successful-collaboration"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ten-rules-successful-collaboration"
+      ]
+    },
+    {
+      "id": "method:sutton12-5",
+      "title": "持续学习不是“刚发生什么就全信什么”",
+      "summary": "原文强调 tracking 依赖时间上的关联：当前学到的东西，要对接下来一段经历有帮助。本期反例：若机器人刚适应一种箱子，下一次却随机切换到完全不同的任务，最近经验可能毫无预测力。再如一次抓取失败只是传感器偶发错误，立即改掉全部策略反而有害。接受持续学习的方向，仍需回答保留什么、更新多快、怎样判断反馈可靠。 [原始依据](https://khurramjaved.com/papers/the_big_world_hypothesis.pdf)",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L38",
+          "confidence": "likely",
+          "about_entity": "work:big-world-hypothesis"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:big-world-hypothesis"
+      ]
+    },
+    {
+      "id": "method:quick-dirty-4",
+      "title": "探索结束，要能从输入重新走到结论",
+      "summary": "规则10要求以脚本化流程复现每一项拟发表结果。一个能点开的页面或一次成功日志，不能代替这个流程。这里的价值不只是交接便利，而是让最后的结论能被重新计算和检查。原文的发表边界，迁移到个人工具时可以改为“开始据此作重要判断或交给别人使用之前”；这是本期建议。",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L27",
+          "confidence": "likely",
+          "about_entity": "work:quick-dirty-programming"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:quick-dirty-programming"
+      ]
+    },
+    {
+      "id": "method:poincare-7",
+      "title": "确信感负责提醒你注意，不负责证明你正确",
+      "summary": "上马车的一瞬间，他非常确信自己找到了关键联系，但回到卡昂仍做了验证。随后他又承认，另一些灵感同样令人确信，写证明时却发现错了。按他自己的解释，美感像筛子，只把值得看的想法推到眼前；它不能为想法的真假盖章。",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L33",
+          "confidence": "likely",
+          "about_entity": "work:poincare-mathematical-creation"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:poincare-mathematical-creation"
+      ]
+    },
+    {
+      "id": "method:noble-7",
+      "title": "等复用真的出现，再增加工程投入",
+      "summary": "作者区分驱动脚本、一次性脚本、项目内复用程序、跨项目程序。一个小脚本可以随着实际复杂度与复用需求逐渐增加错误处理、文档和测试；不必一开始按公共软件包建设，也不能永远拿一次性脚本承担多人长期使用。",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L33",
+          "confidence": "likely",
+          "about_entity": "work:organizing-computational-biology-projects"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:organizing-computational-biology-projects"
+      ]
+    },
+    {
+      "id": "method:sutton12-6",
+      "title": "节省的计算要算到最终效果里",
+      "summary": "由原文第4.2、4.3节得到的检查方法：比较算法时，把预算与目标一起摆出来。本期假设实验：在相同响应期限下，方法甲的单次更新更精细，却来不及完成足够更新；方法乙更新粗一些，但能用节省的时间处理更多经验。不能仅凭“更新更精确”判甲胜；也不能仅凭“更便宜”判乙胜。应比较固定时间、内存或能耗下的实际任务成绩，并说明自己固定的是哪一种成本。 [原始依据](https://khurramjaved.com/papers/the_big_world_hypothesis.pdf)",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L42",
+          "confidence": "likely",
+          "about_entity": "work:big-world-hypothesis"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:big-world-hypothesis"
+      ]
+    },
+    {
+      "id": "method:collaboration-7",
+      "title": "退出与继续，都不该只看此刻的情绪",
+      "summary": "作者同时提醒两件事：不要无限拖着已经失效的合作，也不要因为一次危机就放弃可能产生突破的关系。值得留下的不只是论文，还有双方逐渐理解彼此工作习惯、长短处的积累。继续还是退出，需要判断问题能否修复，而不是只数共同发表了几篇。",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L33",
+          "confidence": "likely",
+          "about_entity": "work:ten-rules-successful-collaboration"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:ten-rules-successful-collaboration"
+      ]
+    },
+    {
+      "id": "method:bacon-5",
+      "title": "阅读、讨论、写作，不能只用一个替代另外两个",
+      "summary": "作者分别把三者与充实、敏捷、精确相连。用一个本期情境理解：读完觉得有道理；别人追问“这句话到底指谁”，你发现概念含混；写成一句限定清楚的话时，又发现结论比证据走得远。这里有三种不同活动，不是把同一份摘要多看三次。这个因果过程是解释性例子，原文没有提供现代实验结果。",
+      "max_priority": 2,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L30",
+          "confidence": "likely",
+          "about_entity": "work:bacon-of-studies"
+        }
+      ],
+      "acceptance": [],
+      "about_entities": [
+        "work:bacon-of-studies"
+      ]
+    }
+  ],
+  "context_cards": [
+    {
+      "id": "context:bacon-origin",
+      "title": "为什么一个谈科学的人也写这种短文",
+      "summary": "培根（1561—1626）同时从事法律、政治与写作，曾任英国大法官。《随笔集》从1597年的十篇，历经1612年扩充，到1625年再次扩充；这里读的是1625年文本。《论读书》开头就谈事务的判断与安排，它关心的是学识怎样进入生活，不只是书斋里的知识积累。这是理解作品的背景，不应把后来关于科学方法的全部主张都塞进这篇短文。[历史版本导言](https://en.wikisource.org/wiki/Essays,_civil_and_moral_(Harvard_Classics)/Introductory_Note)",
+      "kind": "origin",
+      "about_entity": "work:bacon-of-studies",
+      "max_priority": 6,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L14",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:sutton12-7",
+      "title": "Deep Blue 不是“没有人类知识”的机器",
+      "summary": "Deep Blue 团队自己的技术论文摘要，把复杂的局面评价函数、棋谱数据库与并行搜索一起列为成功因素。这限制了对《苦涩的教训》的极端解读：历史上的成功系统可以同时使用搜索、工程结构与领域知识。真正值得实验的是某种知识让系统更能扩展，还是成为瓶颈，不能把“人设计的东西”统统列为反面。 [原始依据](https://research.ibm.com/publications/deep-blue)",
+      "kind": "counterpoint",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L46",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hardy-life-and-collaborations",
+      "title": "Hardy 不是孤立的“天才老人”",
+      "summary": "他是分析与数论领域的重要纯数学家，与 Littlewood 和 Ramanujan 的合作构成其职业生命的核心；理解这层经历，才能看懂结尾那份既骄傲又脆弱的自我结算。",
+      "kind": "biography",
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L15-L17",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:vox-counterexample",
+      "title": "一个最小反例：五支温度计一起偏高",
+      "summary": "假设五支温度计都因同一种校准错误高出3度。无论取平均数还是中位数，偏差仍在；加到五百支也不会自动消失。类推到AI，这只是一个待检验的提醒：多个回答可能共享训练来源、错误前提或题目误读，不能把回答数直接当作独立证据数。这是本期自拟反例，不是高尔顿做过的实验。",
+      "kind": "counterpoint",
+      "about_entity": "work:vox-populi",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L39",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hamming-origin",
+      "title": "一份有立场的经验谈",
+      "summary": "1986 年的这次演讲，是他向研究人员回顾如何做出重要工作的经验。我的阅读定位：把它当作一个有鲜明偏好的实践者提出的挑战，不当作一套得到实验验证的成功学规律。[演讲原文](https://www.cs.virginia.edu/~robins/YouAndYourResearch)",
+      "kind": "origin",
+      "about_entity": "work:you-and-your-research",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L16",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:bainbridge-background",
+      "title": "一位关心实际操作的心理学者",
+      "summary": "Bainbridge 曾在 UCL 任 Reader。她在履历里回忆，院系偏重实验心理学，甚至不愿把这篇应用研究列入出版物。这段作者自述，让人看到学科边界与实际问题之间的张力。",
+      "kind": "biography",
+      "about_entity": "work:ironies-of-automation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L8",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:poincare-2",
+      "title": "一位数学家，拿自己的头脑做观察材料",
+      "summary": "庞加莱并不是在教人如何提高日程表效率。他试图解释一个心理学问题：数学创造的念头究竟怎样产生？这篇文章从他写第一篇富克斯函数论文的亲身经历展开，讲到卡昂、地质旅行、海边散步和服兵役。那些数学名词不懂也没关系——他本人就请读者关注发现发生的情形，而不是先学会定理。",
+      "kind": "origin",
+      "about_entity": "work:poincare-mathematical-creation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L13",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:darwin-origin",
+      "title": "一场关于“能不能用假说”的争论",
+      "summary": "这不是功成名就后的方法论宣言，而是一封感谢盟友的私信。1861 年，福西特在英国科学促进会为《物种起源》的推理方法辩护，又把手稿和报道寄给达尔文。争论不只在于演化是否成立，也在于科学家能否借助假说组织事实。[信件及编者注](https://darwin-editorial.darwinproject.ac.uk/view/letters/DCP-LETT-3257)",
+      "kind": "origin",
+      "about_entity": "work:darwin-fawcett-1861-09-18",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L7",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:naur-origin",
+      "title": "一次交接为什么成了哲学问题",
+      "summary": "有源码和文档的接手团队，仍可能看不出原设计可以怎样自然扩展。文章用编译器交接案例，把日常维护问题引向对“理解”的追问。",
+      "kind": "origin",
+      "about_entity": "work:programming-as-theory-building",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L15",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:vox-limit",
+      "title": "一次成功，不能推出人越多越可靠",
+      "summary": "参赛者中本就有屠夫和农民，并非全是毫无经验的外行；原文也没有逐个验证判断是否独立，更没有通过多场受控实验排除运气。它能证明这次中位数接近真值，不能证明所有多数意见都好。尤其是政治选择中，参与者可能连目标都不同，也未必存在事后称重一样明确的标准。",
+      "kind": "counterpoint",
+      "about_entity": "work:vox-populi",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L35",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:collaboration-2",
+      "title": "一篇关于合作的文章，本身就是一次合作",
+      "summary": "当时维森斯在科罗拉多大学博尔德分校从事研究，伯恩则是期刊主编。文末透露：送到主编手里的不是一句“你能不能写写合作”，而是一份只需小改的规则草稿。两人共同署名，并用这件事说明第八条——贡献应该得到承认。这段成文经过，比列头衔更能说明他们说的合作是什么。",
+      "kind": "origin",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L13",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:quick-dirty-0",
+      "title": "不是鼓励糊弄，而是从研究现场找一个中间位置",
+      "summary": "作者来自奥斯陆的生物医学信息学与医学微生物学研究环境。他们在引言交代，建议来自过去十年的计算生物学项目经验，以及对工业软件方法的改造：研究者常常既提出问题又写代码，需求会随着实验改变。本文不面向刚入门的编程者，也不试图替大型通用框架规定全部工程标准。理解这一位置，才能看懂为什么他们一面允许原型粗糙，一面要求发表结果可复现。这里用的是作者自己的经验交代，不把它包装成普遍实验定律。",
+      "kind": "origin",
+      "about_entity": "work:quick-dirty-programming",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L11",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:noble-2",
+      "title": "为什么会写这样一篇文章",
+      "summary": "生物信息学课程教算法，却很少教学生怎样组织实际计算实验。Noble 把十二年工作中摸索出的习惯写成指南，明确承认它们不是最优标准。文章要补的是：实验结束几个月后，如何不把当时的认识一起弄丢。",
+      "kind": "origin",
+      "about_entity": "work:organizing-computational-biology-projects",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L13",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:naur-limits",
+      "title": "交接困难，足以推出必须重写吗？",
+      "summary": "Naur 对程序复活的悲观结论值得质疑。新团队借观测、测试和修改建立有效的新理解，也可能成功维护系统；是否必须恢复原作者的全部理解，需要另行论证。",
+      "kind": "counterpoint",
+      "about_entity": "work:programming-as-theory-building",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L31",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:naur-background",
+      "title": "从天文学计算走到程序设计",
+      "summary": "Naur 早年研究天文学，为 EDSAC 编写小行星运动计算程序，后来参与 ALGOL 60。他对程序理解的关注，有实际计算和系统建设的背景。",
+      "kind": "biography",
+      "about_entity": "work:programming-as-theory-building",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L11",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:hamming-life",
+      "title": "从解决计算难题，到思考研究者怎样工作",
+      "summary": "Hamming 不只是名字出现在编码课里的数学家。他参加过洛斯阿拉莫斯的计算工作，随后在贝尔实验室从事计算、编码等研究，后来在海军研究生院教学。他的经历横跨实际计算难题与培养研究者。理解这条路线，比记住奖项更有助于理解他为什么在意“怎样工作”。[NPS 生平介绍](https://nps.edu/-/iconic-researcher-teacher-richard-hamming-maintains-lasting-legacy-on-campus)",
+      "kind": "biography",
+      "about_entity": "work:you-and-your-research",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L14",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:sutton12-1",
+      "title": "作者与成文背景",
+      "summary": "《苦涩的教训》是 Sutton 于2019年3月13日发表的短文。“大世界假说”这篇文章由 Khurram Javed 与 Richard S. Sutton 合著，首次出现于 RLC 2024 的 Finding the Frame 工作坊。Javed 的个人主页说明，他在 Sutton 指导下研究高效强化学习，后来与 Sutton 共同创办 Oak Lab。因此，不宜把它写成 Sutton 一个人在创办公司之后突然提出的观点。 [原始依据](https://khurramjaved.com/)",
+      "kind": "origin",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L22",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:poincare-8",
+      "title": "别把一位天才的回忆，当作已经验证的脑科学",
+      "summary": "他用顿悟前后的经历支持“无意识在工作”，但这些回忆本身不能区分：究竟是持续的无意识搜索、疲劳减轻，还是暂时离开错误思路起了作用。他没有给出可以比较这些解释的实验；结尾也承认自己的看法仍很有假说性质。因此可拿这篇提出问题，不能据它判断某人缺少审美感就永远不能创造。这是本期对论证的批评。",
+      "kind": "counterpoint",
+      "about_entity": "work:poincare-mathematical-creation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L37",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:bainbridge-origin",
+      "title": "她面对的是正常自动、异常人工的控制系统",
+      "summary": "工业过程和驾驶舱的这种分工，是论文的具体背景。把结论用于 AI 阅读，需要检验相应机制是否存在。",
+      "kind": "origin",
+      "about_entity": "work:ironies-of-automation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L10",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:hamming-selection-bias",
+      "title": "成功者经验不能直接变成因果律",
+      "summary": "成功者经验不能直接变成因果律。演讲问答里，听众就追问他是否低估了进入洛斯阿拉莫斯和贝尔实验室的机遇。他也承认调查样本有偏。我们的批评是：若不比较同样努力却失败的人，就无法知道某种习惯贡献了多少，更不能用成果倒推个人品格。[问答原文](https://www.cs.virginia.edu/~robins/YouAndYourResearch)",
+      "kind": "counterpoint",
+      "about_entity": "work:you-and-your-research",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L32",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:noble-8",
+      "title": "文件存在，不等于结果仍然有效",
+      "summary": "作者建议用“输出文件已存在就跳过”帮助重启。但输入数据或参数变了，旧文件仍存在，这会悄悄复用错误版本；临时文件改名也只证明某次处理结束，不证明算对了。今天应另记录输入、参数、代码和环境版本并建立失效规则。可重跑不等于结论有效：错误算法也可以稳定重现错误。本段是对原文的批评与补充，不是作者已经交付的完整方案。",
+      "kind": "counterpoint",
+      "about_entity": "work:organizing-computational-biology-projects",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L37",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hamming-values",
+      "title": "有价值，不等于有名望",
+      "summary": "重要性也不能只按名望排序。我的反例是维护、复现与教学：未必产生冠名成果，却可能使整个共同体可靠运转。选题框架有用，不表示接受它隐含的全部人生排序；内在乐趣也不是需要被纠正的低级目标。",
+      "kind": "counterpoint",
+      "about_entity": "work:you-and-your-research",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L34",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:darwin-life",
+      "title": "比起写大书，他更喜欢观察",
+      "summary": "信里的达尔文一边被病痛折磨，一边嫌写书不如观察好玩。当时他正在从整理物种理论的大部头，转向兰花、报春花等具体植物问题；有些研究起初只是消遣，后来变成系统调查。理论给了他看细节的新眼光，而兴趣也把他带向原计划之外。[1861 年的研究生活](https://www.darwinproject.ac.uk/letters/darwins-life-letters/darwin-letters-1861-gaining-allies)",
+      "kind": "biography",
+      "about_entity": "work:darwin-fawcett-1861-09-18",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L9",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hardy-elitism-and-usefulness",
+      "title": "精英主义和“无用”崇拜不能照搬",
+      "summary": "他贬低解释者与应用研究，把原创纯数学和高贵强绑定；这更适合作为理解 Hardy 的材料，而不是今天评价知识工作的通用尺度。",
+      "kind": "counterpoint",
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L55-L57",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:bainbridge-limit",
+      "title": "自动化也可能增加练习机会",
+      "summary": "作者并不主张减少所有自动化。我们的反例设想是：让 AI 出变更题、反例并纠错，可能增加主动练习。应检查结果是否改善理解，不能仅凭用了 AI 就认定能力退化。",
+      "kind": "counterpoint",
+      "about_entity": "work:ironies-of-automation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L25",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:collaboration-8",
+      "title": "说“不”的自由，并不是人人都有",
+      "summary": "“给三次机会再走”是作者的经验建议，并无证据表明三次对所有合作都合适。若一位早期研究者的经费、数据或毕业进度依赖资深合作者，退出就不只是减少下一篇论文的联系；反过来，严重的不当行为也不需要等够三次。书面约定能减少误解，却不能自动改变谁能决定署名、谁承担延期成本。阅读时应补问：谁有权调整，谁有可行退路，争议由谁处理？这是本期批评，不是原文已解决的方案。",
+      "kind": "counterpoint",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L37",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hardy-apology-origin",
+      "title": "这是 1940 年战争背景下的晚年自辩",
+      "summary": "Hardy 在 63 岁、原创能力衰退时写作；第 28 节又来自战争期间的短文。书同时承受个人衰老和时代危机两种压力。",
+      "kind": "origin",
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L17-L21",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "context:darwin-critique",
+      "title": "问题会照亮事实，也会遮住事实",
+      "summary": "这封信自己就暴露了边界：达尔文说声誉与论证无关，随即又对兰克斯特作人身贬斥，还用对年轻女性的刻板印象嘲讽同行。站在正确理论一边，不等于每次争论都公允。另一个更强的方法论反例是：未预设特定假说的标本保存、长期观测，可能供后来者提出尚不存在的问题。问题导向不应把意外发现筛掉；“有用”也不能只指立刻能检验手头观点。这是本期批评，不是达尔文已经给出的完整答案。",
+      "kind": "counterpoint",
+      "about_entity": "work:darwin-fawcett-1861-09-18",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L17",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:vox-origin",
+      "title": "高尔顿为什么盯着这些卡片",
+      "summary": "高尔顿（1822—1911）是达尔文的亲属，也是研究测量、统计与个体差异的维多利亚时代学者；他还推动了优生学，不能只把他写成一个发现群体智慧的温和老人。这段背景提醒我们：统计贡献不能替他的社会等级观念背书。本篇一开头就问公众判断是否可信，后来把估牛重与选民判断相类比；因此，政治解释不是后人强加的，但也不是数据已经证明的。[UCL历史资料](https://www.ucl.ac.uk/mathematical-physical-sciences/statistics/department-information/our-early-history)",
+      "kind": "origin",
+      "about_entity": "work:vox-populi",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L15",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:hardy-jyy-bridge",
+      "title": "JYY 类比有文本支撑，但只能走到一半",
+      "summary": "Hardy 确实因创造力流失而转向自述；学术内卷和学生失去创造乐趣则是评论者对当代处境的延伸，不是本书原意。",
+      "kind": "bridge",
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L59-L61",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:sutton12-8",
+      "title": "“世界大”并没有自动证明每种学习方案都对",
+      "summary": "原文第3节承认所列证据有其他解释。本期进一步追问：不能完整模拟环境，不等于不能对一个狭窄目标作出好决策；环境中有很多与目标无关的复杂细节时，一个简单控制器也可能足够。反过来，观察到搜索提高表现，也不能只归因为模型容量不足，训练不足或优化问题同样可能造成它。要检验这条研究路线，就要把这些解释分开，而不只重复“世界很复杂”。 [原始依据](https://khurramjaved.com/papers/the_big_world_hypothesis.pdf)",
+      "kind": "counterpoint",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L50",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:sutton12-9",
+      "title": "与 Oak Lab 到底是什么关系",
+      "summary": "关系有一手依据：Javed 自述研究受大世界假说驱动；Oak 官网把该文列为既有研究，使命是让智能体在大世界中实现目标，并称正在构建 OaK 架构。OaK 架构与 Oak Lab 公司不是同一个东西。官网列出的万亿参数、20瓦实时学习与规划，是愿景，不是本次核实到的成品。将大世界假说称为其研究基础有依据；将“底层思想”当成两篇文章的正式共同名称，则不准确。 [原始依据](https://oaklab.ai/mission)",
+      "kind": "bridge",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L54",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:poincare-3",
+      "title": "他的自画像，和“算得特别快的天才”不一样",
+      "summary": "他承认自己做加法也会出错，下棋时可能忘掉刚才预见的危险。那么长证明为什么还能跟得上？他的解释是：他记住的不是一串孤立步骤，而是整个推理的组织次序，每一步在其中都有位置。这是理解他如何看待数学能力的好入口，而不是可用于测量所有人天赋的结论。",
+      "kind": "biography",
+      "about_entity": "work:poincare-mathematical-creation",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L17",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:noble-3",
+      "title": "作者站在哪里",
+      "summary": "Noble 的研究连接机器学习与分子生物学。这使他同时面对代码能否重跑、结果能否被不写代码的合作者理解这两类问题。结尾甚至谈到合作者使用不同写作工具：组织工作的终点不是漂亮目录，而是让合作继续。",
+      "kind": "biography",
+      "about_entity": "work:organizing-computational-biology-projects",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L17",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:quick-dirty-5",
+      "title": "关键错误不一定住在“核心算法”里",
+      "summary": "这是本期反例：统计公式调用成熟库且计算完全正确，但导入数据时把两组标签对调，结论仍然会反转。因此，原文图8把大量数据处理放在非关键部分的示意，不能当作你的测试边界。应沿输入—变换—计算—输出追踪错误后果，连接处也可能关键。单元测试通过更不能证明研究假设成立；它首先说明某些已设定输入满足某些预期。",
+      "kind": "counterpoint",
+      "about_entity": "work:quick-dirty-programming",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L31",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:poincare-9",
+      "title": "机器做不到？这句话必须放回年代里",
+      "summary": "他从“选择规则难以说清”走到“机器无论多完善也做不到”，这一步不能直接成立。一个具体对照是 AlphaGeometry：语言模型提出辅助构造，符号引擎继续推演；它在论文限定的平面几何题集上取得了可验证的结果。它没有证明机器拥有人的审美或能处理全部数学，却说明“不能把规则手写清楚”不等于“无法实现有效搜索”。 [对照论文](https://www.nature.com/articles/s41586-023-06747-5)",
+      "kind": "counterpoint",
+      "about_entity": "work:poincare-mathematical-creation",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L41",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:collaboration-3",
+      "title": "问题越来越复杂，合作者也越来越多",
+      "summary": "文章用1981—2001年PNAS论文平均作者数从3.9增至8.4的资料开场：要理解复杂生命系统，需要不同领域的专家。这是作者在2007年面对的背景，不是今天的最新统计。十条规则不是实验验证的定律，而是他们试图把合作中的经验说清楚。",
+      "kind": "biography",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L17",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:quick-dirty-6",
+      "title": "先小后大，也可能把真正的问题藏掉",
+      "summary": "规则5建议先用小型合成数据，再扩大规模，通常能加快反馈。但若问题本身就是内存峰值、并发竞争或长尾分布，小样本通过不足以支持“大规模可行”。此时要保留能触发目标机制的最小规模，而不是一味缩小。这是本期提出的适用边界。另一个直接细节是原文图10的代码未兼容小写，不能视为图7测试需求的完整实现；译文已单列说明。",
+      "kind": "counterpoint",
+      "about_entity": "work:quick-dirty-programming",
+      "max_priority": 3,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L35",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:bacon-cure",
+      "title": "好记的格言，也可能把复杂问题说满了",
+      "summary": "文章后半把学科与能力一一对应，甚至说每种心智缺陷都有专门药方。它没有证明这样的训练一定跨情境生效。本期反例：一个人可以在数学证明里严谨，却在判断消息真伪时不检查来源；“学过数学”本身不保证他把同样的检查带到这里。可保留“按弱项选练习”的启发，但不能把学科名当疗效承诺。原文的运动治病类比也只作历史材料阅读。",
+      "kind": "counterpoint",
+      "about_entity": "work:bacon-of-studies",
+      "max_priority": 1,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L34",
+          "confidence": "likely"
+        }
+      ]
+    },
+    {
+      "id": "context:bacon-selection",
+      "title": "谁有资格提前说一本书不重要？",
+      "summary": "培根让代读主要用于不重要的题目和较低价值的书，但初学者恰恰可能还不知道什么重要。这是本期对其建议的补充：先用摘要探索，遇到会改变判断的内容，再有选择地回到原文。不能把“少数精读”变成永远只接触熟悉观点；也不能反过来要求读完所有材料才有资格选择。",
+      "kind": "counterpoint",
+      "about_entity": "work:bacon-of-studies",
+      "max_priority": 1,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L38",
+          "confidence": "likely"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:darwin-zh",
+      "label": "中文全译（约 5 分钟）",
+      "note": "公版信件；以手稿转录版为底本，恢复的附言也已译出。",
+      "url": "https://darwin-editorial.darwinproject.ac.uk/view/letters/DCP-LETT-3257",
+      "local_path": "library/达尔文致福西特-观察与观点-中文全译.md",
+      "about_entity": "work:darwin-fawcett-1861-09-18",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-08-darwin-reading-dossier",
+          "locator": "L5",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:bainbridge-author-full",
+      "label": "作者网站免费全文",
+      "note": "已阅读全文；原刊五页",
+      "url": "https://www.complexcognition.co.uk/2021/06/ironies-of-automation.html",
+      "local_path": null,
+      "about_entity": "work:ironies-of-automation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-06-bainbridge-reading-dossier",
+          "locator": "L4",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:sutton12-bitter",
+      "label": "先读《苦涩的教训》英文全文（2页）",
+      "note": "大学课程站公开副本；2019年正文，PDF页眉是打印时间。",
+      "url": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+      "local_path": "library/The-Bitter-Lesson-original.pdf",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L7",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:naur-free-paper",
+      "label": "免费论文全文（大学网站，14 页）",
+      "note": "附有导读的扫描版；论文不是一本长书",
+      "url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+      "local_path": null,
+      "about_entity": "work:programming-as-theory-building",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-05-naur-reading-dossier",
+          "locator": "L7",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:hamming-full",
+      "label": "大学教师网站公开的英文全文",
+      "note": "免费，无需登录；正文与问答均可阅读",
+      "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch",
+      "local_path": null,
+      "about_entity": "work:you-and-your-research",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-07-hamming-reading-dossier",
+          "locator": "L4",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:quick-dirty-zh",
+      "label": "完整中文译文",
+      "note": "CC BY 4.0；已核对期刊XML及十幅原图。",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008549",
+      "local_path": "library/快速而不失严谨的科学编程-中文全译.md",
+      "about_entity": "work:quick-dirty-programming",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-16-quick-dirty-reading-dossier",
+          "locator": "L5",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:poincare-zh",
+      "label": "打开《数学创造》中文全译",
+      "note": "公版原作与英译本；已保留全部论证、个人经历及括注。",
+      "url": "https://www.gutenberg.org/files/39713/39713-h/39713-h.htm#Page_383",
+      "local_path": "library/庞加莱-数学创造-中文全译.md",
+      "about_entity": "work:poincare-mathematical-creation",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-10-poincare-reading-dossier",
+          "locator": "L9",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:noble-zh",
+      "label": "打开中文全译",
+      "note": "原作采用 CC BY 许可；目录图已转成目录树。",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424",
+      "local_path": "library/计算生物学项目组织简明指南-中文全译.md",
+      "about_entity": "work:organizing-computational-biology-projects",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-09-noble-reading-dossier",
+          "locator": "L9",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:collaboration-zh",
+      "label": "打开完整中文版",
+      "note": "原作按CC BY许可发布；译文与导读分开。",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030044",
+      "local_path": "library/成功合作的十条简单规则-中文全译.md",
+      "about_entity": "work:ten-rules-successful-collaboration",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-11-collaboration-reading-dossier",
+          "locator": "L9",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:vox-zh",
+      "label": "打开完整中文版",
+      "note": "已补导入LocalReader；不是以导读代替原文。",
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Collective_Intelligence/Galton_1907_Vox_Populi.pdf",
+      "local_path": "library/民众之声-中文全译.md",
+      "about_entity": "work:vox-populi",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-14-vox-populi-reading-dossier",
+          "locator": "L6",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:bacon-zh",
+      "label": "打开完整中文版",
+      "note": "自译公版原文；不使用现成中文译本。",
+      "url": "https://jacklynch.net/Texts/studies.html",
+      "local_path": "library/培根-论读书-中文全译.md",
+      "about_entity": "work:bacon-of-studies",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-15-bacon-reading-dossier",
+          "locator": "L4",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:hardy-apology-local-full-pdf",
+      "label": "本地完整 PDF（56 页）",
+      "note": "已检查封面、版本页、开头与结尾，正文完整可读",
+      "url": null,
+      "local_path": "library/A-Mathematicians-Apology-full.pdf",
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 5,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L9-L11",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:sutton12-big",
+      "label": "再读“大世界假说”英文全文（5页）",
+      "note": "合著者个人网站提供；正文、例框和参考文献齐全。",
+      "url": "https://khurramjaved.com/papers/the_big_world_hypothesis.pdf",
+      "local_path": "library/Big-World-Hypothesis-original.pdf",
+      "about_entity": "work:big-world-hypothesis",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-12-sutton-reading-dossier",
+          "locator": "L8",
+          "confidence": "verified"
+        }
+      ]
+    },
+    {
+      "id": "resource:hardy-apology-online-full-pdf",
+      "label": "在线完整电子版",
+      "note": "University of Alberta Mathematical Sciences Society 2005 年电子版镜像",
+      "url": "https://web.njit.edu/~akansu/PAPERS/GHHardy-AMathematiciansApology.pdf",
+      "local_path": null,
+      "about_entity": "work:a-mathematicians-apology",
+      "max_priority": 4,
+      "appearances": [
+        {
+          "record_id": "2026-09-04-hardy-reading-dossier",
+          "locator": "L9-L11",
+          "confidence": "verified"
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation:cn-edition-of-apology",
+      "from": "edition:mathematicians-apology-cn-2007",
+      "type": "edition_of",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L15-L17",
+      "confidence": "verified",
+      "record_id": "2026-09-04-hardy-bibliographic-verification"
+    },
+    {
+      "id": "relation:hardy-authored-apology",
+      "from": "person:gh-hardy",
+      "type": "associated_as_author_in_comment_context",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L11-L13",
+      "confidence": "unverified",
+      "record_id": "2026-09-04-hardy-signal"
+    },
+    {
+      "id": "relation:hardy-authored-apology-verified",
+      "from": "person:gh-hardy",
+      "type": "authored",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L7-L11",
+      "confidence": "verified",
+      "record_id": "2026-09-04-hardy-bibliographic-verification"
+    },
+    {
+      "id": "relation:jyy-describes-personal-os",
+      "from": "person:jiang-yanyan",
+      "type": "describes",
+      "to": "concept:personal-intelligence-os",
+      "locator": "L23-L29",
+      "confidence": "unverified",
+      "record_id": "2026-09-04-jyy-ai-practice-unified"
+    },
+    {
+      "id": "relation:jyy-reading-example-aposd",
+      "from": "person:jiang-yanyan",
+      "type": "uses_as_reading_example",
+      "to": "work:a-philosophy-of-software-design",
+      "locator": "L35",
+      "confidence": "unverified",
+      "record_id": "2026-09-04-jyy-ai-practice-unified"
+    },
+    {
+      "id": "relation:talk-homage-hardy-book",
+      "from": "talk:a-software-workers-apology",
+      "type": "title_homage",
+      "to": "work:a-mathematicians-apology",
+      "locator": "L13",
+      "confidence": "unverified",
+      "record_id": "2026-09-04-hardy-signal"
+    }
+  ]
+}
