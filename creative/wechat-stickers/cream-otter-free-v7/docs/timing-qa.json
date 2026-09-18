@@ -1,0 +1,1369 @@
+{
+  "status": "PASS",
+  "scope": "Encoding, original character preservation, identical boundary and layered roundtrip. Not an aesthetic score.",
+  "items": [
+    {
+      "id": "01-received",
+      "gif": {
+        "main": {
+          "encoded_frames": 22,
+          "duration_ms": 1920,
+          "bytes": 263338,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 15,
+          "duration_ms": 1920,
+          "bytes": 174718,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 14,
+          "ms": 160
+        },
+        {
+          "pose": 15,
+          "ms": 80
+        },
+        {
+          "pose": 2,
+          "ms": 160
+        },
+        {
+          "pose": 3,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 40
+        },
+        {
+          "pose": 5,
+          "ms": 40
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 120
+        },
+        {
+          "pose": 9,
+          "ms": 40
+        },
+        {
+          "pose": 10,
+          "ms": 120
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "02-thanks",
+      "gif": {
+        "main": {
+          "encoded_frames": 20,
+          "duration_ms": 2080,
+          "bytes": 232934,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 15,
+          "duration_ms": 2080,
+          "bytes": 172322,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 15,
+          "ms": 160
+        },
+        {
+          "pose": 16,
+          "ms": 80
+        },
+        {
+          "pose": 2,
+          "ms": 160
+        },
+        {
+          "pose": 3,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 120
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 40
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 120
+        },
+        {
+          "pose": 11,
+          "ms": 160
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 120
+        },
+        {
+          "pose": 15,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "03-laugh",
+      "gif": {
+        "main": {
+          "encoded_frames": 24,
+          "duration_ms": 2160,
+          "bytes": 279529,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 21,
+          "duration_ms": 2160,
+          "bytes": 245466,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 15,
+          "ms": 160
+        },
+        {
+          "pose": 16,
+          "ms": 80
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 160
+        },
+        {
+          "pose": 4,
+          "ms": 160
+        },
+        {
+          "pose": 5,
+          "ms": 80
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 120
+        },
+        {
+          "pose": 12,
+          "ms": 160
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 80
+        },
+        {
+          "pose": 15,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "04-heart",
+      "gif": {
+        "main": {
+          "encoded_frames": 27,
+          "duration_ms": 2160,
+          "bytes": 351668,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 15,
+          "duration_ms": 2160,
+          "bytes": 192114,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 12,
+          "ms": 160
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 80
+        },
+        {
+          "pose": 15,
+          "ms": 80
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 80
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 40
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 160
+        },
+        {
+          "pose": 11,
+          "ms": 280
+        },
+        {
+          "pose": 12,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "05-there",
+      "gif": {
+        "main": {
+          "encoded_frames": 35,
+          "duration_ms": 2480,
+          "bytes": 431647,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 29,
+          "duration_ms": 2480,
+          "bytes": 352333,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 600,
+      "beats": [
+        {
+          "pose": 1,
+          "ms": 200
+        },
+        {
+          "pose": 2,
+          "ms": 80
+        },
+        {
+          "pose": 3,
+          "ms": 200
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 80
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 40
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 240
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 480
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 15,
+          "ms": 80
+        },
+        {
+          "pose": 1,
+          "ms": 400
+        }
+      ]
+    },
+    {
+      "id": "06-coming",
+      "gif": {
+        "main": {
+          "encoded_frames": 32,
+          "duration_ms": 2120,
+          "bytes": 384582,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 4,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 31,
+          "duration_ms": 2120,
+          "bytes": 362731,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 4,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 15,
+          "ms": 160,
+          "fx": false
+        },
+        {
+          "pose": 14,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 13,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 4,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 16,
+          "ms": 120,
+          "fx": false
+        },
+        {
+          "pose": 2,
+          "ms": 40
+        },
+        {
+          "pose": 3,
+          "ms": 40
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 40
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 80
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 120
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 120
+        },
+        {
+          "pose": 15,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "07-wait",
+      "gif": {
+        "main": {
+          "encoded_frames": 22,
+          "duration_ms": 1880,
+          "bytes": 270576,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 18,
+          "duration_ms": 1880,
+          "bytes": 217469,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 13,
+          "ms": 160,
+          "fx": false
+        },
+        {
+          "pose": 14,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 15,
+          "ms": 120,
+          "fx": false
+        },
+        {
+          "pose": 2,
+          "ms": 240
+        },
+        {
+          "pose": 3,
+          "ms": 80
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 40
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 40
+        },
+        {
+          "pose": 8,
+          "ms": 40
+        },
+        {
+          "pose": 9,
+          "ms": 120
+        },
+        {
+          "pose": 10,
+          "ms": 160
+        },
+        {
+          "pose": 13,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "08-coffee",
+      "gif": {
+        "main": {
+          "encoded_frames": 34,
+          "duration_ms": 2640,
+          "bytes": 389769,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 16,
+          "duration_ms": 2640,
+          "bytes": 187186,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 680,
+      "beats": [
+        {
+          "pose": 1,
+          "ms": 240
+        },
+        {
+          "pose": 3,
+          "ms": 80
+        },
+        {
+          "pose": 4,
+          "ms": 240
+        },
+        {
+          "pose": 5,
+          "ms": 120
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 120
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 200
+        },
+        {
+          "pose": 10,
+          "ms": 40
+        },
+        {
+          "pose": 11,
+          "ms": 240
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 440
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 1,
+          "ms": 440
+        }
+      ]
+    },
+    {
+      "id": "09-cheer",
+      "gif": {
+        "main": {
+          "encoded_frames": 21,
+          "duration_ms": 1840,
+          "bytes": 204010,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 19,
+          "duration_ms": 1840,
+          "bytes": 181996,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 14,
+          "ms": 160,
+          "fx": false
+        },
+        {
+          "pose": 13,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 15,
+          "ms": 80,
+          "fx": false
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 80
+        },
+        {
+          "pose": 4,
+          "ms": 160
+        },
+        {
+          "pose": 5,
+          "ms": 40
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 40
+        },
+        {
+          "pose": 9,
+          "ms": 40
+        },
+        {
+          "pose": 10,
+          "ms": 80
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 40
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "10-hug",
+      "gif": {
+        "main": {
+          "encoded_frames": 17,
+          "duration_ms": 1880,
+          "bytes": 204079,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 12,
+          "duration_ms": 1880,
+          "bytes": 145115,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 920,
+      "beats": [
+        {
+          "pose": 9,
+          "ms": 160
+        },
+        {
+          "pose": 10,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 120
+        },
+        {
+          "pose": 1,
+          "ms": 120
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 160
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 40
+        },
+        {
+          "pose": 6,
+          "ms": 40
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 120
+        },
+        {
+          "pose": 9,
+          "ms": 760
+        }
+      ]
+    },
+    {
+      "id": "11-sad",
+      "gif": {
+        "main": {
+          "encoded_frames": 23,
+          "duration_ms": 2680,
+          "bytes": 256141,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 13,
+          "duration_ms": 2680,
+          "bytes": 144997,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 640,
+      "beats": [
+        {
+          "pose": 1,
+          "ms": 240
+        },
+        {
+          "pose": 2,
+          "ms": 160
+        },
+        {
+          "pose": 3,
+          "ms": 240
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 160
+        },
+        {
+          "pose": 10,
+          "ms": 80
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 240
+        },
+        {
+          "pose": 14,
+          "ms": 640
+        },
+        {
+          "pose": 15,
+          "ms": 120
+        },
+        {
+          "pose": 16,
+          "ms": 160
+        },
+        {
+          "pose": 1,
+          "ms": 400
+        }
+      ]
+    },
+    {
+      "id": "12-speechless",
+      "gif": {
+        "main": {
+          "encoded_frames": 11,
+          "duration_ms": 2160,
+          "bytes": 120842,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 11,
+          "duration_ms": 2160,
+          "bytes": 120842,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 720,
+      "beats": [
+        {
+          "pose": 4,
+          "ms": 240
+        },
+        {
+          "pose": 6,
+          "ms": 120
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 240
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 560
+        },
+        {
+          "pose": 5,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 480
+        }
+      ]
+    },
+    {
+      "id": "13-angry",
+      "gif": {
+        "main": {
+          "encoded_frames": 20,
+          "duration_ms": 2000,
+          "bytes": 228151,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 14,
+          "duration_ms": 2000,
+          "bytes": 158432,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 840,
+      "beats": [
+        {
+          "pose": 15,
+          "ms": 200
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 120
+        },
+        {
+          "pose": 5,
+          "ms": 160
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 40
+        },
+        {
+          "pose": 9,
+          "ms": 40
+        },
+        {
+          "pose": 10,
+          "ms": 120
+        },
+        {
+          "pose": 11,
+          "ms": 80
+        },
+        {
+          "pose": 12,
+          "ms": 120
+        },
+        {
+          "pose": 14,
+          "ms": 80
+        },
+        {
+          "pose": 15,
+          "ms": 640
+        }
+      ]
+    },
+    {
+      "id": "14-sleepy",
+      "gif": {
+        "main": {
+          "encoded_frames": 18,
+          "duration_ms": 2760,
+          "bytes": 222917,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 16,
+          "duration_ms": 2760,
+          "bytes": 196352,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 640,
+      "beats": [
+        {
+          "pose": 1,
+          "ms": 240
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 3,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 280
+        },
+        {
+          "pose": 5,
+          "ms": 160
+        },
+        {
+          "pose": 6,
+          "ms": 120
+        },
+        {
+          "pose": 7,
+          "ms": 160
+        },
+        {
+          "pose": 8,
+          "ms": 120
+        },
+        {
+          "pose": 10,
+          "ms": 80
+        },
+        {
+          "pose": 11,
+          "ms": 40
+        },
+        {
+          "pose": 12,
+          "ms": 40
+        },
+        {
+          "pose": 13,
+          "ms": 80
+        },
+        {
+          "pose": 14,
+          "ms": 120
+        },
+        {
+          "pose": 15,
+          "ms": 520
+        },
+        {
+          "pose": 16,
+          "ms": 160
+        },
+        {
+          "pose": 1,
+          "ms": 400
+        }
+      ]
+    },
+    {
+      "id": "15-goodnight",
+      "gif": {
+        "main": {
+          "encoded_frames": 7,
+          "duration_ms": 2480,
+          "bytes": 91953,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 7,
+          "duration_ms": 2480,
+          "bytes": 91953,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 6,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 1360,
+      "beats": [
+        {
+          "pose": 13,
+          "ms": 560
+        },
+        {
+          "pose": 5,
+          "ms": 160
+        },
+        {
+          "pose": 6,
+          "ms": 160
+        },
+        {
+          "pose": 14,
+          "ms": 480
+        },
+        {
+          "pose": 6,
+          "ms": 160
+        },
+        {
+          "pose": 5,
+          "ms": 160
+        },
+        {
+          "pose": 13,
+          "ms": 800
+        }
+      ]
+    },
+    {
+      "id": "16-bye",
+      "gif": {
+        "main": {
+          "encoded_frames": 27,
+          "duration_ms": 1880,
+          "bytes": 295651,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        },
+        "-no-fx": {
+          "encoded_frames": 25,
+          "duration_ms": 1880,
+          "bytes": 272749,
+          "loop_seam_identical": true,
+          "minimum_margin_px": 7,
+          "loop": 0
+        }
+      },
+      "character_layers_from_approved_source": true,
+      "piskel_roundtrip_exact": true,
+      "all_layers_seam_identical": true,
+      "seam_rest_ms": 800,
+      "beats": [
+        {
+          "pose": 14,
+          "ms": 160
+        },
+        {
+          "pose": 15,
+          "ms": 80
+        },
+        {
+          "pose": 16,
+          "ms": 120
+        },
+        {
+          "pose": 2,
+          "ms": 120
+        },
+        {
+          "pose": 4,
+          "ms": 80
+        },
+        {
+          "pose": 5,
+          "ms": 80
+        },
+        {
+          "pose": 6,
+          "ms": 80
+        },
+        {
+          "pose": 7,
+          "ms": 80
+        },
+        {
+          "pose": 8,
+          "ms": 80
+        },
+        {
+          "pose": 9,
+          "ms": 80
+        },
+        {
+          "pose": 10,
+          "ms": 40
+        },
+        {
+          "pose": 11,
+          "ms": 40
+        },
+        {
+          "pose": 12,
+          "ms": 80
+        },
+        {
+          "pose": 13,
+          "ms": 120
+        },
+        {
+          "pose": 14,
+          "ms": 640
+        }
+      ]
+    }
+  ]
+}
